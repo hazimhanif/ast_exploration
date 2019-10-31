@@ -1,0 +1,118 @@
+SOURCE_FILE	31:7	57:1	0	
+SIMPLE_DECL	31:7	31:60	1	char [ ] sccsid ; sccsid = "@(#)getopt.c\t8.3 (Berkeley) 4/27/95" ;
+VAR_DECL	31:7	31:12	2	char [ ] sccsid ; sccsid = "@(#)getopt.c\t8.3 (Berkeley) 4/27/95"
+TYPE	31:7	31:18	3	char [ ]
+TYPE_NAME	31:7	31:7	4	char
+LEAF_NODE	31:7	31:7	5	char
+TYPE_SUFFIX	31:18	31:19	4	[ ]
+LEAF_NODE	31:18	31:18	5	[
+LEAF_NODE	31:19	31:19	5	]
+NAME	31:12	31:12	3	sccsid
+LEAF_NODE	31:12	31:12	4	sccsid
+LEAF_NODE	0:0	0:0	3	;
+INIT	31:12	31:12	3	sccsid = "@(#)getopt.c\t8.3 (Berkeley) 4/27/95"
+ASSIGN	31:12	31:23	4	sccsid = "@(#)getopt.c\t8.3 (Berkeley) 4/27/95"
+LVAL	31:12	31:12	5	sccsid
+NAME	31:12	31:12	6	sccsid
+LEAF_NODE	31:12	31:12	7	sccsid
+ASSIGN_OP	31:21	31:21	5	=
+LEAF_NODE	31:21	31:21	6	=
+RVAL	31:23	31:23	5	"@(#)getopt.c\t8.3 (Berkeley) 4/27/95"
+FIELD	31:23	31:23	6	"@(#)getopt.c\t8.3 (Berkeley) 4/27/95"
+LEAF_NODE	31:23	31:23	7	"@(#)getopt.c\t8.3 (Berkeley) 4/27/95"
+LEAF_NODE	31:60	31:60	2	;
+SIMPLE_DECL	39:0	42:9	1	int opterr ; opterr = 1 , int optind ; optind = 1 , int optopt , int optreset ;
+INIT_DECL_LIST	39:0	39:0	2	int opterr ; opterr = 1 , int optind ; optind = 1 , int optopt , int optreset
+VAR_DECL	39:0	39:4	3	int opterr ; opterr = 1
+TYPE	39:0	39:0	4	int
+TYPE_NAME	39:0	39:0	5	int
+LEAF_NODE	39:0	39:0	6	int
+NAME	39:4	39:4	4	opterr
+LEAF_NODE	39:4	39:4	5	opterr
+LEAF_NODE	0:0	0:0	4	;
+INIT	39:4	39:4	4	opterr = 1
+ASSIGN	39:4	39:13	5	opterr = 1
+LVAL	39:4	39:4	6	opterr
+NAME	39:4	39:4	7	opterr
+LEAF_NODE	39:4	39:4	8	opterr
+ASSIGN_OP	39:11	39:11	6	=
+LEAF_NODE	39:11	39:11	7	=
+RVAL	39:13	39:13	6	1
+FIELD	39:13	39:13	7	1
+LEAF_NODE	39:13	39:13	8	1
+LEAF_NODE	39:14	39:14	3	,
+INIT_DECL_LIST	39:0	39:0	3	int optind ; optind = 1 , int optopt , int optreset
+VAR_DECL	39:0	40:1	4	int optind ; optind = 1
+TYPE	39:0	39:0	5	int
+TYPE_NAME	39:0	39:0	6	int
+LEAF_NODE	39:0	39:0	7	int
+NAME	40:1	40:1	5	optind
+LEAF_NODE	40:1	40:1	6	optind
+LEAF_NODE	0:0	0:0	5	;
+INIT	40:1	40:1	5	optind = 1
+ASSIGN	40:1	40:10	6	optind = 1
+LVAL	40:1	40:1	7	optind
+NAME	40:1	40:1	8	optind
+LEAF_NODE	40:1	40:1	9	optind
+ASSIGN_OP	40:8	40:8	7	=
+LEAF_NODE	40:8	40:8	8	=
+RVAL	40:10	40:10	7	1
+FIELD	40:10	40:10	8	1
+LEAF_NODE	40:10	40:10	9	1
+LEAF_NODE	40:11	40:11	4	,
+INIT_DECL_LIST	39:0	39:0	4	int optopt , int optreset
+VAR_DECL	39:0	41:1	5	int optopt
+TYPE	39:0	39:0	6	int
+TYPE_NAME	39:0	39:0	7	int
+LEAF_NODE	39:0	39:0	8	int
+NAME	41:1	41:1	6	optopt
+LEAF_NODE	41:1	41:1	7	optopt
+LEAF_NODE	41:7	41:7	5	,
+VAR_DECL	39:0	42:1	5	int optreset
+TYPE	39:0	39:0	6	int
+TYPE_NAME	39:0	39:0	7	int
+LEAF_NODE	39:0	39:0	8	int
+NAME	42:1	42:1	6	optreset
+LEAF_NODE	42:1	42:1	7	optreset
+LEAF_NODE	42:9	42:9	2	;
+SIMPLE_DECL	43:0	43:12	1	char * optarg ;
+VAR_DECL	43:0	43:6	2	char * optarg
+TYPE	43:0	43:5	3	char *
+TYPE_NAME	43:0	43:0	4	char
+LEAF_NODE	43:0	43:0	5	char
+POINTER	43:5	43:5	4	*
+LEAF_NODE	43:5	43:5	5	*
+NAME	43:6	43:6	3	optarg
+LEAF_NODE	43:6	43:6	4	optarg
+LEAF_NODE	43:12	43:12	2	;
+SIMPLE_DECL	56:8	56:26	1	char * place ; place = EMSG ;
+VAR_DECL	56:8	56:14	2	char * place ; place = EMSG
+TYPE	56:8	56:13	3	char *
+TYPE_NAME	56:8	56:8	4	char
+LEAF_NODE	56:8	56:8	5	char
+POINTER	56:13	56:13	4	*
+LEAF_NODE	56:13	56:13	5	*
+NAME	56:14	56:14	3	place
+LEAF_NODE	56:14	56:14	4	place
+LEAF_NODE	0:0	0:0	3	;
+INIT	56:14	56:14	3	place = EMSG
+ASSIGN	56:14	56:22	4	place = EMSG
+LVAL	56:14	56:14	5	place
+NAME	56:14	56:14	6	place
+LEAF_NODE	56:14	56:14	7	place
+ASSIGN_OP	56:20	56:20	5	=
+LEAF_NODE	56:20	56:20	6	=
+RVAL	56:22	56:22	5	EMSG
+FIELD	56:22	56:22	6	EMSG
+LEAF_NODE	56:22	56:22	7	EMSG
+LEAF_NODE	56:26	56:26	2	;
+SIMPLE_DECL	57:1	57:10	1	char * oli ;
+VAR_DECL	57:1	57:7	2	char * oli
+TYPE	57:1	57:6	3	char *
+TYPE_NAME	57:1	57:1	4	char
+LEAF_NODE	57:1	57:1	5	char
+POINTER	57:6	57:6	4	*
+LEAF_NODE	57:6	57:6	5	*
+NAME	57:7	57:7	3	oli
+LEAF_NODE	57:7	57:7	4	oli
+LEAF_NODE	57:10	57:10	2	;

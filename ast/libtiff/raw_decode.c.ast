@@ -1,0 +1,2446 @@
+SOURCE_FILE	69:11	153:0	0	
+SIMPLE_DECL	69:11	69:32	1	unsigned char boolean ;
+VAR_DECL	69:11	69:25	2	unsigned char boolean
+TYPE	69:11	69:11	3	unsigned char
+TYPE_NAME	69:11	69:20	4	unsigned char
+LEAF_NODE	69:11	69:11	5	unsigned
+LEAF_NODE	69:20	69:20	5	char
+NAME	69:25	69:25	3	boolean
+LEAF_NODE	69:25	69:25	4	boolean
+LEAF_NODE	69:32	69:32	2	;
+FUNCTION_DEF	79:0	100:0	1	
+RETURN_TYPE	79:0	79:7	2	static int
+LEAF_NODE	79:0	79:0	3	static
+TYPE_NAME	79:7	79:7	3	int
+LEAF_NODE	79:7	79:7	4	int
+FUNCTION_NAME	79:11	79:11	2	check_cluster
+LEAF_NODE	79:11	79:11	3	check_cluster
+PARAMETER_LIST	79:24	79:94	2	( int cluster , unsigned char * buffer , unsigned char * expected_cluster )
+LEAF_NODE	79:24	79:24	3	(
+PARAMETER_DECL	79:26	79:30	3	int cluster
+TYPE	79:26	79:26	4	int
+TYPE_NAME	79:26	79:26	5	int
+LEAF_NODE	79:26	79:26	6	int
+NAME	79:30	79:30	4	cluster
+LEAF_NODE	79:30	79:30	5	cluster
+LEAF_NODE	79:37	79:37	3	,
+PARAMETER_DECL	79:39	79:54	3	unsigned char * buffer
+TYPE	79:39	79:53	4	unsigned char *
+TYPE_NAME	79:39	79:48	5	unsigned char
+LEAF_NODE	79:39	79:39	6	unsigned
+LEAF_NODE	79:48	79:48	6	char
+POINTER	79:53	79:53	5	*
+LEAF_NODE	79:53	79:53	6	*
+NAME	79:54	79:54	4	buffer
+LEAF_NODE	79:54	79:54	5	buffer
+LEAF_NODE	79:60	79:60	3	,
+PARAMETER_DECL	79:62	79:77	3	unsigned char * expected_cluster
+TYPE	79:62	79:76	4	unsigned char *
+TYPE_NAME	79:62	79:71	5	unsigned char
+LEAF_NODE	79:62	79:62	6	unsigned
+LEAF_NODE	79:71	79:71	6	char
+POINTER	79:76	79:76	5	*
+LEAF_NODE	79:76	79:76	6	*
+NAME	79:77	79:77	4	expected_cluster
+LEAF_NODE	79:77	79:77	5	expected_cluster
+LEAF_NODE	79:94	79:94	3	)
+LEAF_NODE	79:96	79:96	2	{
+STATEMENTS	80:1	99:1	2	
+SIMPLE_DECL	80:1	80:43	3	unsigned char * target ; target = buffer + cluster * 6 ;
+VAR_DECL	80:1	80:16	4	unsigned char * target ; target = buffer + cluster * 6
+TYPE	80:1	80:15	5	unsigned char *
+TYPE_NAME	80:1	80:10	6	unsigned char
+LEAF_NODE	80:1	80:1	7	unsigned
+LEAF_NODE	80:10	80:10	7	char
+POINTER	80:15	80:15	6	*
+LEAF_NODE	80:15	80:15	7	*
+NAME	80:16	80:16	5	target
+LEAF_NODE	80:16	80:16	6	target
+LEAF_NODE	0:0	0:0	5	;
+INIT	80:16	80:16	5	target = buffer + cluster * 6
+ASSIGN	80:16	80:25	6	target = buffer + cluster * 6
+LVAL	80:16	80:16	7	target
+NAME	80:16	80:16	8	target
+LEAF_NODE	80:16	80:16	9	target
+ASSIGN_OP	80:23	80:23	7	=
+LEAF_NODE	80:23	80:23	8	=
+RVAL	80:25	80:42	7	buffer + cluster * 6
+FIELD	80:25	80:25	8	buffer
+LEAF_NODE	80:25	80:25	9	buffer
+LEAF_NODE	80:32	80:32	8	+
+FIELD	80:34	80:34	8	cluster
+LEAF_NODE	80:34	80:34	9	cluster
+LEAF_NODE	80:41	80:41	8	*
+FIELD	80:42	80:42	8	6
+LEAF_NODE	80:42	80:42	9	6
+LEAF_NODE	80:43	80:43	4	;
+SELECTION	82:1	82:47	3	
+KEYWORD	82:1	82:1	4	if
+LEAF_NODE	82:1	82:1	5	if
+LEAF_NODE	82:4	82:4	4	(
+CONDITION	82:5	82:5	4	memcmp ( target , expected_cluster , 6 ) == 0
+EXPR	82:5	82:44	5	memcmp ( target , expected_cluster , 6 ) == 0
+FUNCTION_CALL	82:5	82:39	6	memcmp ( target , expected_cluster , 6 )
+CALLEE	82:5	82:5	7	memcmp
+LEAF_NODE	82:5	82:5	8	memcmp
+LEAF_NODE	82:11	82:11	7	(
+ARGUMENT	82:12	82:12	7	target
+FIELD	82:12	82:12	8	target
+LEAF_NODE	82:12	82:12	9	target
+LEAF_NODE	82:18	82:18	7	,
+ARGUMENT	82:20	82:20	7	expected_cluster
+FIELD	82:20	82:20	8	expected_cluster
+LEAF_NODE	82:20	82:20	9	expected_cluster
+LEAF_NODE	82:36	82:36	7	,
+ARGUMENT	82:38	82:38	7	6
+FIELD	82:38	82:38	8	6
+LEAF_NODE	82:38	82:38	9	6
+LEAF_NODE	82:39	82:39	7	)
+EQ_OPERATOR	82:41	82:41	6	==
+LEAF_NODE	82:41	82:41	7	==
+FIELD	82:44	82:44	6	0
+LEAF_NODE	82:44	82:44	7	0
+LEAF_NODE	82:45	82:45	4	)
+STATEMENTS	82:47	84:1	4	
+LEAF_NODE	82:47	82:47	5	{
+STATEMENTS	83:2	83:2	5	
+JUMP_STATEMENT	83:2	83:10	6	return 0 ;
+KEYWORD	83:2	83:2	7	return
+LEAF_NODE	83:2	83:2	8	return
+DESTINATION	83:9	83:9	7	0
+EXPR	83:9	83:9	8	0
+FIELD	83:9	83:9	9	0
+LEAF_NODE	83:9	83:9	10	0
+LEAF_NODE	83:10	83:10	7	;
+LEAF_NODE	84:1	84:1	5	}
+EXPR_STATEMENT	86:1	86:75	3	fprintf ( stderr , "Cluster %d did not match expected results.\n" , cluster ) ;
+EXPR	86:1	86:1	4	fprintf ( stderr , "Cluster %d did not match expected results.\n" , cluster )
+FUNCTION_CALL	86:1	86:74	5	fprintf ( stderr , "Cluster %d did not match expected results.\n" , cluster )
+CALLEE	86:1	86:1	6	fprintf
+LEAF_NODE	86:1	86:1	7	fprintf
+LEAF_NODE	86:8	86:8	6	(
+ARGUMENT	86:10	86:10	6	stderr
+FIELD	86:10	86:10	7	stderr
+LEAF_NODE	86:10	86:10	8	stderr
+LEAF_NODE	86:16	86:16	6	,
+ARGUMENT	86:18	86:18	6	"Cluster %d did not match expected results.\n"
+FIELD	86:18	86:18	7	"Cluster %d did not match expected results.\n"
+LEAF_NODE	86:18	86:18	8	"Cluster %d did not match expected results.\n"
+LEAF_NODE	86:64	86:64	6	,
+ARGUMENT	86:66	86:66	6	cluster
+FIELD	86:66	86:66	7	cluster
+LEAF_NODE	86:66	86:66	8	cluster
+LEAF_NODE	86:74	86:74	6	)
+LEAF_NODE	86:75	86:75	4	;
+LEAF_NODE	87:1	87:1	3	fprintf
+LEAF_NODE	87:8	87:8	3	(
+LEAF_NODE	87:10	87:10	3	stderr
+LEAF_NODE	87:16	87:16	3	,
+LEAF_NODE	88:3	88:3	3	"Expect: %3d %3d   %3d   %3d\n"
+LEAF_NODE	89:3	89:3	3	"        %3d %3d\n"
+LEAF_NODE	89:22	89:22	3	,
+LEAF_NODE	90:3	90:3	3	expected_cluster
+LEAF_NODE	90:19	90:19	3	[
+LEAF_NODE	90:20	90:20	3	0
+LEAF_NODE	90:21	90:21	3	]
+LEAF_NODE	90:22	90:22	3	,
+LEAF_NODE	90:24	90:24	3	expected_cluster
+LEAF_NODE	90:40	90:40	3	[
+LEAF_NODE	90:41	90:41	3	1
+LEAF_NODE	90:42	90:42	3	]
+LEAF_NODE	90:43	90:43	3	,
+LEAF_NODE	91:3	91:3	3	expected_cluster
+LEAF_NODE	91:19	91:19	3	[
+LEAF_NODE	91:20	91:20	3	4
+LEAF_NODE	91:21	91:21	3	]
+LEAF_NODE	91:22	91:22	3	,
+LEAF_NODE	91:24	91:24	3	expected_cluster
+LEAF_NODE	91:40	91:40	3	[
+LEAF_NODE	91:41	91:41	3	5
+LEAF_NODE	91:42	91:42	3	]
+LEAF_NODE	91:43	91:43	3	,
+LEAF_NODE	92:3	92:3	3	expected_cluster
+LEAF_NODE	92:19	92:19	3	[
+LEAF_NODE	92:20	92:20	3	2
+LEAF_NODE	92:21	92:21	3	]
+LEAF_NODE	92:22	92:22	3	,
+LEAF_NODE	92:24	92:24	3	expected_cluster
+LEAF_NODE	92:40	92:40	3	[
+LEAF_NODE	92:41	92:41	3	3
+LEAF_NODE	92:42	92:42	3	]
+LEAF_NODE	92:44	92:44	3	)
+LEAF_NODE	92:45	92:45	3	;
+LEAF_NODE	93:1	93:1	3	fprintf
+LEAF_NODE	93:8	93:8	3	(
+LEAF_NODE	93:10	93:10	3	stderr
+LEAF_NODE	93:16	93:16	3	,
+LEAF_NODE	94:3	94:3	3	"   Got: %3d %3d   %3d   %3d\n"
+LEAF_NODE	95:3	95:3	3	"        %3d %3d\n"
+LEAF_NODE	95:22	95:22	3	,
+LEAF_NODE	96:3	96:3	3	target
+LEAF_NODE	96:9	96:9	3	[
+LEAF_NODE	96:10	96:10	3	0
+LEAF_NODE	96:11	96:11	3	]
+LEAF_NODE	96:12	96:12	3	,
+LEAF_NODE	96:14	96:14	3	target
+LEAF_NODE	96:20	96:20	3	[
+LEAF_NODE	96:21	96:21	3	1
+LEAF_NODE	96:22	96:22	3	]
+LEAF_NODE	96:23	96:23	3	,
+LEAF_NODE	97:3	97:3	3	target
+LEAF_NODE	97:9	97:9	3	[
+LEAF_NODE	97:10	97:10	3	4
+LEAF_NODE	97:11	97:11	3	]
+LEAF_NODE	97:12	97:12	3	,
+LEAF_NODE	97:14	97:14	3	target
+LEAF_NODE	97:20	97:20	3	[
+LEAF_NODE	97:21	97:21	3	5
+LEAF_NODE	97:22	97:22	3	]
+LEAF_NODE	97:23	97:23	3	,
+LEAF_NODE	98:3	98:3	3	target
+LEAF_NODE	98:9	98:9	3	[
+LEAF_NODE	98:10	98:10	3	2
+LEAF_NODE	98:11	98:11	3	]
+LEAF_NODE	98:12	98:12	3	,
+LEAF_NODE	98:14	98:14	3	target
+LEAF_NODE	98:20	98:20	3	[
+LEAF_NODE	98:21	98:21	3	3
+LEAF_NODE	98:22	98:22	3	]
+LEAF_NODE	98:24	98:24	3	)
+LEAF_NODE	98:25	98:25	3	;
+JUMP_STATEMENT	99:1	99:9	3	return 1 ;
+KEYWORD	99:1	99:1	4	return
+LEAF_NODE	99:1	99:1	5	return
+DESTINATION	99:8	99:8	4	1
+EXPR	99:8	99:8	5	1
+FIELD	99:8	99:8	6	1
+LEAF_NODE	99:8	99:8	7	1
+LEAF_NODE	99:9	99:9	4	;
+LEAF_NODE	100:0	100:0	2	}
+FUNCTION_DEF	102:0	121:0	1	
+RETURN_TYPE	102:0	102:7	2	static int
+LEAF_NODE	102:0	102:0	3	static
+TYPE_NAME	102:7	102:7	3	int
+LEAF_NODE	102:7	102:7	4	int
+FUNCTION_NAME	102:11	102:11	2	check_rgb_pixel
+LEAF_NODE	102:11	102:11	3	check_rgb_pixel
+PARAMETER_LIST	102:26	106:29	2	( int pixel , int min_red , int max_red , int min_green , int max_green , int min_blue , int max_blue , unsigned char * buffer )
+LEAF_NODE	102:26	102:26	3	(
+PARAMETER_DECL	102:28	102:32	3	int pixel
+TYPE	102:28	102:28	4	int
+TYPE_NAME	102:28	102:28	5	int
+LEAF_NODE	102:28	102:28	6	int
+NAME	102:32	102:32	4	pixel
+LEAF_NODE	102:32	102:32	5	pixel
+LEAF_NODE	102:37	102:37	3	,
+PARAMETER_DECL	103:7	103:11	3	int min_red
+TYPE	103:7	103:7	4	int
+TYPE_NAME	103:7	103:7	5	int
+LEAF_NODE	103:7	103:7	6	int
+NAME	103:11	103:11	4	min_red
+LEAF_NODE	103:11	103:11	5	min_red
+LEAF_NODE	103:18	103:18	3	,
+PARAMETER_DECL	103:20	103:24	3	int max_red
+TYPE	103:20	103:20	4	int
+TYPE_NAME	103:20	103:20	5	int
+LEAF_NODE	103:20	103:20	6	int
+NAME	103:24	103:24	4	max_red
+LEAF_NODE	103:24	103:24	5	max_red
+LEAF_NODE	103:31	103:31	3	,
+PARAMETER_DECL	104:7	104:11	3	int min_green
+TYPE	104:7	104:7	4	int
+TYPE_NAME	104:7	104:7	5	int
+LEAF_NODE	104:7	104:7	6	int
+NAME	104:11	104:11	4	min_green
+LEAF_NODE	104:11	104:11	5	min_green
+LEAF_NODE	104:20	104:20	3	,
+PARAMETER_DECL	104:22	104:26	3	int max_green
+TYPE	104:22	104:22	4	int
+TYPE_NAME	104:22	104:22	5	int
+LEAF_NODE	104:22	104:22	6	int
+NAME	104:26	104:26	4	max_green
+LEAF_NODE	104:26	104:26	5	max_green
+LEAF_NODE	104:35	104:35	3	,
+PARAMETER_DECL	105:7	105:11	3	int min_blue
+TYPE	105:7	105:7	4	int
+TYPE_NAME	105:7	105:7	5	int
+LEAF_NODE	105:7	105:7	6	int
+NAME	105:11	105:11	4	min_blue
+LEAF_NODE	105:11	105:11	5	min_blue
+LEAF_NODE	105:19	105:19	3	,
+PARAMETER_DECL	105:21	105:25	3	int max_blue
+TYPE	105:21	105:21	4	int
+TYPE_NAME	105:21	105:21	5	int
+LEAF_NODE	105:21	105:21	6	int
+NAME	105:25	105:25	4	max_blue
+LEAF_NODE	105:25	105:25	5	max_blue
+LEAF_NODE	105:33	105:33	3	,
+PARAMETER_DECL	106:7	106:22	3	unsigned char * buffer
+TYPE	106:7	106:21	4	unsigned char *
+TYPE_NAME	106:7	106:16	5	unsigned char
+LEAF_NODE	106:7	106:7	6	unsigned
+LEAF_NODE	106:16	106:16	6	char
+POINTER	106:21	106:21	5	*
+LEAF_NODE	106:21	106:21	6	*
+NAME	106:22	106:22	4	buffer
+LEAF_NODE	106:22	106:22	5	buffer
+LEAF_NODE	106:29	106:29	3	)
+LEAF_NODE	106:31	106:31	2	{
+STATEMENTS	107:1	120:1	2	
+SIMPLE_DECL	107:1	107:40	3	unsigned char * rgb ; rgb = buffer + 3 * pixel ;
+VAR_DECL	107:1	107:16	4	unsigned char * rgb ; rgb = buffer + 3 * pixel
+TYPE	107:1	107:15	5	unsigned char *
+TYPE_NAME	107:1	107:10	6	unsigned char
+LEAF_NODE	107:1	107:1	7	unsigned
+LEAF_NODE	107:10	107:10	7	char
+POINTER	107:15	107:15	6	*
+LEAF_NODE	107:15	107:15	7	*
+NAME	107:16	107:16	5	rgb
+LEAF_NODE	107:16	107:16	6	rgb
+LEAF_NODE	0:0	0:0	5	;
+INIT	107:16	107:16	5	rgb = buffer + 3 * pixel
+ASSIGN	107:16	107:22	6	rgb = buffer + 3 * pixel
+LVAL	107:16	107:16	7	rgb
+NAME	107:16	107:16	8	rgb
+LEAF_NODE	107:16	107:16	9	rgb
+ASSIGN_OP	107:20	107:20	7	=
+LEAF_NODE	107:20	107:20	8	=
+RVAL	107:22	107:35	7	buffer + 3 * pixel
+FIELD	107:22	107:22	8	buffer
+LEAF_NODE	107:22	107:22	9	buffer
+LEAF_NODE	107:29	107:29	8	+
+FIELD	107:31	107:31	8	3
+LEAF_NODE	107:31	107:31	9	3
+LEAF_NODE	107:33	107:33	8	*
+FIELD	107:35	107:35	8	pixel
+LEAF_NODE	107:35	107:35	9	pixel
+LEAF_NODE	107:40	107:40	4	;
+SELECTION	109:1	111:48	3	
+KEYWORD	109:1	109:1	4	if
+LEAF_NODE	109:1	109:1	5	if
+LEAF_NODE	109:3	109:3	4	(
+CONDITION	109:5	109:5	4	rgb [ 0 ] >= min_red && rgb [ 0 ] <= max_red && rgb [ 1 ] >= min_green && rgb [ 1 ] <= max_green && rgb [ 2 ] >= min_blue && rgb [ 2 ] <= max_blue
+EXPR	109:5	109:5	5	rgb [ 0 ] >= min_red && rgb [ 0 ] <= max_red && rgb [ 1 ] >= min_green && rgb [ 1 ] <= max_green && rgb [ 2 ] >= min_blue && rgb [ 2 ] <= max_blue
+AND	109:5	109:26	6	rgb [ 0 ] >= min_red && rgb [ 0 ] <= max_red && rgb [ 1 ] >= min_green && rgb [ 1 ] <= max_green && rgb [ 2 ] >= min_blue && rgb [ 2 ] <= max_blue
+EXPR	109:5	109:15	7	rgb [ 0 ] >= min_red
+FIELD	109:5	109:10	8	rgb [ 0 ]
+LEAF_NODE	109:5	109:5	9	rgb
+LEAF_NODE	109:8	109:8	9	[
+EXPR	109:9	109:9	9	0
+FIELD	109:9	109:9	10	0
+LEAF_NODE	109:9	109:9	11	0
+LEAF_NODE	109:10	109:10	9	]
+REL_OPERATOR	109:12	109:12	8	>=
+LEAF_NODE	109:12	109:12	9	>=
+FIELD	109:15	109:15	8	min_red
+LEAF_NODE	109:15	109:15	9	min_red
+LEAF_NODE	109:23	109:23	7	&&
+EXPR	109:26	109:26	7	rgb [ 0 ] <= max_red && rgb [ 1 ] >= min_green && rgb [ 1 ] <= max_green && rgb [ 2 ] >= min_blue && rgb [ 2 ] <= max_blue
+AND	109:26	110:5	8	rgb [ 0 ] <= max_red && rgb [ 1 ] >= min_green && rgb [ 1 ] <= max_green && rgb [ 2 ] >= min_blue && rgb [ 2 ] <= max_blue
+EXPR	109:26	109:36	9	rgb [ 0 ] <= max_red
+FIELD	109:26	109:31	10	rgb [ 0 ]
+LEAF_NODE	109:26	109:26	11	rgb
+LEAF_NODE	109:29	109:29	11	[
+EXPR	109:30	109:30	11	0
+FIELD	109:30	109:30	12	0
+LEAF_NODE	109:30	109:30	13	0
+LEAF_NODE	109:31	109:31	11	]
+REL_OPERATOR	109:33	109:33	10	<=
+LEAF_NODE	109:33	109:33	11	<=
+FIELD	109:36	109:36	10	max_red
+LEAF_NODE	109:36	109:36	11	max_red
+LEAF_NODE	109:44	109:44	9	&&
+EXPR	110:5	110:5	9	rgb [ 1 ] >= min_green && rgb [ 1 ] <= max_green && rgb [ 2 ] >= min_blue && rgb [ 2 ] <= max_blue
+AND	110:5	110:28	10	rgb [ 1 ] >= min_green && rgb [ 1 ] <= max_green && rgb [ 2 ] >= min_blue && rgb [ 2 ] <= max_blue
+EXPR	110:5	110:15	11	rgb [ 1 ] >= min_green
+FIELD	110:5	110:10	12	rgb [ 1 ]
+LEAF_NODE	110:5	110:5	13	rgb
+LEAF_NODE	110:8	110:8	13	[
+EXPR	110:9	110:9	13	1
+FIELD	110:9	110:9	14	1
+LEAF_NODE	110:9	110:9	15	1
+LEAF_NODE	110:10	110:10	13	]
+REL_OPERATOR	110:12	110:12	12	>=
+LEAF_NODE	110:12	110:12	13	>=
+FIELD	110:15	110:15	12	min_green
+LEAF_NODE	110:15	110:15	13	min_green
+LEAF_NODE	110:25	110:25	11	&&
+EXPR	110:28	110:28	11	rgb [ 1 ] <= max_green && rgb [ 2 ] >= min_blue && rgb [ 2 ] <= max_blue
+AND	110:28	111:5	12	rgb [ 1 ] <= max_green && rgb [ 2 ] >= min_blue && rgb [ 2 ] <= max_blue
+EXPR	110:28	110:38	13	rgb [ 1 ] <= max_green
+FIELD	110:28	110:33	14	rgb [ 1 ]
+LEAF_NODE	110:28	110:28	15	rgb
+LEAF_NODE	110:31	110:31	15	[
+EXPR	110:32	110:32	15	1
+FIELD	110:32	110:32	16	1
+LEAF_NODE	110:32	110:32	17	1
+LEAF_NODE	110:33	110:33	15	]
+REL_OPERATOR	110:35	110:35	14	<=
+LEAF_NODE	110:35	110:35	15	<=
+FIELD	110:38	110:38	14	max_green
+LEAF_NODE	110:38	110:38	15	max_green
+LEAF_NODE	110:48	110:48	13	&&
+EXPR	111:5	111:5	13	rgb [ 2 ] >= min_blue && rgb [ 2 ] <= max_blue
+AND	111:5	111:27	14	rgb [ 2 ] >= min_blue && rgb [ 2 ] <= max_blue
+EXPR	111:5	111:15	15	rgb [ 2 ] >= min_blue
+FIELD	111:5	111:10	16	rgb [ 2 ]
+LEAF_NODE	111:5	111:5	17	rgb
+LEAF_NODE	111:8	111:8	17	[
+EXPR	111:9	111:9	17	2
+FIELD	111:9	111:9	18	2
+LEAF_NODE	111:9	111:9	19	2
+LEAF_NODE	111:10	111:10	17	]
+REL_OPERATOR	111:12	111:12	16	>=
+LEAF_NODE	111:12	111:12	17	>=
+FIELD	111:15	111:15	16	min_blue
+LEAF_NODE	111:15	111:15	17	min_blue
+LEAF_NODE	111:24	111:24	15	&&
+EXPR	111:27	111:37	15	rgb [ 2 ] <= max_blue
+FIELD	111:27	111:32	16	rgb [ 2 ]
+LEAF_NODE	111:27	111:27	17	rgb
+LEAF_NODE	111:30	111:30	17	[
+EXPR	111:31	111:31	17	2
+FIELD	111:31	111:31	18	2
+LEAF_NODE	111:31	111:31	19	2
+LEAF_NODE	111:32	111:32	17	]
+REL_OPERATOR	111:34	111:34	16	<=
+LEAF_NODE	111:34	111:34	17	<=
+FIELD	111:37	111:37	16	max_blue
+LEAF_NODE	111:37	111:37	17	max_blue
+LEAF_NODE	111:46	111:46	4	)
+STATEMENTS	111:48	113:1	4	
+LEAF_NODE	111:48	111:48	5	{
+STATEMENTS	112:2	112:2	5	
+JUMP_STATEMENT	112:2	112:10	6	return 0 ;
+KEYWORD	112:2	112:2	7	return
+LEAF_NODE	112:2	112:2	8	return
+DESTINATION	112:9	112:9	7	0
+EXPR	112:9	112:9	8	0
+FIELD	112:9	112:9	9	0
+LEAF_NODE	112:9	112:9	10	0
+LEAF_NODE	112:10	112:10	7	;
+LEAF_NODE	113:1	113:1	5	}
+EXPR_STATEMENT	115:1	115:71	3	fprintf ( stderr , "Pixel %d did not match expected results.\n" , pixel ) ;
+EXPR	115:1	115:1	4	fprintf ( stderr , "Pixel %d did not match expected results.\n" , pixel )
+FUNCTION_CALL	115:1	115:70	5	fprintf ( stderr , "Pixel %d did not match expected results.\n" , pixel )
+CALLEE	115:1	115:1	6	fprintf
+LEAF_NODE	115:1	115:1	7	fprintf
+LEAF_NODE	115:8	115:8	6	(
+ARGUMENT	115:10	115:10	6	stderr
+FIELD	115:10	115:10	7	stderr
+LEAF_NODE	115:10	115:10	8	stderr
+LEAF_NODE	115:16	115:16	6	,
+ARGUMENT	115:18	115:18	6	"Pixel %d did not match expected results.\n"
+FIELD	115:18	115:18	7	"Pixel %d did not match expected results.\n"
+LEAF_NODE	115:18	115:18	8	"Pixel %d did not match expected results.\n"
+LEAF_NODE	115:62	115:62	6	,
+ARGUMENT	115:64	115:64	6	pixel
+FIELD	115:64	115:64	7	pixel
+LEAF_NODE	115:64	115:64	8	pixel
+LEAF_NODE	115:70	115:70	6	)
+LEAF_NODE	115:71	115:71	4	;
+EXPR_STATEMENT	116:1	119:31	3	fprintf ( stderr , "Got R=%d (expected %d..%d), G=%d (expected %d..%d), B=%d (expected %d..%d)\n" , rgb [ 0 ] , min_red , max_red , rgb [ 1 ] , min_green , max_green , rgb [ 2 ] , min_blue , max_blue ) ;
+EXPR	116:1	116:1	4	fprintf ( stderr , "Got R=%d (expected %d..%d), G=%d (expected %d..%d), B=%d (expected %d..%d)\n" , rgb [ 0 ] , min_red , max_red , rgb [ 1 ] , min_green , max_green , rgb [ 2 ] , min_blue , max_blue )
+FUNCTION_CALL	116:1	119:30	5	fprintf ( stderr , "Got R=%d (expected %d..%d), G=%d (expected %d..%d), B=%d (expected %d..%d)\n" , rgb [ 0 ] , min_red , max_red , rgb [ 1 ] , min_green , max_green , rgb [ 2 ] , min_blue , max_blue )
+CALLEE	116:1	116:1	6	fprintf
+LEAF_NODE	116:1	116:1	7	fprintf
+LEAF_NODE	116:8	116:8	6	(
+ARGUMENT	116:10	116:10	6	stderr
+FIELD	116:10	116:10	7	stderr
+LEAF_NODE	116:10	116:10	8	stderr
+LEAF_NODE	116:16	116:16	6	,
+ARGUMENT	116:18	116:18	6	"Got R=%d (expected %d..%d), G=%d (expected %d..%d), B=%d (expected %d..%d)\n"
+FIELD	116:18	116:18	7	"Got R=%d (expected %d..%d), G=%d (expected %d..%d), B=%d (expected %d..%d)\n"
+LEAF_NODE	116:18	116:18	8	"Got R=%d (expected %d..%d), G=%d (expected %d..%d), B=%d (expected %d..%d)\n"
+LEAF_NODE	116:96	116:96	6	,
+ARGUMENT	117:3	117:3	6	rgb [ 0 ]
+FIELD	117:3	117:8	7	rgb [ 0 ]
+LEAF_NODE	117:3	117:3	8	rgb
+LEAF_NODE	117:6	117:6	8	[
+EXPR	117:7	117:7	8	0
+FIELD	117:7	117:7	9	0
+LEAF_NODE	117:7	117:7	10	0
+LEAF_NODE	117:8	117:8	8	]
+LEAF_NODE	117:9	117:9	6	,
+ARGUMENT	117:11	117:11	6	min_red
+FIELD	117:11	117:11	7	min_red
+LEAF_NODE	117:11	117:11	8	min_red
+LEAF_NODE	117:18	117:18	6	,
+ARGUMENT	117:20	117:20	6	max_red
+FIELD	117:20	117:20	7	max_red
+LEAF_NODE	117:20	117:20	8	max_red
+LEAF_NODE	117:27	117:27	6	,
+ARGUMENT	118:3	118:3	6	rgb [ 1 ]
+FIELD	118:3	118:8	7	rgb [ 1 ]
+LEAF_NODE	118:3	118:3	8	rgb
+LEAF_NODE	118:6	118:6	8	[
+EXPR	118:7	118:7	8	1
+FIELD	118:7	118:7	9	1
+LEAF_NODE	118:7	118:7	10	1
+LEAF_NODE	118:8	118:8	8	]
+LEAF_NODE	118:9	118:9	6	,
+ARGUMENT	118:11	118:11	6	min_green
+FIELD	118:11	118:11	7	min_green
+LEAF_NODE	118:11	118:11	8	min_green
+LEAF_NODE	118:20	118:20	6	,
+ARGUMENT	118:22	118:22	6	max_green
+FIELD	118:22	118:22	7	max_green
+LEAF_NODE	118:22	118:22	8	max_green
+LEAF_NODE	118:31	118:31	6	,
+ARGUMENT	119:3	119:3	6	rgb [ 2 ]
+FIELD	119:3	119:8	7	rgb [ 2 ]
+LEAF_NODE	119:3	119:3	8	rgb
+LEAF_NODE	119:6	119:6	8	[
+EXPR	119:7	119:7	8	2
+FIELD	119:7	119:7	9	2
+LEAF_NODE	119:7	119:7	10	2
+LEAF_NODE	119:8	119:8	8	]
+LEAF_NODE	119:9	119:9	6	,
+ARGUMENT	119:11	119:11	6	min_blue
+FIELD	119:11	119:11	7	min_blue
+LEAF_NODE	119:11	119:11	8	min_blue
+LEAF_NODE	119:19	119:19	6	,
+ARGUMENT	119:21	119:21	6	max_blue
+FIELD	119:21	119:21	7	max_blue
+LEAF_NODE	119:21	119:21	8	max_blue
+LEAF_NODE	119:30	119:30	6	)
+LEAF_NODE	119:31	119:31	4	;
+JUMP_STATEMENT	120:1	120:9	3	return 1 ;
+KEYWORD	120:1	120:1	4	return
+LEAF_NODE	120:1	120:1	5	return
+DESTINATION	120:8	120:8	4	1
+EXPR	120:8	120:8	5	1
+FIELD	120:8	120:8	6	1
+LEAF_NODE	120:8	120:8	7	1
+LEAF_NODE	120:9	120:9	4	;
+LEAF_NODE	121:0	121:0	2	}
+FUNCTION_DEF	123:0	151:0	1	
+RETURN_TYPE	123:0	123:7	2	static int
+LEAF_NODE	123:0	123:0	3	static
+TYPE_NAME	123:7	123:7	3	int
+LEAF_NODE	123:7	123:7	4	int
+FUNCTION_NAME	123:11	123:11	2	check_rgba_pixel
+LEAF_NODE	123:11	123:11	3	check_rgba_pixel
+PARAMETER_LIST	123:27	128:23	2	( int pixel , int min_red , int max_red , int min_green , int max_green , int min_blue , int max_blue , int min_alpha , int max_alpha , uint32 * buffer )
+LEAF_NODE	123:27	123:27	3	(
+PARAMETER_DECL	123:29	123:33	3	int pixel
+TYPE	123:29	123:29	4	int
+TYPE_NAME	123:29	123:29	5	int
+LEAF_NODE	123:29	123:29	6	int
+NAME	123:33	123:33	4	pixel
+LEAF_NODE	123:33	123:33	5	pixel
+LEAF_NODE	123:38	123:38	3	,
+PARAMETER_DECL	124:8	124:12	3	int min_red
+TYPE	124:8	124:8	4	int
+TYPE_NAME	124:8	124:8	5	int
+LEAF_NODE	124:8	124:8	6	int
+NAME	124:12	124:12	4	min_red
+LEAF_NODE	124:12	124:12	5	min_red
+LEAF_NODE	124:19	124:19	3	,
+PARAMETER_DECL	124:21	124:25	3	int max_red
+TYPE	124:21	124:21	4	int
+TYPE_NAME	124:21	124:21	5	int
+LEAF_NODE	124:21	124:21	6	int
+NAME	124:25	124:25	4	max_red
+LEAF_NODE	124:25	124:25	5	max_red
+LEAF_NODE	124:32	124:32	3	,
+PARAMETER_DECL	125:8	125:12	3	int min_green
+TYPE	125:8	125:8	4	int
+TYPE_NAME	125:8	125:8	5	int
+LEAF_NODE	125:8	125:8	6	int
+NAME	125:12	125:12	4	min_green
+LEAF_NODE	125:12	125:12	5	min_green
+LEAF_NODE	125:21	125:21	3	,
+PARAMETER_DECL	125:23	125:27	3	int max_green
+TYPE	125:23	125:23	4	int
+TYPE_NAME	125:23	125:23	5	int
+LEAF_NODE	125:23	125:23	6	int
+NAME	125:27	125:27	4	max_green
+LEAF_NODE	125:27	125:27	5	max_green
+LEAF_NODE	125:36	125:36	3	,
+PARAMETER_DECL	126:8	126:12	3	int min_blue
+TYPE	126:8	126:8	4	int
+TYPE_NAME	126:8	126:8	5	int
+LEAF_NODE	126:8	126:8	6	int
+NAME	126:12	126:12	4	min_blue
+LEAF_NODE	126:12	126:12	5	min_blue
+LEAF_NODE	126:20	126:20	3	,
+PARAMETER_DECL	126:22	126:26	3	int max_blue
+TYPE	126:22	126:22	4	int
+TYPE_NAME	126:22	126:22	5	int
+LEAF_NODE	126:22	126:22	6	int
+NAME	126:26	126:26	4	max_blue
+LEAF_NODE	126:26	126:26	5	max_blue
+LEAF_NODE	126:34	126:34	3	,
+PARAMETER_DECL	127:8	127:12	3	int min_alpha
+TYPE	127:8	127:8	4	int
+TYPE_NAME	127:8	127:8	5	int
+LEAF_NODE	127:8	127:8	6	int
+NAME	127:12	127:12	4	min_alpha
+LEAF_NODE	127:12	127:12	5	min_alpha
+LEAF_NODE	127:21	127:21	3	,
+PARAMETER_DECL	127:23	127:27	3	int max_alpha
+TYPE	127:23	127:23	4	int
+TYPE_NAME	127:23	127:23	5	int
+LEAF_NODE	127:23	127:23	6	int
+NAME	127:27	127:27	4	max_alpha
+LEAF_NODE	127:27	127:27	5	max_alpha
+LEAF_NODE	127:36	127:36	3	,
+PARAMETER_DECL	128:8	128:16	3	uint32 * buffer
+TYPE	128:8	128:15	4	uint32 *
+TYPE_NAME	128:8	128:8	5	uint32
+LEAF_NODE	128:8	128:8	6	uint32
+POINTER	128:15	128:15	5	*
+LEAF_NODE	128:15	128:15	6	*
+NAME	128:16	128:16	4	buffer
+LEAF_NODE	128:16	128:16	5	buffer
+LEAF_NODE	128:23	128:23	3	)
+LEAF_NODE	128:25	128:25	2	{
+STATEMENTS	130:1	150:1	2	
+SIMPLE_DECL	130:1	130:61	3	int adjusted_pixel ; adjusted_pixel = pixel % 128 + ( 127 - ( pixel / 128 ) ) * 128 ;
+VAR_DECL	130:1	130:5	4	int adjusted_pixel ; adjusted_pixel = pixel % 128 + ( 127 - ( pixel / 128 ) ) * 128
+TYPE	130:1	130:1	5	int
+TYPE_NAME	130:1	130:1	6	int
+LEAF_NODE	130:1	130:1	7	int
+NAME	130:5	130:5	5	adjusted_pixel
+LEAF_NODE	130:5	130:5	6	adjusted_pixel
+LEAF_NODE	0:0	0:0	5	;
+INIT	130:5	130:5	5	adjusted_pixel = pixel % 128 + ( 127 - ( pixel / 128 ) ) * 128
+ASSIGN	130:5	130:22	6	adjusted_pixel = pixel % 128 + ( 127 - ( pixel / 128 ) ) * 128
+LVAL	130:5	130:5	7	adjusted_pixel
+NAME	130:5	130:5	8	adjusted_pixel
+LEAF_NODE	130:5	130:5	9	adjusted_pixel
+ASSIGN_OP	130:20	130:20	7	=
+LEAF_NODE	130:20	130:20	8	=
+RVAL	130:22	130:58	7	pixel % 128 + ( 127 - ( pixel / 128 ) ) * 128
+FIELD	130:22	130:22	8	pixel
+LEAF_NODE	130:22	130:22	9	pixel
+LEAF_NODE	130:28	130:28	8	%
+FIELD	130:30	130:30	8	128
+LEAF_NODE	130:30	130:30	9	128
+LEAF_NODE	130:34	130:34	8	+
+LEAF_NODE	130:36	130:36	8	(
+FIELD	130:37	130:37	8	127
+LEAF_NODE	130:37	130:37	9	127
+LEAF_NODE	130:41	130:41	8	-
+LEAF_NODE	130:43	130:43	8	(
+FIELD	130:44	130:44	8	pixel
+LEAF_NODE	130:44	130:44	9	pixel
+LEAF_NODE	130:49	130:49	8	/
+FIELD	130:50	130:50	8	128
+LEAF_NODE	130:50	130:50	9	128
+LEAF_NODE	130:53	130:53	8	)
+LEAF_NODE	130:54	130:54	8	)
+LEAF_NODE	130:56	130:56	8	*
+FIELD	130:58	130:58	8	128
+LEAF_NODE	130:58	130:58	9	128
+LEAF_NODE	130:61	130:61	4	;
+SIMPLE_DECL	131:1	131:37	3	uint32 rgba ; rgba = buffer [ adjusted_pixel ] ;
+VAR_DECL	131:1	131:8	4	uint32 rgba ; rgba = buffer [ adjusted_pixel ]
+TYPE	131:1	131:1	5	uint32
+TYPE_NAME	131:1	131:1	6	uint32
+LEAF_NODE	131:1	131:1	7	uint32
+NAME	131:8	131:8	5	rgba
+LEAF_NODE	131:8	131:8	6	rgba
+LEAF_NODE	0:0	0:0	5	;
+INIT	131:8	131:8	5	rgba = buffer [ adjusted_pixel ]
+ASSIGN	131:8	131:15	6	rgba = buffer [ adjusted_pixel ]
+LVAL	131:8	131:8	7	rgba
+NAME	131:8	131:8	8	rgba
+LEAF_NODE	131:8	131:8	9	rgba
+ASSIGN_OP	131:13	131:13	7	=
+LEAF_NODE	131:13	131:13	8	=
+RVAL	131:15	131:15	7	buffer [ adjusted_pixel ]
+FIELD	131:15	131:36	8	buffer [ adjusted_pixel ]
+LEAF_NODE	131:15	131:15	9	buffer
+LEAF_NODE	131:21	131:21	9	[
+EXPR	131:22	131:22	9	adjusted_pixel
+FIELD	131:22	131:22	10	adjusted_pixel
+LEAF_NODE	131:22	131:22	11	adjusted_pixel
+LEAF_NODE	131:36	131:36	9	]
+LEAF_NODE	131:37	131:37	4	;
+SELECTION	133:1	140:44	3	
+KEYWORD	133:1	133:1	4	if
+LEAF_NODE	133:1	133:1	5	if
+LEAF_NODE	133:3	133:3	4	(
+CONDITION	133:5	133:5	4	TIFFGetR ( rgba ) >= ( uint32 ) min_red && TIFFGetR ( rgba ) <= ( uint32 ) max_red && TIFFGetG ( rgba ) >= ( uint32 ) min_green && TIFFGetG ( rgba ) <= ( uint32 ) max_green && TIFFGetB ( rgba ) >= ( uint32 ) min_blue && TIFFGetB ( rgba ) <= ( uint32 ) max_blue && TIFFGetA ( rgba ) >= ( uint32 ) min_alpha && TIFFGetA ( rgba ) <= ( uint32 ) max_alpha
+EXPR	133:5	133:5	5	TIFFGetR ( rgba ) >= ( uint32 ) min_red && TIFFGetR ( rgba ) <= ( uint32 ) max_red && TIFFGetG ( rgba ) >= ( uint32 ) min_green && TIFFGetG ( rgba ) <= ( uint32 ) max_green && TIFFGetB ( rgba ) >= ( uint32 ) min_blue && TIFFGetB ( rgba ) <= ( uint32 ) max_blue && TIFFGetA ( rgba ) >= ( uint32 ) min_alpha && TIFFGetA ( rgba ) <= ( uint32 ) max_alpha
+AND	133:5	134:5	6	TIFFGetR ( rgba ) >= ( uint32 ) min_red && TIFFGetR ( rgba ) <= ( uint32 ) max_red && TIFFGetG ( rgba ) >= ( uint32 ) min_green && TIFFGetG ( rgba ) <= ( uint32 ) max_green && TIFFGetB ( rgba ) >= ( uint32 ) min_blue && TIFFGetB ( rgba ) <= ( uint32 ) max_blue && TIFFGetA ( rgba ) >= ( uint32 ) min_alpha && TIFFGetA ( rgba ) <= ( uint32 ) max_alpha
+EXPR	133:5	133:32	7	TIFFGetR ( rgba ) >= ( uint32 ) min_red
+FUNCTION_CALL	133:5	133:18	8	TIFFGetR ( rgba )
+CALLEE	133:5	133:5	9	TIFFGetR
+LEAF_NODE	133:5	133:5	10	TIFFGetR
+LEAF_NODE	133:13	133:13	9	(
+ARGUMENT	133:14	133:14	9	rgba
+FIELD	133:14	133:14	10	rgba
+LEAF_NODE	133:14	133:14	11	rgba
+LEAF_NODE	133:18	133:18	9	)
+REL_OPERATOR	133:20	133:20	8	>=
+LEAF_NODE	133:20	133:20	9	>=
+LEAF_NODE	133:23	133:23	8	(
+TYPE_NAME	133:24	133:24	8	uint32
+LEAF_NODE	133:24	133:24	9	uint32
+LEAF_NODE	133:30	133:30	8	)
+FIELD	133:32	133:32	8	min_red
+LEAF_NODE	133:32	133:32	9	min_red
+LEAF_NODE	133:40	133:40	7	&&
+EXPR	134:5	134:5	7	TIFFGetR ( rgba ) <= ( uint32 ) max_red && TIFFGetG ( rgba ) >= ( uint32 ) min_green && TIFFGetG ( rgba ) <= ( uint32 ) max_green && TIFFGetB ( rgba ) >= ( uint32 ) min_blue && TIFFGetB ( rgba ) <= ( uint32 ) max_blue && TIFFGetA ( rgba ) >= ( uint32 ) min_alpha && TIFFGetA ( rgba ) <= ( uint32 ) max_alpha
+AND	134:5	135:5	8	TIFFGetR ( rgba ) <= ( uint32 ) max_red && TIFFGetG ( rgba ) >= ( uint32 ) min_green && TIFFGetG ( rgba ) <= ( uint32 ) max_green && TIFFGetB ( rgba ) >= ( uint32 ) min_blue && TIFFGetB ( rgba ) <= ( uint32 ) max_blue && TIFFGetA ( rgba ) >= ( uint32 ) min_alpha && TIFFGetA ( rgba ) <= ( uint32 ) max_alpha
+EXPR	134:5	134:32	9	TIFFGetR ( rgba ) <= ( uint32 ) max_red
+FUNCTION_CALL	134:5	134:18	10	TIFFGetR ( rgba )
+CALLEE	134:5	134:5	11	TIFFGetR
+LEAF_NODE	134:5	134:5	12	TIFFGetR
+LEAF_NODE	134:13	134:13	11	(
+ARGUMENT	134:14	134:14	11	rgba
+FIELD	134:14	134:14	12	rgba
+LEAF_NODE	134:14	134:14	13	rgba
+LEAF_NODE	134:18	134:18	11	)
+REL_OPERATOR	134:20	134:20	10	<=
+LEAF_NODE	134:20	134:20	11	<=
+LEAF_NODE	134:23	134:23	10	(
+TYPE_NAME	134:24	134:24	10	uint32
+LEAF_NODE	134:24	134:24	11	uint32
+LEAF_NODE	134:30	134:30	10	)
+FIELD	134:32	134:32	10	max_red
+LEAF_NODE	134:32	134:32	11	max_red
+LEAF_NODE	134:40	134:40	9	&&
+EXPR	135:5	135:5	9	TIFFGetG ( rgba ) >= ( uint32 ) min_green && TIFFGetG ( rgba ) <= ( uint32 ) max_green && TIFFGetB ( rgba ) >= ( uint32 ) min_blue && TIFFGetB ( rgba ) <= ( uint32 ) max_blue && TIFFGetA ( rgba ) >= ( uint32 ) min_alpha && TIFFGetA ( rgba ) <= ( uint32 ) max_alpha
+AND	135:5	136:5	10	TIFFGetG ( rgba ) >= ( uint32 ) min_green && TIFFGetG ( rgba ) <= ( uint32 ) max_green && TIFFGetB ( rgba ) >= ( uint32 ) min_blue && TIFFGetB ( rgba ) <= ( uint32 ) max_blue && TIFFGetA ( rgba ) >= ( uint32 ) min_alpha && TIFFGetA ( rgba ) <= ( uint32 ) max_alpha
+EXPR	135:5	135:32	11	TIFFGetG ( rgba ) >= ( uint32 ) min_green
+FUNCTION_CALL	135:5	135:18	12	TIFFGetG ( rgba )
+CALLEE	135:5	135:5	13	TIFFGetG
+LEAF_NODE	135:5	135:5	14	TIFFGetG
+LEAF_NODE	135:13	135:13	13	(
+ARGUMENT	135:14	135:14	13	rgba
+FIELD	135:14	135:14	14	rgba
+LEAF_NODE	135:14	135:14	15	rgba
+LEAF_NODE	135:18	135:18	13	)
+REL_OPERATOR	135:20	135:20	12	>=
+LEAF_NODE	135:20	135:20	13	>=
+LEAF_NODE	135:23	135:23	12	(
+TYPE_NAME	135:24	135:24	12	uint32
+LEAF_NODE	135:24	135:24	13	uint32
+LEAF_NODE	135:30	135:30	12	)
+FIELD	135:32	135:32	12	min_green
+LEAF_NODE	135:32	135:32	13	min_green
+LEAF_NODE	135:42	135:42	11	&&
+EXPR	136:5	136:5	11	TIFFGetG ( rgba ) <= ( uint32 ) max_green && TIFFGetB ( rgba ) >= ( uint32 ) min_blue && TIFFGetB ( rgba ) <= ( uint32 ) max_blue && TIFFGetA ( rgba ) >= ( uint32 ) min_alpha && TIFFGetA ( rgba ) <= ( uint32 ) max_alpha
+AND	136:5	137:5	12	TIFFGetG ( rgba ) <= ( uint32 ) max_green && TIFFGetB ( rgba ) >= ( uint32 ) min_blue && TIFFGetB ( rgba ) <= ( uint32 ) max_blue && TIFFGetA ( rgba ) >= ( uint32 ) min_alpha && TIFFGetA ( rgba ) <= ( uint32 ) max_alpha
+EXPR	136:5	136:32	13	TIFFGetG ( rgba ) <= ( uint32 ) max_green
+FUNCTION_CALL	136:5	136:18	14	TIFFGetG ( rgba )
+CALLEE	136:5	136:5	15	TIFFGetG
+LEAF_NODE	136:5	136:5	16	TIFFGetG
+LEAF_NODE	136:13	136:13	15	(
+ARGUMENT	136:14	136:14	15	rgba
+FIELD	136:14	136:14	16	rgba
+LEAF_NODE	136:14	136:14	17	rgba
+LEAF_NODE	136:18	136:18	15	)
+REL_OPERATOR	136:20	136:20	14	<=
+LEAF_NODE	136:20	136:20	15	<=
+LEAF_NODE	136:23	136:23	14	(
+TYPE_NAME	136:24	136:24	14	uint32
+LEAF_NODE	136:24	136:24	15	uint32
+LEAF_NODE	136:30	136:30	14	)
+FIELD	136:32	136:32	14	max_green
+LEAF_NODE	136:32	136:32	15	max_green
+LEAF_NODE	136:42	136:42	13	&&
+EXPR	137:5	137:5	13	TIFFGetB ( rgba ) >= ( uint32 ) min_blue && TIFFGetB ( rgba ) <= ( uint32 ) max_blue && TIFFGetA ( rgba ) >= ( uint32 ) min_alpha && TIFFGetA ( rgba ) <= ( uint32 ) max_alpha
+AND	137:5	138:5	14	TIFFGetB ( rgba ) >= ( uint32 ) min_blue && TIFFGetB ( rgba ) <= ( uint32 ) max_blue && TIFFGetA ( rgba ) >= ( uint32 ) min_alpha && TIFFGetA ( rgba ) <= ( uint32 ) max_alpha
+EXPR	137:5	137:32	15	TIFFGetB ( rgba ) >= ( uint32 ) min_blue
+FUNCTION_CALL	137:5	137:18	16	TIFFGetB ( rgba )
+CALLEE	137:5	137:5	17	TIFFGetB
+LEAF_NODE	137:5	137:5	18	TIFFGetB
+LEAF_NODE	137:13	137:13	17	(
+ARGUMENT	137:14	137:14	17	rgba
+FIELD	137:14	137:14	18	rgba
+LEAF_NODE	137:14	137:14	19	rgba
+LEAF_NODE	137:18	137:18	17	)
+REL_OPERATOR	137:20	137:20	16	>=
+LEAF_NODE	137:20	137:20	17	>=
+LEAF_NODE	137:23	137:23	16	(
+TYPE_NAME	137:24	137:24	16	uint32
+LEAF_NODE	137:24	137:24	17	uint32
+LEAF_NODE	137:30	137:30	16	)
+FIELD	137:32	137:32	16	min_blue
+LEAF_NODE	137:32	137:32	17	min_blue
+LEAF_NODE	137:41	137:41	15	&&
+EXPR	138:5	138:5	15	TIFFGetB ( rgba ) <= ( uint32 ) max_blue && TIFFGetA ( rgba ) >= ( uint32 ) min_alpha && TIFFGetA ( rgba ) <= ( uint32 ) max_alpha
+AND	138:5	139:5	16	TIFFGetB ( rgba ) <= ( uint32 ) max_blue && TIFFGetA ( rgba ) >= ( uint32 ) min_alpha && TIFFGetA ( rgba ) <= ( uint32 ) max_alpha
+EXPR	138:5	138:32	17	TIFFGetB ( rgba ) <= ( uint32 ) max_blue
+FUNCTION_CALL	138:5	138:18	18	TIFFGetB ( rgba )
+CALLEE	138:5	138:5	19	TIFFGetB
+LEAF_NODE	138:5	138:5	20	TIFFGetB
+LEAF_NODE	138:13	138:13	19	(
+ARGUMENT	138:14	138:14	19	rgba
+FIELD	138:14	138:14	20	rgba
+LEAF_NODE	138:14	138:14	21	rgba
+LEAF_NODE	138:18	138:18	19	)
+REL_OPERATOR	138:20	138:20	18	<=
+LEAF_NODE	138:20	138:20	19	<=
+LEAF_NODE	138:23	138:23	18	(
+TYPE_NAME	138:24	138:24	18	uint32
+LEAF_NODE	138:24	138:24	19	uint32
+LEAF_NODE	138:30	138:30	18	)
+FIELD	138:32	138:32	18	max_blue
+LEAF_NODE	138:32	138:32	19	max_blue
+LEAF_NODE	138:41	138:41	17	&&
+EXPR	139:5	139:5	17	TIFFGetA ( rgba ) >= ( uint32 ) min_alpha && TIFFGetA ( rgba ) <= ( uint32 ) max_alpha
+AND	139:5	140:5	18	TIFFGetA ( rgba ) >= ( uint32 ) min_alpha && TIFFGetA ( rgba ) <= ( uint32 ) max_alpha
+EXPR	139:5	139:32	19	TIFFGetA ( rgba ) >= ( uint32 ) min_alpha
+FUNCTION_CALL	139:5	139:18	20	TIFFGetA ( rgba )
+CALLEE	139:5	139:5	21	TIFFGetA
+LEAF_NODE	139:5	139:5	22	TIFFGetA
+LEAF_NODE	139:13	139:13	21	(
+ARGUMENT	139:14	139:14	21	rgba
+FIELD	139:14	139:14	22	rgba
+LEAF_NODE	139:14	139:14	23	rgba
+LEAF_NODE	139:18	139:18	21	)
+REL_OPERATOR	139:20	139:20	20	>=
+LEAF_NODE	139:20	139:20	21	>=
+LEAF_NODE	139:23	139:23	20	(
+TYPE_NAME	139:24	139:24	20	uint32
+LEAF_NODE	139:24	139:24	21	uint32
+LEAF_NODE	139:30	139:30	20	)
+FIELD	139:32	139:32	20	min_alpha
+LEAF_NODE	139:32	139:32	21	min_alpha
+LEAF_NODE	139:42	139:42	19	&&
+EXPR	140:5	140:32	19	TIFFGetA ( rgba ) <= ( uint32 ) max_alpha
+FUNCTION_CALL	140:5	140:18	20	TIFFGetA ( rgba )
+CALLEE	140:5	140:5	21	TIFFGetA
+LEAF_NODE	140:5	140:5	22	TIFFGetA
+LEAF_NODE	140:13	140:13	21	(
+ARGUMENT	140:14	140:14	21	rgba
+FIELD	140:14	140:14	22	rgba
+LEAF_NODE	140:14	140:14	23	rgba
+LEAF_NODE	140:18	140:18	21	)
+REL_OPERATOR	140:20	140:20	20	<=
+LEAF_NODE	140:20	140:20	21	<=
+LEAF_NODE	140:23	140:23	20	(
+TYPE_NAME	140:24	140:24	20	uint32
+LEAF_NODE	140:24	140:24	21	uint32
+LEAF_NODE	140:30	140:30	20	)
+FIELD	140:32	140:32	20	max_alpha
+LEAF_NODE	140:32	140:32	21	max_alpha
+LEAF_NODE	140:42	140:42	4	)
+STATEMENTS	140:44	142:1	4	
+LEAF_NODE	140:44	140:44	5	{
+STATEMENTS	141:2	141:2	5	
+JUMP_STATEMENT	141:2	141:10	6	return 0 ;
+KEYWORD	141:2	141:2	7	return
+LEAF_NODE	141:2	141:2	8	return
+DESTINATION	141:9	141:9	7	0
+EXPR	141:9	141:9	8	0
+FIELD	141:9	141:9	9	0
+LEAF_NODE	141:9	141:9	10	0
+LEAF_NODE	141:10	141:10	7	;
+LEAF_NODE	142:1	142:1	5	}
+EXPR_STATEMENT	144:1	144:71	3	fprintf ( stderr , "Pixel %d did not match expected results.\n" , pixel ) ;
+EXPR	144:1	144:1	4	fprintf ( stderr , "Pixel %d did not match expected results.\n" , pixel )
+FUNCTION_CALL	144:1	144:70	5	fprintf ( stderr , "Pixel %d did not match expected results.\n" , pixel )
+CALLEE	144:1	144:1	6	fprintf
+LEAF_NODE	144:1	144:1	7	fprintf
+LEAF_NODE	144:8	144:8	6	(
+ARGUMENT	144:10	144:10	6	stderr
+FIELD	144:10	144:10	7	stderr
+LEAF_NODE	144:10	144:10	8	stderr
+LEAF_NODE	144:16	144:16	6	,
+ARGUMENT	144:18	144:18	6	"Pixel %d did not match expected results.\n"
+FIELD	144:18	144:18	7	"Pixel %d did not match expected results.\n"
+LEAF_NODE	144:18	144:18	8	"Pixel %d did not match expected results.\n"
+LEAF_NODE	144:62	144:62	6	,
+ARGUMENT	144:64	144:64	6	pixel
+FIELD	144:64	144:64	7	pixel
+LEAF_NODE	144:64	144:64	8	pixel
+LEAF_NODE	144:70	144:70	6	)
+LEAF_NODE	144:71	144:71	4	;
+EXPR_STATEMENT	145:1	149:41	3	fprintf ( stderr , "Got R=%d (expected %d..%d), G=%d (expected %d..%d), B=%d (expected %d..%d), A=%d (expected %d..%d)\n" , TIFFGetR ( rgba ) , min_red , max_red , TIFFGetG ( rgba ) , min_green , max_green , TIFFGetB ( rgba ) , min_blue , max_blue , TIFFGetA ( rgba ) , min_alpha , max_alpha ) ;
+EXPR	145:1	145:1	4	fprintf ( stderr , "Got R=%d (expected %d..%d), G=%d (expected %d..%d), B=%d (expected %d..%d), A=%d (expected %d..%d)\n" , TIFFGetR ( rgba ) , min_red , max_red , TIFFGetG ( rgba ) , min_green , max_green , TIFFGetB ( rgba ) , min_blue , max_blue , TIFFGetA ( rgba ) , min_alpha , max_alpha )
+FUNCTION_CALL	145:1	149:40	5	fprintf ( stderr , "Got R=%d (expected %d..%d), G=%d (expected %d..%d), B=%d (expected %d..%d), A=%d (expected %d..%d)\n" , TIFFGetR ( rgba ) , min_red , max_red , TIFFGetG ( rgba ) , min_green , max_green , TIFFGetB ( rgba ) , min_blue , max_blue , TIFFGetA ( rgba ) , min_alpha , max_alpha )
+CALLEE	145:1	145:1	6	fprintf
+LEAF_NODE	145:1	145:1	7	fprintf
+LEAF_NODE	145:8	145:8	6	(
+ARGUMENT	145:10	145:10	6	stderr
+FIELD	145:10	145:10	7	stderr
+LEAF_NODE	145:10	145:10	8	stderr
+LEAF_NODE	145:16	145:16	6	,
+ARGUMENT	145:18	145:18	6	"Got R=%d (expected %d..%d), G=%d (expected %d..%d), B=%d (expected %d..%d), A=%d (expected %d..%d)\n"
+FIELD	145:18	145:18	7	"Got R=%d (expected %d..%d), G=%d (expected %d..%d), B=%d (expected %d..%d), A=%d (expected %d..%d)\n"
+LEAF_NODE	145:18	145:18	8	"Got R=%d (expected %d..%d), G=%d (expected %d..%d), B=%d (expected %d..%d), A=%d (expected %d..%d)\n"
+LEAF_NODE	145:120	145:120	6	,
+ARGUMENT	146:3	146:3	6	TIFFGetR ( rgba )
+FUNCTION_CALL	146:3	146:16	7	TIFFGetR ( rgba )
+CALLEE	146:3	146:3	8	TIFFGetR
+LEAF_NODE	146:3	146:3	9	TIFFGetR
+LEAF_NODE	146:11	146:11	8	(
+ARGUMENT	146:12	146:12	8	rgba
+FIELD	146:12	146:12	9	rgba
+LEAF_NODE	146:12	146:12	10	rgba
+LEAF_NODE	146:16	146:16	8	)
+LEAF_NODE	146:17	146:17	6	,
+ARGUMENT	146:19	146:19	6	min_red
+FIELD	146:19	146:19	7	min_red
+LEAF_NODE	146:19	146:19	8	min_red
+LEAF_NODE	146:26	146:26	6	,
+ARGUMENT	146:28	146:28	6	max_red
+FIELD	146:28	146:28	7	max_red
+LEAF_NODE	146:28	146:28	8	max_red
+LEAF_NODE	146:35	146:35	6	,
+ARGUMENT	147:3	147:3	6	TIFFGetG ( rgba )
+FUNCTION_CALL	147:3	147:16	7	TIFFGetG ( rgba )
+CALLEE	147:3	147:3	8	TIFFGetG
+LEAF_NODE	147:3	147:3	9	TIFFGetG
+LEAF_NODE	147:11	147:11	8	(
+ARGUMENT	147:12	147:12	8	rgba
+FIELD	147:12	147:12	9	rgba
+LEAF_NODE	147:12	147:12	10	rgba
+LEAF_NODE	147:16	147:16	8	)
+LEAF_NODE	147:17	147:17	6	,
+ARGUMENT	147:19	147:19	6	min_green
+FIELD	147:19	147:19	7	min_green
+LEAF_NODE	147:19	147:19	8	min_green
+LEAF_NODE	147:28	147:28	6	,
+ARGUMENT	147:30	147:30	6	max_green
+FIELD	147:30	147:30	7	max_green
+LEAF_NODE	147:30	147:30	8	max_green
+LEAF_NODE	147:39	147:39	6	,
+ARGUMENT	148:3	148:3	6	TIFFGetB ( rgba )
+FUNCTION_CALL	148:3	148:16	7	TIFFGetB ( rgba )
+CALLEE	148:3	148:3	8	TIFFGetB
+LEAF_NODE	148:3	148:3	9	TIFFGetB
+LEAF_NODE	148:11	148:11	8	(
+ARGUMENT	148:12	148:12	8	rgba
+FIELD	148:12	148:12	9	rgba
+LEAF_NODE	148:12	148:12	10	rgba
+LEAF_NODE	148:16	148:16	8	)
+LEAF_NODE	148:17	148:17	6	,
+ARGUMENT	148:19	148:19	6	min_blue
+FIELD	148:19	148:19	7	min_blue
+LEAF_NODE	148:19	148:19	8	min_blue
+LEAF_NODE	148:27	148:27	6	,
+ARGUMENT	148:29	148:29	6	max_blue
+FIELD	148:29	148:29	7	max_blue
+LEAF_NODE	148:29	148:29	8	max_blue
+LEAF_NODE	148:37	148:37	6	,
+ARGUMENT	149:3	149:3	6	TIFFGetA ( rgba )
+FUNCTION_CALL	149:3	149:16	7	TIFFGetA ( rgba )
+CALLEE	149:3	149:3	8	TIFFGetA
+LEAF_NODE	149:3	149:3	9	TIFFGetA
+LEAF_NODE	149:11	149:11	8	(
+ARGUMENT	149:12	149:12	8	rgba
+FIELD	149:12	149:12	9	rgba
+LEAF_NODE	149:12	149:12	10	rgba
+LEAF_NODE	149:16	149:16	8	)
+LEAF_NODE	149:17	149:17	6	,
+ARGUMENT	149:19	149:19	6	min_alpha
+FIELD	149:19	149:19	7	min_alpha
+LEAF_NODE	149:19	149:19	8	min_alpha
+LEAF_NODE	149:28	149:28	6	,
+ARGUMENT	149:30	149:30	6	max_alpha
+FIELD	149:30	149:30	7	max_alpha
+LEAF_NODE	149:30	149:30	8	max_alpha
+LEAF_NODE	149:40	149:40	6	)
+LEAF_NODE	149:41	149:41	4	;
+JUMP_STATEMENT	150:1	150:9	3	return 1 ;
+KEYWORD	150:1	150:1	4	return
+LEAF_NODE	150:1	150:1	5	return
+DESTINATION	150:8	150:8	4	1
+EXPR	150:8	150:8	5	1
+FIELD	150:8	150:8	6	1
+LEAF_NODE	150:8	150:8	7	1
+LEAF_NODE	150:9	150:9	4	;
+LEAF_NODE	151:0	151:0	2	}
+FUNCTION_DEF	153:0	293:0	1	
+RETURN_TYPE	153:0	153:0	2	int
+TYPE_NAME	153:0	153:0	3	int
+LEAF_NODE	153:0	153:0	4	int
+FUNCTION_NAME	154:0	154:0	2	main
+LEAF_NODE	154:0	154:0	3	main
+PARAMETER_LIST	154:4	154:26	2	( int argc , char * * argv )
+LEAF_NODE	154:4	154:4	3	(
+PARAMETER_DECL	154:5	154:9	3	int argc
+TYPE	154:5	154:5	4	int
+TYPE_NAME	154:5	154:5	5	int
+LEAF_NODE	154:5	154:5	6	int
+NAME	154:9	154:9	4	argc
+LEAF_NODE	154:9	154:9	5	argc
+LEAF_NODE	154:13	154:13	3	,
+PARAMETER_DECL	154:15	154:22	3	char * * argv
+TYPE	154:15	154:20	4	char * *
+TYPE_NAME	154:15	154:15	5	char
+LEAF_NODE	154:15	154:15	6	char
+POINTER	154:20	154:21	5	* *
+LEAF_NODE	154:20	154:20	6	*
+LEAF_NODE	154:21	154:21	6	*
+NAME	154:22	154:22	4	argv
+LEAF_NODE	154:22	154:22	5	argv
+LEAF_NODE	154:26	154:26	3	)
+LEAF_NODE	155:0	155:0	2	{
+STATEMENTS	156:1	292:1	2	
+SIMPLE_DECL	156:1	156:11	3	TIFF * tif ;
+VAR_DECL	156:1	156:8	4	TIFF * tif
+TYPE	156:1	156:7	5	TIFF *
+TYPE_NAME	156:1	156:1	6	TIFF
+LEAF_NODE	156:1	156:1	7	TIFF
+POINTER	156:7	156:7	6	*
+LEAF_NODE	156:7	156:7	7	*
+NAME	156:8	156:8	5	tif
+LEAF_NODE	156:8	156:8	6	tif
+LEAF_NODE	156:11	156:11	4	;
+LEAF_NODE	157:1	157:1	3	static
+SIMPLE_DECL	157:8	157:60	3	const char * srcfilerel ; srcfilerel = "images/quad-tile.jpg.tiff" ;
+VAR_DECL	157:8	157:20	4	const char * srcfilerel ; srcfilerel = "images/quad-tile.jpg.tiff"
+TYPE	157:8	157:19	5	const char *
+TYPE_NAME	157:8	157:14	6	const char
+LEAF_NODE	157:8	157:8	7	const
+LEAF_NODE	157:14	157:14	7	char
+POINTER	157:19	157:19	6	*
+LEAF_NODE	157:19	157:19	7	*
+NAME	157:20	157:20	5	srcfilerel
+LEAF_NODE	157:20	157:20	6	srcfilerel
+LEAF_NODE	0:0	0:0	5	;
+INIT	157:20	157:20	5	srcfilerel = "images/quad-tile.jpg.tiff"
+ASSIGN	157:20	157:33	6	srcfilerel = "images/quad-tile.jpg.tiff"
+LVAL	157:20	157:20	7	srcfilerel
+NAME	157:20	157:20	8	srcfilerel
+LEAF_NODE	157:20	157:20	9	srcfilerel
+ASSIGN_OP	157:31	157:31	7	=
+LEAF_NODE	157:31	157:31	8	=
+RVAL	157:33	157:33	7	"images/quad-tile.jpg.tiff"
+FIELD	157:33	157:33	8	"images/quad-tile.jpg.tiff"
+LEAF_NODE	157:33	157:33	9	"images/quad-tile.jpg.tiff"
+LEAF_NODE	157:60	157:60	4	;
+SIMPLE_DECL	158:1	158:20	3	char * srcdir ; srcdir = NULL ;
+VAR_DECL	158:1	158:7	4	char * srcdir ; srcdir = NULL
+TYPE	158:1	158:6	5	char *
+TYPE_NAME	158:1	158:1	6	char
+LEAF_NODE	158:1	158:1	7	char
+POINTER	158:6	158:6	6	*
+LEAF_NODE	158:6	158:6	7	*
+NAME	158:7	158:7	5	srcdir
+LEAF_NODE	158:7	158:7	6	srcdir
+LEAF_NODE	0:0	0:0	5	;
+INIT	158:7	158:7	5	srcdir = NULL
+ASSIGN	158:7	158:16	6	srcdir = NULL
+LVAL	158:7	158:7	7	srcdir
+NAME	158:7	158:7	8	srcdir
+LEAF_NODE	158:7	158:7	9	srcdir
+ASSIGN_OP	158:14	158:14	7	=
+LEAF_NODE	158:14	158:14	8	=
+RVAL	158:16	158:16	7	NULL
+FIELD	158:16	158:16	8	NULL
+LEAF_NODE	158:16	158:16	9	NULL
+LEAF_NODE	158:20	158:20	4	;
+SIMPLE_DECL	159:1	159:19	3	char [ 1024 ] srcfile ;
+VAR_DECL	159:1	159:6	4	char [ 1024 ] srcfile
+TYPE	159:1	159:13	5	char [ 1024 ]
+TYPE_NAME	159:1	159:1	6	char
+LEAF_NODE	159:1	159:1	7	char
+TYPE_SUFFIX	159:13	159:18	6	[ 1024 ]
+LEAF_NODE	159:13	159:13	7	[
+FIELD	159:14	159:14	7	1024
+LEAF_NODE	159:14	159:14	8	1024
+LEAF_NODE	159:18	159:18	7	]
+NAME	159:6	159:6	5	srcfile
+LEAF_NODE	159:6	159:6	6	srcfile
+LEAF_NODE	159:19	159:19	4	;
+SIMPLE_DECL	160:1	160:20	3	unsigned short h , unsigned short v ;
+INIT_DECL_LIST	160:1	160:1	4	unsigned short h , unsigned short v
+VAR_DECL	160:1	160:16	5	unsigned short h
+TYPE	160:1	160:1	6	unsigned short
+TYPE_NAME	160:1	160:10	7	unsigned short
+LEAF_NODE	160:1	160:1	8	unsigned
+LEAF_NODE	160:10	160:10	8	short
+NAME	160:16	160:16	6	h
+LEAF_NODE	160:16	160:16	7	h
+LEAF_NODE	160:17	160:17	5	,
+VAR_DECL	160:1	160:19	5	unsigned short v
+TYPE	160:1	160:1	6	unsigned short
+TYPE_NAME	160:1	160:10	7	unsigned short
+LEAF_NODE	160:1	160:1	8	unsigned
+LEAF_NODE	160:10	160:10	8	short
+NAME	160:19	160:19	6	v
+LEAF_NODE	160:19	160:19	7	v
+LEAF_NODE	160:20	160:20	4	;
+SIMPLE_DECL	161:1	161:11	3	int status ;
+VAR_DECL	161:1	161:5	4	int status
+TYPE	161:1	161:1	5	int
+TYPE_NAME	161:1	161:1	6	int
+LEAF_NODE	161:1	161:1	7	int
+NAME	161:5	161:5	5	status
+LEAF_NODE	161:5	161:5	6	status
+LEAF_NODE	161:11	161:11	4	;
+SIMPLE_DECL	162:1	162:22	3	unsigned char * buffer ;
+VAR_DECL	162:1	162:16	4	unsigned char * buffer
+TYPE	162:1	162:15	5	unsigned char *
+TYPE_NAME	162:1	162:10	6	unsigned char
+LEAF_NODE	162:1	162:1	7	unsigned
+LEAF_NODE	162:10	162:10	7	char
+POINTER	162:15	162:15	6	*
+LEAF_NODE	162:15	162:15	7	*
+NAME	162:16	162:16	5	buffer
+LEAF_NODE	162:16	162:16	6	buffer
+LEAF_NODE	162:22	162:22	4	;
+SIMPLE_DECL	163:1	163:20	3	uint32 * rgba_buffer ;
+VAR_DECL	163:1	163:9	4	uint32 * rgba_buffer
+TYPE	163:1	163:8	5	uint32 *
+TYPE_NAME	163:1	163:1	6	uint32
+LEAF_NODE	163:1	163:1	7	uint32
+POINTER	163:8	163:8	6	*
+LEAF_NODE	163:8	163:8	7	*
+NAME	163:9	163:9	5	rgba_buffer
+LEAF_NODE	163:9	163:9	6	rgba_buffer
+LEAF_NODE	163:20	163:20	4	;
+SIMPLE_DECL	164:1	164:18	3	tsize_t sz , tsize_t szout ;
+INIT_DECL_LIST	164:1	164:1	4	tsize_t sz , tsize_t szout
+VAR_DECL	164:1	164:9	5	tsize_t sz
+TYPE	164:1	164:1	6	tsize_t
+TYPE_NAME	164:1	164:1	7	tsize_t
+LEAF_NODE	164:1	164:1	8	tsize_t
+NAME	164:9	164:9	6	sz
+LEAF_NODE	164:9	164:9	7	sz
+LEAF_NODE	164:11	164:11	5	,
+VAR_DECL	164:1	164:13	5	tsize_t szout
+TYPE	164:1	164:1	6	tsize_t
+TYPE_NAME	164:1	164:1	7	tsize_t
+LEAF_NODE	164:1	164:1	8	tsize_t
+NAME	164:13	164:13	6	szout
+LEAF_NODE	164:13	164:13	7	szout
+LEAF_NODE	164:18	164:18	4	;
+SIMPLE_DECL	165:1	165:30	3	unsigned int pixel_status ; pixel_status = 0 ;
+VAR_DECL	165:1	165:14	4	unsigned int pixel_status ; pixel_status = 0
+TYPE	165:1	165:1	5	unsigned int
+TYPE_NAME	165:1	165:10	6	unsigned int
+LEAF_NODE	165:1	165:1	7	unsigned
+LEAF_NODE	165:10	165:10	7	int
+NAME	165:14	165:14	5	pixel_status
+LEAF_NODE	165:14	165:14	6	pixel_status
+LEAF_NODE	0:0	0:0	5	;
+INIT	165:14	165:14	5	pixel_status = 0
+ASSIGN	165:14	165:29	6	pixel_status = 0
+LVAL	165:14	165:14	7	pixel_status
+NAME	165:14	165:14	8	pixel_status
+LEAF_NODE	165:14	165:14	9	pixel_status
+ASSIGN_OP	165:27	165:27	7	=
+LEAF_NODE	165:27	165:27	8	=
+RVAL	165:29	165:29	7	0
+FIELD	165:29	165:29	8	0
+LEAF_NODE	165:29	165:29	9	0
+LEAF_NODE	165:30	165:30	4	;
+EXPR_STATEMENT	167:8	167:19	3	( void ) argc ;
+EXPR	167:8	167:15	4	( void ) argc
+LEAF_NODE	167:8	167:8	5	(
+TYPE_NAME	167:9	167:9	5	void
+LEAF_NODE	167:9	167:9	6	void
+LEAF_NODE	167:13	167:13	5	)
+FIELD	167:15	167:15	5	argc
+LEAF_NODE	167:15	167:15	6	argc
+LEAF_NODE	167:19	167:19	4	;
+EXPR_STATEMENT	168:8	168:19	3	( void ) argv ;
+EXPR	168:8	168:15	4	( void ) argv
+LEAF_NODE	168:8	168:8	5	(
+TYPE_NAME	168:9	168:9	5	void
+LEAF_NODE	168:9	168:9	6	void
+LEAF_NODE	168:13	168:13	5	)
+FIELD	168:15	168:15	5	argv
+LEAF_NODE	168:15	168:15	6	argv
+LEAF_NODE	168:19	168:19	4	;
+SELECTION	170:1	170:42	3	
+KEYWORD	170:1	170:1	4	if
+LEAF_NODE	170:1	170:1	5	if
+LEAF_NODE	170:4	170:4	4	(
+CONDITION	170:5	170:5	4	( srcdir = getenv ( "srcdir" ) ) == NULL
+EXPR	170:5	170:36	5	( srcdir = getenv ( "srcdir" ) ) == NULL
+LEAF_NODE	170:5	170:5	6	(
+ASSIGN	170:6	170:15	6	srcdir = getenv ( "srcdir" )
+LVAL	170:6	170:6	7	srcdir
+FIELD	170:6	170:6	8	srcdir
+LEAF_NODE	170:6	170:6	9	srcdir
+ASSIGN_OP	170:13	170:13	7	=
+LEAF_NODE	170:13	170:13	8	=
+RVAL	170:15	170:15	7	getenv ( "srcdir" )
+FUNCTION_CALL	170:15	170:30	8	getenv ( "srcdir" )
+CALLEE	170:15	170:15	9	getenv
+LEAF_NODE	170:15	170:15	10	getenv
+LEAF_NODE	170:21	170:21	9	(
+ARGUMENT	170:22	170:22	9	"srcdir"
+FIELD	170:22	170:22	10	"srcdir"
+LEAF_NODE	170:22	170:22	11	"srcdir"
+LEAF_NODE	170:30	170:30	9	)
+LEAF_NODE	170:31	170:31	6	)
+EQ_OPERATOR	170:33	170:33	6	==
+LEAF_NODE	170:33	170:33	7	==
+FIELD	170:36	170:36	6	NULL
+LEAF_NODE	170:36	170:36	7	NULL
+LEAF_NODE	170:40	170:40	4	)
+STATEMENTS	170:42	172:1	4	
+LEAF_NODE	170:42	170:42	5	{
+STATEMENTS	171:2	171:2	5	
+EXPR_STATEMENT	171:2	171:14	6	srcdir = "." ;
+EXPR	171:2	171:2	7	srcdir = "."
+ASSIGN	171:2	171:11	8	srcdir = "."
+LVAL	171:2	171:2	9	srcdir
+FIELD	171:2	171:2	10	srcdir
+LEAF_NODE	171:2	171:2	11	srcdir
+ASSIGN_OP	171:9	171:9	9	=
+LEAF_NODE	171:9	171:9	10	=
+RVAL	171:11	171:11	9	"."
+FIELD	171:11	171:11	10	"."
+LEAF_NODE	171:11	171:11	11	"."
+LEAF_NODE	171:14	171:14	7	;
+LEAF_NODE	172:1	172:1	5	}
+SELECTION	173:1	173:67	3	
+KEYWORD	173:1	173:1	4	if
+LEAF_NODE	173:1	173:1	5	if
+LEAF_NODE	173:4	173:4	4	(
+CONDITION	173:5	173:5	4	( strlen ( srcdir ) + 1 + strlen ( srcfilerel ) ) >= sizeof ( srcfile )
+EXPR	173:5	173:50	5	( strlen ( srcdir ) + 1 + strlen ( srcfilerel ) ) >= sizeof ( srcfile )
+LEAF_NODE	173:5	173:5	6	(
+FUNCTION_CALL	173:6	173:19	6	strlen ( srcdir )
+CALLEE	173:6	173:6	7	strlen
+LEAF_NODE	173:6	173:6	8	strlen
+LEAF_NODE	173:12	173:12	7	(
+ARGUMENT	173:13	173:13	7	srcdir
+FIELD	173:13	173:13	8	srcdir
+LEAF_NODE	173:13	173:13	9	srcdir
+LEAF_NODE	173:19	173:19	7	)
+LEAF_NODE	173:21	173:21	6	+
+FIELD	173:23	173:23	6	1
+LEAF_NODE	173:23	173:23	7	1
+LEAF_NODE	173:25	173:25	6	+
+FUNCTION_CALL	173:27	173:44	6	strlen ( srcfilerel )
+CALLEE	173:27	173:27	7	strlen
+LEAF_NODE	173:27	173:27	8	strlen
+LEAF_NODE	173:33	173:33	7	(
+ARGUMENT	173:34	173:34	7	srcfilerel
+FIELD	173:34	173:34	8	srcfilerel
+LEAF_NODE	173:34	173:34	9	srcfilerel
+LEAF_NODE	173:44	173:44	7	)
+LEAF_NODE	173:45	173:45	6	)
+REL_OPERATOR	173:47	173:47	6	>=
+LEAF_NODE	173:47	173:47	7	>=
+FUNCTION_CALL	173:50	173:64	6	sizeof ( srcfile )
+CALLEE	173:50	173:50	7	sizeof
+LEAF_NODE	173:50	173:50	8	sizeof
+LEAF_NODE	173:56	173:56	7	(
+ARGUMENT	173:57	173:57	7	srcfile
+FIELD	173:57	173:57	8	srcfile
+LEAF_NODE	173:57	173:57	9	srcfile
+LEAF_NODE	173:64	173:64	7	)
+LEAF_NODE	173:65	173:65	4	)
+STATEMENTS	173:67	176:1	4	
+LEAF_NODE	173:67	173:67	5	{
+STATEMENTS	174:2	175:2	5	
+EXPR_STATEMENT	174:2	174:50	6	fprintf ( stderr , "srcdir too long %s\n" , srcdir ) ;
+EXPR	174:2	174:2	7	fprintf ( stderr , "srcdir too long %s\n" , srcdir )
+FUNCTION_CALL	174:2	174:49	8	fprintf ( stderr , "srcdir too long %s\n" , srcdir )
+CALLEE	174:2	174:2	9	fprintf
+LEAF_NODE	174:2	174:2	10	fprintf
+LEAF_NODE	174:9	174:9	9	(
+ARGUMENT	174:11	174:11	9	stderr
+FIELD	174:11	174:11	10	stderr
+LEAF_NODE	174:11	174:11	11	stderr
+LEAF_NODE	174:17	174:17	9	,
+ARGUMENT	174:19	174:19	9	"srcdir too long %s\n"
+FIELD	174:19	174:19	10	"srcdir too long %s\n"
+LEAF_NODE	174:19	174:19	11	"srcdir too long %s\n"
+LEAF_NODE	174:41	174:41	9	,
+ARGUMENT	174:43	174:43	9	srcdir
+FIELD	174:43	174:43	10	srcdir
+LEAF_NODE	174:43	174:43	11	srcdir
+LEAF_NODE	174:49	174:49	9	)
+LEAF_NODE	174:50	174:50	7	;
+EXPR_STATEMENT	175:2	175:11	6	exit ( 1 ) ;
+EXPR	175:2	175:2	7	exit ( 1 )
+FUNCTION_CALL	175:2	175:10	8	exit ( 1 )
+CALLEE	175:2	175:2	9	exit
+LEAF_NODE	175:2	175:2	10	exit
+LEAF_NODE	175:6	175:6	9	(
+ARGUMENT	175:8	175:8	9	1
+FIELD	175:8	175:8	10	1
+LEAF_NODE	175:8	175:8	11	1
+LEAF_NODE	175:10	175:10	9	)
+LEAF_NODE	175:11	175:11	7	;
+LEAF_NODE	176:1	176:1	5	}
+EXPR_STATEMENT	177:1	177:23	3	strcpy ( srcfile , srcdir ) ;
+EXPR	177:1	177:1	4	strcpy ( srcfile , srcdir )
+FUNCTION_CALL	177:1	177:22	5	strcpy ( srcfile , srcdir )
+CALLEE	177:1	177:1	6	strcpy
+LEAF_NODE	177:1	177:1	7	strcpy
+LEAF_NODE	177:7	177:7	6	(
+ARGUMENT	177:8	177:8	6	srcfile
+FIELD	177:8	177:8	7	srcfile
+LEAF_NODE	177:8	177:8	8	srcfile
+LEAF_NODE	177:15	177:15	6	,
+ARGUMENT	177:16	177:16	6	srcdir
+FIELD	177:16	177:16	7	srcdir
+LEAF_NODE	177:16	177:16	8	srcdir
+LEAF_NODE	177:22	177:22	6	)
+LEAF_NODE	177:23	177:23	4	;
+EXPR_STATEMENT	178:1	178:20	3	strcat ( srcfile , "/" ) ;
+EXPR	178:1	178:1	4	strcat ( srcfile , "/" )
+FUNCTION_CALL	178:1	178:19	5	strcat ( srcfile , "/" )
+CALLEE	178:1	178:1	6	strcat
+LEAF_NODE	178:1	178:1	7	strcat
+LEAF_NODE	178:7	178:7	6	(
+ARGUMENT	178:8	178:8	6	srcfile
+FIELD	178:8	178:8	7	srcfile
+LEAF_NODE	178:8	178:8	8	srcfile
+LEAF_NODE	178:15	178:15	6	,
+ARGUMENT	178:16	178:16	6	"/"
+FIELD	178:16	178:16	7	"/"
+LEAF_NODE	178:16	178:16	8	"/"
+LEAF_NODE	178:19	178:19	6	)
+LEAF_NODE	178:20	178:20	4	;
+EXPR_STATEMENT	179:1	179:27	3	strcat ( srcfile , srcfilerel ) ;
+EXPR	179:1	179:1	4	strcat ( srcfile , srcfilerel )
+FUNCTION_CALL	179:1	179:26	5	strcat ( srcfile , srcfilerel )
+CALLEE	179:1	179:1	6	strcat
+LEAF_NODE	179:1	179:1	7	strcat
+LEAF_NODE	179:7	179:7	6	(
+ARGUMENT	179:8	179:8	6	srcfile
+FIELD	179:8	179:8	7	srcfile
+LEAF_NODE	179:8	179:8	8	srcfile
+LEAF_NODE	179:15	179:15	6	,
+ARGUMENT	179:16	179:16	6	srcfilerel
+FIELD	179:16	179:16	7	srcfilerel
+LEAF_NODE	179:16	179:16	8	srcfilerel
+LEAF_NODE	179:26	179:26	6	)
+LEAF_NODE	179:27	179:27	4	;
+EXPR_STATEMENT	181:1	181:28	3	tif = TIFFOpen ( srcfile , "r" ) ;
+EXPR	181:1	181:1	4	tif = TIFFOpen ( srcfile , "r" )
+ASSIGN	181:1	181:7	5	tif = TIFFOpen ( srcfile , "r" )
+LVAL	181:1	181:1	6	tif
+FIELD	181:1	181:1	7	tif
+LEAF_NODE	181:1	181:1	8	tif
+ASSIGN_OP	181:5	181:5	6	=
+LEAF_NODE	181:5	181:5	7	=
+RVAL	181:7	181:7	6	TIFFOpen ( srcfile , "r" )
+FUNCTION_CALL	181:7	181:27	7	TIFFOpen ( srcfile , "r" )
+CALLEE	181:7	181:7	8	TIFFOpen
+LEAF_NODE	181:7	181:7	9	TIFFOpen
+LEAF_NODE	181:15	181:15	8	(
+ARGUMENT	181:16	181:16	8	srcfile
+FIELD	181:16	181:16	9	srcfile
+LEAF_NODE	181:16	181:16	10	srcfile
+LEAF_NODE	181:23	181:23	8	,
+ARGUMENT	181:24	181:24	8	"r"
+FIELD	181:24	181:24	9	"r"
+LEAF_NODE	181:24	181:24	10	"r"
+LEAF_NODE	181:27	181:27	8	)
+LEAF_NODE	181:28	181:28	4	;
+SELECTION	182:1	182:20	3	
+KEYWORD	182:1	182:1	4	if
+LEAF_NODE	182:1	182:1	5	if
+LEAF_NODE	182:4	182:4	4	(
+CONDITION	182:6	182:6	4	tif == NULL
+EXPR	182:6	182:13	5	tif == NULL
+FIELD	182:6	182:6	6	tif
+LEAF_NODE	182:6	182:6	7	tif
+EQ_OPERATOR	182:10	182:10	6	==
+LEAF_NODE	182:10	182:10	7	==
+FIELD	182:13	182:13	6	NULL
+LEAF_NODE	182:13	182:13	7	NULL
+LEAF_NODE	182:18	182:18	4	)
+STATEMENTS	182:20	185:1	4	
+LEAF_NODE	182:20	182:20	5	{
+STATEMENTS	183:2	184:2	5	
+EXPR_STATEMENT	183:2	183:50	6	fprintf ( stderr , "Could not open %s\n" , srcfile ) ;
+EXPR	183:2	183:2	7	fprintf ( stderr , "Could not open %s\n" , srcfile )
+FUNCTION_CALL	183:2	183:49	8	fprintf ( stderr , "Could not open %s\n" , srcfile )
+CALLEE	183:2	183:2	9	fprintf
+LEAF_NODE	183:2	183:2	10	fprintf
+LEAF_NODE	183:9	183:9	9	(
+ARGUMENT	183:11	183:11	9	stderr
+FIELD	183:11	183:11	10	stderr
+LEAF_NODE	183:11	183:11	11	stderr
+LEAF_NODE	183:17	183:17	9	,
+ARGUMENT	183:19	183:19	9	"Could not open %s\n"
+FIELD	183:19	183:19	10	"Could not open %s\n"
+LEAF_NODE	183:19	183:19	11	"Could not open %s\n"
+LEAF_NODE	183:40	183:40	9	,
+ARGUMENT	183:42	183:42	9	srcfile
+FIELD	183:42	183:42	10	srcfile
+LEAF_NODE	183:42	183:42	11	srcfile
+LEAF_NODE	183:49	183:49	9	)
+LEAF_NODE	183:50	183:50	7	;
+EXPR_STATEMENT	184:2	184:11	6	exit ( 1 ) ;
+EXPR	184:2	184:2	7	exit ( 1 )
+FUNCTION_CALL	184:2	184:10	8	exit ( 1 )
+CALLEE	184:2	184:2	9	exit
+LEAF_NODE	184:2	184:2	10	exit
+LEAF_NODE	184:6	184:6	9	(
+ARGUMENT	184:8	184:8	9	1
+FIELD	184:8	184:8	10	1
+LEAF_NODE	184:8	184:8	11	1
+LEAF_NODE	184:10	184:10	9	)
+LEAF_NODE	184:11	184:11	7	;
+LEAF_NODE	185:1	185:1	5	}
+EXPR_STATEMENT	187:1	187:60	3	status = TIFFGetField ( tif , TIFFTAG_YCBCRSUBSAMPLING , & h , & v ) ;
+EXPR	187:1	187:1	4	status = TIFFGetField ( tif , TIFFTAG_YCBCRSUBSAMPLING , & h , & v )
+ASSIGN	187:1	187:10	5	status = TIFFGetField ( tif , TIFFTAG_YCBCRSUBSAMPLING , & h , & v )
+LVAL	187:1	187:1	6	status
+FIELD	187:1	187:1	7	status
+LEAF_NODE	187:1	187:1	8	status
+ASSIGN_OP	187:8	187:8	6	=
+LEAF_NODE	187:8	187:8	7	=
+RVAL	187:10	187:10	6	TIFFGetField ( tif , TIFFTAG_YCBCRSUBSAMPLING , & h , & v )
+FUNCTION_CALL	187:10	187:59	7	TIFFGetField ( tif , TIFFTAG_YCBCRSUBSAMPLING , & h , & v )
+CALLEE	187:10	187:10	8	TIFFGetField
+LEAF_NODE	187:10	187:10	9	TIFFGetField
+LEAF_NODE	187:22	187:22	8	(
+ARGUMENT	187:23	187:23	8	tif
+FIELD	187:23	187:23	9	tif
+LEAF_NODE	187:23	187:23	10	tif
+LEAF_NODE	187:26	187:26	8	,
+ARGUMENT	187:27	187:27	8	TIFFTAG_YCBCRSUBSAMPLING
+FIELD	187:27	187:27	9	TIFFTAG_YCBCRSUBSAMPLING
+LEAF_NODE	187:27	187:27	10	TIFFTAG_YCBCRSUBSAMPLING
+LEAF_NODE	187:51	187:51	8	,
+ARGUMENT	187:53	187:53	8	& h
+UNARY_EXPR	187:53	187:54	9	& h
+UNARY_OPERATOR	187:53	187:53	10	&
+LEAF_NODE	187:53	187:53	11	&
+FIELD	187:54	187:54	10	h
+LEAF_NODE	187:54	187:54	11	h
+LEAF_NODE	187:55	187:55	8	,
+ARGUMENT	187:57	187:57	8	& v
+UNARY_EXPR	187:57	187:58	9	& v
+UNARY_OPERATOR	187:57	187:57	10	&
+LEAF_NODE	187:57	187:57	11	&
+FIELD	187:58	187:58	10	v
+LEAF_NODE	187:58	187:58	11	v
+LEAF_NODE	187:59	187:59	8	)
+LEAF_NODE	187:60	187:60	4	;
+SELECTION	188:1	188:39	3	
+KEYWORD	188:1	188:1	4	if
+LEAF_NODE	188:1	188:1	5	if
+LEAF_NODE	188:4	188:4	4	(
+CONDITION	188:6	188:6	4	status == 0 || h != 2 || v != 2
+EXPR	188:6	188:6	5	status == 0 || h != 2 || v != 2
+OR	188:6	188:21	6	status == 0 || h != 2 || v != 2
+EXPR	188:6	188:16	7	status == 0
+FIELD	188:6	188:6	8	status
+LEAF_NODE	188:6	188:6	9	status
+EQ_OPERATOR	188:13	188:13	8	==
+LEAF_NODE	188:13	188:13	9	==
+FIELD	188:16	188:16	8	0
+LEAF_NODE	188:16	188:16	9	0
+LEAF_NODE	188:18	188:18	7	||
+EXPR	188:21	188:21	7	h != 2 || v != 2
+OR	188:21	188:31	8	h != 2 || v != 2
+EXPR	188:21	188:26	9	h != 2
+FIELD	188:21	188:21	10	h
+LEAF_NODE	188:21	188:21	11	h
+EQ_OPERATOR	188:23	188:23	10	!=
+LEAF_NODE	188:23	188:23	11	!=
+FIELD	188:26	188:26	10	2
+LEAF_NODE	188:26	188:26	11	2
+LEAF_NODE	188:28	188:28	9	||
+EXPR	188:31	188:36	9	v != 2
+FIELD	188:31	188:31	10	v
+LEAF_NODE	188:31	188:31	11	v
+EQ_OPERATOR	188:33	188:33	10	!=
+LEAF_NODE	188:33	188:33	11	!=
+FIELD	188:36	188:36	10	2
+LEAF_NODE	188:36	188:36	11	2
+LEAF_NODE	188:37	188:37	4	)
+STATEMENTS	188:39	191:1	4	
+LEAF_NODE	188:39	188:39	5	{
+STATEMENTS	189:2	190:2	5	
+EXPR_STATEMENT	189:2	189:60	6	fprintf ( stderr , "Could not retrieve subsampling tag.\n" ) ;
+EXPR	189:2	189:2	7	fprintf ( stderr , "Could not retrieve subsampling tag.\n" )
+FUNCTION_CALL	189:2	189:59	8	fprintf ( stderr , "Could not retrieve subsampling tag.\n" )
+CALLEE	189:2	189:2	9	fprintf
+LEAF_NODE	189:2	189:2	10	fprintf
+LEAF_NODE	189:9	189:9	9	(
+ARGUMENT	189:11	189:11	9	stderr
+FIELD	189:11	189:11	10	stderr
+LEAF_NODE	189:11	189:11	11	stderr
+LEAF_NODE	189:17	189:17	9	,
+ARGUMENT	189:19	189:19	9	"Could not retrieve subsampling tag.\n"
+FIELD	189:19	189:19	10	"Could not retrieve subsampling tag.\n"
+LEAF_NODE	189:19	189:19	11	"Could not retrieve subsampling tag.\n"
+LEAF_NODE	189:59	189:59	9	)
+LEAF_NODE	189:60	189:60	7	;
+EXPR_STATEMENT	190:2	190:9	6	exit ( 1 ) ;
+EXPR	190:2	190:2	7	exit ( 1 )
+FUNCTION_CALL	190:2	190:8	8	exit ( 1 )
+CALLEE	190:2	190:2	9	exit
+LEAF_NODE	190:2	190:2	10	exit
+LEAF_NODE	190:6	190:6	9	(
+ARGUMENT	190:7	190:7	9	1
+FIELD	190:7	190:7	10	1
+LEAF_NODE	190:7	190:7	11	1
+LEAF_NODE	190:8	190:8	9	)
+LEAF_NODE	190:9	190:9	7	;
+LEAF_NODE	191:1	191:1	5	}
+EXPR_STATEMENT	196:1	196:23	3	sz = TIFFTileSize ( tif ) ;
+EXPR	196:1	196:1	4	sz = TIFFTileSize ( tif )
+ASSIGN	196:1	196:6	5	sz = TIFFTileSize ( tif )
+LVAL	196:1	196:1	6	sz
+FIELD	196:1	196:1	7	sz
+LEAF_NODE	196:1	196:1	8	sz
+ASSIGN_OP	196:4	196:4	6	=
+LEAF_NODE	196:4	196:4	7	=
+RVAL	196:6	196:6	6	TIFFTileSize ( tif )
+FUNCTION_CALL	196:6	196:22	7	TIFFTileSize ( tif )
+CALLEE	196:6	196:6	8	TIFFTileSize
+LEAF_NODE	196:6	196:6	9	TIFFTileSize
+LEAF_NODE	196:18	196:18	8	(
+ARGUMENT	196:19	196:19	8	tif
+FIELD	196:19	196:19	9	tif
+LEAF_NODE	196:19	196:19	10	tif
+LEAF_NODE	196:22	196:22	8	)
+LEAF_NODE	196:23	196:23	4	;
+SELECTION	197:1	197:18	3	
+KEYWORD	197:1	197:1	4	if
+LEAF_NODE	197:1	197:1	5	if
+LEAF_NODE	197:3	197:3	4	(
+CONDITION	197:5	197:5	4	sz != 24576
+EXPR	197:5	197:11	5	sz != 24576
+FIELD	197:5	197:5	6	sz
+LEAF_NODE	197:5	197:5	7	sz
+EQ_OPERATOR	197:8	197:8	6	!=
+LEAF_NODE	197:8	197:8	7	!=
+FIELD	197:11	197:11	6	24576
+LEAF_NODE	197:11	197:11	7	24576
+LEAF_NODE	197:16	197:16	4	)
+STATEMENTS	197:18	200:1	4	
+LEAF_NODE	197:18	197:18	5	{
+STATEMENTS	198:2	199:2	5	
+EXPR_STATEMENT	198:2	198:50	6	fprintf ( stderr , "tiles are %d bytes\n" , ( int ) sz ) ;
+EXPR	198:2	198:2	7	fprintf ( stderr , "tiles are %d bytes\n" , ( int ) sz )
+FUNCTION_CALL	198:2	198:49	8	fprintf ( stderr , "tiles are %d bytes\n" , ( int ) sz )
+CALLEE	198:2	198:2	9	fprintf
+LEAF_NODE	198:2	198:2	10	fprintf
+LEAF_NODE	198:9	198:9	9	(
+ARGUMENT	198:10	198:10	9	stderr
+FIELD	198:10	198:10	10	stderr
+LEAF_NODE	198:10	198:10	11	stderr
+LEAF_NODE	198:16	198:16	9	,
+ARGUMENT	198:18	198:18	9	"tiles are %d bytes\n"
+FIELD	198:18	198:18	10	"tiles are %d bytes\n"
+LEAF_NODE	198:18	198:18	11	"tiles are %d bytes\n"
+LEAF_NODE	198:40	198:40	9	,
+ARGUMENT	198:42	198:47	9	( int ) sz
+LEAF_NODE	198:42	198:42	10	(
+TYPE_NAME	198:43	198:43	10	int
+LEAF_NODE	198:43	198:43	11	int
+LEAF_NODE	198:46	198:46	10	)
+FIELD	198:47	198:47	10	sz
+LEAF_NODE	198:47	198:47	11	sz
+LEAF_NODE	198:49	198:49	9	)
+LEAF_NODE	198:50	198:50	7	;
+EXPR_STATEMENT	199:2	199:9	6	exit ( 1 ) ;
+EXPR	199:2	199:2	7	exit ( 1 )
+FUNCTION_CALL	199:2	199:8	8	exit ( 1 )
+CALLEE	199:2	199:2	9	exit
+LEAF_NODE	199:2	199:2	10	exit
+LEAF_NODE	199:6	199:6	9	(
+ARGUMENT	199:7	199:7	9	1
+FIELD	199:7	199:7	10	1
+LEAF_NODE	199:7	199:7	11	1
+LEAF_NODE	199:8	199:8	9	)
+LEAF_NODE	199:9	199:9	7	;
+LEAF_NODE	200:1	200:1	5	}
+EXPR_STATEMENT	202:1	202:38	3	buffer = ( unsigned char * ) malloc ( sz ) ;
+EXPR	202:1	202:1	4	buffer = ( unsigned char * ) malloc ( sz )
+ASSIGN	202:1	202:10	5	buffer = ( unsigned char * ) malloc ( sz )
+LVAL	202:1	202:1	6	buffer
+FIELD	202:1	202:1	7	buffer
+LEAF_NODE	202:1	202:1	8	buffer
+ASSIGN_OP	202:8	202:8	6	=
+LEAF_NODE	202:8	202:8	7	=
+RVAL	202:10	202:28	6	( unsigned char * ) malloc ( sz )
+LEAF_NODE	202:10	202:10	7	(
+TYPE_NAME	202:11	202:20	7	unsigned char
+LEAF_NODE	202:11	202:11	8	unsigned
+LEAF_NODE	202:20	202:20	8	char
+LEAF_NODE	202:25	202:25	7	*
+LEAF_NODE	202:26	202:26	7	)
+FUNCTION_CALL	202:28	202:37	7	malloc ( sz )
+CALLEE	202:28	202:28	8	malloc
+LEAF_NODE	202:28	202:28	9	malloc
+LEAF_NODE	202:34	202:34	8	(
+ARGUMENT	202:35	202:35	8	sz
+FIELD	202:35	202:35	9	sz
+LEAF_NODE	202:35	202:35	10	sz
+LEAF_NODE	202:37	202:37	8	)
+LEAF_NODE	202:38	202:38	4	;
+EXPR_STATEMENT	207:1	207:45	3	szout = TIFFReadEncodedTile ( tif , 9 , buffer , sz ) ;
+EXPR	207:1	207:1	4	szout = TIFFReadEncodedTile ( tif , 9 , buffer , sz )
+ASSIGN	207:1	207:9	5	szout = TIFFReadEncodedTile ( tif , 9 , buffer , sz )
+LVAL	207:1	207:1	6	szout
+FIELD	207:1	207:1	7	szout
+LEAF_NODE	207:1	207:1	8	szout
+ASSIGN_OP	207:7	207:7	6	=
+LEAF_NODE	207:7	207:7	7	=
+RVAL	207:9	207:9	6	TIFFReadEncodedTile ( tif , 9 , buffer , sz )
+FUNCTION_CALL	207:9	207:44	7	TIFFReadEncodedTile ( tif , 9 , buffer , sz )
+CALLEE	207:9	207:9	8	TIFFReadEncodedTile
+LEAF_NODE	207:9	207:9	9	TIFFReadEncodedTile
+LEAF_NODE	207:28	207:28	8	(
+ARGUMENT	207:29	207:29	8	tif
+FIELD	207:29	207:29	9	tif
+LEAF_NODE	207:29	207:29	10	tif
+LEAF_NODE	207:32	207:32	8	,
+ARGUMENT	207:33	207:33	8	9
+FIELD	207:33	207:33	9	9
+LEAF_NODE	207:33	207:33	10	9
+LEAF_NODE	207:34	207:34	8	,
+ARGUMENT	207:35	207:35	8	buffer
+FIELD	207:35	207:35	9	buffer
+LEAF_NODE	207:35	207:35	10	buffer
+LEAF_NODE	207:41	207:41	8	,
+ARGUMENT	207:42	207:42	8	sz
+FIELD	207:42	207:42	9	sz
+LEAF_NODE	207:42	207:42	10	sz
+LEAF_NODE	207:44	207:44	8	)
+LEAF_NODE	207:45	207:45	4	;
+SELECTION	208:1	208:18	3	
+KEYWORD	208:1	208:1	4	if
+LEAF_NODE	208:1	208:1	5	if
+LEAF_NODE	208:4	208:4	4	(
+CONDITION	208:5	208:5	4	szout != sz
+EXPR	208:5	208:14	5	szout != sz
+FIELD	208:5	208:5	6	szout
+LEAF_NODE	208:5	208:5	7	szout
+EQ_OPERATOR	208:11	208:11	6	!=
+LEAF_NODE	208:11	208:11	7	!=
+FIELD	208:14	208:14	6	sz
+LEAF_NODE	208:14	208:14	7	sz
+LEAF_NODE	208:16	208:16	4	)
+STATEMENTS	208:18	213:1	4	
+LEAF_NODE	208:18	208:18	5	{
+STATEMENTS	209:2	212:2	5	
+EXPR_STATEMENT	209:2	211:27	6	fprintf ( stderr , "Did not get expected result code from TIFFReadEncodedTile()(%d instead of %d)\n" , ( int ) szout , ( int ) sz ) ;
+EXPR	209:2	209:2	7	fprintf ( stderr , "Did not get expected result code from TIFFReadEncodedTile()(%d instead of %d)\n" , ( int ) szout , ( int ) sz )
+FUNCTION_CALL	209:2	211:26	8	fprintf ( stderr , "Did not get expected result code from TIFFReadEncodedTile()(%d instead of %d)\n" , ( int ) szout , ( int ) sz )
+CALLEE	209:2	209:2	9	fprintf
+LEAF_NODE	209:2	209:2	10	fprintf
+LEAF_NODE	209:9	209:9	9	(
+ARGUMENT	209:11	209:11	9	stderr
+FIELD	209:11	209:11	10	stderr
+LEAF_NODE	209:11	209:11	11	stderr
+LEAF_NODE	209:17	209:17	9	,
+ARGUMENT	210:4	210:4	9	"Did not get expected result code from TIFFReadEncodedTile()(%d instead of %d)\n"
+FIELD	210:4	210:4	10	"Did not get expected result code from TIFFReadEncodedTile()(%d instead of %d)\n"
+LEAF_NODE	210:4	210:4	11	"Did not get expected result code from TIFFReadEncodedTile()(%d instead of %d)\n"
+LEAF_NODE	210:85	210:85	9	,
+ARGUMENT	211:4	211:10	9	( int ) szout
+LEAF_NODE	211:4	211:4	10	(
+TYPE_NAME	211:5	211:5	10	int
+LEAF_NODE	211:5	211:5	11	int
+LEAF_NODE	211:8	211:8	10	)
+FIELD	211:10	211:10	10	szout
+LEAF_NODE	211:10	211:10	11	szout
+LEAF_NODE	211:15	211:15	9	,
+ARGUMENT	211:17	211:23	9	( int ) sz
+LEAF_NODE	211:17	211:17	10	(
+TYPE_NAME	211:18	211:18	10	int
+LEAF_NODE	211:18	211:18	11	int
+LEAF_NODE	211:21	211:21	10	)
+FIELD	211:23	211:23	10	sz
+LEAF_NODE	211:23	211:23	11	sz
+LEAF_NODE	211:26	211:26	9	)
+LEAF_NODE	211:27	211:27	7	;
+JUMP_STATEMENT	212:2	212:10	6	return 1 ;
+KEYWORD	212:2	212:2	7	return
+LEAF_NODE	212:2	212:2	8	return
+DESTINATION	212:9	212:9	7	1
+EXPR	212:9	212:9	8	1
+FIELD	212:9	212:9	9	1
+LEAF_NODE	212:9	212:9	10	1
+LEAF_NODE	212:10	212:10	7	;
+LEAF_NODE	213:1	213:1	5	}
+SELECTION	215:1	217:52	3	
+KEYWORD	215:1	215:1	4	if
+LEAF_NODE	215:1	215:1	5	if
+LEAF_NODE	215:3	215:3	4	(
+CONDITION	215:5	215:5	4	check_cluster ( 0 , buffer , cluster_0 ) || check_cluster ( 64 , buffer , cluster_64 ) || check_cluster ( 128 , buffer , cluster_128 )
+EXPR	215:5	215:5	5	check_cluster ( 0 , buffer , cluster_0 ) || check_cluster ( 64 , buffer , cluster_64 ) || check_cluster ( 128 , buffer , cluster_128 )
+OR	215:5	216:8	6	check_cluster ( 0 , buffer , cluster_0 ) || check_cluster ( 64 , buffer , cluster_64 ) || check_cluster ( 128 , buffer , cluster_128 )
+EXPR	215:5	215:5	7	check_cluster ( 0 , buffer , cluster_0 )
+FUNCTION_CALL	215:5	215:41	8	check_cluster ( 0 , buffer , cluster_0 )
+CALLEE	215:5	215:5	9	check_cluster
+LEAF_NODE	215:5	215:5	10	check_cluster
+LEAF_NODE	215:18	215:18	9	(
+ARGUMENT	215:20	215:20	9	0
+FIELD	215:20	215:20	10	0
+LEAF_NODE	215:20	215:20	11	0
+LEAF_NODE	215:21	215:21	9	,
+ARGUMENT	215:23	215:23	9	buffer
+FIELD	215:23	215:23	10	buffer
+LEAF_NODE	215:23	215:23	11	buffer
+LEAF_NODE	215:29	215:29	9	,
+ARGUMENT	215:31	215:31	9	cluster_0
+FIELD	215:31	215:31	10	cluster_0
+LEAF_NODE	215:31	215:31	11	cluster_0
+LEAF_NODE	215:41	215:41	9	)
+LEAF_NODE	216:5	216:5	7	||
+EXPR	216:8	216:8	7	check_cluster ( 64 , buffer , cluster_64 ) || check_cluster ( 128 , buffer , cluster_128 )
+OR	216:8	217:8	8	check_cluster ( 64 , buffer , cluster_64 ) || check_cluster ( 128 , buffer , cluster_128 )
+EXPR	216:8	216:8	9	check_cluster ( 64 , buffer , cluster_64 )
+FUNCTION_CALL	216:8	216:46	10	check_cluster ( 64 , buffer , cluster_64 )
+CALLEE	216:8	216:8	11	check_cluster
+LEAF_NODE	216:8	216:8	12	check_cluster
+LEAF_NODE	216:21	216:21	11	(
+ARGUMENT	216:23	216:23	11	64
+FIELD	216:23	216:23	12	64
+LEAF_NODE	216:23	216:23	13	64
+LEAF_NODE	216:25	216:25	11	,
+ARGUMENT	216:27	216:27	11	buffer
+FIELD	216:27	216:27	12	buffer
+LEAF_NODE	216:27	216:27	13	buffer
+LEAF_NODE	216:33	216:33	11	,
+ARGUMENT	216:35	216:35	11	cluster_64
+FIELD	216:35	216:35	12	cluster_64
+LEAF_NODE	216:35	216:35	13	cluster_64
+LEAF_NODE	216:46	216:46	11	)
+LEAF_NODE	217:5	217:5	9	||
+EXPR	217:8	217:8	9	check_cluster ( 128 , buffer , cluster_128 )
+FUNCTION_CALL	217:8	217:48	10	check_cluster ( 128 , buffer , cluster_128 )
+CALLEE	217:8	217:8	11	check_cluster
+LEAF_NODE	217:8	217:8	12	check_cluster
+LEAF_NODE	217:21	217:21	11	(
+ARGUMENT	217:23	217:23	11	128
+FIELD	217:23	217:23	12	128
+LEAF_NODE	217:23	217:23	13	128
+LEAF_NODE	217:26	217:26	11	,
+ARGUMENT	217:28	217:28	11	buffer
+FIELD	217:28	217:28	12	buffer
+LEAF_NODE	217:28	217:28	13	buffer
+LEAF_NODE	217:34	217:34	11	,
+ARGUMENT	217:36	217:36	11	cluster_128
+FIELD	217:36	217:36	12	cluster_128
+LEAF_NODE	217:36	217:36	13	cluster_128
+LEAF_NODE	217:48	217:48	11	)
+LEAF_NODE	217:50	217:50	4	)
+STATEMENTS	217:52	219:1	4	
+LEAF_NODE	217:52	217:52	5	{
+STATEMENTS	218:2	218:2	5	
+EXPR_STATEMENT	218:2	218:9	6	exit ( 1 ) ;
+EXPR	218:2	218:2	7	exit ( 1 )
+FUNCTION_CALL	218:2	218:8	8	exit ( 1 )
+CALLEE	218:2	218:2	9	exit
+LEAF_NODE	218:2	218:2	10	exit
+LEAF_NODE	218:6	218:6	9	(
+ARGUMENT	218:7	218:7	9	1
+FIELD	218:7	218:7	10	1
+LEAF_NODE	218:7	218:7	11	1
+LEAF_NODE	218:8	218:8	9	)
+LEAF_NODE	218:9	218:9	7	;
+LEAF_NODE	219:1	219:1	5	}
+EXPR_STATEMENT	220:1	220:13	3	free ( buffer ) ;
+EXPR	220:1	220:1	4	free ( buffer )
+FUNCTION_CALL	220:1	220:12	5	free ( buffer )
+CALLEE	220:1	220:1	6	free
+LEAF_NODE	220:1	220:1	7	free
+LEAF_NODE	220:5	220:5	6	(
+ARGUMENT	220:6	220:6	6	buffer
+FIELD	220:6	220:6	7	buffer
+LEAF_NODE	220:6	220:6	8	buffer
+LEAF_NODE	220:12	220:12	6	)
+LEAF_NODE	220:13	220:13	4	;
+EXPR_STATEMENT	225:1	225:60	3	TIFFSetField ( tif , TIFFTAG_JPEGCOLORMODE , JPEGCOLORMODE_RGB ) ;
+EXPR	225:1	225:1	4	TIFFSetField ( tif , TIFFTAG_JPEGCOLORMODE , JPEGCOLORMODE_RGB )
+FUNCTION_CALL	225:1	225:59	5	TIFFSetField ( tif , TIFFTAG_JPEGCOLORMODE , JPEGCOLORMODE_RGB )
+CALLEE	225:1	225:1	6	TIFFSetField
+LEAF_NODE	225:1	225:1	7	TIFFSetField
+LEAF_NODE	225:13	225:13	6	(
+ARGUMENT	225:14	225:14	6	tif
+FIELD	225:14	225:14	7	tif
+LEAF_NODE	225:14	225:14	8	tif
+LEAF_NODE	225:17	225:17	6	,
+ARGUMENT	225:19	225:19	6	TIFFTAG_JPEGCOLORMODE
+FIELD	225:19	225:19	7	TIFFTAG_JPEGCOLORMODE
+LEAF_NODE	225:19	225:19	8	TIFFTAG_JPEGCOLORMODE
+LEAF_NODE	225:40	225:40	6	,
+ARGUMENT	225:42	225:42	6	JPEGCOLORMODE_RGB
+FIELD	225:42	225:42	7	JPEGCOLORMODE_RGB
+LEAF_NODE	225:42	225:42	8	JPEGCOLORMODE_RGB
+LEAF_NODE	225:59	225:59	6	)
+LEAF_NODE	225:60	225:60	4	;
+EXPR_STATEMENT	227:1	227:23	3	sz = TIFFTileSize ( tif ) ;
+EXPR	227:1	227:1	4	sz = TIFFTileSize ( tif )
+ASSIGN	227:1	227:6	5	sz = TIFFTileSize ( tif )
+LVAL	227:1	227:1	6	sz
+FIELD	227:1	227:1	7	sz
+LEAF_NODE	227:1	227:1	8	sz
+ASSIGN_OP	227:4	227:4	6	=
+LEAF_NODE	227:4	227:4	7	=
+RVAL	227:6	227:6	6	TIFFTileSize ( tif )
+FUNCTION_CALL	227:6	227:22	7	TIFFTileSize ( tif )
+CALLEE	227:6	227:6	8	TIFFTileSize
+LEAF_NODE	227:6	227:6	9	TIFFTileSize
+LEAF_NODE	227:18	227:18	8	(
+ARGUMENT	227:19	227:19	8	tif
+FIELD	227:19	227:19	9	tif
+LEAF_NODE	227:19	227:19	10	tif
+LEAF_NODE	227:22	227:22	8	)
+LEAF_NODE	227:23	227:23	4	;
+LEAF_NODE	228:1	228:1	3	if
+LEAF_NODE	228:3	228:3	3	(
+LEAF_NODE	228:5	228:5	3	sz
+LEAF_NODE	228:8	228:8	3	!=
+LEAF_NODE	228:11	228:11	3	128
+LEAF_NODE	228:14	228:14	3	*
+LEAF_NODE	228:15	228:15	3	128
+LEAF_NODE	228:18	228:18	3	*
+LEAF_NODE	228:19	228:19	3	3
+LEAF_NODE	228:20	228:20	3	)
+LEAF_NODE	228:22	228:22	3	{
+STATEMENTS	229:2	230:2	3	
+EXPR_STATEMENT	229:2	229:50	4	fprintf ( stderr , "tiles are %d bytes\n" , ( int ) sz ) ;
+EXPR	229:2	229:2	5	fprintf ( stderr , "tiles are %d bytes\n" , ( int ) sz )
+FUNCTION_CALL	229:2	229:49	6	fprintf ( stderr , "tiles are %d bytes\n" , ( int ) sz )
+CALLEE	229:2	229:2	7	fprintf
+LEAF_NODE	229:2	229:2	8	fprintf
+LEAF_NODE	229:9	229:9	7	(
+ARGUMENT	229:10	229:10	7	stderr
+FIELD	229:10	229:10	8	stderr
+LEAF_NODE	229:10	229:10	9	stderr
+LEAF_NODE	229:16	229:16	7	,
+ARGUMENT	229:18	229:18	7	"tiles are %d bytes\n"
+FIELD	229:18	229:18	8	"tiles are %d bytes\n"
+LEAF_NODE	229:18	229:18	9	"tiles are %d bytes\n"
+LEAF_NODE	229:40	229:40	7	,
+ARGUMENT	229:42	229:47	7	( int ) sz
+LEAF_NODE	229:42	229:42	8	(
+TYPE_NAME	229:43	229:43	8	int
+LEAF_NODE	229:43	229:43	9	int
+LEAF_NODE	229:46	229:46	8	)
+FIELD	229:47	229:47	8	sz
+LEAF_NODE	229:47	229:47	9	sz
+LEAF_NODE	229:49	229:49	7	)
+LEAF_NODE	229:50	229:50	5	;
+EXPR_STATEMENT	230:2	230:9	4	exit ( 1 ) ;
+EXPR	230:2	230:2	5	exit ( 1 )
+FUNCTION_CALL	230:2	230:8	6	exit ( 1 )
+CALLEE	230:2	230:2	7	exit
+LEAF_NODE	230:2	230:2	8	exit
+LEAF_NODE	230:6	230:6	7	(
+ARGUMENT	230:7	230:7	7	1
+FIELD	230:7	230:7	8	1
+LEAF_NODE	230:7	230:7	9	1
+LEAF_NODE	230:8	230:8	7	)
+LEAF_NODE	230:9	230:9	5	;
+LEAF_NODE	231:1	231:1	3	}
+EXPR_STATEMENT	233:1	233:38	3	buffer = ( unsigned char * ) malloc ( sz ) ;
+EXPR	233:1	233:1	4	buffer = ( unsigned char * ) malloc ( sz )
+ASSIGN	233:1	233:10	5	buffer = ( unsigned char * ) malloc ( sz )
+LVAL	233:1	233:1	6	buffer
+FIELD	233:1	233:1	7	buffer
+LEAF_NODE	233:1	233:1	8	buffer
+ASSIGN_OP	233:8	233:8	6	=
+LEAF_NODE	233:8	233:8	7	=
+RVAL	233:10	233:28	6	( unsigned char * ) malloc ( sz )
+LEAF_NODE	233:10	233:10	7	(
+TYPE_NAME	233:11	233:20	7	unsigned char
+LEAF_NODE	233:11	233:11	8	unsigned
+LEAF_NODE	233:20	233:20	8	char
+LEAF_NODE	233:25	233:25	7	*
+LEAF_NODE	233:26	233:26	7	)
+FUNCTION_CALL	233:28	233:37	7	malloc ( sz )
+CALLEE	233:28	233:28	8	malloc
+LEAF_NODE	233:28	233:28	9	malloc
+LEAF_NODE	233:34	233:34	8	(
+ARGUMENT	233:35	233:35	8	sz
+FIELD	233:35	233:35	9	sz
+LEAF_NODE	233:35	233:35	10	sz
+LEAF_NODE	233:37	233:37	8	)
+LEAF_NODE	233:38	233:38	4	;
+EXPR_STATEMENT	235:1	235:45	3	szout = TIFFReadEncodedTile ( tif , 9 , buffer , sz ) ;
+EXPR	235:1	235:1	4	szout = TIFFReadEncodedTile ( tif , 9 , buffer , sz )
+ASSIGN	235:1	235:9	5	szout = TIFFReadEncodedTile ( tif , 9 , buffer , sz )
+LVAL	235:1	235:1	6	szout
+FIELD	235:1	235:1	7	szout
+LEAF_NODE	235:1	235:1	8	szout
+ASSIGN_OP	235:7	235:7	6	=
+LEAF_NODE	235:7	235:7	7	=
+RVAL	235:9	235:9	6	TIFFReadEncodedTile ( tif , 9 , buffer , sz )
+FUNCTION_CALL	235:9	235:44	7	TIFFReadEncodedTile ( tif , 9 , buffer , sz )
+CALLEE	235:9	235:9	8	TIFFReadEncodedTile
+LEAF_NODE	235:9	235:9	9	TIFFReadEncodedTile
+LEAF_NODE	235:28	235:28	8	(
+ARGUMENT	235:29	235:29	8	tif
+FIELD	235:29	235:29	9	tif
+LEAF_NODE	235:29	235:29	10	tif
+LEAF_NODE	235:32	235:32	8	,
+ARGUMENT	235:33	235:33	8	9
+FIELD	235:33	235:33	9	9
+LEAF_NODE	235:33	235:33	10	9
+LEAF_NODE	235:34	235:34	8	,
+ARGUMENT	235:35	235:35	8	buffer
+FIELD	235:35	235:35	9	buffer
+LEAF_NODE	235:35	235:35	10	buffer
+LEAF_NODE	235:41	235:41	8	,
+ARGUMENT	235:42	235:42	8	sz
+FIELD	235:42	235:42	9	sz
+LEAF_NODE	235:42	235:42	10	sz
+LEAF_NODE	235:44	235:44	8	)
+LEAF_NODE	235:45	235:45	4	;
+SELECTION	236:1	236:18	3	
+KEYWORD	236:1	236:1	4	if
+LEAF_NODE	236:1	236:1	5	if
+LEAF_NODE	236:4	236:4	4	(
+CONDITION	236:5	236:5	4	szout != sz
+EXPR	236:5	236:14	5	szout != sz
+FIELD	236:5	236:5	6	szout
+LEAF_NODE	236:5	236:5	7	szout
+EQ_OPERATOR	236:11	236:11	6	!=
+LEAF_NODE	236:11	236:11	7	!=
+FIELD	236:14	236:14	6	sz
+LEAF_NODE	236:14	236:14	7	sz
+LEAF_NODE	236:16	236:16	4	)
+STATEMENTS	236:18	241:1	4	
+LEAF_NODE	236:18	236:18	5	{
+STATEMENTS	237:2	240:2	5	
+EXPR_STATEMENT	237:2	239:27	6	fprintf ( stderr , "Did not get expected result code from TIFFReadEncodedTile()(%d instead of %d)\n" , ( int ) szout , ( int ) sz ) ;
+EXPR	237:2	237:2	7	fprintf ( stderr , "Did not get expected result code from TIFFReadEncodedTile()(%d instead of %d)\n" , ( int ) szout , ( int ) sz )
+FUNCTION_CALL	237:2	239:26	8	fprintf ( stderr , "Did not get expected result code from TIFFReadEncodedTile()(%d instead of %d)\n" , ( int ) szout , ( int ) sz )
+CALLEE	237:2	237:2	9	fprintf
+LEAF_NODE	237:2	237:2	10	fprintf
+LEAF_NODE	237:9	237:9	9	(
+ARGUMENT	237:11	237:11	9	stderr
+FIELD	237:11	237:11	10	stderr
+LEAF_NODE	237:11	237:11	11	stderr
+LEAF_NODE	237:17	237:17	9	,
+ARGUMENT	238:4	238:4	9	"Did not get expected result code from TIFFReadEncodedTile()(%d instead of %d)\n"
+FIELD	238:4	238:4	10	"Did not get expected result code from TIFFReadEncodedTile()(%d instead of %d)\n"
+LEAF_NODE	238:4	238:4	11	"Did not get expected result code from TIFFReadEncodedTile()(%d instead of %d)\n"
+LEAF_NODE	238:85	238:85	9	,
+ARGUMENT	239:4	239:10	9	( int ) szout
+LEAF_NODE	239:4	239:4	10	(
+TYPE_NAME	239:5	239:5	10	int
+LEAF_NODE	239:5	239:5	11	int
+LEAF_NODE	239:8	239:8	10	)
+FIELD	239:10	239:10	10	szout
+LEAF_NODE	239:10	239:10	11	szout
+LEAF_NODE	239:15	239:15	9	,
+ARGUMENT	239:17	239:23	9	( int ) sz
+LEAF_NODE	239:17	239:17	10	(
+TYPE_NAME	239:18	239:18	10	int
+LEAF_NODE	239:18	239:18	11	int
+LEAF_NODE	239:21	239:21	10	)
+FIELD	239:23	239:23	10	sz
+LEAF_NODE	239:23	239:23	11	sz
+LEAF_NODE	239:26	239:26	9	)
+LEAF_NODE	239:27	239:27	7	;
+JUMP_STATEMENT	240:2	240:10	6	return 1 ;
+KEYWORD	240:2	240:2	7	return
+LEAF_NODE	240:2	240:2	8	return
+DESTINATION	240:9	240:9	7	1
+EXPR	240:9	240:9	8	1
+FIELD	240:9	240:9	9	1
+LEAF_NODE	240:9	240:9	10	1
+LEAF_NODE	240:10	240:10	7	;
+LEAF_NODE	241:1	241:1	5	}
+EXPR_STATEMENT	251:1	251:67	3	pixel_status |= check_rgb_pixel ( 0 , 15 , 18 , 0 , 0 , 18 , 41 , buffer ) ;
+EXPR	251:1	251:1	4	pixel_status |= check_rgb_pixel ( 0 , 15 , 18 , 0 , 0 , 18 , 41 , buffer )
+ASSIGN	251:1	251:17	5	pixel_status |= check_rgb_pixel ( 0 , 15 , 18 , 0 , 0 , 18 , 41 , buffer )
+LVAL	251:1	251:1	6	pixel_status
+FIELD	251:1	251:1	7	pixel_status
+LEAF_NODE	251:1	251:1	8	pixel_status
+ASSIGN_OP	251:14	251:14	6	|=
+LEAF_NODE	251:14	251:14	7	|=
+RVAL	251:17	251:17	6	check_rgb_pixel ( 0 , 15 , 18 , 0 , 0 , 18 , 41 , buffer )
+FUNCTION_CALL	251:17	251:66	7	check_rgb_pixel ( 0 , 15 , 18 , 0 , 0 , 18 , 41 , buffer )
+CALLEE	251:17	251:17	8	check_rgb_pixel
+LEAF_NODE	251:17	251:17	9	check_rgb_pixel
+LEAF_NODE	251:32	251:32	8	(
+ARGUMENT	251:34	251:34	8	0
+FIELD	251:34	251:34	9	0
+LEAF_NODE	251:34	251:34	10	0
+LEAF_NODE	251:35	251:35	8	,
+ARGUMENT	251:37	251:37	8	15
+FIELD	251:37	251:37	9	15
+LEAF_NODE	251:37	251:37	10	15
+LEAF_NODE	251:39	251:39	8	,
+ARGUMENT	251:41	251:41	8	18
+FIELD	251:41	251:41	9	18
+LEAF_NODE	251:41	251:41	10	18
+LEAF_NODE	251:43	251:43	8	,
+ARGUMENT	251:45	251:45	8	0
+FIELD	251:45	251:45	9	0
+LEAF_NODE	251:45	251:45	10	0
+LEAF_NODE	251:46	251:46	8	,
+ARGUMENT	251:48	251:48	8	0
+FIELD	251:48	251:48	9	0
+LEAF_NODE	251:48	251:48	10	0
+LEAF_NODE	251:49	251:49	8	,
+ARGUMENT	251:51	251:51	8	18
+FIELD	251:51	251:51	9	18
+LEAF_NODE	251:51	251:51	10	18
+LEAF_NODE	251:53	251:53	8	,
+ARGUMENT	251:55	251:55	8	41
+FIELD	251:55	251:55	9	41
+LEAF_NODE	251:55	251:55	10	41
+LEAF_NODE	251:57	251:57	8	,
+ARGUMENT	251:59	251:59	8	buffer
+FIELD	251:59	251:59	9	buffer
+LEAF_NODE	251:59	251:59	10	buffer
+LEAF_NODE	251:66	251:66	8	)
+LEAF_NODE	251:67	251:67	4	;
+EXPR_STATEMENT	252:1	252:64	3	pixel_status |= check_rgb_pixel ( 64 , 0 , 0 , 0 , 0 , 0 , 2 , buffer ) ;
+EXPR	252:1	252:1	4	pixel_status |= check_rgb_pixel ( 64 , 0 , 0 , 0 , 0 , 0 , 2 , buffer )
+ASSIGN	252:1	252:17	5	pixel_status |= check_rgb_pixel ( 64 , 0 , 0 , 0 , 0 , 0 , 2 , buffer )
+LVAL	252:1	252:1	6	pixel_status
+FIELD	252:1	252:1	7	pixel_status
+LEAF_NODE	252:1	252:1	8	pixel_status
+ASSIGN_OP	252:14	252:14	6	|=
+LEAF_NODE	252:14	252:14	7	|=
+RVAL	252:17	252:17	6	check_rgb_pixel ( 64 , 0 , 0 , 0 , 0 , 0 , 2 , buffer )
+FUNCTION_CALL	252:17	252:63	7	check_rgb_pixel ( 64 , 0 , 0 , 0 , 0 , 0 , 2 , buffer )
+CALLEE	252:17	252:17	8	check_rgb_pixel
+LEAF_NODE	252:17	252:17	9	check_rgb_pixel
+LEAF_NODE	252:32	252:32	8	(
+ARGUMENT	252:34	252:34	8	64
+FIELD	252:34	252:34	9	64
+LEAF_NODE	252:34	252:34	10	64
+LEAF_NODE	252:36	252:36	8	,
+ARGUMENT	252:38	252:38	8	0
+FIELD	252:38	252:38	9	0
+LEAF_NODE	252:38	252:38	10	0
+LEAF_NODE	252:39	252:39	8	,
+ARGUMENT	252:41	252:41	8	0
+FIELD	252:41	252:41	9	0
+LEAF_NODE	252:41	252:41	10	0
+LEAF_NODE	252:42	252:42	8	,
+ARGUMENT	252:44	252:44	8	0
+FIELD	252:44	252:44	9	0
+LEAF_NODE	252:44	252:44	10	0
+LEAF_NODE	252:45	252:45	8	,
+ARGUMENT	252:47	252:47	8	0
+FIELD	252:47	252:47	9	0
+LEAF_NODE	252:47	252:47	10	0
+LEAF_NODE	252:48	252:48	8	,
+ARGUMENT	252:50	252:50	8	0
+FIELD	252:50	252:50	9	0
+LEAF_NODE	252:50	252:50	10	0
+LEAF_NODE	252:51	252:51	8	,
+ARGUMENT	252:53	252:53	8	2
+FIELD	252:53	252:53	9	2
+LEAF_NODE	252:53	252:53	10	2
+LEAF_NODE	252:54	252:54	8	,
+ARGUMENT	252:56	252:56	8	buffer
+FIELD	252:56	252:56	9	buffer
+LEAF_NODE	252:56	252:56	10	buffer
+LEAF_NODE	252:63	252:63	8	)
+LEAF_NODE	252:64	252:64	4	;
+EXPR_STATEMENT	253:1	253:71	3	pixel_status |= check_rgb_pixel ( 512 , 5 , 6 , 34 , 36 , 182 , 196 , buffer ) ;
+EXPR	253:1	253:1	4	pixel_status |= check_rgb_pixel ( 512 , 5 , 6 , 34 , 36 , 182 , 196 , buffer )
+ASSIGN	253:1	253:17	5	pixel_status |= check_rgb_pixel ( 512 , 5 , 6 , 34 , 36 , 182 , 196 , buffer )
+LVAL	253:1	253:1	6	pixel_status
+FIELD	253:1	253:1	7	pixel_status
+LEAF_NODE	253:1	253:1	8	pixel_status
+ASSIGN_OP	253:14	253:14	6	|=
+LEAF_NODE	253:14	253:14	7	|=
+RVAL	253:17	253:17	6	check_rgb_pixel ( 512 , 5 , 6 , 34 , 36 , 182 , 196 , buffer )
+FUNCTION_CALL	253:17	253:70	7	check_rgb_pixel ( 512 , 5 , 6 , 34 , 36 , 182 , 196 , buffer )
+CALLEE	253:17	253:17	8	check_rgb_pixel
+LEAF_NODE	253:17	253:17	9	check_rgb_pixel
+LEAF_NODE	253:32	253:32	8	(
+ARGUMENT	253:34	253:34	8	512
+FIELD	253:34	253:34	9	512
+LEAF_NODE	253:34	253:34	10	512
+LEAF_NODE	253:37	253:37	8	,
+ARGUMENT	253:39	253:39	8	5
+FIELD	253:39	253:39	9	5
+LEAF_NODE	253:39	253:39	10	5
+LEAF_NODE	253:40	253:40	8	,
+ARGUMENT	253:42	253:42	8	6
+FIELD	253:42	253:42	9	6
+LEAF_NODE	253:42	253:42	10	6
+LEAF_NODE	253:43	253:43	8	,
+ARGUMENT	253:45	253:45	8	34
+FIELD	253:45	253:45	9	34
+LEAF_NODE	253:45	253:45	10	34
+LEAF_NODE	253:47	253:47	8	,
+ARGUMENT	253:49	253:49	8	36
+FIELD	253:49	253:49	9	36
+LEAF_NODE	253:49	253:49	10	36
+LEAF_NODE	253:51	253:51	8	,
+ARGUMENT	253:53	253:53	8	182
+FIELD	253:53	253:53	9	182
+LEAF_NODE	253:53	253:53	10	182
+LEAF_NODE	253:56	253:56	8	,
+ARGUMENT	253:58	253:58	8	196
+FIELD	253:58	253:58	9	196
+LEAF_NODE	253:58	253:58	10	196
+LEAF_NODE	253:61	253:61	8	,
+ARGUMENT	253:63	253:63	8	buffer
+FIELD	253:63	253:63	9	buffer
+LEAF_NODE	253:63	253:63	10	buffer
+LEAF_NODE	253:70	253:70	8	)
+LEAF_NODE	253:71	253:71	4	;
+EXPR_STATEMENT	255:1	255:15	3	free ( buffer ) ;
+EXPR	255:1	255:1	4	free ( buffer )
+FUNCTION_CALL	255:1	255:14	5	free ( buffer )
+CALLEE	255:1	255:1	6	free
+LEAF_NODE	255:1	255:1	7	free
+LEAF_NODE	255:5	255:5	6	(
+ARGUMENT	255:7	255:7	6	buffer
+FIELD	255:7	255:7	7	buffer
+LEAF_NODE	255:7	255:7	8	buffer
+LEAF_NODE	255:14	255:14	6	)
+LEAF_NODE	255:15	255:15	4	;
+EXPR_STATEMENT	257:1	257:15	3	TIFFClose ( tif ) ;
+EXPR	257:1	257:1	4	TIFFClose ( tif )
+FUNCTION_CALL	257:1	257:14	5	TIFFClose ( tif )
+CALLEE	257:1	257:1	6	TIFFClose
+LEAF_NODE	257:1	257:1	7	TIFFClose
+LEAF_NODE	257:10	257:10	6	(
+ARGUMENT	257:11	257:11	6	tif
+FIELD	257:11	257:11	7	tif
+LEAF_NODE	257:11	257:11	8	tif
+LEAF_NODE	257:14	257:14	6	)
+LEAF_NODE	257:15	257:15	4	;
+EXPR_STATEMENT	262:1	262:28	3	tif = TIFFOpen ( srcfile , "r" ) ;
+EXPR	262:1	262:1	4	tif = TIFFOpen ( srcfile , "r" )
+ASSIGN	262:1	262:7	5	tif = TIFFOpen ( srcfile , "r" )
+LVAL	262:1	262:1	6	tif
+FIELD	262:1	262:1	7	tif
+LEAF_NODE	262:1	262:1	8	tif
+ASSIGN_OP	262:5	262:5	6	=
+LEAF_NODE	262:5	262:5	7	=
+RVAL	262:7	262:7	6	TIFFOpen ( srcfile , "r" )
+FUNCTION_CALL	262:7	262:27	7	TIFFOpen ( srcfile , "r" )
+CALLEE	262:7	262:7	8	TIFFOpen
+LEAF_NODE	262:7	262:7	9	TIFFOpen
+LEAF_NODE	262:15	262:15	8	(
+ARGUMENT	262:16	262:16	8	srcfile
+FIELD	262:16	262:16	9	srcfile
+LEAF_NODE	262:16	262:16	10	srcfile
+LEAF_NODE	262:23	262:23	8	,
+ARGUMENT	262:24	262:24	8	"r"
+FIELD	262:24	262:24	9	"r"
+LEAF_NODE	262:24	262:24	10	"r"
+LEAF_NODE	262:27	262:27	8	)
+LEAF_NODE	262:28	262:28	4	;
+LEAF_NODE	264:1	264:1	3	sz
+LEAF_NODE	264:4	264:4	3	=
+LEAF_NODE	264:6	264:6	3	128
+EXPR_STATEMENT	264:10	264:32	3	* 128 * sizeof ( uint32 ) ;
+EXPR	264:10	264:18	4	* 128 * sizeof ( uint32 )
+UNARY_EXPR	264:10	264:12	5	* 128
+UNARY_OPERATOR	264:10	264:10	6	*
+LEAF_NODE	264:10	264:10	7	*
+FIELD	264:12	264:12	6	128
+LEAF_NODE	264:12	264:12	7	128
+LEAF_NODE	264:16	264:16	5	*
+FUNCTION_CALL	264:18	264:31	5	sizeof ( uint32 )
+CALLEE	264:18	264:18	6	sizeof
+LEAF_NODE	264:18	264:18	7	sizeof
+LEAF_NODE	264:24	264:24	6	(
+ARGUMENT	264:25	264:25	6	uint32
+FIELD	264:25	264:25	7	uint32
+LEAF_NODE	264:25	264:25	8	uint32
+LEAF_NODE	264:31	264:31	6	)
+LEAF_NODE	264:32	264:32	4	;
+EXPR_STATEMENT	265:1	265:36	3	rgba_buffer = ( uint32 * ) malloc ( sz ) ;
+EXPR	265:1	265:1	4	rgba_buffer = ( uint32 * ) malloc ( sz )
+ASSIGN	265:1	265:15	5	rgba_buffer = ( uint32 * ) malloc ( sz )
+LVAL	265:1	265:1	6	rgba_buffer
+FIELD	265:1	265:1	7	rgba_buffer
+LEAF_NODE	265:1	265:1	8	rgba_buffer
+ASSIGN_OP	265:13	265:13	6	=
+LEAF_NODE	265:13	265:13	7	=
+RVAL	265:15	265:26	6	( uint32 * ) malloc ( sz )
+LEAF_NODE	265:15	265:15	7	(
+TYPE_NAME	265:16	265:16	7	uint32
+LEAF_NODE	265:16	265:16	8	uint32
+LEAF_NODE	265:23	265:23	7	*
+LEAF_NODE	265:24	265:24	7	)
+FUNCTION_CALL	265:26	265:35	7	malloc ( sz )
+CALLEE	265:26	265:26	8	malloc
+LEAF_NODE	265:26	265:26	9	malloc
+LEAF_NODE	265:32	265:32	8	(
+ARGUMENT	265:33	265:33	8	sz
+FIELD	265:33	265:33	9	sz
+LEAF_NODE	265:33	265:33	10	sz
+LEAF_NODE	265:35	265:35	8	)
+LEAF_NODE	265:36	265:36	4	;
+SELECTION	267:1	267:58	3	
+KEYWORD	267:1	267:1	4	if
+LEAF_NODE	267:1	267:1	5	if
+LEAF_NODE	267:4	267:4	4	(
+CONDITION	267:5	267:5	4	! TIFFReadRGBATile ( tif , 1 * 128 , 2 * 128 , rgba_buffer )
+EXPR	267:5	267:5	5	! TIFFReadRGBATile ( tif , 1 * 128 , 2 * 128 , rgba_buffer )
+UNARY_EXPR	267:5	267:6	6	! TIFFReadRGBATile ( tif , 1 * 128 , 2 * 128 , rgba_buffer )
+UNARY_OPERATOR	267:5	267:5	7	!
+LEAF_NODE	267:5	267:5	8	!
+FUNCTION_CALL	267:6	267:55	7	TIFFReadRGBATile ( tif , 1 * 128 , 2 * 128 , rgba_buffer )
+CALLEE	267:6	267:6	8	TIFFReadRGBATile
+LEAF_NODE	267:6	267:6	9	TIFFReadRGBATile
+LEAF_NODE	267:22	267:22	8	(
+ARGUMENT	267:24	267:24	8	tif
+FIELD	267:24	267:24	9	tif
+LEAF_NODE	267:24	267:24	10	tif
+LEAF_NODE	267:27	267:27	8	,
+ARGUMENT	267:29	267:31	8	1 * 128
+FIELD	267:29	267:29	9	1
+LEAF_NODE	267:29	267:29	10	1
+LEAF_NODE	267:30	267:30	9	*
+FIELD	267:31	267:31	9	128
+LEAF_NODE	267:31	267:31	10	128
+LEAF_NODE	267:34	267:34	8	,
+ARGUMENT	267:36	267:38	8	2 * 128
+FIELD	267:36	267:36	9	2
+LEAF_NODE	267:36	267:36	10	2
+LEAF_NODE	267:37	267:37	9	*
+FIELD	267:38	267:38	9	128
+LEAF_NODE	267:38	267:38	10	128
+LEAF_NODE	267:41	267:41	8	,
+ARGUMENT	267:43	267:43	8	rgba_buffer
+FIELD	267:43	267:43	9	rgba_buffer
+LEAF_NODE	267:43	267:43	10	rgba_buffer
+LEAF_NODE	267:55	267:55	8	)
+LEAF_NODE	267:56	267:56	4	)
+STATEMENTS	267:58	270:1	4	
+LEAF_NODE	267:58	267:58	5	{
+STATEMENTS	268:2	269:2	5	
+EXPR_STATEMENT	268:2	268:66	6	fprintf ( stderr , "TIFFReadRGBATile() returned failure code.\n" ) ;
+EXPR	268:2	268:2	7	fprintf ( stderr , "TIFFReadRGBATile() returned failure code.\n" )
+FUNCTION_CALL	268:2	268:65	8	fprintf ( stderr , "TIFFReadRGBATile() returned failure code.\n" )
+CALLEE	268:2	268:2	9	fprintf
+LEAF_NODE	268:2	268:2	10	fprintf
+LEAF_NODE	268:9	268:9	9	(
+ARGUMENT	268:11	268:11	9	stderr
+FIELD	268:11	268:11	10	stderr
+LEAF_NODE	268:11	268:11	11	stderr
+LEAF_NODE	268:17	268:17	9	,
+ARGUMENT	268:19	268:19	9	"TIFFReadRGBATile() returned failure code.\n"
+FIELD	268:19	268:19	10	"TIFFReadRGBATile() returned failure code.\n"
+LEAF_NODE	268:19	268:19	11	"TIFFReadRGBATile() returned failure code.\n"
+LEAF_NODE	268:65	268:65	9	)
+LEAF_NODE	268:66	268:66	7	;
+JUMP_STATEMENT	269:2	269:10	6	return 1 ;
+KEYWORD	269:2	269:2	7	return
+LEAF_NODE	269:2	269:2	8	return
+DESTINATION	269:9	269:9	7	1
+EXPR	269:9	269:9	8	1
+FIELD	269:9	269:9	9	1
+LEAF_NODE	269:9	269:9	10	1
+LEAF_NODE	269:10	269:10	7	;
+LEAF_NODE	270:1	270:1	5	}
+EXPR_STATEMENT	278:1	279:20	3	pixel_status |= check_rgba_pixel ( 0 , 15 , 18 , 0 , 0 , 18 , 41 , 255 , 255 , rgba_buffer ) ;
+EXPR	278:1	278:1	4	pixel_status |= check_rgba_pixel ( 0 , 15 , 18 , 0 , 0 , 18 , 41 , 255 , 255 , rgba_buffer )
+ASSIGN	278:1	278:17	5	pixel_status |= check_rgba_pixel ( 0 , 15 , 18 , 0 , 0 , 18 , 41 , 255 , 255 , rgba_buffer )
+LVAL	278:1	278:1	6	pixel_status
+FIELD	278:1	278:1	7	pixel_status
+LEAF_NODE	278:1	278:1	8	pixel_status
+ASSIGN_OP	278:14	278:14	6	|=
+LEAF_NODE	278:14	278:14	7	|=
+RVAL	278:17	278:17	6	check_rgba_pixel ( 0 , 15 , 18 , 0 , 0 , 18 , 41 , 255 , 255 , rgba_buffer )
+FUNCTION_CALL	278:17	279:19	7	check_rgba_pixel ( 0 , 15 , 18 , 0 , 0 , 18 , 41 , 255 , 255 , rgba_buffer )
+CALLEE	278:17	278:17	8	check_rgba_pixel
+LEAF_NODE	278:17	278:17	9	check_rgba_pixel
+LEAF_NODE	278:33	278:33	8	(
+ARGUMENT	278:35	278:35	8	0
+FIELD	278:35	278:35	9	0
+LEAF_NODE	278:35	278:35	10	0
+LEAF_NODE	278:36	278:36	8	,
+ARGUMENT	278:38	278:38	8	15
+FIELD	278:38	278:38	9	15
+LEAF_NODE	278:38	278:38	10	15
+LEAF_NODE	278:40	278:40	8	,
+ARGUMENT	278:42	278:42	8	18
+FIELD	278:42	278:42	9	18
+LEAF_NODE	278:42	278:42	10	18
+LEAF_NODE	278:44	278:44	8	,
+ARGUMENT	278:46	278:46	8	0
+FIELD	278:46	278:46	9	0
+LEAF_NODE	278:46	278:46	10	0
+LEAF_NODE	278:47	278:47	8	,
+ARGUMENT	278:49	278:49	8	0
+FIELD	278:49	278:49	9	0
+LEAF_NODE	278:49	278:49	10	0
+LEAF_NODE	278:50	278:50	8	,
+ARGUMENT	278:52	278:52	8	18
+FIELD	278:52	278:52	9	18
+LEAF_NODE	278:52	278:52	10	18
+LEAF_NODE	278:54	278:54	8	,
+ARGUMENT	278:56	278:56	8	41
+FIELD	278:56	278:56	9	41
+LEAF_NODE	278:56	278:56	10	41
+LEAF_NODE	278:58	278:58	8	,
+ARGUMENT	278:60	278:60	8	255
+FIELD	278:60	278:60	9	255
+LEAF_NODE	278:60	278:60	10	255
+LEAF_NODE	278:63	278:63	8	,
+ARGUMENT	278:65	278:65	8	255
+FIELD	278:65	278:65	9	255
+LEAF_NODE	278:65	278:65	10	255
+LEAF_NODE	278:68	278:68	8	,
+ARGUMENT	279:7	279:7	8	rgba_buffer
+FIELD	279:7	279:7	9	rgba_buffer
+LEAF_NODE	279:7	279:7	10	rgba_buffer
+LEAF_NODE	279:19	279:19	8	)
+LEAF_NODE	279:20	279:20	4	;
+EXPR_STATEMENT	280:1	281:20	3	pixel_status |= check_rgba_pixel ( 64 , 0 , 0 , 0 , 0 , 0 , 2 , 255 , 255 , rgba_buffer ) ;
+EXPR	280:1	280:1	4	pixel_status |= check_rgba_pixel ( 64 , 0 , 0 , 0 , 0 , 0 , 2 , 255 , 255 , rgba_buffer )
+ASSIGN	280:1	280:17	5	pixel_status |= check_rgba_pixel ( 64 , 0 , 0 , 0 , 0 , 0 , 2 , 255 , 255 , rgba_buffer )
+LVAL	280:1	280:1	6	pixel_status
+FIELD	280:1	280:1	7	pixel_status
+LEAF_NODE	280:1	280:1	8	pixel_status
+ASSIGN_OP	280:14	280:14	6	|=
+LEAF_NODE	280:14	280:14	7	|=
+RVAL	280:17	280:17	6	check_rgba_pixel ( 64 , 0 , 0 , 0 , 0 , 0 , 2 , 255 , 255 , rgba_buffer )
+FUNCTION_CALL	280:17	281:19	7	check_rgba_pixel ( 64 , 0 , 0 , 0 , 0 , 0 , 2 , 255 , 255 , rgba_buffer )
+CALLEE	280:17	280:17	8	check_rgba_pixel
+LEAF_NODE	280:17	280:17	9	check_rgba_pixel
+LEAF_NODE	280:33	280:33	8	(
+ARGUMENT	280:35	280:35	8	64
+FIELD	280:35	280:35	9	64
+LEAF_NODE	280:35	280:35	10	64
+LEAF_NODE	280:37	280:37	8	,
+ARGUMENT	280:39	280:39	8	0
+FIELD	280:39	280:39	9	0
+LEAF_NODE	280:39	280:39	10	0
+LEAF_NODE	280:40	280:40	8	,
+ARGUMENT	280:42	280:42	8	0
+FIELD	280:42	280:42	9	0
+LEAF_NODE	280:42	280:42	10	0
+LEAF_NODE	280:43	280:43	8	,
+ARGUMENT	280:45	280:45	8	0
+FIELD	280:45	280:45	9	0
+LEAF_NODE	280:45	280:45	10	0
+LEAF_NODE	280:46	280:46	8	,
+ARGUMENT	280:48	280:48	8	0
+FIELD	280:48	280:48	9	0
+LEAF_NODE	280:48	280:48	10	0
+LEAF_NODE	280:49	280:49	8	,
+ARGUMENT	280:51	280:51	8	0
+FIELD	280:51	280:51	9	0
+LEAF_NODE	280:51	280:51	10	0
+LEAF_NODE	280:52	280:52	8	,
+ARGUMENT	280:54	280:54	8	2
+FIELD	280:54	280:54	9	2
+LEAF_NODE	280:54	280:54	10	2
+LEAF_NODE	280:55	280:55	8	,
+ARGUMENT	280:57	280:57	8	255
+FIELD	280:57	280:57	9	255
+LEAF_NODE	280:57	280:57	10	255
+LEAF_NODE	280:60	280:60	8	,
+ARGUMENT	280:62	280:62	8	255
+FIELD	280:62	280:62	9	255
+LEAF_NODE	280:62	280:62	10	255
+LEAF_NODE	280:65	280:65	8	,
+ARGUMENT	281:7	281:7	8	rgba_buffer
+FIELD	281:7	281:7	9	rgba_buffer
+LEAF_NODE	281:7	281:7	10	rgba_buffer
+LEAF_NODE	281:19	281:19	8	)
+LEAF_NODE	281:20	281:20	4	;
+EXPR_STATEMENT	282:1	283:20	3	pixel_status |= check_rgba_pixel ( 512 , 5 , 6 , 34 , 36 , 182 , 196 , 255 , 255 , rgba_buffer ) ;
+EXPR	282:1	282:1	4	pixel_status |= check_rgba_pixel ( 512 , 5 , 6 , 34 , 36 , 182 , 196 , 255 , 255 , rgba_buffer )
+ASSIGN	282:1	282:17	5	pixel_status |= check_rgba_pixel ( 512 , 5 , 6 , 34 , 36 , 182 , 196 , 255 , 255 , rgba_buffer )
+LVAL	282:1	282:1	6	pixel_status
+FIELD	282:1	282:1	7	pixel_status
+LEAF_NODE	282:1	282:1	8	pixel_status
+ASSIGN_OP	282:14	282:14	6	|=
+LEAF_NODE	282:14	282:14	7	|=
+RVAL	282:17	282:17	6	check_rgba_pixel ( 512 , 5 , 6 , 34 , 36 , 182 , 196 , 255 , 255 , rgba_buffer )
+FUNCTION_CALL	282:17	283:19	7	check_rgba_pixel ( 512 , 5 , 6 , 34 , 36 , 182 , 196 , 255 , 255 , rgba_buffer )
+CALLEE	282:17	282:17	8	check_rgba_pixel
+LEAF_NODE	282:17	282:17	9	check_rgba_pixel
+LEAF_NODE	282:33	282:33	8	(
+ARGUMENT	282:35	282:35	8	512
+FIELD	282:35	282:35	9	512
+LEAF_NODE	282:35	282:35	10	512
+LEAF_NODE	282:38	282:38	8	,
+ARGUMENT	282:40	282:40	8	5
+FIELD	282:40	282:40	9	5
+LEAF_NODE	282:40	282:40	10	5
+LEAF_NODE	282:41	282:41	8	,
+ARGUMENT	282:43	282:43	8	6
+FIELD	282:43	282:43	9	6
+LEAF_NODE	282:43	282:43	10	6
+LEAF_NODE	282:44	282:44	8	,
+ARGUMENT	282:46	282:46	8	34
+FIELD	282:46	282:46	9	34
+LEAF_NODE	282:46	282:46	10	34
+LEAF_NODE	282:48	282:48	8	,
+ARGUMENT	282:50	282:50	8	36
+FIELD	282:50	282:50	9	36
+LEAF_NODE	282:50	282:50	10	36
+LEAF_NODE	282:52	282:52	8	,
+ARGUMENT	282:54	282:54	8	182
+FIELD	282:54	282:54	9	182
+LEAF_NODE	282:54	282:54	10	182
+LEAF_NODE	282:57	282:57	8	,
+ARGUMENT	282:59	282:59	8	196
+FIELD	282:59	282:59	9	196
+LEAF_NODE	282:59	282:59	10	196
+LEAF_NODE	282:62	282:62	8	,
+ARGUMENT	282:64	282:64	8	255
+FIELD	282:64	282:64	9	255
+LEAF_NODE	282:64	282:64	10	255
+LEAF_NODE	282:67	282:67	8	,
+ARGUMENT	282:69	282:69	8	255
+FIELD	282:69	282:69	9	255
+LEAF_NODE	282:69	282:69	10	255
+LEAF_NODE	282:72	282:72	8	,
+ARGUMENT	283:7	283:7	8	rgba_buffer
+FIELD	283:7	283:7	9	rgba_buffer
+LEAF_NODE	283:7	283:7	10	rgba_buffer
+LEAF_NODE	283:19	283:19	8	)
+LEAF_NODE	283:20	283:20	4	;
+EXPR_STATEMENT	285:1	285:20	3	free ( rgba_buffer ) ;
+EXPR	285:1	285:1	4	free ( rgba_buffer )
+FUNCTION_CALL	285:1	285:19	5	free ( rgba_buffer )
+CALLEE	285:1	285:1	6	free
+LEAF_NODE	285:1	285:1	7	free
+LEAF_NODE	285:5	285:5	6	(
+ARGUMENT	285:7	285:7	6	rgba_buffer
+FIELD	285:7	285:7	7	rgba_buffer
+LEAF_NODE	285:7	285:7	8	rgba_buffer
+LEAF_NODE	285:19	285:19	6	)
+LEAF_NODE	285:20	285:20	4	;
+EXPR_STATEMENT	286:1	286:15	3	TIFFClose ( tif ) ;
+EXPR	286:1	286:1	4	TIFFClose ( tif )
+FUNCTION_CALL	286:1	286:14	5	TIFFClose ( tif )
+CALLEE	286:1	286:1	6	TIFFClose
+LEAF_NODE	286:1	286:1	7	TIFFClose
+LEAF_NODE	286:10	286:10	6	(
+ARGUMENT	286:11	286:11	6	tif
+FIELD	286:11	286:11	7	tif
+LEAF_NODE	286:11	286:11	8	tif
+LEAF_NODE	286:14	286:14	6	)
+LEAF_NODE	286:15	286:15	4	;
+SELECTION	288:1	288:19	3	
+KEYWORD	288:1	288:1	4	if
+LEAF_NODE	288:1	288:1	5	if
+LEAF_NODE	288:4	288:4	4	(
+CONDITION	288:5	288:5	4	pixel_status
+EXPR	288:5	288:5	5	pixel_status
+FIELD	288:5	288:5	6	pixel_status
+LEAF_NODE	288:5	288:5	7	pixel_status
+LEAF_NODE	288:17	288:17	4	)
+STATEMENTS	288:19	290:1	4	
+LEAF_NODE	288:19	288:19	5	{
+STATEMENTS	289:2	289:2	5	
+EXPR_STATEMENT	289:2	289:9	6	exit ( 1 ) ;
+EXPR	289:2	289:2	7	exit ( 1 )
+FUNCTION_CALL	289:2	289:8	8	exit ( 1 )
+CALLEE	289:2	289:2	9	exit
+LEAF_NODE	289:2	289:2	10	exit
+LEAF_NODE	289:6	289:6	9	(
+ARGUMENT	289:7	289:7	9	1
+FIELD	289:7	289:7	10	1
+LEAF_NODE	289:7	289:7	11	1
+LEAF_NODE	289:8	289:8	9	)
+LEAF_NODE	289:9	289:9	7	;
+LEAF_NODE	290:1	290:1	5	}
+EXPR_STATEMENT	292:1	292:10	3	exit ( 0 ) ;
+EXPR	292:1	292:1	4	exit ( 0 )
+FUNCTION_CALL	292:1	292:9	5	exit ( 0 )
+CALLEE	292:1	292:1	6	exit
+LEAF_NODE	292:1	292:1	7	exit
+LEAF_NODE	292:5	292:5	6	(
+ARGUMENT	292:7	292:7	6	0
+FIELD	292:7	292:7	7	0
+LEAF_NODE	292:7	292:7	8	0
+LEAF_NODE	292:9	292:9	6	)
+LEAF_NODE	292:10	292:10	4	;
+LEAF_NODE	293:0	293:0	2	}

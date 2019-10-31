@@ -1,0 +1,4233 @@
+SOURCE_FILE	44:8	414:0	0	
+SIMPLE_DECL	44:8	58:11	1	struct CLASS_NAME BASE_CLASSES { TIFFPredictorState predict ; lzma_stream stream ; lzma_filter [ LZMA_FILTERS_MAX + 1 ] filters ; lzma_options_delta opt_delta ; lzma_options_lzma opt_lzma ; int preset ; lzma_check check ; int state ; TIFFVGetMethod vgetparent ; TIFFVSetMethod vsetparent ; } LZMAState ;
+VAR_DECL	44:8	58:2	2	struct CLASS_NAME BASE_CLASSES { TIFFPredictorState predict ; lzma_stream stream ; lzma_filter [ LZMA_FILTERS_MAX + 1 ] filters ; lzma_options_delta opt_delta ; lzma_options_lzma opt_lzma ; int preset ; lzma_check check ; int state ; TIFFVGetMethod vgetparent ; TIFFVSetMethod vsetparent ; } LZMAState
+TYPE	44:8	44:8	3	struct CLASS_NAME BASE_CLASSES { TIFFPredictorState predict ; lzma_stream stream ; lzma_filter [ LZMA_FILTERS_MAX + 1 ] filters ; lzma_options_delta opt_delta ; lzma_options_lzma opt_lzma ; int preset ; lzma_check check ; int state ; TIFFVGetMethod vgetparent ; TIFFVSetMethod vsetparent ; }
+CLASS_DEF	44:8	58:0	4	struct CLASS_NAME BASE_CLASSES { TIFFPredictorState predict ; lzma_stream stream ; lzma_filter [ LZMA_FILTERS_MAX + 1 ] filters ; lzma_options_delta opt_delta ; lzma_options_lzma opt_lzma ; int preset ; lzma_check check ; int state ; TIFFVGetMethod vgetparent ; TIFFVSetMethod vsetparent ; }
+LEAF_NODE	44:8	44:8	5	struct
+LEAF_NODE	0:0	0:0	5	CLASS_NAME
+LEAF_NODE	0:0	0:0	5	BASE_CLASSES
+LEAF_NODE	44:15	44:15	5	{
+CLASS_CONTENT	45:1	57:1	5	TIFFPredictorState predict ; lzma_stream stream ; lzma_filter [ LZMA_FILTERS_MAX + 1 ] filters ; lzma_options_delta opt_delta ; lzma_options_lzma opt_lzma ; int preset ; lzma_check check ; int state ; TIFFVGetMethod vgetparent ; TIFFVSetMethod vsetparent ;
+SIMPLE_DECL	45:1	45:27	6	TIFFPredictorState predict ;
+VAR_DECL	45:1	45:20	7	TIFFPredictorState predict
+TYPE	45:1	45:1	8	TIFFPredictorState
+TYPE_NAME	45:1	45:1	9	TIFFPredictorState
+LEAF_NODE	45:1	45:1	10	TIFFPredictorState
+NAME	45:20	45:20	8	predict
+LEAF_NODE	45:20	45:20	9	predict
+LEAF_NODE	45:27	45:27	7	;
+SIMPLE_DECL	46:8	46:26	6	lzma_stream stream ;
+VAR_DECL	46:8	46:20	7	lzma_stream stream
+TYPE	46:8	46:8	8	lzma_stream
+TYPE_NAME	46:8	46:8	9	lzma_stream
+LEAF_NODE	46:8	46:8	10	lzma_stream
+NAME	46:20	46:20	8	stream
+LEAF_NODE	46:20	46:20	9	stream
+LEAF_NODE	46:26	46:26	7	;
+SIMPLE_DECL	47:1	47:42	6	lzma_filter [ LZMA_FILTERS_MAX + 1 ] filters ;
+VAR_DECL	47:1	47:13	7	lzma_filter [ LZMA_FILTERS_MAX + 1 ] filters
+TYPE	47:1	47:20	8	lzma_filter [ LZMA_FILTERS_MAX + 1 ]
+TYPE_NAME	47:1	47:1	9	lzma_filter
+LEAF_NODE	47:1	47:1	10	lzma_filter
+TYPE_SUFFIX	47:20	47:41	9	[ LZMA_FILTERS_MAX + 1 ]
+LEAF_NODE	47:20	47:20	10	[
+FIELD	47:21	47:21	10	LZMA_FILTERS_MAX
+LEAF_NODE	47:21	47:21	11	LZMA_FILTERS_MAX
+LEAF_NODE	47:38	47:38	10	+
+FIELD	47:40	47:40	10	1
+LEAF_NODE	47:40	47:40	11	1
+LEAF_NODE	47:41	47:41	10	]
+NAME	47:13	47:13	8	filters
+LEAF_NODE	47:13	47:13	9	filters
+LEAF_NODE	47:42	47:42	7	;
+SIMPLE_DECL	48:1	48:29	6	lzma_options_delta opt_delta ;
+VAR_DECL	48:1	48:20	7	lzma_options_delta opt_delta
+TYPE	48:1	48:1	8	lzma_options_delta
+TYPE_NAME	48:1	48:1	9	lzma_options_delta
+LEAF_NODE	48:1	48:1	10	lzma_options_delta
+NAME	48:20	48:20	8	opt_delta
+LEAF_NODE	48:20	48:20	9	opt_delta
+LEAF_NODE	48:29	48:29	7	;
+SIMPLE_DECL	49:1	49:27	6	lzma_options_lzma opt_lzma ;
+VAR_DECL	49:1	49:19	7	lzma_options_lzma opt_lzma
+TYPE	49:1	49:1	8	lzma_options_lzma
+TYPE_NAME	49:1	49:1	9	lzma_options_lzma
+LEAF_NODE	49:1	49:1	10	lzma_options_lzma
+NAME	49:19	49:19	8	opt_lzma
+LEAF_NODE	49:19	49:19	9	opt_lzma
+LEAF_NODE	49:27	49:27	7	;
+SIMPLE_DECL	50:1	50:23	6	int preset ;
+VAR_DECL	50:1	50:17	7	int preset
+TYPE	50:1	50:1	8	int
+TYPE_NAME	50:1	50:1	9	int
+LEAF_NODE	50:1	50:1	10	int
+NAME	50:17	50:17	8	preset
+LEAF_NODE	50:17	50:17	9	preset
+LEAF_NODE	50:23	50:23	7	;
+SIMPLE_DECL	51:1	51:17	6	lzma_check check ;
+VAR_DECL	51:1	51:12	7	lzma_check check
+TYPE	51:1	51:1	8	lzma_check
+TYPE_NAME	51:1	51:1	9	lzma_check
+LEAF_NODE	51:1	51:1	10	lzma_check
+NAME	51:12	51:12	8	check
+LEAF_NODE	51:12	51:12	9	check
+LEAF_NODE	51:17	51:17	7	;
+SIMPLE_DECL	52:1	52:22	6	int state ;
+VAR_DECL	52:1	52:17	7	int state
+TYPE	52:1	52:1	8	int
+TYPE_NAME	52:1	52:1	9	int
+LEAF_NODE	52:1	52:1	10	int
+NAME	52:17	52:17	8	state
+LEAF_NODE	52:17	52:17	9	state
+LEAF_NODE	52:22	52:22	7	;
+SIMPLE_DECL	56:1	56:27	6	TIFFVGetMethod vgetparent ;
+VAR_DECL	56:1	56:17	7	TIFFVGetMethod vgetparent
+TYPE	56:1	56:1	8	TIFFVGetMethod
+TYPE_NAME	56:1	56:1	9	TIFFVGetMethod
+LEAF_NODE	56:1	56:1	10	TIFFVGetMethod
+NAME	56:17	56:17	8	vgetparent
+LEAF_NODE	56:17	56:17	9	vgetparent
+LEAF_NODE	56:27	56:27	7	;
+SIMPLE_DECL	57:1	57:27	6	TIFFVSetMethod vsetparent ;
+VAR_DECL	57:1	57:17	7	TIFFVSetMethod vsetparent
+TYPE	57:1	57:1	8	TIFFVSetMethod
+TYPE_NAME	57:1	57:1	9	TIFFVSetMethod
+LEAF_NODE	57:1	57:1	10	TIFFVSetMethod
+NAME	57:17	57:17	8	vsetparent
+LEAF_NODE	57:17	57:17	9	vsetparent
+LEAF_NODE	57:27	57:27	7	;
+LEAF_NODE	58:0	58:0	5	}
+NAME	58:2	58:2	3	LZMAState
+LEAF_NODE	58:2	58:2	4	LZMAState
+LEAF_NODE	58:11	58:11	2	;
+FUNCTION_DEF	67:0	98:0	1	
+RETURN_TYPE	67:0	67:18	2	static const char *
+LEAF_NODE	67:0	67:0	3	static
+TYPE_NAME	67:7	67:13	3	const char
+LEAF_NODE	67:7	67:7	4	const
+LEAF_NODE	67:13	67:13	4	char
+LEAF_NODE	67:18	67:18	3	*
+FUNCTION_NAME	68:0	68:0	2	LZMAStrerror
+LEAF_NODE	68:0	68:0	3	LZMAStrerror
+PARAMETER_LIST	68:12	68:25	2	( lzma_ret ret )
+LEAF_NODE	68:12	68:12	3	(
+PARAMETER_DECL	68:13	68:22	3	lzma_ret ret
+TYPE	68:13	68:13	4	lzma_ret
+TYPE_NAME	68:13	68:13	5	lzma_ret
+LEAF_NODE	68:13	68:13	6	lzma_ret
+NAME	68:22	68:22	4	ret
+LEAF_NODE	68:22	68:22	5	ret
+LEAF_NODE	68:25	68:25	3	)
+LEAF_NODE	69:0	69:0	2	{
+STATEMENTS	70:1	70:1	2	
+SELECTION	70:1	70:14	3	
+KEYWORD	70:1	70:1	4	switch
+LEAF_NODE	70:1	70:1	5	switch
+LEAF_NODE	70:8	70:8	4	(
+CONDITION	70:9	70:9	4	ret
+EXPR	70:9	70:9	5	ret
+FIELD	70:9	70:9	6	ret
+LEAF_NODE	70:9	70:9	7	ret
+LEAF_NODE	70:12	70:12	4	)
+STATEMENTS	70:14	97:1	4	
+LEAF_NODE	70:14	70:14	5	{
+STATEMENTS	71:2	96:6	5	
+LABEL	71:2	71:14	6	case LZMA_OK :
+LEAF_NODE	71:2	71:2	7	case
+LEAF_NODE	71:7	71:7	7	LZMA_OK
+LEAF_NODE	71:14	71:14	7	:
+JUMP_STATEMENT	72:6	72:47	6	return "operation completed successfully" ;
+KEYWORD	72:6	72:6	7	return
+LEAF_NODE	72:6	72:6	8	return
+DESTINATION	72:13	72:13	7	"operation completed successfully"
+EXPR	72:13	72:13	8	"operation completed successfully"
+FIELD	72:13	72:13	9	"operation completed successfully"
+LEAF_NODE	72:13	72:13	10	"operation completed successfully"
+LEAF_NODE	72:47	72:47	7	;
+LABEL	73:2	73:22	6	case LZMA_STREAM_END :
+LEAF_NODE	73:2	73:2	7	case
+LEAF_NODE	73:7	73:7	7	LZMA_STREAM_END
+LEAF_NODE	73:22	73:22	7	:
+JUMP_STATEMENT	74:6	74:40	6	return "end of stream was reached" ;
+KEYWORD	74:6	74:6	7	return
+LEAF_NODE	74:6	74:6	8	return
+DESTINATION	74:13	74:13	7	"end of stream was reached"
+EXPR	74:13	74:13	8	"end of stream was reached"
+FIELD	74:13	74:13	9	"end of stream was reached"
+LEAF_NODE	74:13	74:13	10	"end of stream was reached"
+LEAF_NODE	74:40	74:40	7	;
+LABEL	75:2	75:20	6	case LZMA_NO_CHECK :
+LEAF_NODE	75:2	75:2	7	case
+LEAF_NODE	75:7	75:7	7	LZMA_NO_CHECK
+LEAF_NODE	75:20	75:20	7	:
+JUMP_STATEMENT	76:6	76:50	6	return "input stream has no integrity check" ;
+KEYWORD	76:6	76:6	7	return
+LEAF_NODE	76:6	76:6	8	return
+DESTINATION	76:13	76:13	7	"input stream has no integrity check"
+EXPR	76:13	76:13	8	"input stream has no integrity check"
+FIELD	76:13	76:13	9	"input stream has no integrity check"
+LEAF_NODE	76:13	76:13	10	"input stream has no integrity check"
+LEAF_NODE	76:50	76:50	7	;
+LABEL	77:2	77:29	6	case LZMA_UNSUPPORTED_CHECK :
+LEAF_NODE	77:2	77:2	7	case
+LEAF_NODE	77:7	77:7	7	LZMA_UNSUPPORTED_CHECK
+LEAF_NODE	77:29	77:29	7	:
+JUMP_STATEMENT	78:6	78:51	6	return "cannot calculate the integrity check" ;
+KEYWORD	78:6	78:6	7	return
+LEAF_NODE	78:6	78:6	8	return
+DESTINATION	78:13	78:13	7	"cannot calculate the integrity check"
+EXPR	78:13	78:13	8	"cannot calculate the integrity check"
+FIELD	78:13	78:13	9	"cannot calculate the integrity check"
+LEAF_NODE	78:13	78:13	10	"cannot calculate the integrity check"
+LEAF_NODE	78:51	78:51	7	;
+LABEL	79:2	79:21	6	case LZMA_GET_CHECK :
+LEAF_NODE	79:2	79:2	7	case
+LEAF_NODE	79:7	79:7	7	LZMA_GET_CHECK
+LEAF_NODE	79:21	79:21	7	:
+JUMP_STATEMENT	80:6	80:52	6	return "integrity check type is now available" ;
+KEYWORD	80:6	80:6	7	return
+LEAF_NODE	80:6	80:6	8	return
+DESTINATION	80:13	80:13	7	"integrity check type is now available"
+EXPR	80:13	80:13	8	"integrity check type is now available"
+FIELD	80:13	80:13	9	"integrity check type is now available"
+LEAF_NODE	80:13	80:13	10	"integrity check type is now available"
+LEAF_NODE	80:52	80:52	7	;
+LABEL	81:2	81:21	6	case LZMA_MEM_ERROR :
+LEAF_NODE	81:2	81:2	7	case
+LEAF_NODE	81:7	81:7	7	LZMA_MEM_ERROR
+LEAF_NODE	81:21	81:21	7	:
+JUMP_STATEMENT	82:6	82:37	6	return "cannot allocate memory" ;
+KEYWORD	82:6	82:6	7	return
+LEAF_NODE	82:6	82:6	8	return
+DESTINATION	82:13	82:13	7	"cannot allocate memory"
+EXPR	82:13	82:13	8	"cannot allocate memory"
+FIELD	82:13	82:13	9	"cannot allocate memory"
+LEAF_NODE	82:13	82:13	10	"cannot allocate memory"
+LEAF_NODE	82:37	82:37	7	;
+LABEL	83:2	83:26	6	case LZMA_MEMLIMIT_ERROR :
+LEAF_NODE	83:2	83:2	7	case
+LEAF_NODE	83:7	83:7	7	LZMA_MEMLIMIT_ERROR
+LEAF_NODE	83:26	83:26	7	:
+JUMP_STATEMENT	84:6	84:45	6	return "memory usage limit was reached" ;
+KEYWORD	84:6	84:6	7	return
+LEAF_NODE	84:6	84:6	8	return
+DESTINATION	84:13	84:13	7	"memory usage limit was reached"
+EXPR	84:13	84:13	8	"memory usage limit was reached"
+FIELD	84:13	84:13	9	"memory usage limit was reached"
+LEAF_NODE	84:13	84:13	10	"memory usage limit was reached"
+LEAF_NODE	84:45	84:45	7	;
+LABEL	85:2	85:24	6	case LZMA_FORMAT_ERROR :
+LEAF_NODE	85:2	85:2	7	case
+LEAF_NODE	85:7	85:7	7	LZMA_FORMAT_ERROR
+LEAF_NODE	85:24	85:24	7	:
+JUMP_STATEMENT	86:6	86:41	6	return "file format not recognized" ;
+KEYWORD	86:6	86:6	7	return
+LEAF_NODE	86:6	86:6	8	return
+DESTINATION	86:13	86:13	7	"file format not recognized"
+EXPR	86:13	86:13	8	"file format not recognized"
+FIELD	86:13	86:13	9	"file format not recognized"
+LEAF_NODE	86:13	86:13	10	"file format not recognized"
+LEAF_NODE	86:41	86:41	7	;
+LABEL	87:2	87:25	6	case LZMA_OPTIONS_ERROR :
+LEAF_NODE	87:2	87:2	7	case
+LEAF_NODE	87:7	87:7	7	LZMA_OPTIONS_ERROR
+LEAF_NODE	87:25	87:25	7	:
+JUMP_STATEMENT	88:6	88:45	6	return "invalid or unsupported options" ;
+KEYWORD	88:6	88:6	7	return
+LEAF_NODE	88:6	88:6	8	return
+DESTINATION	88:13	88:13	7	"invalid or unsupported options"
+EXPR	88:13	88:13	8	"invalid or unsupported options"
+FIELD	88:13	88:13	9	"invalid or unsupported options"
+LEAF_NODE	88:13	88:13	10	"invalid or unsupported options"
+LEAF_NODE	88:45	88:45	7	;
+LABEL	89:2	89:22	6	case LZMA_DATA_ERROR :
+LEAF_NODE	89:2	89:2	7	case
+LEAF_NODE	89:7	89:7	7	LZMA_DATA_ERROR
+LEAF_NODE	89:22	89:22	7	:
+JUMP_STATEMENT	90:6	90:30	6	return "data is corrupt" ;
+KEYWORD	90:6	90:6	7	return
+LEAF_NODE	90:6	90:6	8	return
+DESTINATION	90:13	90:13	7	"data is corrupt"
+EXPR	90:13	90:13	8	"data is corrupt"
+FIELD	90:13	90:13	9	"data is corrupt"
+LEAF_NODE	90:13	90:13	10	"data is corrupt"
+LEAF_NODE	90:30	90:30	7	;
+LABEL	91:2	91:21	6	case LZMA_BUF_ERROR :
+LEAF_NODE	91:2	91:2	7	case
+LEAF_NODE	91:7	91:7	7	LZMA_BUF_ERROR
+LEAF_NODE	91:21	91:21	7	:
+JUMP_STATEMENT	92:6	92:71	6	return "no progress is possible (stream is truncated or corrupt)" ;
+KEYWORD	92:6	92:6	7	return
+LEAF_NODE	92:6	92:6	8	return
+DESTINATION	92:13	92:13	7	"no progress is possible (stream is truncated or corrupt)"
+EXPR	92:13	92:13	8	"no progress is possible (stream is truncated or corrupt)"
+FIELD	92:13	92:13	9	"no progress is possible (stream is truncated or corrupt)"
+LEAF_NODE	92:13	92:13	10	"no progress is possible (stream is truncated or corrupt)"
+LEAF_NODE	92:71	92:71	7	;
+LABEL	93:2	93:22	6	case LZMA_PROG_ERROR :
+LEAF_NODE	93:2	93:2	7	case
+LEAF_NODE	93:7	93:7	7	LZMA_PROG_ERROR
+LEAF_NODE	93:22	93:22	7	:
+JUMP_STATEMENT	94:6	94:32	6	return "programming error" ;
+KEYWORD	94:6	94:6	7	return
+LEAF_NODE	94:6	94:6	8	return
+DESTINATION	94:13	94:13	7	"programming error"
+EXPR	94:13	94:13	8	"programming error"
+FIELD	94:13	94:13	9	"programming error"
+LEAF_NODE	94:13	94:13	10	"programming error"
+LEAF_NODE	94:32	94:32	7	;
+LABEL	95:2	95:9	6	default :
+LEAF_NODE	95:2	95:2	7	default
+LEAF_NODE	95:9	95:9	7	:
+JUMP_STATEMENT	96:6	96:41	6	return "unidentified liblzma error" ;
+KEYWORD	96:6	96:6	7	return
+LEAF_NODE	96:6	96:6	8	return
+DESTINATION	96:13	96:13	7	"unidentified liblzma error"
+EXPR	96:13	96:13	8	"unidentified liblzma error"
+FIELD	96:13	96:13	9	"unidentified liblzma error"
+LEAF_NODE	96:13	96:13	10	"unidentified liblzma error"
+LEAF_NODE	96:41	96:41	7	;
+LEAF_NODE	97:1	97:1	5	}
+LEAF_NODE	98:0	98:0	2	}
+FUNCTION_DEF	100:0	105:0	1	
+RETURN_TYPE	100:0	100:7	2	static int
+LEAF_NODE	100:0	100:0	3	static
+TYPE_NAME	100:7	100:7	3	int
+LEAF_NODE	100:7	100:7	4	int
+FUNCTION_NAME	101:0	101:0	2	LZMAFixupTags
+LEAF_NODE	101:0	101:0	3	LZMAFixupTags
+PARAMETER_LIST	101:13	101:23	2	( TIFF * tif )
+LEAF_NODE	101:13	101:13	3	(
+PARAMETER_DECL	101:14	101:20	3	TIFF * tif
+TYPE	101:14	101:18	4	TIFF *
+TYPE_NAME	101:14	101:14	5	TIFF
+LEAF_NODE	101:14	101:14	6	TIFF
+POINTER	101:18	101:18	5	*
+LEAF_NODE	101:18	101:18	6	*
+NAME	101:20	101:20	4	tif
+LEAF_NODE	101:20	101:20	5	tif
+LEAF_NODE	101:23	101:23	3	)
+LEAF_NODE	102:0	102:0	2	{
+STATEMENTS	103:1	104:1	2	
+EXPR_STATEMENT	103:1	103:11	3	( void ) tif ;
+EXPR	103:1	103:8	4	( void ) tif
+LEAF_NODE	103:1	103:1	5	(
+TYPE_NAME	103:2	103:2	5	void
+LEAF_NODE	103:2	103:2	6	void
+LEAF_NODE	103:6	103:6	5	)
+FIELD	103:8	103:8	5	tif
+LEAF_NODE	103:8	103:8	6	tif
+LEAF_NODE	103:11	103:11	4	;
+JUMP_STATEMENT	104:1	104:9	3	return 1 ;
+KEYWORD	104:1	104:1	4	return
+LEAF_NODE	104:1	104:1	5	return
+DESTINATION	104:8	104:8	4	1
+EXPR	104:8	104:8	5	1
+FIELD	104:8	104:8	6	1
+LEAF_NODE	104:8	104:8	7	1
+LEAF_NODE	104:9	104:9	4	;
+LEAF_NODE	105:0	105:0	2	}
+FUNCTION_DEF	107:0	122:0	1	
+RETURN_TYPE	107:0	107:7	2	static int
+LEAF_NODE	107:0	107:0	3	static
+TYPE_NAME	107:7	107:7	3	int
+LEAF_NODE	107:7	107:7	4	int
+FUNCTION_NAME	108:0	108:0	2	LZMASetupDecode
+LEAF_NODE	108:0	108:0	3	LZMASetupDecode
+PARAMETER_LIST	108:15	108:25	2	( TIFF * tif )
+LEAF_NODE	108:15	108:15	3	(
+PARAMETER_DECL	108:16	108:22	3	TIFF * tif
+TYPE	108:16	108:20	4	TIFF *
+TYPE_NAME	108:16	108:16	5	TIFF
+LEAF_NODE	108:16	108:16	6	TIFF
+POINTER	108:20	108:20	5	*
+LEAF_NODE	108:20	108:20	6	*
+NAME	108:22	108:22	4	tif
+LEAF_NODE	108:22	108:22	5	tif
+LEAF_NODE	108:25	108:25	3	)
+LEAF_NODE	109:0	109:0	2	{
+STATEMENTS	110:1	121:1	2	
+SIMPLE_DECL	110:1	110:34	3	LZMAState * sp ; sp = DecoderState ( tif ) ;
+VAR_DECL	110:1	110:12	4	LZMAState * sp ; sp = DecoderState ( tif )
+TYPE	110:1	110:10	5	LZMAState *
+TYPE_NAME	110:1	110:1	6	LZMAState
+LEAF_NODE	110:1	110:1	7	LZMAState
+POINTER	110:10	110:10	6	*
+LEAF_NODE	110:10	110:10	7	*
+NAME	110:12	110:12	5	sp
+LEAF_NODE	110:12	110:12	6	sp
+LEAF_NODE	0:0	0:0	5	;
+INIT	110:12	110:12	5	sp = DecoderState ( tif )
+ASSIGN	110:12	110:17	6	sp = DecoderState ( tif )
+LVAL	110:12	110:12	7	sp
+NAME	110:12	110:12	8	sp
+LEAF_NODE	110:12	110:12	9	sp
+ASSIGN_OP	110:15	110:15	7	=
+LEAF_NODE	110:15	110:15	8	=
+RVAL	110:17	110:17	7	DecoderState ( tif )
+FUNCTION_CALL	110:17	110:33	8	DecoderState ( tif )
+CALLEE	110:17	110:17	9	DecoderState
+LEAF_NODE	110:17	110:17	10	DecoderState
+LEAF_NODE	110:29	110:29	9	(
+ARGUMENT	110:30	110:30	9	tif
+FIELD	110:30	110:30	10	tif
+LEAF_NODE	110:30	110:30	11	tif
+LEAF_NODE	110:33	110:33	9	)
+LEAF_NODE	110:34	110:34	4	;
+EXPR_STATEMENT	112:1	112:19	3	assert ( sp != NULL ) ;
+EXPR	112:1	112:1	4	assert ( sp != NULL )
+FUNCTION_CALL	112:1	112:18	5	assert ( sp != NULL )
+CALLEE	112:1	112:1	6	assert
+LEAF_NODE	112:1	112:1	7	assert
+LEAF_NODE	112:7	112:7	6	(
+ARGUMENT	112:8	112:14	6	sp != NULL
+FIELD	112:8	112:8	7	sp
+LEAF_NODE	112:8	112:8	8	sp
+EQ_OPERATOR	112:11	112:11	7	!=
+LEAF_NODE	112:11	112:11	8	!=
+FIELD	112:14	112:14	7	NULL
+LEAF_NODE	112:14	112:14	8	NULL
+LEAF_NODE	112:18	112:18	6	)
+LEAF_NODE	112:19	112:19	4	;
+SELECTION	115:1	115:37	3	
+KEYWORD	115:1	115:1	4	if
+LEAF_NODE	115:1	115:1	5	if
+LEAF_NODE	115:4	115:4	4	(
+CONDITION	115:5	115:5	4	sp -> state & LSTATE_INIT_ENCODE
+EXPR	115:5	115:17	5	sp -> state & LSTATE_INIT_ENCODE
+FIELD	115:5	115:9	6	sp -> state
+LEAF_NODE	115:5	115:5	7	sp
+LEAF_NODE	115:7	115:7	7	->
+LEAF_NODE	115:9	115:9	7	state
+LEAF_NODE	115:15	115:15	6	&
+FIELD	115:17	115:17	6	LSTATE_INIT_ENCODE
+LEAF_NODE	115:17	115:17	7	LSTATE_INIT_ENCODE
+LEAF_NODE	115:35	115:35	4	)
+STATEMENTS	115:37	118:1	4	
+LEAF_NODE	115:37	115:37	5	{
+STATEMENTS	116:5	117:5	5	
+EXPR_STATEMENT	116:5	116:26	6	lzma_end ( & sp -> stream ) ;
+EXPR	116:5	116:5	7	lzma_end ( & sp -> stream )
+FUNCTION_CALL	116:5	116:25	8	lzma_end ( & sp -> stream )
+CALLEE	116:5	116:5	9	lzma_end
+LEAF_NODE	116:5	116:5	10	lzma_end
+LEAF_NODE	116:13	116:13	9	(
+ARGUMENT	116:14	116:14	9	& sp -> stream
+UNARY_EXPR	116:14	116:15	10	& sp -> stream
+UNARY_OPERATOR	116:14	116:14	11	&
+LEAF_NODE	116:14	116:14	12	&
+FIELD	116:15	116:19	11	sp -> stream
+LEAF_NODE	116:15	116:15	12	sp
+LEAF_NODE	116:17	116:17	12	->
+LEAF_NODE	116:19	116:19	12	stream
+LEAF_NODE	116:25	116:25	9	)
+LEAF_NODE	116:26	116:26	7	;
+EXPR_STATEMENT	117:5	117:18	6	sp -> state = 0 ;
+EXPR	117:5	117:5	7	sp -> state = 0
+ASSIGN	117:5	117:17	8	sp -> state = 0
+LVAL	117:5	117:5	9	sp -> state
+FIELD	117:5	117:9	10	sp -> state
+LEAF_NODE	117:5	117:5	11	sp
+LEAF_NODE	117:7	117:7	11	->
+LEAF_NODE	117:9	117:9	11	state
+ASSIGN_OP	117:15	117:15	9	=
+LEAF_NODE	117:15	117:15	10	=
+RVAL	117:17	117:17	9	0
+FIELD	117:17	117:17	10	0
+LEAF_NODE	117:17	117:17	11	0
+LEAF_NODE	117:18	117:18	7	;
+LEAF_NODE	118:1	118:1	5	}
+EXPR_STATEMENT	120:1	120:32	3	sp -> state |= LSTATE_INIT_DECODE ;
+EXPR	120:1	120:1	4	sp -> state |= LSTATE_INIT_DECODE
+ASSIGN	120:1	120:14	5	sp -> state |= LSTATE_INIT_DECODE
+LVAL	120:1	120:1	6	sp -> state
+FIELD	120:1	120:5	7	sp -> state
+LEAF_NODE	120:1	120:1	8	sp
+LEAF_NODE	120:3	120:3	8	->
+LEAF_NODE	120:5	120:5	8	state
+ASSIGN_OP	120:11	120:11	6	|=
+LEAF_NODE	120:11	120:11	7	|=
+RVAL	120:14	120:14	6	LSTATE_INIT_DECODE
+FIELD	120:14	120:14	7	LSTATE_INIT_DECODE
+LEAF_NODE	120:14	120:14	8	LSTATE_INIT_DECODE
+LEAF_NODE	120:32	120:32	4	;
+JUMP_STATEMENT	121:1	121:9	3	return 1 ;
+KEYWORD	121:1	121:1	4	return
+LEAF_NODE	121:1	121:1	5	return
+DESTINATION	121:8	121:8	4	1
+EXPR	121:8	121:8	5	1
+FIELD	121:8	121:8	6	1
+LEAF_NODE	121:8	121:8	7	1
+LEAF_NODE	121:9	121:9	4	;
+LEAF_NODE	122:0	122:0	2	}
+FUNCTION_DEF	127:0	160:0	1	
+RETURN_TYPE	127:0	127:7	2	static int
+LEAF_NODE	127:0	127:0	3	static
+TYPE_NAME	127:7	127:7	3	int
+LEAF_NODE	127:7	127:7	4	int
+FUNCTION_NAME	128:0	128:0	2	LZMAPreDecode
+LEAF_NODE	128:0	128:0	3	LZMAPreDecode
+PARAMETER_LIST	128:13	128:33	2	( TIFF * tif , uint16 s )
+LEAF_NODE	128:13	128:13	3	(
+PARAMETER_DECL	128:14	128:20	3	TIFF * tif
+TYPE	128:14	128:18	4	TIFF *
+TYPE_NAME	128:14	128:14	5	TIFF
+LEAF_NODE	128:14	128:14	6	TIFF
+POINTER	128:18	128:18	5	*
+LEAF_NODE	128:18	128:18	6	*
+NAME	128:20	128:20	4	tif
+LEAF_NODE	128:20	128:20	5	tif
+LEAF_NODE	128:23	128:23	3	,
+PARAMETER_DECL	128:25	128:32	3	uint16 s
+TYPE	128:25	128:25	4	uint16
+TYPE_NAME	128:25	128:25	5	uint16
+LEAF_NODE	128:25	128:25	6	uint16
+NAME	128:32	128:32	4	s
+LEAF_NODE	128:32	128:32	5	s
+LEAF_NODE	128:33	128:33	3	)
+LEAF_NODE	129:0	129:0	2	{
+STATEMENTS	130:1	159:1	2	
+LEAF_NODE	130:1	130:1	3	static
+SIMPLE_DECL	130:8	130:45	3	const char [ ] module ; module = "LZMAPreDecode" ;
+VAR_DECL	130:8	130:19	4	const char [ ] module ; module = "LZMAPreDecode"
+TYPE	130:8	130:25	5	const char [ ]
+TYPE_NAME	130:8	130:14	6	const char
+LEAF_NODE	130:8	130:8	7	const
+LEAF_NODE	130:14	130:14	7	char
+TYPE_SUFFIX	130:25	130:26	6	[ ]
+LEAF_NODE	130:25	130:25	7	[
+LEAF_NODE	130:26	130:26	7	]
+NAME	130:19	130:19	5	module
+LEAF_NODE	130:19	130:19	6	module
+LEAF_NODE	0:0	0:0	5	;
+INIT	130:19	130:19	5	module = "LZMAPreDecode"
+ASSIGN	130:19	130:30	6	module = "LZMAPreDecode"
+LVAL	130:19	130:19	7	module
+NAME	130:19	130:19	8	module
+LEAF_NODE	130:19	130:19	9	module
+ASSIGN_OP	130:28	130:28	7	=
+LEAF_NODE	130:28	130:28	8	=
+RVAL	130:30	130:30	7	"LZMAPreDecode"
+FIELD	130:30	130:30	8	"LZMAPreDecode"
+LEAF_NODE	130:30	130:30	9	"LZMAPreDecode"
+LEAF_NODE	130:45	130:45	4	;
+SIMPLE_DECL	131:1	131:34	3	LZMAState * sp ; sp = DecoderState ( tif ) ;
+VAR_DECL	131:1	131:12	4	LZMAState * sp ; sp = DecoderState ( tif )
+TYPE	131:1	131:10	5	LZMAState *
+TYPE_NAME	131:1	131:1	6	LZMAState
+LEAF_NODE	131:1	131:1	7	LZMAState
+POINTER	131:10	131:10	6	*
+LEAF_NODE	131:10	131:10	7	*
+NAME	131:12	131:12	5	sp
+LEAF_NODE	131:12	131:12	6	sp
+LEAF_NODE	0:0	0:0	5	;
+INIT	131:12	131:12	5	sp = DecoderState ( tif )
+ASSIGN	131:12	131:17	6	sp = DecoderState ( tif )
+LVAL	131:12	131:12	7	sp
+NAME	131:12	131:12	8	sp
+LEAF_NODE	131:12	131:12	9	sp
+ASSIGN_OP	131:15	131:15	7	=
+LEAF_NODE	131:15	131:15	8	=
+RVAL	131:17	131:17	7	DecoderState ( tif )
+FUNCTION_CALL	131:17	131:33	8	DecoderState ( tif )
+CALLEE	131:17	131:17	9	DecoderState
+LEAF_NODE	131:17	131:17	10	DecoderState
+LEAF_NODE	131:29	131:29	9	(
+ARGUMENT	131:30	131:30	9	tif
+FIELD	131:30	131:30	10	tif
+LEAF_NODE	131:30	131:30	11	tif
+LEAF_NODE	131:33	131:33	9	)
+LEAF_NODE	131:34	131:34	4	;
+SIMPLE_DECL	132:1	132:13	3	lzma_ret ret ;
+VAR_DECL	132:1	132:10	4	lzma_ret ret
+TYPE	132:1	132:1	5	lzma_ret
+TYPE_NAME	132:1	132:1	6	lzma_ret
+LEAF_NODE	132:1	132:1	7	lzma_ret
+NAME	132:10	132:10	5	ret
+LEAF_NODE	132:10	132:10	6	ret
+LEAF_NODE	132:13	132:13	4	;
+EXPR_STATEMENT	134:1	134:9	3	( void ) s ;
+EXPR	134:1	134:8	4	( void ) s
+LEAF_NODE	134:1	134:1	5	(
+TYPE_NAME	134:2	134:2	5	void
+LEAF_NODE	134:2	134:2	6	void
+LEAF_NODE	134:6	134:6	5	)
+FIELD	134:8	134:8	5	s
+LEAF_NODE	134:8	134:8	6	s
+LEAF_NODE	134:9	134:9	4	;
+EXPR_STATEMENT	135:1	135:19	3	assert ( sp != NULL ) ;
+EXPR	135:1	135:1	4	assert ( sp != NULL )
+FUNCTION_CALL	135:1	135:18	5	assert ( sp != NULL )
+CALLEE	135:1	135:1	6	assert
+LEAF_NODE	135:1	135:1	7	assert
+LEAF_NODE	135:7	135:7	6	(
+ARGUMENT	135:8	135:14	6	sp != NULL
+FIELD	135:8	135:8	7	sp
+LEAF_NODE	135:8	135:8	8	sp
+EQ_OPERATOR	135:11	135:11	7	!=
+LEAF_NODE	135:11	135:11	8	!=
+FIELD	135:14	135:14	7	NULL
+LEAF_NODE	135:14	135:14	8	NULL
+LEAF_NODE	135:18	135:18	6	)
+LEAF_NODE	135:19	135:19	4	;
+SELECTION	137:1	138:12	3	
+KEYWORD	137:1	137:1	4	if
+LEAF_NODE	137:1	137:1	5	if
+LEAF_NODE	137:3	137:3	4	(
+CONDITION	137:5	137:5	4	( sp -> state & LSTATE_INIT_DECODE ) == 0
+EXPR	137:5	137:41	5	( sp -> state & LSTATE_INIT_DECODE ) == 0
+LEAF_NODE	137:5	137:5	6	(
+FIELD	137:6	137:10	6	sp -> state
+LEAF_NODE	137:6	137:6	7	sp
+LEAF_NODE	137:8	137:8	7	->
+LEAF_NODE	137:10	137:10	7	state
+LEAF_NODE	137:16	137:16	6	&
+FIELD	137:18	137:18	6	LSTATE_INIT_DECODE
+LEAF_NODE	137:18	137:18	7	LSTATE_INIT_DECODE
+LEAF_NODE	137:36	137:36	6	)
+EQ_OPERATOR	137:38	137:38	6	==
+LEAF_NODE	137:38	137:38	7	==
+FIELD	137:41	137:41	6	0
+LEAF_NODE	137:41	137:41	7	0
+LEAF_NODE	137:43	137:43	4	)
+STATEMENTS	138:12	138:12	4	
+EXPR_STATEMENT	138:12	138:37	5	tif -> tif_setupdecode ( tif ) ;
+EXPR	138:12	138:12	6	tif -> tif_setupdecode ( tif )
+FUNCTION_CALL	138:12	138:36	7	tif -> tif_setupdecode ( tif )
+CALLEE	138:12	138:17	8	tif -> tif_setupdecode
+LEAF_NODE	138:12	138:12	9	tif
+LEAF_NODE	138:15	138:15	9	->
+LEAF_NODE	138:17	138:17	9	tif_setupdecode
+LEAF_NODE	138:32	138:32	8	(
+ARGUMENT	138:33	138:33	8	tif
+FIELD	138:33	138:33	9	tif
+LEAF_NODE	138:33	138:33	10	tif
+LEAF_NODE	138:36	138:36	8	)
+LEAF_NODE	138:37	138:37	6	;
+EXPR_STATEMENT	140:1	140:38	3	sp -> stream . next_in = tif -> tif_rawdata ;
+EXPR	140:1	140:1	4	sp -> stream . next_in = tif -> tif_rawdata
+ASSIGN	140:1	140:22	5	sp -> stream . next_in = tif -> tif_rawdata
+LVAL	140:1	140:1	6	sp -> stream . next_in
+FIELD	140:1	140:12	7	sp -> stream . next_in
+LEAF_NODE	140:1	140:1	8	sp
+LEAF_NODE	140:3	140:3	8	->
+LEAF_NODE	140:5	140:5	8	stream
+LEAF_NODE	140:11	140:11	8	.
+LEAF_NODE	140:12	140:12	8	next_in
+ASSIGN_OP	140:20	140:20	6	=
+LEAF_NODE	140:20	140:20	7	=
+RVAL	140:22	140:22	6	tif -> tif_rawdata
+FIELD	140:22	140:27	7	tif -> tif_rawdata
+LEAF_NODE	140:22	140:22	8	tif
+LEAF_NODE	140:25	140:25	8	->
+LEAF_NODE	140:27	140:27	8	tif_rawdata
+LEAF_NODE	140:38	140:38	4	;
+EXPR_STATEMENT	141:1	141:46	3	sp -> stream . avail_in = ( size_t ) tif -> tif_rawcc ;
+EXPR	141:1	141:1	4	sp -> stream . avail_in = ( size_t ) tif -> tif_rawcc
+ASSIGN	141:1	141:23	5	sp -> stream . avail_in = ( size_t ) tif -> tif_rawcc
+LVAL	141:1	141:1	6	sp -> stream . avail_in
+FIELD	141:1	141:12	7	sp -> stream . avail_in
+LEAF_NODE	141:1	141:1	8	sp
+LEAF_NODE	141:3	141:3	8	->
+LEAF_NODE	141:5	141:5	8	stream
+LEAF_NODE	141:11	141:11	8	.
+LEAF_NODE	141:12	141:12	8	avail_in
+ASSIGN_OP	141:21	141:21	6	=
+LEAF_NODE	141:21	141:21	7	=
+RVAL	141:23	141:32	6	( size_t ) tif -> tif_rawcc
+LEAF_NODE	141:23	141:23	7	(
+TYPE_NAME	141:24	141:24	7	size_t
+LEAF_NODE	141:24	141:24	8	size_t
+LEAF_NODE	141:30	141:30	7	)
+FIELD	141:32	141:37	7	tif -> tif_rawcc
+LEAF_NODE	141:32	141:32	8	tif
+LEAF_NODE	141:35	141:35	8	->
+LEAF_NODE	141:37	141:37	8	tif_rawcc
+LEAF_NODE	141:46	141:46	4	;
+SELECTION	142:1	142:54	3	
+KEYWORD	142:1	142:1	4	if
+LEAF_NODE	142:1	142:1	5	if
+LEAF_NODE	142:4	142:4	4	(
+CONDITION	142:5	142:5	4	( tmsize_t ) sp -> stream . avail_in != tif -> tif_rawcc
+EXPR	142:5	142:38	5	( tmsize_t ) sp -> stream . avail_in != tif -> tif_rawcc
+LEAF_NODE	142:5	142:5	6	(
+TYPE_NAME	142:6	142:6	6	tmsize_t
+LEAF_NODE	142:6	142:6	7	tmsize_t
+LEAF_NODE	142:14	142:14	6	)
+FIELD	142:15	142:26	6	sp -> stream . avail_in
+LEAF_NODE	142:15	142:15	7	sp
+LEAF_NODE	142:17	142:17	7	->
+LEAF_NODE	142:19	142:19	7	stream
+LEAF_NODE	142:25	142:25	7	.
+LEAF_NODE	142:26	142:26	7	avail_in
+EQ_OPERATOR	142:35	142:35	6	!=
+LEAF_NODE	142:35	142:35	7	!=
+FIELD	142:38	142:43	6	tif -> tif_rawcc
+LEAF_NODE	142:38	142:38	7	tif
+LEAF_NODE	142:41	142:41	7	->
+LEAF_NODE	142:43	142:43	7	tif_rawcc
+LEAF_NODE	142:52	142:52	4	)
+STATEMENTS	142:54	146:1	4	
+LEAF_NODE	142:54	142:54	5	{
+STATEMENTS	143:2	145:2	5	
+EXPR_STATEMENT	143:2	144:53	6	TIFFErrorExt ( tif -> tif_clientdata , module , "Liblzma cannot deal with buffers this size" ) ;
+EXPR	143:2	143:2	7	TIFFErrorExt ( tif -> tif_clientdata , module , "Liblzma cannot deal with buffers this size" )
+FUNCTION_CALL	143:2	144:52	8	TIFFErrorExt ( tif -> tif_clientdata , module , "Liblzma cannot deal with buffers this size" )
+CALLEE	143:2	143:2	9	TIFFErrorExt
+LEAF_NODE	143:2	143:2	10	TIFFErrorExt
+LEAF_NODE	143:14	143:14	9	(
+ARGUMENT	143:15	143:15	9	tif -> tif_clientdata
+FIELD	143:15	143:20	10	tif -> tif_clientdata
+LEAF_NODE	143:15	143:15	11	tif
+LEAF_NODE	143:18	143:18	11	->
+LEAF_NODE	143:20	143:20	11	tif_clientdata
+LEAF_NODE	143:34	143:34	9	,
+ARGUMENT	143:36	143:36	9	module
+FIELD	143:36	143:36	10	module
+LEAF_NODE	143:36	143:36	11	module
+LEAF_NODE	143:42	143:42	9	,
+ARGUMENT	144:8	144:8	9	"Liblzma cannot deal with buffers this size"
+FIELD	144:8	144:8	10	"Liblzma cannot deal with buffers this size"
+LEAF_NODE	144:8	144:8	11	"Liblzma cannot deal with buffers this size"
+LEAF_NODE	144:52	144:52	9	)
+LEAF_NODE	144:53	144:53	7	;
+JUMP_STATEMENT	145:2	145:10	6	return 0 ;
+KEYWORD	145:2	145:2	7	return
+LEAF_NODE	145:2	145:2	8	return
+DESTINATION	145:9	145:9	7	0
+EXPR	145:9	145:9	8	0
+FIELD	145:9	145:9	9	0
+LEAF_NODE	145:9	145:9	10	0
+LEAF_NODE	145:10	145:10	7	;
+LEAF_NODE	146:1	146:1	5	}
+EXPR_STATEMENT	152:1	152:56	3	ret = lzma_stream_decoder ( & sp -> stream , ( uint64_t ) - 1 , 0 ) ;
+EXPR	152:1	152:1	4	ret = lzma_stream_decoder ( & sp -> stream , ( uint64_t ) - 1 , 0 )
+ASSIGN	152:1	152:7	5	ret = lzma_stream_decoder ( & sp -> stream , ( uint64_t ) - 1 , 0 )
+LVAL	152:1	152:1	6	ret
+FIELD	152:1	152:1	7	ret
+LEAF_NODE	152:1	152:1	8	ret
+ASSIGN_OP	152:5	152:5	6	=
+LEAF_NODE	152:5	152:5	7	=
+RVAL	152:7	152:7	6	lzma_stream_decoder ( & sp -> stream , ( uint64_t ) - 1 , 0 )
+FUNCTION_CALL	152:7	152:55	7	lzma_stream_decoder ( & sp -> stream , ( uint64_t ) - 1 , 0 )
+CALLEE	152:7	152:7	8	lzma_stream_decoder
+LEAF_NODE	152:7	152:7	9	lzma_stream_decoder
+LEAF_NODE	152:26	152:26	8	(
+ARGUMENT	152:27	152:27	8	& sp -> stream
+UNARY_EXPR	152:27	152:28	9	& sp -> stream
+UNARY_OPERATOR	152:27	152:27	10	&
+LEAF_NODE	152:27	152:27	11	&
+FIELD	152:28	152:32	10	sp -> stream
+LEAF_NODE	152:28	152:28	11	sp
+LEAF_NODE	152:30	152:30	11	->
+LEAF_NODE	152:32	152:32	11	stream
+LEAF_NODE	152:38	152:38	8	,
+ARGUMENT	152:40	152:50	8	( uint64_t ) - 1
+LEAF_NODE	152:40	152:40	9	(
+TYPE_NAME	152:41	152:41	9	uint64_t
+LEAF_NODE	152:41	152:41	10	uint64_t
+LEAF_NODE	152:49	152:49	9	)
+UNARY_EXPR	152:50	152:51	9	- 1
+UNARY_OPERATOR	152:50	152:50	10	-
+LEAF_NODE	152:50	152:50	11	-
+FIELD	152:51	152:51	10	1
+LEAF_NODE	152:51	152:51	11	1
+LEAF_NODE	152:52	152:52	8	,
+ARGUMENT	152:54	152:54	8	0
+FIELD	152:54	152:54	9	0
+LEAF_NODE	152:54	152:54	10	0
+LEAF_NODE	152:55	152:55	8	)
+LEAF_NODE	152:56	152:56	4	;
+SELECTION	153:1	153:21	3	
+KEYWORD	153:1	153:1	4	if
+LEAF_NODE	153:1	153:1	5	if
+LEAF_NODE	153:4	153:4	4	(
+CONDITION	153:5	153:5	4	ret != LZMA_OK
+EXPR	153:5	153:12	5	ret != LZMA_OK
+FIELD	153:5	153:5	6	ret
+LEAF_NODE	153:5	153:5	7	ret
+EQ_OPERATOR	153:9	153:9	6	!=
+LEAF_NODE	153:9	153:9	7	!=
+FIELD	153:12	153:12	6	LZMA_OK
+LEAF_NODE	153:12	153:12	7	LZMA_OK
+LEAF_NODE	153:19	153:19	4	)
+STATEMENTS	153:21	158:1	4	
+LEAF_NODE	153:21	153:21	5	{
+STATEMENTS	154:2	157:2	5	
+EXPR_STATEMENT	154:2	156:26	6	TIFFErrorExt ( tif -> tif_clientdata , module , "Error initializing the stream decoder, %s" , LZMAStrerror ( ret ) ) ;
+EXPR	154:2	154:2	7	TIFFErrorExt ( tif -> tif_clientdata , module , "Error initializing the stream decoder, %s" , LZMAStrerror ( ret ) )
+FUNCTION_CALL	154:2	156:25	8	TIFFErrorExt ( tif -> tif_clientdata , module , "Error initializing the stream decoder, %s" , LZMAStrerror ( ret ) )
+CALLEE	154:2	154:2	9	TIFFErrorExt
+LEAF_NODE	154:2	154:2	10	TIFFErrorExt
+LEAF_NODE	154:14	154:14	9	(
+ARGUMENT	154:15	154:15	9	tif -> tif_clientdata
+FIELD	154:15	154:20	10	tif -> tif_clientdata
+LEAF_NODE	154:15	154:15	11	tif
+LEAF_NODE	154:18	154:18	11	->
+LEAF_NODE	154:20	154:20	11	tif_clientdata
+LEAF_NODE	154:34	154:34	9	,
+ARGUMENT	154:36	154:36	9	module
+FIELD	154:36	154:36	10	module
+LEAF_NODE	154:36	154:36	11	module
+LEAF_NODE	154:42	154:42	9	,
+ARGUMENT	155:8	155:8	9	"Error initializing the stream decoder, %s"
+FIELD	155:8	155:8	10	"Error initializing the stream decoder, %s"
+LEAF_NODE	155:8	155:8	11	"Error initializing the stream decoder, %s"
+LEAF_NODE	155:51	155:51	9	,
+ARGUMENT	156:8	156:8	9	LZMAStrerror ( ret )
+FUNCTION_CALL	156:8	156:24	10	LZMAStrerror ( ret )
+CALLEE	156:8	156:8	11	LZMAStrerror
+LEAF_NODE	156:8	156:8	12	LZMAStrerror
+LEAF_NODE	156:20	156:20	11	(
+ARGUMENT	156:21	156:21	11	ret
+FIELD	156:21	156:21	12	ret
+LEAF_NODE	156:21	156:21	13	ret
+LEAF_NODE	156:24	156:24	11	)
+LEAF_NODE	156:25	156:25	9	)
+LEAF_NODE	156:26	156:26	7	;
+JUMP_STATEMENT	157:2	157:10	6	return 0 ;
+KEYWORD	157:2	157:2	7	return
+LEAF_NODE	157:2	157:2	8	return
+DESTINATION	157:9	157:9	7	0
+EXPR	157:9	157:9	8	0
+FIELD	157:9	157:9	9	0
+LEAF_NODE	157:9	157:9	10	0
+LEAF_NODE	157:10	157:10	7	;
+LEAF_NODE	158:1	158:1	5	}
+JUMP_STATEMENT	159:1	159:9	3	return 1 ;
+KEYWORD	159:1	159:1	4	return
+LEAF_NODE	159:1	159:1	5	return
+DESTINATION	159:8	159:8	4	1
+EXPR	159:8	159:8	5	1
+FIELD	159:8	159:8	6	1
+LEAF_NODE	159:8	159:8	7	1
+LEAF_NODE	159:9	159:9	4	;
+LEAF_NODE	160:0	160:0	2	}
+FUNCTION_DEF	162:0	225:0	1	
+RETURN_TYPE	162:0	162:7	2	static int
+LEAF_NODE	162:0	162:0	3	static
+TYPE_NAME	162:7	162:7	3	int
+LEAF_NODE	162:7	162:7	4	int
+FUNCTION_NAME	163:0	163:0	2	LZMADecode
+LEAF_NODE	163:0	163:0	3	LZMADecode
+PARAMETER_LIST	163:10	163:55	2	( TIFF * tif , uint8 * op , tmsize_t occ , uint16 s )
+LEAF_NODE	163:10	163:10	3	(
+PARAMETER_DECL	163:11	163:17	3	TIFF * tif
+TYPE	163:11	163:15	4	TIFF *
+TYPE_NAME	163:11	163:11	5	TIFF
+LEAF_NODE	163:11	163:11	6	TIFF
+POINTER	163:15	163:15	5	*
+LEAF_NODE	163:15	163:15	6	*
+NAME	163:17	163:17	4	tif
+LEAF_NODE	163:17	163:17	5	tif
+LEAF_NODE	163:20	163:20	3	,
+PARAMETER_DECL	163:22	163:29	3	uint8 * op
+TYPE	163:22	163:27	4	uint8 *
+TYPE_NAME	163:22	163:22	5	uint8
+LEAF_NODE	163:22	163:22	6	uint8
+POINTER	163:27	163:27	5	*
+LEAF_NODE	163:27	163:27	6	*
+NAME	163:29	163:29	4	op
+LEAF_NODE	163:29	163:29	5	op
+LEAF_NODE	163:31	163:31	3	,
+PARAMETER_DECL	163:33	163:42	3	tmsize_t occ
+TYPE	163:33	163:33	4	tmsize_t
+TYPE_NAME	163:33	163:33	5	tmsize_t
+LEAF_NODE	163:33	163:33	6	tmsize_t
+NAME	163:42	163:42	4	occ
+LEAF_NODE	163:42	163:42	5	occ
+LEAF_NODE	163:45	163:45	3	,
+PARAMETER_DECL	163:47	163:54	3	uint16 s
+TYPE	163:47	163:47	4	uint16
+TYPE_NAME	163:47	163:47	5	uint16
+LEAF_NODE	163:47	163:47	6	uint16
+NAME	163:54	163:54	4	s
+LEAF_NODE	163:54	163:54	5	s
+LEAF_NODE	163:55	163:55	3	)
+LEAF_NODE	164:0	164:0	2	{
+STATEMENTS	165:1	224:1	2	
+LEAF_NODE	165:1	165:1	3	static
+SIMPLE_DECL	165:8	165:42	3	const char [ ] module ; module = "LZMADecode" ;
+VAR_DECL	165:8	165:19	4	const char [ ] module ; module = "LZMADecode"
+TYPE	165:8	165:25	5	const char [ ]
+TYPE_NAME	165:8	165:14	6	const char
+LEAF_NODE	165:8	165:8	7	const
+LEAF_NODE	165:14	165:14	7	char
+TYPE_SUFFIX	165:25	165:26	6	[ ]
+LEAF_NODE	165:25	165:25	7	[
+LEAF_NODE	165:26	165:26	7	]
+NAME	165:19	165:19	5	module
+LEAF_NODE	165:19	165:19	6	module
+LEAF_NODE	0:0	0:0	5	;
+INIT	165:19	165:19	5	module = "LZMADecode"
+ASSIGN	165:19	165:30	6	module = "LZMADecode"
+LVAL	165:19	165:19	7	module
+NAME	165:19	165:19	8	module
+LEAF_NODE	165:19	165:19	9	module
+ASSIGN_OP	165:28	165:28	7	=
+LEAF_NODE	165:28	165:28	8	=
+RVAL	165:30	165:30	7	"LZMADecode"
+FIELD	165:30	165:30	8	"LZMADecode"
+LEAF_NODE	165:30	165:30	9	"LZMADecode"
+LEAF_NODE	165:42	165:42	4	;
+SIMPLE_DECL	166:1	166:34	3	LZMAState * sp ; sp = DecoderState ( tif ) ;
+VAR_DECL	166:1	166:12	4	LZMAState * sp ; sp = DecoderState ( tif )
+TYPE	166:1	166:10	5	LZMAState *
+TYPE_NAME	166:1	166:1	6	LZMAState
+LEAF_NODE	166:1	166:1	7	LZMAState
+POINTER	166:10	166:10	6	*
+LEAF_NODE	166:10	166:10	7	*
+NAME	166:12	166:12	5	sp
+LEAF_NODE	166:12	166:12	6	sp
+LEAF_NODE	0:0	0:0	5	;
+INIT	166:12	166:12	5	sp = DecoderState ( tif )
+ASSIGN	166:12	166:17	6	sp = DecoderState ( tif )
+LVAL	166:12	166:12	7	sp
+NAME	166:12	166:12	8	sp
+LEAF_NODE	166:12	166:12	9	sp
+ASSIGN_OP	166:15	166:15	7	=
+LEAF_NODE	166:15	166:15	8	=
+RVAL	166:17	166:17	7	DecoderState ( tif )
+FUNCTION_CALL	166:17	166:33	8	DecoderState ( tif )
+CALLEE	166:17	166:17	9	DecoderState
+LEAF_NODE	166:17	166:17	10	DecoderState
+LEAF_NODE	166:29	166:29	9	(
+ARGUMENT	166:30	166:30	9	tif
+FIELD	166:30	166:30	10	tif
+LEAF_NODE	166:30	166:30	11	tif
+LEAF_NODE	166:33	166:33	9	)
+LEAF_NODE	166:34	166:34	4	;
+EXPR_STATEMENT	168:1	168:9	3	( void ) s ;
+EXPR	168:1	168:8	4	( void ) s
+LEAF_NODE	168:1	168:1	5	(
+TYPE_NAME	168:2	168:2	5	void
+LEAF_NODE	168:2	168:2	6	void
+LEAF_NODE	168:6	168:6	5	)
+FIELD	168:8	168:8	5	s
+LEAF_NODE	168:8	168:8	6	s
+LEAF_NODE	168:9	168:9	4	;
+EXPR_STATEMENT	169:1	169:19	3	assert ( sp != NULL ) ;
+EXPR	169:1	169:1	4	assert ( sp != NULL )
+FUNCTION_CALL	169:1	169:18	5	assert ( sp != NULL )
+CALLEE	169:1	169:1	6	assert
+LEAF_NODE	169:1	169:1	7	assert
+LEAF_NODE	169:7	169:7	6	(
+ARGUMENT	169:8	169:14	6	sp != NULL
+FIELD	169:8	169:8	7	sp
+LEAF_NODE	169:8	169:8	8	sp
+EQ_OPERATOR	169:11	169:11	7	!=
+LEAF_NODE	169:11	169:11	8	!=
+FIELD	169:14	169:14	7	NULL
+LEAF_NODE	169:14	169:14	8	NULL
+LEAF_NODE	169:18	169:18	6	)
+LEAF_NODE	169:19	169:19	4	;
+EXPR_STATEMENT	170:1	170:40	3	assert ( sp -> state == LSTATE_INIT_DECODE ) ;
+EXPR	170:1	170:1	4	assert ( sp -> state == LSTATE_INIT_DECODE )
+FUNCTION_CALL	170:1	170:39	5	assert ( sp -> state == LSTATE_INIT_DECODE )
+CALLEE	170:1	170:1	6	assert
+LEAF_NODE	170:1	170:1	7	assert
+LEAF_NODE	170:7	170:7	6	(
+ARGUMENT	170:8	170:21	6	sp -> state == LSTATE_INIT_DECODE
+FIELD	170:8	170:12	7	sp -> state
+LEAF_NODE	170:8	170:8	8	sp
+LEAF_NODE	170:10	170:10	8	->
+LEAF_NODE	170:12	170:12	8	state
+EQ_OPERATOR	170:18	170:18	7	==
+LEAF_NODE	170:18	170:18	8	==
+FIELD	170:21	170:21	7	LSTATE_INIT_DECODE
+LEAF_NODE	170:21	170:21	8	LSTATE_INIT_DECODE
+LEAF_NODE	170:39	170:39	6	)
+LEAF_NODE	170:40	170:40	4	;
+EXPR_STATEMENT	172:8	172:43	3	sp -> stream . next_in = tif -> tif_rawcp ;
+EXPR	172:8	172:8	4	sp -> stream . next_in = tif -> tif_rawcp
+ASSIGN	172:8	172:29	5	sp -> stream . next_in = tif -> tif_rawcp
+LVAL	172:8	172:8	6	sp -> stream . next_in
+FIELD	172:8	172:19	7	sp -> stream . next_in
+LEAF_NODE	172:8	172:8	8	sp
+LEAF_NODE	172:10	172:10	8	->
+LEAF_NODE	172:12	172:12	8	stream
+LEAF_NODE	172:18	172:18	8	.
+LEAF_NODE	172:19	172:19	8	next_in
+ASSIGN_OP	172:27	172:27	6	=
+LEAF_NODE	172:27	172:27	7	=
+RVAL	172:29	172:29	6	tif -> tif_rawcp
+FIELD	172:29	172:34	7	tif -> tif_rawcp
+LEAF_NODE	172:29	172:29	8	tif
+LEAF_NODE	172:32	172:32	8	->
+LEAF_NODE	172:34	172:34	8	tif_rawcp
+LEAF_NODE	172:43	172:43	4	;
+EXPR_STATEMENT	173:8	173:53	3	sp -> stream . avail_in = ( size_t ) tif -> tif_rawcc ;
+EXPR	173:8	173:8	4	sp -> stream . avail_in = ( size_t ) tif -> tif_rawcc
+ASSIGN	173:8	173:30	5	sp -> stream . avail_in = ( size_t ) tif -> tif_rawcc
+LVAL	173:8	173:8	6	sp -> stream . avail_in
+FIELD	173:8	173:19	7	sp -> stream . avail_in
+LEAF_NODE	173:8	173:8	8	sp
+LEAF_NODE	173:10	173:10	8	->
+LEAF_NODE	173:12	173:12	8	stream
+LEAF_NODE	173:18	173:18	8	.
+LEAF_NODE	173:19	173:19	8	avail_in
+ASSIGN_OP	173:28	173:28	6	=
+LEAF_NODE	173:28	173:28	7	=
+RVAL	173:30	173:39	6	( size_t ) tif -> tif_rawcc
+LEAF_NODE	173:30	173:30	7	(
+TYPE_NAME	173:31	173:31	7	size_t
+LEAF_NODE	173:31	173:31	8	size_t
+LEAF_NODE	173:37	173:37	7	)
+FIELD	173:39	173:44	7	tif -> tif_rawcc
+LEAF_NODE	173:39	173:39	8	tif
+LEAF_NODE	173:42	173:42	8	->
+LEAF_NODE	173:44	173:44	8	tif_rawcc
+LEAF_NODE	173:53	173:53	4	;
+EXPR_STATEMENT	175:1	175:25	3	sp -> stream . next_out = op ;
+EXPR	175:1	175:1	4	sp -> stream . next_out = op
+ASSIGN	175:1	175:23	5	sp -> stream . next_out = op
+LVAL	175:1	175:1	6	sp -> stream . next_out
+FIELD	175:1	175:12	7	sp -> stream . next_out
+LEAF_NODE	175:1	175:1	8	sp
+LEAF_NODE	175:3	175:3	8	->
+LEAF_NODE	175:5	175:5	8	stream
+LEAF_NODE	175:11	175:11	8	.
+LEAF_NODE	175:12	175:12	8	next_out
+ASSIGN_OP	175:21	175:21	6	=
+LEAF_NODE	175:21	175:21	7	=
+RVAL	175:23	175:23	6	op
+FIELD	175:23	175:23	7	op
+LEAF_NODE	175:23	175:23	8	op
+LEAF_NODE	175:25	175:25	4	;
+EXPR_STATEMENT	176:1	176:36	3	sp -> stream . avail_out = ( size_t ) occ ;
+EXPR	176:1	176:1	4	sp -> stream . avail_out = ( size_t ) occ
+ASSIGN	176:1	176:24	5	sp -> stream . avail_out = ( size_t ) occ
+LVAL	176:1	176:1	6	sp -> stream . avail_out
+FIELD	176:1	176:12	7	sp -> stream . avail_out
+LEAF_NODE	176:1	176:1	8	sp
+LEAF_NODE	176:3	176:3	8	->
+LEAF_NODE	176:5	176:5	8	stream
+LEAF_NODE	176:11	176:11	8	.
+LEAF_NODE	176:12	176:12	8	avail_out
+ASSIGN_OP	176:22	176:22	6	=
+LEAF_NODE	176:22	176:22	7	=
+RVAL	176:24	176:33	6	( size_t ) occ
+LEAF_NODE	176:24	176:24	7	(
+TYPE_NAME	176:25	176:25	7	size_t
+LEAF_NODE	176:25	176:25	8	size_t
+LEAF_NODE	176:31	176:31	7	)
+FIELD	176:33	176:33	7	occ
+LEAF_NODE	176:33	176:33	8	occ
+LEAF_NODE	176:36	176:36	4	;
+SELECTION	177:1	177:44	3	
+KEYWORD	177:1	177:1	4	if
+LEAF_NODE	177:1	177:1	5	if
+LEAF_NODE	177:4	177:4	4	(
+CONDITION	177:5	177:5	4	( tmsize_t ) sp -> stream . avail_out != occ
+EXPR	177:5	177:39	5	( tmsize_t ) sp -> stream . avail_out != occ
+LEAF_NODE	177:5	177:5	6	(
+TYPE_NAME	177:6	177:6	6	tmsize_t
+LEAF_NODE	177:6	177:6	7	tmsize_t
+LEAF_NODE	177:14	177:14	6	)
+FIELD	177:15	177:26	6	sp -> stream . avail_out
+LEAF_NODE	177:15	177:15	7	sp
+LEAF_NODE	177:17	177:17	7	->
+LEAF_NODE	177:19	177:19	7	stream
+LEAF_NODE	177:25	177:25	7	.
+LEAF_NODE	177:26	177:26	7	avail_out
+EQ_OPERATOR	177:36	177:36	6	!=
+LEAF_NODE	177:36	177:36	7	!=
+FIELD	177:39	177:39	6	occ
+LEAF_NODE	177:39	177:39	7	occ
+LEAF_NODE	177:42	177:42	4	)
+STATEMENTS	177:44	181:1	4	
+LEAF_NODE	177:44	177:44	5	{
+STATEMENTS	178:2	180:2	5	
+EXPR_STATEMENT	178:2	179:53	6	TIFFErrorExt ( tif -> tif_clientdata , module , "Liblzma cannot deal with buffers this size" ) ;
+EXPR	178:2	178:2	7	TIFFErrorExt ( tif -> tif_clientdata , module , "Liblzma cannot deal with buffers this size" )
+FUNCTION_CALL	178:2	179:52	8	TIFFErrorExt ( tif -> tif_clientdata , module , "Liblzma cannot deal with buffers this size" )
+CALLEE	178:2	178:2	9	TIFFErrorExt
+LEAF_NODE	178:2	178:2	10	TIFFErrorExt
+LEAF_NODE	178:14	178:14	9	(
+ARGUMENT	178:15	178:15	9	tif -> tif_clientdata
+FIELD	178:15	178:20	10	tif -> tif_clientdata
+LEAF_NODE	178:15	178:15	11	tif
+LEAF_NODE	178:18	178:18	11	->
+LEAF_NODE	178:20	178:20	11	tif_clientdata
+LEAF_NODE	178:34	178:34	9	,
+ARGUMENT	178:36	178:36	9	module
+FIELD	178:36	178:36	10	module
+LEAF_NODE	178:36	178:36	11	module
+LEAF_NODE	178:42	178:42	9	,
+ARGUMENT	179:8	179:8	9	"Liblzma cannot deal with buffers this size"
+FIELD	179:8	179:8	10	"Liblzma cannot deal with buffers this size"
+LEAF_NODE	179:8	179:8	11	"Liblzma cannot deal with buffers this size"
+LEAF_NODE	179:52	179:52	9	)
+LEAF_NODE	179:53	179:53	7	;
+JUMP_STATEMENT	180:2	180:10	6	return 0 ;
+KEYWORD	180:2	180:2	7	return
+LEAF_NODE	180:2	180:2	8	return
+DESTINATION	180:9	180:9	7	0
+EXPR	180:9	180:9	8	0
+FIELD	180:9	180:9	9	0
+LEAF_NODE	180:9	180:9	10	0
+LEAF_NODE	180:10	180:10	7	;
+LEAF_NODE	181:1	181:1	5	}
+ITERATION	183:1	183:4	3	
+KEYWORD	183:1	183:1	4	do
+LEAF_NODE	183:1	183:1	5	do
+LEAF_NODE	213:9	213:9	4	(
+CONDITION	213:10	213:10	4	sp -> stream . avail_out > 0
+EXPR	213:10	213:33	5	sp -> stream . avail_out > 0
+FIELD	213:10	213:21	6	sp -> stream . avail_out
+LEAF_NODE	213:10	213:10	7	sp
+LEAF_NODE	213:12	213:12	7	->
+LEAF_NODE	213:14	213:14	7	stream
+LEAF_NODE	213:20	213:20	7	.
+LEAF_NODE	213:21	213:21	7	avail_out
+REL_OPERATOR	213:31	213:31	6	>
+LEAF_NODE	213:31	213:31	7	>
+FIELD	213:33	213:33	6	0
+LEAF_NODE	213:33	213:33	7	0
+LEAF_NODE	213:34	213:34	4	)
+STATEMENTS	183:4	213:1	4	
+LEAF_NODE	183:4	183:4	5	{
+STATEMENTS	188:2	207:2	5	
+SIMPLE_DECL	188:2	188:45	6	const uint8_t * next_in ; next_in = sp -> stream . next_in ;
+VAR_DECL	188:2	188:17	7	const uint8_t * next_in ; next_in = sp -> stream . next_in
+TYPE	188:2	188:16	8	const uint8_t *
+TYPE_NAME	188:2	188:8	9	const uint8_t
+LEAF_NODE	188:2	188:2	10	const
+LEAF_NODE	188:8	188:8	10	uint8_t
+POINTER	188:16	188:16	9	*
+LEAF_NODE	188:16	188:16	10	*
+NAME	188:17	188:17	8	next_in
+LEAF_NODE	188:17	188:17	9	next_in
+LEAF_NODE	0:0	0:0	8	;
+INIT	188:17	188:17	8	next_in = sp -> stream . next_in
+ASSIGN	188:17	188:27	9	next_in = sp -> stream . next_in
+LVAL	188:17	188:17	10	next_in
+NAME	188:17	188:17	11	next_in
+LEAF_NODE	188:17	188:17	12	next_in
+ASSIGN_OP	188:25	188:25	10	=
+LEAF_NODE	188:25	188:25	11	=
+RVAL	188:27	188:27	10	sp -> stream . next_in
+FIELD	188:27	188:38	11	sp -> stream . next_in
+LEAF_NODE	188:27	188:27	12	sp
+LEAF_NODE	188:29	188:29	12	->
+LEAF_NODE	188:31	188:31	12	stream
+LEAF_NODE	188:37	188:37	12	.
+LEAF_NODE	188:38	188:38	12	next_in
+LEAF_NODE	188:45	188:45	7	;
+SIMPLE_DECL	189:2	189:39	6	size_t avail_in ; avail_in = sp -> stream . avail_in ;
+VAR_DECL	189:2	189:9	7	size_t avail_in ; avail_in = sp -> stream . avail_in
+TYPE	189:2	189:2	8	size_t
+TYPE_NAME	189:2	189:2	9	size_t
+LEAF_NODE	189:2	189:2	10	size_t
+NAME	189:9	189:9	8	avail_in
+LEAF_NODE	189:9	189:9	9	avail_in
+LEAF_NODE	0:0	0:0	8	;
+INIT	189:9	189:9	8	avail_in = sp -> stream . avail_in
+ASSIGN	189:9	189:20	9	avail_in = sp -> stream . avail_in
+LVAL	189:9	189:9	10	avail_in
+NAME	189:9	189:9	11	avail_in
+LEAF_NODE	189:9	189:9	12	avail_in
+ASSIGN_OP	189:18	189:18	10	=
+LEAF_NODE	189:18	189:18	11	=
+RVAL	189:20	189:20	10	sp -> stream . avail_in
+FIELD	189:20	189:31	11	sp -> stream . avail_in
+LEAF_NODE	189:20	189:20	12	sp
+LEAF_NODE	189:22	189:22	12	->
+LEAF_NODE	189:24	189:24	12	stream
+LEAF_NODE	189:30	189:30	12	.
+LEAF_NODE	189:31	189:31	12	avail_in
+LEAF_NODE	189:39	189:39	7	;
+SIMPLE_DECL	191:2	191:49	6	lzma_ret ret ; ret = lzma_code ( & sp -> stream , LZMA_RUN ) ;
+VAR_DECL	191:2	191:11	7	lzma_ret ret ; ret = lzma_code ( & sp -> stream , LZMA_RUN )
+TYPE	191:2	191:2	8	lzma_ret
+TYPE_NAME	191:2	191:2	9	lzma_ret
+LEAF_NODE	191:2	191:2	10	lzma_ret
+NAME	191:11	191:11	8	ret
+LEAF_NODE	191:11	191:11	9	ret
+LEAF_NODE	0:0	0:0	8	;
+INIT	191:11	191:11	8	ret = lzma_code ( & sp -> stream , LZMA_RUN )
+ASSIGN	191:11	191:17	9	ret = lzma_code ( & sp -> stream , LZMA_RUN )
+LVAL	191:11	191:11	10	ret
+NAME	191:11	191:11	11	ret
+LEAF_NODE	191:11	191:11	12	ret
+ASSIGN_OP	191:15	191:15	10	=
+LEAF_NODE	191:15	191:15	11	=
+RVAL	191:17	191:17	10	lzma_code ( & sp -> stream , LZMA_RUN )
+FUNCTION_CALL	191:17	191:48	11	lzma_code ( & sp -> stream , LZMA_RUN )
+CALLEE	191:17	191:17	12	lzma_code
+LEAF_NODE	191:17	191:17	13	lzma_code
+LEAF_NODE	191:26	191:26	12	(
+ARGUMENT	191:27	191:27	12	& sp -> stream
+UNARY_EXPR	191:27	191:28	13	& sp -> stream
+UNARY_OPERATOR	191:27	191:27	14	&
+LEAF_NODE	191:27	191:27	15	&
+FIELD	191:28	191:32	14	sp -> stream
+LEAF_NODE	191:28	191:28	15	sp
+LEAF_NODE	191:30	191:30	15	->
+LEAF_NODE	191:32	191:32	15	stream
+LEAF_NODE	191:38	191:38	12	,
+ARGUMENT	191:40	191:40	12	LZMA_RUN
+FIELD	191:40	191:40	13	LZMA_RUN
+LEAF_NODE	191:40	191:40	14	LZMA_RUN
+LEAF_NODE	191:48	191:48	12	)
+LEAF_NODE	191:49	191:49	7	;
+SELECTION	192:2	193:3	6	
+KEYWORD	192:2	192:2	7	if
+LEAF_NODE	192:2	192:2	8	if
+LEAF_NODE	192:5	192:5	7	(
+CONDITION	192:6	192:6	7	ret == LZMA_STREAM_END
+EXPR	192:6	192:13	8	ret == LZMA_STREAM_END
+FIELD	192:6	192:6	9	ret
+LEAF_NODE	192:6	192:6	10	ret
+EQ_OPERATOR	192:10	192:10	9	==
+LEAF_NODE	192:10	192:10	10	==
+FIELD	192:13	192:13	9	LZMA_STREAM_END
+LEAF_NODE	192:13	192:13	10	LZMA_STREAM_END
+LEAF_NODE	192:28	192:28	7	)
+STATEMENTS	193:3	193:3	7	
+JUMP_STATEMENT	193:3	193:8	8	break DESTINATION ;
+KEYWORD	193:3	193:3	9	break
+LEAF_NODE	193:3	193:3	10	break
+LEAF_NODE	0:0	0:0	9	DESTINATION
+LEAF_NODE	193:8	193:8	9	;
+SELECTION	194:2	194:34	6	
+KEYWORD	194:2	194:2	7	if
+LEAF_NODE	194:2	194:2	8	if
+LEAF_NODE	194:5	194:5	7	(
+CONDITION	194:6	194:6	7	ret == LZMA_MEMLIMIT_ERROR
+EXPR	194:6	194:13	8	ret == LZMA_MEMLIMIT_ERROR
+FIELD	194:6	194:6	9	ret
+LEAF_NODE	194:6	194:6	10	ret
+EQ_OPERATOR	194:10	194:10	9	==
+LEAF_NODE	194:10	194:10	10	==
+FIELD	194:13	194:13	9	LZMA_MEMLIMIT_ERROR
+LEAF_NODE	194:13	194:13	10	LZMA_MEMLIMIT_ERROR
+LEAF_NODE	194:32	194:32	7	)
+STATEMENTS	194:34	206:2	7	
+LEAF_NODE	194:34	194:34	8	{
+STATEMENTS	195:3	205:3	8	
+SIMPLE_DECL	195:3	196:38	9	lzma_ret r ; r = lzma_stream_decoder ( & sp -> stream , lzma_memusage ( & sp -> stream ) , 0 ) ;
+VAR_DECL	195:3	195:12	10	lzma_ret r ; r = lzma_stream_decoder ( & sp -> stream , lzma_memusage ( & sp -> stream ) , 0 )
+TYPE	195:3	195:3	11	lzma_ret
+TYPE_NAME	195:3	195:3	12	lzma_ret
+LEAF_NODE	195:3	195:3	13	lzma_ret
+NAME	195:12	195:12	11	r
+LEAF_NODE	195:12	195:12	12	r
+LEAF_NODE	0:0	0:0	11	;
+INIT	195:12	195:12	11	r = lzma_stream_decoder ( & sp -> stream , lzma_memusage ( & sp -> stream ) , 0 )
+ASSIGN	195:12	195:16	12	r = lzma_stream_decoder ( & sp -> stream , lzma_memusage ( & sp -> stream ) , 0 )
+LVAL	195:12	195:12	13	r
+NAME	195:12	195:12	14	r
+LEAF_NODE	195:12	195:12	15	r
+ASSIGN_OP	195:14	195:14	13	=
+LEAF_NODE	195:14	195:14	14	=
+RVAL	195:16	195:16	13	lzma_stream_decoder ( & sp -> stream , lzma_memusage ( & sp -> stream ) , 0 )
+FUNCTION_CALL	195:16	196:37	14	lzma_stream_decoder ( & sp -> stream , lzma_memusage ( & sp -> stream ) , 0 )
+CALLEE	195:16	195:16	15	lzma_stream_decoder
+LEAF_NODE	195:16	195:16	16	lzma_stream_decoder
+LEAF_NODE	195:35	195:35	15	(
+ARGUMENT	195:36	195:36	15	& sp -> stream
+UNARY_EXPR	195:36	195:37	16	& sp -> stream
+UNARY_OPERATOR	195:36	195:36	17	&
+LEAF_NODE	195:36	195:36	18	&
+FIELD	195:37	195:41	17	sp -> stream
+LEAF_NODE	195:37	195:37	18	sp
+LEAF_NODE	195:39	195:39	18	->
+LEAF_NODE	195:41	195:41	18	stream
+LEAF_NODE	195:47	195:47	15	,
+ARGUMENT	196:8	196:8	15	lzma_memusage ( & sp -> stream )
+FUNCTION_CALL	196:8	196:33	16	lzma_memusage ( & sp -> stream )
+CALLEE	196:8	196:8	17	lzma_memusage
+LEAF_NODE	196:8	196:8	18	lzma_memusage
+LEAF_NODE	196:21	196:21	17	(
+ARGUMENT	196:22	196:22	17	& sp -> stream
+UNARY_EXPR	196:22	196:23	18	& sp -> stream
+UNARY_OPERATOR	196:22	196:22	19	&
+LEAF_NODE	196:22	196:22	20	&
+FIELD	196:23	196:27	19	sp -> stream
+LEAF_NODE	196:23	196:23	20	sp
+LEAF_NODE	196:25	196:25	20	->
+LEAF_NODE	196:27	196:27	20	stream
+LEAF_NODE	196:33	196:33	17	)
+LEAF_NODE	196:34	196:34	15	,
+ARGUMENT	196:36	196:36	15	0
+FIELD	196:36	196:36	16	0
+LEAF_NODE	196:36	196:36	17	0
+LEAF_NODE	196:37	196:37	15	)
+LEAF_NODE	196:38	196:38	10	;
+SELECTION	197:3	197:21	9	
+KEYWORD	197:3	197:3	10	if
+LEAF_NODE	197:3	197:3	11	if
+LEAF_NODE	197:6	197:6	10	(
+CONDITION	197:7	197:7	10	r != LZMA_OK
+EXPR	197:7	197:12	11	r != LZMA_OK
+FIELD	197:7	197:7	12	r
+LEAF_NODE	197:7	197:7	13	r
+EQ_OPERATOR	197:9	197:9	12	!=
+LEAF_NODE	197:9	197:9	13	!=
+FIELD	197:12	197:12	12	LZMA_OK
+LEAF_NODE	197:12	197:12	13	LZMA_OK
+LEAF_NODE	197:19	197:19	10	)
+STATEMENTS	197:21	202:3	10	
+LEAF_NODE	197:21	197:21	11	{
+STATEMENTS	198:4	201:4	11	
+EXPR_STATEMENT	198:4	200:26	12	TIFFErrorExt ( tif -> tif_clientdata , module , "Error initializing the stream decoder, %s" , LZMAStrerror ( r ) ) ;
+EXPR	198:4	198:4	13	TIFFErrorExt ( tif -> tif_clientdata , module , "Error initializing the stream decoder, %s" , LZMAStrerror ( r ) )
+FUNCTION_CALL	198:4	200:25	14	TIFFErrorExt ( tif -> tif_clientdata , module , "Error initializing the stream decoder, %s" , LZMAStrerror ( r ) )
+CALLEE	198:4	198:4	15	TIFFErrorExt
+LEAF_NODE	198:4	198:4	16	TIFFErrorExt
+LEAF_NODE	198:16	198:16	15	(
+ARGUMENT	198:17	198:17	15	tif -> tif_clientdata
+FIELD	198:17	198:22	16	tif -> tif_clientdata
+LEAF_NODE	198:17	198:17	17	tif
+LEAF_NODE	198:20	198:20	17	->
+LEAF_NODE	198:22	198:22	17	tif_clientdata
+LEAF_NODE	198:36	198:36	15	,
+ARGUMENT	198:38	198:38	15	module
+FIELD	198:38	198:38	16	module
+LEAF_NODE	198:38	198:38	17	module
+LEAF_NODE	198:44	198:44	15	,
+ARGUMENT	199:10	199:10	15	"Error initializing the stream decoder, %s"
+FIELD	199:10	199:10	16	"Error initializing the stream decoder, %s"
+LEAF_NODE	199:10	199:10	17	"Error initializing the stream decoder, %s"
+LEAF_NODE	199:53	199:53	15	,
+ARGUMENT	200:10	200:10	15	LZMAStrerror ( r )
+FUNCTION_CALL	200:10	200:24	16	LZMAStrerror ( r )
+CALLEE	200:10	200:10	17	LZMAStrerror
+LEAF_NODE	200:10	200:10	18	LZMAStrerror
+LEAF_NODE	200:22	200:22	17	(
+ARGUMENT	200:23	200:23	17	r
+FIELD	200:23	200:23	18	r
+LEAF_NODE	200:23	200:23	19	r
+LEAF_NODE	200:24	200:24	17	)
+LEAF_NODE	200:25	200:25	15	)
+LEAF_NODE	200:26	200:26	13	;
+JUMP_STATEMENT	201:4	201:9	12	break DESTINATION ;
+KEYWORD	201:4	201:4	13	break
+LEAF_NODE	201:4	201:4	14	break
+LEAF_NODE	0:0	0:0	13	DESTINATION
+LEAF_NODE	201:9	201:9	13	;
+LEAF_NODE	202:3	202:3	11	}
+EXPR_STATEMENT	203:3	203:31	9	sp -> stream . next_in = next_in ;
+EXPR	203:3	203:3	10	sp -> stream . next_in = next_in
+ASSIGN	203:3	203:24	11	sp -> stream . next_in = next_in
+LVAL	203:3	203:3	12	sp -> stream . next_in
+FIELD	203:3	203:14	13	sp -> stream . next_in
+LEAF_NODE	203:3	203:3	14	sp
+LEAF_NODE	203:5	203:5	14	->
+LEAF_NODE	203:7	203:7	14	stream
+LEAF_NODE	203:13	203:13	14	.
+LEAF_NODE	203:14	203:14	14	next_in
+ASSIGN_OP	203:22	203:22	12	=
+LEAF_NODE	203:22	203:22	13	=
+RVAL	203:24	203:24	12	next_in
+FIELD	203:24	203:24	13	next_in
+LEAF_NODE	203:24	203:24	14	next_in
+LEAF_NODE	203:31	203:31	10	;
+EXPR_STATEMENT	204:3	204:33	9	sp -> stream . avail_in = avail_in ;
+EXPR	204:3	204:3	10	sp -> stream . avail_in = avail_in
+ASSIGN	204:3	204:25	11	sp -> stream . avail_in = avail_in
+LVAL	204:3	204:3	12	sp -> stream . avail_in
+FIELD	204:3	204:14	13	sp -> stream . avail_in
+LEAF_NODE	204:3	204:3	14	sp
+LEAF_NODE	204:5	204:5	14	->
+LEAF_NODE	204:7	204:7	14	stream
+LEAF_NODE	204:13	204:13	14	.
+LEAF_NODE	204:14	204:14	14	avail_in
+ASSIGN_OP	204:23	204:23	12	=
+LEAF_NODE	204:23	204:23	13	=
+RVAL	204:25	204:25	12	avail_in
+FIELD	204:25	204:25	13	avail_in
+LEAF_NODE	204:25	204:25	14	avail_in
+LEAF_NODE	204:33	204:33	10	;
+JUMP_STATEMENT	205:3	205:11	9	continue DESTINATION ;
+KEYWORD	205:3	205:3	10	continue
+LEAF_NODE	205:3	205:3	11	continue
+LEAF_NODE	0:0	0:0	10	DESTINATION
+LEAF_NODE	205:11	205:11	10	;
+LEAF_NODE	206:2	206:2	8	}
+SELECTION	207:2	207:22	6	
+KEYWORD	207:2	207:2	7	if
+LEAF_NODE	207:2	207:2	8	if
+LEAF_NODE	207:5	207:5	7	(
+CONDITION	207:6	207:6	7	ret != LZMA_OK
+EXPR	207:6	207:13	8	ret != LZMA_OK
+FIELD	207:6	207:6	9	ret
+LEAF_NODE	207:6	207:6	10	ret
+EQ_OPERATOR	207:10	207:10	9	!=
+LEAF_NODE	207:10	207:10	10	!=
+FIELD	207:13	207:13	9	LZMA_OK
+LEAF_NODE	207:13	207:13	10	LZMA_OK
+LEAF_NODE	207:20	207:20	7	)
+STATEMENTS	207:22	212:2	7	
+LEAF_NODE	207:22	207:22	8	{
+STATEMENTS	208:3	211:3	8	
+EXPR_STATEMENT	208:3	210:55	9	TIFFErrorExt ( tif -> tif_clientdata , module , "Decoding error at scanline %lu, %s" , ( unsigned long ) tif -> tif_row , LZMAStrerror ( ret ) ) ;
+EXPR	208:3	208:3	10	TIFFErrorExt ( tif -> tif_clientdata , module , "Decoding error at scanline %lu, %s" , ( unsigned long ) tif -> tif_row , LZMAStrerror ( ret ) )
+FUNCTION_CALL	208:3	210:54	11	TIFFErrorExt ( tif -> tif_clientdata , module , "Decoding error at scanline %lu, %s" , ( unsigned long ) tif -> tif_row , LZMAStrerror ( ret ) )
+CALLEE	208:3	208:3	12	TIFFErrorExt
+LEAF_NODE	208:3	208:3	13	TIFFErrorExt
+LEAF_NODE	208:15	208:15	12	(
+ARGUMENT	208:16	208:16	12	tif -> tif_clientdata
+FIELD	208:16	208:21	13	tif -> tif_clientdata
+LEAF_NODE	208:16	208:16	14	tif
+LEAF_NODE	208:19	208:19	14	->
+LEAF_NODE	208:21	208:21	14	tif_clientdata
+LEAF_NODE	208:35	208:35	12	,
+ARGUMENT	208:37	208:37	12	module
+FIELD	208:37	208:37	13	module
+LEAF_NODE	208:37	208:37	14	module
+LEAF_NODE	208:43	208:43	12	,
+ARGUMENT	209:7	209:7	12	"Decoding error at scanline %lu, %s"
+FIELD	209:7	209:7	13	"Decoding error at scanline %lu, %s"
+LEAF_NODE	209:7	209:7	14	"Decoding error at scanline %lu, %s"
+LEAF_NODE	209:43	209:43	12	,
+ARGUMENT	210:7	210:23	12	( unsigned long ) tif -> tif_row
+LEAF_NODE	210:7	210:7	13	(
+TYPE_NAME	210:8	210:17	13	unsigned long
+LEAF_NODE	210:8	210:8	14	unsigned
+LEAF_NODE	210:17	210:17	14	long
+LEAF_NODE	210:21	210:21	13	)
+FIELD	210:23	210:28	13	tif -> tif_row
+LEAF_NODE	210:23	210:23	14	tif
+LEAF_NODE	210:26	210:26	14	->
+LEAF_NODE	210:28	210:28	14	tif_row
+LEAF_NODE	210:35	210:35	12	,
+ARGUMENT	210:37	210:37	12	LZMAStrerror ( ret )
+FUNCTION_CALL	210:37	210:53	13	LZMAStrerror ( ret )
+CALLEE	210:37	210:37	14	LZMAStrerror
+LEAF_NODE	210:37	210:37	15	LZMAStrerror
+LEAF_NODE	210:49	210:49	14	(
+ARGUMENT	210:50	210:50	14	ret
+FIELD	210:50	210:50	15	ret
+LEAF_NODE	210:50	210:50	16	ret
+LEAF_NODE	210:53	210:53	14	)
+LEAF_NODE	210:54	210:54	12	)
+LEAF_NODE	210:55	210:55	10	;
+JUMP_STATEMENT	211:3	211:8	9	break DESTINATION ;
+KEYWORD	211:3	211:3	10	break
+LEAF_NODE	211:3	211:3	11	break
+LEAF_NODE	0:0	0:0	10	DESTINATION
+LEAF_NODE	211:8	211:8	10	;
+LEAF_NODE	212:2	212:2	8	}
+LEAF_NODE	213:1	213:1	5	}
+LEAF_NODE	213:35	213:35	3	;
+SELECTION	214:1	214:32	3	
+KEYWORD	214:1	214:1	4	if
+LEAF_NODE	214:1	214:1	5	if
+LEAF_NODE	214:4	214:4	4	(
+CONDITION	214:5	214:5	4	sp -> stream . avail_out != 0
+EXPR	214:5	214:29	5	sp -> stream . avail_out != 0
+FIELD	214:5	214:16	6	sp -> stream . avail_out
+LEAF_NODE	214:5	214:5	7	sp
+LEAF_NODE	214:7	214:7	7	->
+LEAF_NODE	214:9	214:9	7	stream
+LEAF_NODE	214:15	214:15	7	.
+LEAF_NODE	214:16	214:16	7	avail_out
+EQ_OPERATOR	214:26	214:26	6	!=
+LEAF_NODE	214:26	214:26	7	!=
+FIELD	214:29	214:29	6	0
+LEAF_NODE	214:29	214:29	7	0
+LEAF_NODE	214:30	214:30	4	)
+STATEMENTS	214:32	219:1	4	
+LEAF_NODE	214:32	214:32	5	{
+STATEMENTS	215:2	218:2	5	
+EXPR_STATEMENT	215:2	217:73	6	TIFFErrorExt ( tif -> tif_clientdata , module , "Not enough data at scanline %lu (short %lu bytes)" , ( unsigned long ) tif -> tif_row , ( unsigned long ) sp -> stream . avail_out ) ;
+EXPR	215:2	215:2	7	TIFFErrorExt ( tif -> tif_clientdata , module , "Not enough data at scanline %lu (short %lu bytes)" , ( unsigned long ) tif -> tif_row , ( unsigned long ) sp -> stream . avail_out )
+FUNCTION_CALL	215:2	217:72	8	TIFFErrorExt ( tif -> tif_clientdata , module , "Not enough data at scanline %lu (short %lu bytes)" , ( unsigned long ) tif -> tif_row , ( unsigned long ) sp -> stream . avail_out )
+CALLEE	215:2	215:2	9	TIFFErrorExt
+LEAF_NODE	215:2	215:2	10	TIFFErrorExt
+LEAF_NODE	215:14	215:14	9	(
+ARGUMENT	215:15	215:15	9	tif -> tif_clientdata
+FIELD	215:15	215:20	10	tif -> tif_clientdata
+LEAF_NODE	215:15	215:15	11	tif
+LEAF_NODE	215:18	215:18	11	->
+LEAF_NODE	215:20	215:20	11	tif_clientdata
+LEAF_NODE	215:34	215:34	9	,
+ARGUMENT	215:36	215:36	9	module
+FIELD	215:36	215:36	10	module
+LEAF_NODE	215:36	215:36	11	module
+LEAF_NODE	215:42	215:42	9	,
+ARGUMENT	216:6	216:6	9	"Not enough data at scanline %lu (short %lu bytes)"
+FIELD	216:6	216:6	10	"Not enough data at scanline %lu (short %lu bytes)"
+LEAF_NODE	216:6	216:6	11	"Not enough data at scanline %lu (short %lu bytes)"
+LEAF_NODE	216:57	216:57	9	,
+ARGUMENT	217:6	217:22	9	( unsigned long ) tif -> tif_row
+LEAF_NODE	217:6	217:6	10	(
+TYPE_NAME	217:7	217:16	10	unsigned long
+LEAF_NODE	217:7	217:7	11	unsigned
+LEAF_NODE	217:16	217:16	11	long
+LEAF_NODE	217:20	217:20	10	)
+FIELD	217:22	217:27	10	tif -> tif_row
+LEAF_NODE	217:22	217:22	11	tif
+LEAF_NODE	217:25	217:25	11	->
+LEAF_NODE	217:27	217:27	11	tif_row
+LEAF_NODE	217:34	217:34	9	,
+ARGUMENT	217:36	217:52	9	( unsigned long ) sp -> stream . avail_out
+LEAF_NODE	217:36	217:36	10	(
+TYPE_NAME	217:37	217:46	10	unsigned long
+LEAF_NODE	217:37	217:37	11	unsigned
+LEAF_NODE	217:46	217:46	11	long
+LEAF_NODE	217:50	217:50	10	)
+FIELD	217:52	217:63	10	sp -> stream . avail_out
+LEAF_NODE	217:52	217:52	11	sp
+LEAF_NODE	217:54	217:54	11	->
+LEAF_NODE	217:56	217:56	11	stream
+LEAF_NODE	217:62	217:62	11	.
+LEAF_NODE	217:63	217:63	11	avail_out
+LEAF_NODE	217:72	217:72	9	)
+LEAF_NODE	217:73	217:73	7	;
+JUMP_STATEMENT	218:2	218:10	6	return 0 ;
+KEYWORD	218:2	218:2	7	return
+LEAF_NODE	218:2	218:2	8	return
+DESTINATION	218:9	218:9	7	0
+EXPR	218:9	218:9	8	0
+FIELD	218:9	218:9	9	0
+LEAF_NODE	218:9	218:9	10	0
+LEAF_NODE	218:10	218:10	7	;
+LEAF_NODE	219:1	219:1	5	}
+EXPR_STATEMENT	221:8	221:52	3	tif -> tif_rawcp = ( uint8 * ) sp -> stream . next_in ;
+EXPR	221:8	221:8	4	tif -> tif_rawcp = ( uint8 * ) sp -> stream . next_in
+ASSIGN	221:8	221:25	5	tif -> tif_rawcp = ( uint8 * ) sp -> stream . next_in
+LVAL	221:8	221:8	6	tif -> tif_rawcp
+FIELD	221:8	221:13	7	tif -> tif_rawcp
+LEAF_NODE	221:8	221:8	8	tif
+LEAF_NODE	221:11	221:11	8	->
+LEAF_NODE	221:13	221:13	8	tif_rawcp
+ASSIGN_OP	221:23	221:23	6	=
+LEAF_NODE	221:23	221:23	7	=
+RVAL	221:25	221:34	6	( uint8 * ) sp -> stream . next_in
+LEAF_NODE	221:25	221:25	7	(
+TYPE_NAME	221:26	221:26	7	uint8
+LEAF_NODE	221:26	221:26	8	uint8
+LEAF_NODE	221:32	221:32	7	*
+LEAF_NODE	221:33	221:33	7	)
+FIELD	221:34	221:45	7	sp -> stream . next_in
+LEAF_NODE	221:34	221:34	8	sp
+LEAF_NODE	221:36	221:36	8	->
+LEAF_NODE	221:38	221:38	8	stream
+LEAF_NODE	221:44	221:44	8	.
+LEAF_NODE	221:45	221:45	8	next_in
+LEAF_NODE	221:52	221:52	4	;
+EXPR_STATEMENT	222:8	222:44	3	tif -> tif_rawcc = sp -> stream . avail_in ;
+EXPR	222:8	222:8	4	tif -> tif_rawcc = sp -> stream . avail_in
+ASSIGN	222:8	222:25	5	tif -> tif_rawcc = sp -> stream . avail_in
+LVAL	222:8	222:8	6	tif -> tif_rawcc
+FIELD	222:8	222:13	7	tif -> tif_rawcc
+LEAF_NODE	222:8	222:8	8	tif
+LEAF_NODE	222:11	222:11	8	->
+LEAF_NODE	222:13	222:13	8	tif_rawcc
+ASSIGN_OP	222:23	222:23	6	=
+LEAF_NODE	222:23	222:23	7	=
+RVAL	222:25	222:25	6	sp -> stream . avail_in
+FIELD	222:25	222:36	7	sp -> stream . avail_in
+LEAF_NODE	222:25	222:25	8	sp
+LEAF_NODE	222:27	222:27	8	->
+LEAF_NODE	222:29	222:29	8	stream
+LEAF_NODE	222:35	222:35	8	.
+LEAF_NODE	222:36	222:36	8	avail_in
+LEAF_NODE	222:44	222:44	4	;
+JUMP_STATEMENT	224:1	224:9	3	return 1 ;
+KEYWORD	224:1	224:1	4	return
+LEAF_NODE	224:1	224:1	5	return
+DESTINATION	224:8	224:8	4	1
+EXPR	224:8	224:8	5	1
+FIELD	224:8	224:8	6	1
+LEAF_NODE	224:8	224:8	7	1
+LEAF_NODE	224:9	224:9	4	;
+LEAF_NODE	225:0	225:0	2	}
+FUNCTION_DEF	227:0	240:0	1	
+RETURN_TYPE	227:0	227:7	2	static int
+LEAF_NODE	227:0	227:0	3	static
+TYPE_NAME	227:7	227:7	3	int
+LEAF_NODE	227:7	227:7	4	int
+FUNCTION_NAME	228:0	228:0	2	LZMASetupEncode
+LEAF_NODE	228:0	228:0	3	LZMASetupEncode
+PARAMETER_LIST	228:15	228:25	2	( TIFF * tif )
+LEAF_NODE	228:15	228:15	3	(
+PARAMETER_DECL	228:16	228:22	3	TIFF * tif
+TYPE	228:16	228:20	4	TIFF *
+TYPE_NAME	228:16	228:16	5	TIFF
+LEAF_NODE	228:16	228:16	6	TIFF
+POINTER	228:20	228:20	5	*
+LEAF_NODE	228:20	228:20	6	*
+NAME	228:22	228:22	4	tif
+LEAF_NODE	228:22	228:22	5	tif
+LEAF_NODE	228:25	228:25	3	)
+LEAF_NODE	229:0	229:0	2	{
+STATEMENTS	230:1	239:1	2	
+SIMPLE_DECL	230:1	230:34	3	LZMAState * sp ; sp = EncoderState ( tif ) ;
+VAR_DECL	230:1	230:12	4	LZMAState * sp ; sp = EncoderState ( tif )
+TYPE	230:1	230:10	5	LZMAState *
+TYPE_NAME	230:1	230:1	6	LZMAState
+LEAF_NODE	230:1	230:1	7	LZMAState
+POINTER	230:10	230:10	6	*
+LEAF_NODE	230:10	230:10	7	*
+NAME	230:12	230:12	5	sp
+LEAF_NODE	230:12	230:12	6	sp
+LEAF_NODE	0:0	0:0	5	;
+INIT	230:12	230:12	5	sp = EncoderState ( tif )
+ASSIGN	230:12	230:17	6	sp = EncoderState ( tif )
+LVAL	230:12	230:12	7	sp
+NAME	230:12	230:12	8	sp
+LEAF_NODE	230:12	230:12	9	sp
+ASSIGN_OP	230:15	230:15	7	=
+LEAF_NODE	230:15	230:15	8	=
+RVAL	230:17	230:17	7	EncoderState ( tif )
+FUNCTION_CALL	230:17	230:33	8	EncoderState ( tif )
+CALLEE	230:17	230:17	9	EncoderState
+LEAF_NODE	230:17	230:17	10	EncoderState
+LEAF_NODE	230:29	230:29	9	(
+ARGUMENT	230:30	230:30	9	tif
+FIELD	230:30	230:30	10	tif
+LEAF_NODE	230:30	230:30	11	tif
+LEAF_NODE	230:33	230:33	9	)
+LEAF_NODE	230:34	230:34	4	;
+EXPR_STATEMENT	232:1	232:19	3	assert ( sp != NULL ) ;
+EXPR	232:1	232:1	4	assert ( sp != NULL )
+FUNCTION_CALL	232:1	232:18	5	assert ( sp != NULL )
+CALLEE	232:1	232:1	6	assert
+LEAF_NODE	232:1	232:1	7	assert
+LEAF_NODE	232:7	232:7	6	(
+ARGUMENT	232:8	232:14	6	sp != NULL
+FIELD	232:8	232:8	7	sp
+LEAF_NODE	232:8	232:8	8	sp
+EQ_OPERATOR	232:11	232:11	7	!=
+LEAF_NODE	232:11	232:11	8	!=
+FIELD	232:14	232:14	7	NULL
+LEAF_NODE	232:14	232:14	8	NULL
+LEAF_NODE	232:18	232:18	6	)
+LEAF_NODE	232:19	232:19	4	;
+SELECTION	233:1	233:37	3	
+KEYWORD	233:1	233:1	4	if
+LEAF_NODE	233:1	233:1	5	if
+LEAF_NODE	233:4	233:4	4	(
+CONDITION	233:5	233:5	4	sp -> state & LSTATE_INIT_DECODE
+EXPR	233:5	233:17	5	sp -> state & LSTATE_INIT_DECODE
+FIELD	233:5	233:9	6	sp -> state
+LEAF_NODE	233:5	233:5	7	sp
+LEAF_NODE	233:7	233:7	7	->
+LEAF_NODE	233:9	233:9	7	state
+LEAF_NODE	233:15	233:15	6	&
+FIELD	233:17	233:17	6	LSTATE_INIT_DECODE
+LEAF_NODE	233:17	233:17	7	LSTATE_INIT_DECODE
+LEAF_NODE	233:35	233:35	4	)
+STATEMENTS	233:37	236:1	4	
+LEAF_NODE	233:37	233:37	5	{
+STATEMENTS	234:2	235:2	5	
+EXPR_STATEMENT	234:2	234:23	6	lzma_end ( & sp -> stream ) ;
+EXPR	234:2	234:2	7	lzma_end ( & sp -> stream )
+FUNCTION_CALL	234:2	234:22	8	lzma_end ( & sp -> stream )
+CALLEE	234:2	234:2	9	lzma_end
+LEAF_NODE	234:2	234:2	10	lzma_end
+LEAF_NODE	234:10	234:10	9	(
+ARGUMENT	234:11	234:11	9	& sp -> stream
+UNARY_EXPR	234:11	234:12	10	& sp -> stream
+UNARY_OPERATOR	234:11	234:11	11	&
+LEAF_NODE	234:11	234:11	12	&
+FIELD	234:12	234:16	11	sp -> stream
+LEAF_NODE	234:12	234:12	12	sp
+LEAF_NODE	234:14	234:14	12	->
+LEAF_NODE	234:16	234:16	12	stream
+LEAF_NODE	234:22	234:22	9	)
+LEAF_NODE	234:23	234:23	7	;
+EXPR_STATEMENT	235:2	235:15	6	sp -> state = 0 ;
+EXPR	235:2	235:2	7	sp -> state = 0
+ASSIGN	235:2	235:14	8	sp -> state = 0
+LVAL	235:2	235:2	9	sp -> state
+FIELD	235:2	235:6	10	sp -> state
+LEAF_NODE	235:2	235:2	11	sp
+LEAF_NODE	235:4	235:4	11	->
+LEAF_NODE	235:6	235:6	11	state
+ASSIGN_OP	235:12	235:12	9	=
+LEAF_NODE	235:12	235:12	10	=
+RVAL	235:14	235:14	9	0
+FIELD	235:14	235:14	10	0
+LEAF_NODE	235:14	235:14	11	0
+LEAF_NODE	235:15	235:15	7	;
+LEAF_NODE	236:1	236:1	5	}
+EXPR_STATEMENT	238:1	238:32	3	sp -> state |= LSTATE_INIT_ENCODE ;
+EXPR	238:1	238:1	4	sp -> state |= LSTATE_INIT_ENCODE
+ASSIGN	238:1	238:14	5	sp -> state |= LSTATE_INIT_ENCODE
+LVAL	238:1	238:1	6	sp -> state
+FIELD	238:1	238:5	7	sp -> state
+LEAF_NODE	238:1	238:1	8	sp
+LEAF_NODE	238:3	238:3	8	->
+LEAF_NODE	238:5	238:5	8	state
+ASSIGN_OP	238:11	238:11	6	|=
+LEAF_NODE	238:11	238:11	7	|=
+RVAL	238:14	238:14	6	LSTATE_INIT_ENCODE
+FIELD	238:14	238:14	7	LSTATE_INIT_ENCODE
+LEAF_NODE	238:14	238:14	8	LSTATE_INIT_ENCODE
+LEAF_NODE	238:32	238:32	4	;
+JUMP_STATEMENT	239:1	239:9	3	return 1 ;
+KEYWORD	239:1	239:1	4	return
+LEAF_NODE	239:1	239:1	5	return
+DESTINATION	239:8	239:8	4	1
+EXPR	239:8	239:8	5	1
+FIELD	239:8	239:8	6	1
+LEAF_NODE	239:8	239:8	7	1
+LEAF_NODE	239:9	239:9	4	;
+LEAF_NODE	240:0	240:0	2	}
+FUNCTION_DEF	245:0	271:0	1	
+RETURN_TYPE	245:0	245:7	2	static int
+LEAF_NODE	245:0	245:0	3	static
+TYPE_NAME	245:7	245:7	3	int
+LEAF_NODE	245:7	245:7	4	int
+FUNCTION_NAME	246:0	246:0	2	LZMAPreEncode
+LEAF_NODE	246:0	246:0	3	LZMAPreEncode
+PARAMETER_LIST	246:13	246:33	2	( TIFF * tif , uint16 s )
+LEAF_NODE	246:13	246:13	3	(
+PARAMETER_DECL	246:14	246:20	3	TIFF * tif
+TYPE	246:14	246:18	4	TIFF *
+TYPE_NAME	246:14	246:14	5	TIFF
+LEAF_NODE	246:14	246:14	6	TIFF
+POINTER	246:18	246:18	5	*
+LEAF_NODE	246:18	246:18	6	*
+NAME	246:20	246:20	4	tif
+LEAF_NODE	246:20	246:20	5	tif
+LEAF_NODE	246:23	246:23	3	,
+PARAMETER_DECL	246:25	246:32	3	uint16 s
+TYPE	246:25	246:25	4	uint16
+TYPE_NAME	246:25	246:25	5	uint16
+LEAF_NODE	246:25	246:25	6	uint16
+NAME	246:32	246:32	4	s
+LEAF_NODE	246:32	246:32	5	s
+LEAF_NODE	246:33	246:33	3	)
+LEAF_NODE	247:0	247:0	2	{
+STATEMENTS	248:1	270:1	2	
+LEAF_NODE	248:1	248:1	3	static
+SIMPLE_DECL	248:8	248:45	3	const char [ ] module ; module = "LZMAPreEncode" ;
+VAR_DECL	248:8	248:19	4	const char [ ] module ; module = "LZMAPreEncode"
+TYPE	248:8	248:25	5	const char [ ]
+TYPE_NAME	248:8	248:14	6	const char
+LEAF_NODE	248:8	248:8	7	const
+LEAF_NODE	248:14	248:14	7	char
+TYPE_SUFFIX	248:25	248:26	6	[ ]
+LEAF_NODE	248:25	248:25	7	[
+LEAF_NODE	248:26	248:26	7	]
+NAME	248:19	248:19	5	module
+LEAF_NODE	248:19	248:19	6	module
+LEAF_NODE	0:0	0:0	5	;
+INIT	248:19	248:19	5	module = "LZMAPreEncode"
+ASSIGN	248:19	248:30	6	module = "LZMAPreEncode"
+LVAL	248:19	248:19	7	module
+NAME	248:19	248:19	8	module
+LEAF_NODE	248:19	248:19	9	module
+ASSIGN_OP	248:28	248:28	7	=
+LEAF_NODE	248:28	248:28	8	=
+RVAL	248:30	248:30	7	"LZMAPreEncode"
+FIELD	248:30	248:30	8	"LZMAPreEncode"
+LEAF_NODE	248:30	248:30	9	"LZMAPreEncode"
+LEAF_NODE	248:45	248:45	4	;
+SIMPLE_DECL	249:1	249:34	3	LZMAState * sp ; sp = EncoderState ( tif ) ;
+VAR_DECL	249:1	249:12	4	LZMAState * sp ; sp = EncoderState ( tif )
+TYPE	249:1	249:11	5	LZMAState *
+TYPE_NAME	249:1	249:1	6	LZMAState
+LEAF_NODE	249:1	249:1	7	LZMAState
+POINTER	249:11	249:11	6	*
+LEAF_NODE	249:11	249:11	7	*
+NAME	249:12	249:12	5	sp
+LEAF_NODE	249:12	249:12	6	sp
+LEAF_NODE	0:0	0:0	5	;
+INIT	249:12	249:12	5	sp = EncoderState ( tif )
+ASSIGN	249:12	249:17	6	sp = EncoderState ( tif )
+LVAL	249:12	249:12	7	sp
+NAME	249:12	249:12	8	sp
+LEAF_NODE	249:12	249:12	9	sp
+ASSIGN_OP	249:15	249:15	7	=
+LEAF_NODE	249:15	249:15	8	=
+RVAL	249:17	249:17	7	EncoderState ( tif )
+FUNCTION_CALL	249:17	249:33	8	EncoderState ( tif )
+CALLEE	249:17	249:17	9	EncoderState
+LEAF_NODE	249:17	249:17	10	EncoderState
+LEAF_NODE	249:29	249:29	9	(
+ARGUMENT	249:30	249:30	9	tif
+FIELD	249:30	249:30	10	tif
+LEAF_NODE	249:30	249:30	11	tif
+LEAF_NODE	249:33	249:33	9	)
+LEAF_NODE	249:34	249:34	4	;
+SIMPLE_DECL	250:1	250:13	3	lzma_ret ret ;
+VAR_DECL	250:1	250:10	4	lzma_ret ret
+TYPE	250:1	250:1	5	lzma_ret
+TYPE_NAME	250:1	250:1	6	lzma_ret
+LEAF_NODE	250:1	250:1	7	lzma_ret
+NAME	250:10	250:10	5	ret
+LEAF_NODE	250:10	250:10	6	ret
+LEAF_NODE	250:13	250:13	4	;
+EXPR_STATEMENT	252:1	252:9	3	( void ) s ;
+EXPR	252:1	252:8	4	( void ) s
+LEAF_NODE	252:1	252:1	5	(
+TYPE_NAME	252:2	252:2	5	void
+LEAF_NODE	252:2	252:2	6	void
+LEAF_NODE	252:6	252:6	5	)
+FIELD	252:8	252:8	5	s
+LEAF_NODE	252:8	252:8	6	s
+LEAF_NODE	252:9	252:9	4	;
+EXPR_STATEMENT	253:1	253:19	3	assert ( sp != NULL ) ;
+EXPR	253:1	253:1	4	assert ( sp != NULL )
+FUNCTION_CALL	253:1	253:18	5	assert ( sp != NULL )
+CALLEE	253:1	253:1	6	assert
+LEAF_NODE	253:1	253:1	7	assert
+LEAF_NODE	253:7	253:7	6	(
+ARGUMENT	253:8	253:14	6	sp != NULL
+FIELD	253:8	253:8	7	sp
+LEAF_NODE	253:8	253:8	8	sp
+EQ_OPERATOR	253:11	253:11	7	!=
+LEAF_NODE	253:11	253:11	8	!=
+FIELD	253:14	253:14	7	NULL
+LEAF_NODE	253:14	253:14	8	NULL
+LEAF_NODE	253:18	253:18	6	)
+LEAF_NODE	253:19	253:19	4	;
+SELECTION	254:1	255:12	3	
+KEYWORD	254:1	254:1	4	if
+LEAF_NODE	254:1	254:1	5	if
+LEAF_NODE	254:3	254:3	4	(
+CONDITION	254:5	254:5	4	sp -> state != LSTATE_INIT_ENCODE
+EXPR	254:5	254:18	5	sp -> state != LSTATE_INIT_ENCODE
+FIELD	254:5	254:9	6	sp -> state
+LEAF_NODE	254:5	254:5	7	sp
+LEAF_NODE	254:7	254:7	7	->
+LEAF_NODE	254:9	254:9	7	state
+EQ_OPERATOR	254:15	254:15	6	!=
+LEAF_NODE	254:15	254:15	7	!=
+FIELD	254:18	254:18	6	LSTATE_INIT_ENCODE
+LEAF_NODE	254:18	254:18	7	LSTATE_INIT_ENCODE
+LEAF_NODE	254:37	254:37	4	)
+STATEMENTS	255:12	255:12	4	
+EXPR_STATEMENT	255:12	255:37	5	tif -> tif_setupencode ( tif ) ;
+EXPR	255:12	255:12	6	tif -> tif_setupencode ( tif )
+FUNCTION_CALL	255:12	255:36	7	tif -> tif_setupencode ( tif )
+CALLEE	255:12	255:17	8	tif -> tif_setupencode
+LEAF_NODE	255:12	255:12	9	tif
+LEAF_NODE	255:15	255:15	9	->
+LEAF_NODE	255:17	255:17	9	tif_setupencode
+LEAF_NODE	255:32	255:32	8	(
+ARGUMENT	255:33	255:33	8	tif
+FIELD	255:33	255:33	9	tif
+LEAF_NODE	255:33	255:33	10	tif
+LEAF_NODE	255:36	255:36	8	)
+LEAF_NODE	255:37	255:37	6	;
+EXPR_STATEMENT	257:1	257:39	3	sp -> stream . next_out = tif -> tif_rawdata ;
+EXPR	257:1	257:1	4	sp -> stream . next_out = tif -> tif_rawdata
+ASSIGN	257:1	257:23	5	sp -> stream . next_out = tif -> tif_rawdata
+LVAL	257:1	257:1	6	sp -> stream . next_out
+FIELD	257:1	257:12	7	sp -> stream . next_out
+LEAF_NODE	257:1	257:1	8	sp
+LEAF_NODE	257:3	257:3	8	->
+LEAF_NODE	257:5	257:5	8	stream
+LEAF_NODE	257:11	257:11	8	.
+LEAF_NODE	257:12	257:12	8	next_out
+ASSIGN_OP	257:21	257:21	6	=
+LEAF_NODE	257:21	257:21	7	=
+RVAL	257:23	257:23	6	tif -> tif_rawdata
+FIELD	257:23	257:28	7	tif -> tif_rawdata
+LEAF_NODE	257:23	257:23	8	tif
+LEAF_NODE	257:26	257:26	8	->
+LEAF_NODE	257:28	257:28	8	tif_rawdata
+LEAF_NODE	257:39	257:39	4	;
+EXPR_STATEMENT	258:1	258:52	3	sp -> stream . avail_out = ( size_t ) tif -> tif_rawdatasize ;
+EXPR	258:1	258:1	4	sp -> stream . avail_out = ( size_t ) tif -> tif_rawdatasize
+ASSIGN	258:1	258:24	5	sp -> stream . avail_out = ( size_t ) tif -> tif_rawdatasize
+LVAL	258:1	258:1	6	sp -> stream . avail_out
+FIELD	258:1	258:12	7	sp -> stream . avail_out
+LEAF_NODE	258:1	258:1	8	sp
+LEAF_NODE	258:3	258:3	8	->
+LEAF_NODE	258:5	258:5	8	stream
+LEAF_NODE	258:11	258:11	8	.
+LEAF_NODE	258:12	258:12	8	avail_out
+ASSIGN_OP	258:22	258:22	6	=
+LEAF_NODE	258:22	258:22	7	=
+RVAL	258:24	258:32	6	( size_t ) tif -> tif_rawdatasize
+LEAF_NODE	258:24	258:24	7	(
+TYPE_NAME	258:25	258:25	7	size_t
+LEAF_NODE	258:25	258:25	8	size_t
+LEAF_NODE	258:31	258:31	7	)
+FIELD	258:32	258:37	7	tif -> tif_rawdatasize
+LEAF_NODE	258:32	258:32	8	tif
+LEAF_NODE	258:35	258:35	8	->
+LEAF_NODE	258:37	258:37	8	tif_rawdatasize
+LEAF_NODE	258:52	258:52	4	;
+SELECTION	259:1	259:61	3	
+KEYWORD	259:1	259:1	4	if
+LEAF_NODE	259:1	259:1	5	if
+LEAF_NODE	259:4	259:4	4	(
+CONDITION	259:5	259:5	4	( tmsize_t ) sp -> stream . avail_out != tif -> tif_rawdatasize
+EXPR	259:5	259:39	5	( tmsize_t ) sp -> stream . avail_out != tif -> tif_rawdatasize
+LEAF_NODE	259:5	259:5	6	(
+TYPE_NAME	259:6	259:6	6	tmsize_t
+LEAF_NODE	259:6	259:6	7	tmsize_t
+LEAF_NODE	259:14	259:14	6	)
+FIELD	259:15	259:26	6	sp -> stream . avail_out
+LEAF_NODE	259:15	259:15	7	sp
+LEAF_NODE	259:17	259:17	7	->
+LEAF_NODE	259:19	259:19	7	stream
+LEAF_NODE	259:25	259:25	7	.
+LEAF_NODE	259:26	259:26	7	avail_out
+EQ_OPERATOR	259:36	259:36	6	!=
+LEAF_NODE	259:36	259:36	7	!=
+FIELD	259:39	259:44	6	tif -> tif_rawdatasize
+LEAF_NODE	259:39	259:39	7	tif
+LEAF_NODE	259:42	259:42	7	->
+LEAF_NODE	259:44	259:44	7	tif_rawdatasize
+LEAF_NODE	259:59	259:59	4	)
+STATEMENTS	259:61	263:1	4	
+LEAF_NODE	259:61	259:61	5	{
+STATEMENTS	260:2	262:2	5	
+EXPR_STATEMENT	260:2	261:53	6	TIFFErrorExt ( tif -> tif_clientdata , module , "Liblzma cannot deal with buffers this size" ) ;
+EXPR	260:2	260:2	7	TIFFErrorExt ( tif -> tif_clientdata , module , "Liblzma cannot deal with buffers this size" )
+FUNCTION_CALL	260:2	261:52	8	TIFFErrorExt ( tif -> tif_clientdata , module , "Liblzma cannot deal with buffers this size" )
+CALLEE	260:2	260:2	9	TIFFErrorExt
+LEAF_NODE	260:2	260:2	10	TIFFErrorExt
+LEAF_NODE	260:14	260:14	9	(
+ARGUMENT	260:15	260:15	9	tif -> tif_clientdata
+FIELD	260:15	260:20	10	tif -> tif_clientdata
+LEAF_NODE	260:15	260:15	11	tif
+LEAF_NODE	260:18	260:18	11	->
+LEAF_NODE	260:20	260:20	11	tif_clientdata
+LEAF_NODE	260:34	260:34	9	,
+ARGUMENT	260:36	260:36	9	module
+FIELD	260:36	260:36	10	module
+LEAF_NODE	260:36	260:36	11	module
+LEAF_NODE	260:42	260:42	9	,
+ARGUMENT	261:8	261:8	9	"Liblzma cannot deal with buffers this size"
+FIELD	261:8	261:8	10	"Liblzma cannot deal with buffers this size"
+LEAF_NODE	261:8	261:8	11	"Liblzma cannot deal with buffers this size"
+LEAF_NODE	261:52	261:52	9	)
+LEAF_NODE	261:53	261:53	7	;
+JUMP_STATEMENT	262:2	262:10	6	return 0 ;
+KEYWORD	262:2	262:2	7	return
+LEAF_NODE	262:2	262:2	8	return
+DESTINATION	262:9	262:9	7	0
+EXPR	262:9	262:9	8	0
+FIELD	262:9	262:9	9	0
+LEAF_NODE	262:9	262:9	10	0
+LEAF_NODE	262:10	262:10	7	;
+LEAF_NODE	263:1	263:1	5	}
+EXPR_STATEMENT	264:1	264:63	3	ret = lzma_stream_encoder ( & sp -> stream , sp -> filters , sp -> check ) ;
+EXPR	264:1	264:1	4	ret = lzma_stream_encoder ( & sp -> stream , sp -> filters , sp -> check )
+ASSIGN	264:1	264:7	5	ret = lzma_stream_encoder ( & sp -> stream , sp -> filters , sp -> check )
+LVAL	264:1	264:1	6	ret
+FIELD	264:1	264:1	7	ret
+LEAF_NODE	264:1	264:1	8	ret
+ASSIGN_OP	264:5	264:5	6	=
+LEAF_NODE	264:5	264:5	7	=
+RVAL	264:7	264:7	6	lzma_stream_encoder ( & sp -> stream , sp -> filters , sp -> check )
+FUNCTION_CALL	264:7	264:62	7	lzma_stream_encoder ( & sp -> stream , sp -> filters , sp -> check )
+CALLEE	264:7	264:7	8	lzma_stream_encoder
+LEAF_NODE	264:7	264:7	9	lzma_stream_encoder
+LEAF_NODE	264:26	264:26	8	(
+ARGUMENT	264:27	264:27	8	& sp -> stream
+UNARY_EXPR	264:27	264:28	9	& sp -> stream
+UNARY_OPERATOR	264:27	264:27	10	&
+LEAF_NODE	264:27	264:27	11	&
+FIELD	264:28	264:32	10	sp -> stream
+LEAF_NODE	264:28	264:28	11	sp
+LEAF_NODE	264:30	264:30	11	->
+LEAF_NODE	264:32	264:32	11	stream
+LEAF_NODE	264:38	264:38	8	,
+ARGUMENT	264:40	264:40	8	sp -> filters
+FIELD	264:40	264:44	9	sp -> filters
+LEAF_NODE	264:40	264:40	10	sp
+LEAF_NODE	264:42	264:42	10	->
+LEAF_NODE	264:44	264:44	10	filters
+LEAF_NODE	264:51	264:51	8	,
+ARGUMENT	264:53	264:53	8	sp -> check
+FIELD	264:53	264:57	9	sp -> check
+LEAF_NODE	264:53	264:53	10	sp
+LEAF_NODE	264:55	264:55	10	->
+LEAF_NODE	264:57	264:57	10	check
+LEAF_NODE	264:62	264:62	8	)
+LEAF_NODE	264:63	264:63	4	;
+SELECTION	265:1	265:21	3	
+KEYWORD	265:1	265:1	4	if
+LEAF_NODE	265:1	265:1	5	if
+LEAF_NODE	265:4	265:4	4	(
+CONDITION	265:5	265:5	4	ret != LZMA_OK
+EXPR	265:5	265:12	5	ret != LZMA_OK
+FIELD	265:5	265:5	6	ret
+LEAF_NODE	265:5	265:5	7	ret
+EQ_OPERATOR	265:9	265:9	6	!=
+LEAF_NODE	265:9	265:9	7	!=
+FIELD	265:12	265:12	6	LZMA_OK
+LEAF_NODE	265:12	265:12	7	LZMA_OK
+LEAF_NODE	265:19	265:19	4	)
+STATEMENTS	265:21	269:1	4	
+LEAF_NODE	265:21	265:21	5	{
+STATEMENTS	266:2	268:2	5	
+EXPR_STATEMENT	266:2	267:59	6	TIFFErrorExt ( tif -> tif_clientdata , module , "Error in lzma_stream_encoder(): %s" , LZMAStrerror ( ret ) ) ;
+EXPR	266:2	266:2	7	TIFFErrorExt ( tif -> tif_clientdata , module , "Error in lzma_stream_encoder(): %s" , LZMAStrerror ( ret ) )
+FUNCTION_CALL	266:2	267:58	8	TIFFErrorExt ( tif -> tif_clientdata , module , "Error in lzma_stream_encoder(): %s" , LZMAStrerror ( ret ) )
+CALLEE	266:2	266:2	9	TIFFErrorExt
+LEAF_NODE	266:2	266:2	10	TIFFErrorExt
+LEAF_NODE	266:14	266:14	9	(
+ARGUMENT	266:15	266:15	9	tif -> tif_clientdata
+FIELD	266:15	266:20	10	tif -> tif_clientdata
+LEAF_NODE	266:15	266:15	11	tif
+LEAF_NODE	266:18	266:18	11	->
+LEAF_NODE	266:20	266:20	11	tif_clientdata
+LEAF_NODE	266:34	266:34	9	,
+ARGUMENT	266:36	266:36	9	module
+FIELD	266:36	266:36	10	module
+LEAF_NODE	266:36	266:36	11	module
+LEAF_NODE	266:42	266:42	9	,
+ARGUMENT	267:3	267:3	9	"Error in lzma_stream_encoder(): %s"
+FIELD	267:3	267:3	10	"Error in lzma_stream_encoder(): %s"
+LEAF_NODE	267:3	267:3	11	"Error in lzma_stream_encoder(): %s"
+LEAF_NODE	267:39	267:39	9	,
+ARGUMENT	267:41	267:41	9	LZMAStrerror ( ret )
+FUNCTION_CALL	267:41	267:57	10	LZMAStrerror ( ret )
+CALLEE	267:41	267:41	11	LZMAStrerror
+LEAF_NODE	267:41	267:41	12	LZMAStrerror
+LEAF_NODE	267:53	267:53	11	(
+ARGUMENT	267:54	267:54	11	ret
+FIELD	267:54	267:54	12	ret
+LEAF_NODE	267:54	267:54	13	ret
+LEAF_NODE	267:57	267:57	11	)
+LEAF_NODE	267:58	267:58	9	)
+LEAF_NODE	267:59	267:59	7	;
+JUMP_STATEMENT	268:2	268:10	6	return 0 ;
+KEYWORD	268:2	268:2	7	return
+LEAF_NODE	268:2	268:2	8	return
+DESTINATION	268:9	268:9	7	0
+EXPR	268:9	268:9	8	0
+FIELD	268:9	268:9	9	0
+LEAF_NODE	268:9	268:9	10	0
+LEAF_NODE	268:10	268:10	7	;
+LEAF_NODE	269:1	269:1	5	}
+JUMP_STATEMENT	270:1	270:9	3	return 1 ;
+KEYWORD	270:1	270:1	4	return
+LEAF_NODE	270:1	270:1	5	return
+DESTINATION	270:8	270:8	4	1
+EXPR	270:8	270:8	5	1
+FIELD	270:8	270:8	6	1
+LEAF_NODE	270:8	270:8	7	1
+LEAF_NODE	270:9	270:9	4	;
+LEAF_NODE	271:0	271:0	2	}
+FUNCTION_DEF	276:0	309:0	1	
+RETURN_TYPE	276:0	276:7	2	static int
+LEAF_NODE	276:0	276:0	3	static
+TYPE_NAME	276:7	276:7	3	int
+LEAF_NODE	276:7	276:7	4	int
+FUNCTION_NAME	277:0	277:0	2	LZMAEncode
+LEAF_NODE	277:0	277:0	3	LZMAEncode
+PARAMETER_LIST	277:10	277:54	2	( TIFF * tif , uint8 * bp , tmsize_t cc , uint16 s )
+LEAF_NODE	277:10	277:10	3	(
+PARAMETER_DECL	277:11	277:17	3	TIFF * tif
+TYPE	277:11	277:15	4	TIFF *
+TYPE_NAME	277:11	277:11	5	TIFF
+LEAF_NODE	277:11	277:11	6	TIFF
+POINTER	277:15	277:15	5	*
+LEAF_NODE	277:15	277:15	6	*
+NAME	277:17	277:17	4	tif
+LEAF_NODE	277:17	277:17	5	tif
+LEAF_NODE	277:20	277:20	3	,
+PARAMETER_DECL	277:22	277:29	3	uint8 * bp
+TYPE	277:22	277:27	4	uint8 *
+TYPE_NAME	277:22	277:22	5	uint8
+LEAF_NODE	277:22	277:22	6	uint8
+POINTER	277:27	277:27	5	*
+LEAF_NODE	277:27	277:27	6	*
+NAME	277:29	277:29	4	bp
+LEAF_NODE	277:29	277:29	5	bp
+LEAF_NODE	277:31	277:31	3	,
+PARAMETER_DECL	277:33	277:42	3	tmsize_t cc
+TYPE	277:33	277:33	4	tmsize_t
+TYPE_NAME	277:33	277:33	5	tmsize_t
+LEAF_NODE	277:33	277:33	6	tmsize_t
+NAME	277:42	277:42	4	cc
+LEAF_NODE	277:42	277:42	5	cc
+LEAF_NODE	277:44	277:44	3	,
+PARAMETER_DECL	277:46	277:53	3	uint16 s
+TYPE	277:46	277:46	4	uint16
+TYPE_NAME	277:46	277:46	5	uint16
+LEAF_NODE	277:46	277:46	6	uint16
+NAME	277:53	277:53	4	s
+LEAF_NODE	277:53	277:53	5	s
+LEAF_NODE	277:54	277:54	3	)
+LEAF_NODE	278:0	278:0	2	{
+STATEMENTS	279:1	308:1	2	
+LEAF_NODE	279:1	279:1	3	static
+SIMPLE_DECL	279:8	279:42	3	const char [ ] module ; module = "LZMAEncode" ;
+VAR_DECL	279:8	279:19	4	const char [ ] module ; module = "LZMAEncode"
+TYPE	279:8	279:25	5	const char [ ]
+TYPE_NAME	279:8	279:14	6	const char
+LEAF_NODE	279:8	279:8	7	const
+LEAF_NODE	279:14	279:14	7	char
+TYPE_SUFFIX	279:25	279:26	6	[ ]
+LEAF_NODE	279:25	279:25	7	[
+LEAF_NODE	279:26	279:26	7	]
+NAME	279:19	279:19	5	module
+LEAF_NODE	279:19	279:19	6	module
+LEAF_NODE	0:0	0:0	5	;
+INIT	279:19	279:19	5	module = "LZMAEncode"
+ASSIGN	279:19	279:30	6	module = "LZMAEncode"
+LVAL	279:19	279:19	7	module
+NAME	279:19	279:19	8	module
+LEAF_NODE	279:19	279:19	9	module
+ASSIGN_OP	279:28	279:28	7	=
+LEAF_NODE	279:28	279:28	8	=
+RVAL	279:30	279:30	7	"LZMAEncode"
+FIELD	279:30	279:30	8	"LZMAEncode"
+LEAF_NODE	279:30	279:30	9	"LZMAEncode"
+LEAF_NODE	279:42	279:42	4	;
+SIMPLE_DECL	280:1	280:34	3	LZMAState * sp ; sp = EncoderState ( tif ) ;
+VAR_DECL	280:1	280:12	4	LZMAState * sp ; sp = EncoderState ( tif )
+TYPE	280:1	280:11	5	LZMAState *
+TYPE_NAME	280:1	280:1	6	LZMAState
+LEAF_NODE	280:1	280:1	7	LZMAState
+POINTER	280:11	280:11	6	*
+LEAF_NODE	280:11	280:11	7	*
+NAME	280:12	280:12	5	sp
+LEAF_NODE	280:12	280:12	6	sp
+LEAF_NODE	0:0	0:0	5	;
+INIT	280:12	280:12	5	sp = EncoderState ( tif )
+ASSIGN	280:12	280:17	6	sp = EncoderState ( tif )
+LVAL	280:12	280:12	7	sp
+NAME	280:12	280:12	8	sp
+LEAF_NODE	280:12	280:12	9	sp
+ASSIGN_OP	280:15	280:15	7	=
+LEAF_NODE	280:15	280:15	8	=
+RVAL	280:17	280:17	7	EncoderState ( tif )
+FUNCTION_CALL	280:17	280:33	8	EncoderState ( tif )
+CALLEE	280:17	280:17	9	EncoderState
+LEAF_NODE	280:17	280:17	10	EncoderState
+LEAF_NODE	280:29	280:29	9	(
+ARGUMENT	280:30	280:30	9	tif
+FIELD	280:30	280:30	10	tif
+LEAF_NODE	280:30	280:30	11	tif
+LEAF_NODE	280:33	280:33	9	)
+LEAF_NODE	280:34	280:34	4	;
+EXPR_STATEMENT	282:1	282:19	3	assert ( sp != NULL ) ;
+EXPR	282:1	282:1	4	assert ( sp != NULL )
+FUNCTION_CALL	282:1	282:18	5	assert ( sp != NULL )
+CALLEE	282:1	282:1	6	assert
+LEAF_NODE	282:1	282:1	7	assert
+LEAF_NODE	282:7	282:7	6	(
+ARGUMENT	282:8	282:14	6	sp != NULL
+FIELD	282:8	282:8	7	sp
+LEAF_NODE	282:8	282:8	8	sp
+EQ_OPERATOR	282:11	282:11	7	!=
+LEAF_NODE	282:11	282:11	8	!=
+FIELD	282:14	282:14	7	NULL
+LEAF_NODE	282:14	282:14	8	NULL
+LEAF_NODE	282:18	282:18	6	)
+LEAF_NODE	282:19	282:19	4	;
+EXPR_STATEMENT	283:1	283:40	3	assert ( sp -> state == LSTATE_INIT_ENCODE ) ;
+EXPR	283:1	283:1	4	assert ( sp -> state == LSTATE_INIT_ENCODE )
+FUNCTION_CALL	283:1	283:39	5	assert ( sp -> state == LSTATE_INIT_ENCODE )
+CALLEE	283:1	283:1	6	assert
+LEAF_NODE	283:1	283:1	7	assert
+LEAF_NODE	283:7	283:7	6	(
+ARGUMENT	283:8	283:21	6	sp -> state == LSTATE_INIT_ENCODE
+FIELD	283:8	283:12	7	sp -> state
+LEAF_NODE	283:8	283:8	8	sp
+LEAF_NODE	283:10	283:10	8	->
+LEAF_NODE	283:12	283:12	8	state
+EQ_OPERATOR	283:18	283:18	7	==
+LEAF_NODE	283:18	283:18	8	==
+FIELD	283:21	283:21	7	LSTATE_INIT_ENCODE
+LEAF_NODE	283:21	283:21	8	LSTATE_INIT_ENCODE
+LEAF_NODE	283:39	283:39	6	)
+LEAF_NODE	283:40	283:40	4	;
+EXPR_STATEMENT	285:1	285:9	3	( void ) s ;
+EXPR	285:1	285:8	4	( void ) s
+LEAF_NODE	285:1	285:1	5	(
+TYPE_NAME	285:2	285:2	5	void
+LEAF_NODE	285:2	285:2	6	void
+LEAF_NODE	285:6	285:6	5	)
+FIELD	285:8	285:8	5	s
+LEAF_NODE	285:8	285:8	6	s
+LEAF_NODE	285:9	285:9	4	;
+EXPR_STATEMENT	286:1	286:24	3	sp -> stream . next_in = bp ;
+EXPR	286:1	286:1	4	sp -> stream . next_in = bp
+ASSIGN	286:1	286:22	5	sp -> stream . next_in = bp
+LVAL	286:1	286:1	6	sp -> stream . next_in
+FIELD	286:1	286:12	7	sp -> stream . next_in
+LEAF_NODE	286:1	286:1	8	sp
+LEAF_NODE	286:3	286:3	8	->
+LEAF_NODE	286:5	286:5	8	stream
+LEAF_NODE	286:11	286:11	8	.
+LEAF_NODE	286:12	286:12	8	next_in
+ASSIGN_OP	286:20	286:20	6	=
+LEAF_NODE	286:20	286:20	7	=
+RVAL	286:22	286:22	6	bp
+FIELD	286:22	286:22	7	bp
+LEAF_NODE	286:22	286:22	8	bp
+LEAF_NODE	286:24	286:24	4	;
+EXPR_STATEMENT	287:1	287:34	3	sp -> stream . avail_in = ( size_t ) cc ;
+EXPR	287:1	287:1	4	sp -> stream . avail_in = ( size_t ) cc
+ASSIGN	287:1	287:23	5	sp -> stream . avail_in = ( size_t ) cc
+LVAL	287:1	287:1	6	sp -> stream . avail_in
+FIELD	287:1	287:12	7	sp -> stream . avail_in
+LEAF_NODE	287:1	287:1	8	sp
+LEAF_NODE	287:3	287:3	8	->
+LEAF_NODE	287:5	287:5	8	stream
+LEAF_NODE	287:11	287:11	8	.
+LEAF_NODE	287:12	287:12	8	avail_in
+ASSIGN_OP	287:21	287:21	6	=
+LEAF_NODE	287:21	287:21	7	=
+RVAL	287:23	287:32	6	( size_t ) cc
+LEAF_NODE	287:23	287:23	7	(
+TYPE_NAME	287:24	287:24	7	size_t
+LEAF_NODE	287:24	287:24	8	size_t
+LEAF_NODE	287:30	287:30	7	)
+FIELD	287:32	287:32	7	cc
+LEAF_NODE	287:32	287:32	8	cc
+LEAF_NODE	287:34	287:34	4	;
+SELECTION	288:1	288:42	3	
+KEYWORD	288:1	288:1	4	if
+LEAF_NODE	288:1	288:1	5	if
+LEAF_NODE	288:4	288:4	4	(
+CONDITION	288:5	288:5	4	( tmsize_t ) sp -> stream . avail_in != cc
+EXPR	288:5	288:38	5	( tmsize_t ) sp -> stream . avail_in != cc
+LEAF_NODE	288:5	288:5	6	(
+TYPE_NAME	288:6	288:6	6	tmsize_t
+LEAF_NODE	288:6	288:6	7	tmsize_t
+LEAF_NODE	288:14	288:14	6	)
+FIELD	288:15	288:26	6	sp -> stream . avail_in
+LEAF_NODE	288:15	288:15	7	sp
+LEAF_NODE	288:17	288:17	7	->
+LEAF_NODE	288:19	288:19	7	stream
+LEAF_NODE	288:25	288:25	7	.
+LEAF_NODE	288:26	288:26	7	avail_in
+EQ_OPERATOR	288:35	288:35	6	!=
+LEAF_NODE	288:35	288:35	7	!=
+FIELD	288:38	288:38	6	cc
+LEAF_NODE	288:38	288:38	7	cc
+LEAF_NODE	288:40	288:40	4	)
+STATEMENTS	288:42	292:1	4	
+LEAF_NODE	288:42	288:42	5	{
+STATEMENTS	289:2	291:2	5	
+EXPR_STATEMENT	289:2	290:53	6	TIFFErrorExt ( tif -> tif_clientdata , module , "Liblzma cannot deal with buffers this size" ) ;
+EXPR	289:2	289:2	7	TIFFErrorExt ( tif -> tif_clientdata , module , "Liblzma cannot deal with buffers this size" )
+FUNCTION_CALL	289:2	290:52	8	TIFFErrorExt ( tif -> tif_clientdata , module , "Liblzma cannot deal with buffers this size" )
+CALLEE	289:2	289:2	9	TIFFErrorExt
+LEAF_NODE	289:2	289:2	10	TIFFErrorExt
+LEAF_NODE	289:14	289:14	9	(
+ARGUMENT	289:15	289:15	9	tif -> tif_clientdata
+FIELD	289:15	289:20	10	tif -> tif_clientdata
+LEAF_NODE	289:15	289:15	11	tif
+LEAF_NODE	289:18	289:18	11	->
+LEAF_NODE	289:20	289:20	11	tif_clientdata
+LEAF_NODE	289:34	289:34	9	,
+ARGUMENT	289:36	289:36	9	module
+FIELD	289:36	289:36	10	module
+LEAF_NODE	289:36	289:36	11	module
+LEAF_NODE	289:42	289:42	9	,
+ARGUMENT	290:8	290:8	9	"Liblzma cannot deal with buffers this size"
+FIELD	290:8	290:8	10	"Liblzma cannot deal with buffers this size"
+LEAF_NODE	290:8	290:8	11	"Liblzma cannot deal with buffers this size"
+LEAF_NODE	290:52	290:52	9	)
+LEAF_NODE	290:53	290:53	7	;
+JUMP_STATEMENT	291:2	291:10	6	return 0 ;
+KEYWORD	291:2	291:2	7	return
+LEAF_NODE	291:2	291:2	8	return
+DESTINATION	291:9	291:9	7	0
+EXPR	291:9	291:9	8	0
+FIELD	291:9	291:9	9	0
+LEAF_NODE	291:9	291:9	10	0
+LEAF_NODE	291:10	291:10	7	;
+LEAF_NODE	292:1	292:1	5	}
+ITERATION	293:1	293:4	3	
+KEYWORD	293:1	293:1	4	do
+LEAF_NODE	293:1	293:1	5	do
+LEAF_NODE	307:9	307:9	4	(
+CONDITION	307:10	307:10	4	sp -> stream . avail_in > 0
+EXPR	307:10	307:32	5	sp -> stream . avail_in > 0
+FIELD	307:10	307:21	6	sp -> stream . avail_in
+LEAF_NODE	307:10	307:10	7	sp
+LEAF_NODE	307:12	307:12	7	->
+LEAF_NODE	307:14	307:14	7	stream
+LEAF_NODE	307:20	307:20	7	.
+LEAF_NODE	307:21	307:21	7	avail_in
+REL_OPERATOR	307:30	307:30	6	>
+LEAF_NODE	307:30	307:30	7	>
+FIELD	307:32	307:32	6	0
+LEAF_NODE	307:32	307:32	7	0
+LEAF_NODE	307:33	307:33	4	)
+STATEMENTS	293:4	307:1	4	
+LEAF_NODE	293:4	293:4	5	{
+STATEMENTS	294:2	301:2	5	
+SIMPLE_DECL	294:2	294:49	6	lzma_ret ret ; ret = lzma_code ( & sp -> stream , LZMA_RUN ) ;
+VAR_DECL	294:2	294:11	7	lzma_ret ret ; ret = lzma_code ( & sp -> stream , LZMA_RUN )
+TYPE	294:2	294:2	8	lzma_ret
+TYPE_NAME	294:2	294:2	9	lzma_ret
+LEAF_NODE	294:2	294:2	10	lzma_ret
+NAME	294:11	294:11	8	ret
+LEAF_NODE	294:11	294:11	9	ret
+LEAF_NODE	0:0	0:0	8	;
+INIT	294:11	294:11	8	ret = lzma_code ( & sp -> stream , LZMA_RUN )
+ASSIGN	294:11	294:17	9	ret = lzma_code ( & sp -> stream , LZMA_RUN )
+LVAL	294:11	294:11	10	ret
+NAME	294:11	294:11	11	ret
+LEAF_NODE	294:11	294:11	12	ret
+ASSIGN_OP	294:15	294:15	10	=
+LEAF_NODE	294:15	294:15	11	=
+RVAL	294:17	294:17	10	lzma_code ( & sp -> stream , LZMA_RUN )
+FUNCTION_CALL	294:17	294:48	11	lzma_code ( & sp -> stream , LZMA_RUN )
+CALLEE	294:17	294:17	12	lzma_code
+LEAF_NODE	294:17	294:17	13	lzma_code
+LEAF_NODE	294:26	294:26	12	(
+ARGUMENT	294:27	294:27	12	& sp -> stream
+UNARY_EXPR	294:27	294:28	13	& sp -> stream
+UNARY_OPERATOR	294:27	294:27	14	&
+LEAF_NODE	294:27	294:27	15	&
+FIELD	294:28	294:32	14	sp -> stream
+LEAF_NODE	294:28	294:28	15	sp
+LEAF_NODE	294:30	294:30	15	->
+LEAF_NODE	294:32	294:32	15	stream
+LEAF_NODE	294:38	294:38	12	,
+ARGUMENT	294:40	294:40	12	LZMA_RUN
+FIELD	294:40	294:40	13	LZMA_RUN
+LEAF_NODE	294:40	294:40	14	LZMA_RUN
+LEAF_NODE	294:48	294:48	12	)
+LEAF_NODE	294:49	294:49	7	;
+SELECTION	295:2	295:22	6	
+KEYWORD	295:2	295:2	7	if
+LEAF_NODE	295:2	295:2	8	if
+LEAF_NODE	295:5	295:5	7	(
+CONDITION	295:6	295:6	7	ret != LZMA_OK
+EXPR	295:6	295:13	8	ret != LZMA_OK
+FIELD	295:6	295:6	9	ret
+LEAF_NODE	295:6	295:6	10	ret
+EQ_OPERATOR	295:10	295:10	9	!=
+LEAF_NODE	295:10	295:10	10	!=
+FIELD	295:13	295:13	9	LZMA_OK
+LEAF_NODE	295:13	295:13	10	LZMA_OK
+LEAF_NODE	295:20	295:20	7	)
+STATEMENTS	295:22	300:2	7	
+LEAF_NODE	295:22	295:22	8	{
+STATEMENTS	296:3	299:3	8	
+EXPR_STATEMENT	296:3	298:52	9	TIFFErrorExt ( tif -> tif_clientdata , module , "Encoding error at scanline %lu, %s" , ( unsigned long ) tif -> tif_row , LZMAStrerror ( ret ) ) ;
+EXPR	296:3	296:3	10	TIFFErrorExt ( tif -> tif_clientdata , module , "Encoding error at scanline %lu, %s" , ( unsigned long ) tif -> tif_row , LZMAStrerror ( ret ) )
+FUNCTION_CALL	296:3	298:51	11	TIFFErrorExt ( tif -> tif_clientdata , module , "Encoding error at scanline %lu, %s" , ( unsigned long ) tif -> tif_row , LZMAStrerror ( ret ) )
+CALLEE	296:3	296:3	12	TIFFErrorExt
+LEAF_NODE	296:3	296:3	13	TIFFErrorExt
+LEAF_NODE	296:15	296:15	12	(
+ARGUMENT	296:16	296:16	12	tif -> tif_clientdata
+FIELD	296:16	296:21	13	tif -> tif_clientdata
+LEAF_NODE	296:16	296:16	14	tif
+LEAF_NODE	296:19	296:19	14	->
+LEAF_NODE	296:21	296:21	14	tif_clientdata
+LEAF_NODE	296:35	296:35	12	,
+ARGUMENT	296:37	296:37	12	module
+FIELD	296:37	296:37	13	module
+LEAF_NODE	296:37	296:37	14	module
+LEAF_NODE	296:43	296:43	12	,
+ARGUMENT	297:4	297:4	12	"Encoding error at scanline %lu, %s"
+FIELD	297:4	297:4	13	"Encoding error at scanline %lu, %s"
+LEAF_NODE	297:4	297:4	14	"Encoding error at scanline %lu, %s"
+LEAF_NODE	297:40	297:40	12	,
+ARGUMENT	298:4	298:20	12	( unsigned long ) tif -> tif_row
+LEAF_NODE	298:4	298:4	13	(
+TYPE_NAME	298:5	298:14	13	unsigned long
+LEAF_NODE	298:5	298:5	14	unsigned
+LEAF_NODE	298:14	298:14	14	long
+LEAF_NODE	298:18	298:18	13	)
+FIELD	298:20	298:25	13	tif -> tif_row
+LEAF_NODE	298:20	298:20	14	tif
+LEAF_NODE	298:23	298:23	14	->
+LEAF_NODE	298:25	298:25	14	tif_row
+LEAF_NODE	298:32	298:32	12	,
+ARGUMENT	298:34	298:34	12	LZMAStrerror ( ret )
+FUNCTION_CALL	298:34	298:50	13	LZMAStrerror ( ret )
+CALLEE	298:34	298:34	14	LZMAStrerror
+LEAF_NODE	298:34	298:34	15	LZMAStrerror
+LEAF_NODE	298:46	298:46	14	(
+ARGUMENT	298:47	298:47	14	ret
+FIELD	298:47	298:47	15	ret
+LEAF_NODE	298:47	298:47	16	ret
+LEAF_NODE	298:50	298:50	14	)
+LEAF_NODE	298:51	298:51	12	)
+LEAF_NODE	298:52	298:52	10	;
+JUMP_STATEMENT	299:3	299:11	9	return 0 ;
+KEYWORD	299:3	299:3	10	return
+LEAF_NODE	299:3	299:3	11	return
+DESTINATION	299:10	299:10	10	0
+EXPR	299:10	299:10	11	0
+FIELD	299:10	299:10	12	0
+LEAF_NODE	299:10	299:10	13	0
+LEAF_NODE	299:11	299:11	10	;
+LEAF_NODE	300:2	300:2	8	}
+SELECTION	301:2	301:33	6	
+KEYWORD	301:2	301:2	7	if
+LEAF_NODE	301:2	301:2	8	if
+LEAF_NODE	301:5	301:5	7	(
+CONDITION	301:6	301:6	7	sp -> stream . avail_out == 0
+EXPR	301:6	301:30	8	sp -> stream . avail_out == 0
+FIELD	301:6	301:17	9	sp -> stream . avail_out
+LEAF_NODE	301:6	301:6	10	sp
+LEAF_NODE	301:8	301:8	10	->
+LEAF_NODE	301:10	301:10	10	stream
+LEAF_NODE	301:16	301:16	10	.
+LEAF_NODE	301:17	301:17	10	avail_out
+EQ_OPERATOR	301:27	301:27	9	==
+LEAF_NODE	301:27	301:27	10	==
+FIELD	301:30	301:30	9	0
+LEAF_NODE	301:30	301:30	10	0
+LEAF_NODE	301:31	301:31	7	)
+STATEMENTS	301:33	306:2	7	
+LEAF_NODE	301:33	301:33	8	{
+STATEMENTS	302:3	305:3	8	
+EXPR_STATEMENT	302:3	302:40	9	tif -> tif_rawcc = tif -> tif_rawdatasize ;
+EXPR	302:3	302:3	10	tif -> tif_rawcc = tif -> tif_rawdatasize
+ASSIGN	302:3	302:20	11	tif -> tif_rawcc = tif -> tif_rawdatasize
+LVAL	302:3	302:3	12	tif -> tif_rawcc
+FIELD	302:3	302:8	13	tif -> tif_rawcc
+LEAF_NODE	302:3	302:3	14	tif
+LEAF_NODE	302:6	302:6	14	->
+LEAF_NODE	302:8	302:8	14	tif_rawcc
+ASSIGN_OP	302:18	302:18	12	=
+LEAF_NODE	302:18	302:18	13	=
+RVAL	302:20	302:20	12	tif -> tif_rawdatasize
+FIELD	302:20	302:25	13	tif -> tif_rawdatasize
+LEAF_NODE	302:20	302:20	14	tif
+LEAF_NODE	302:23	302:23	14	->
+LEAF_NODE	302:25	302:25	14	tif_rawdatasize
+LEAF_NODE	302:40	302:40	10	;
+EXPR_STATEMENT	303:3	303:22	9	TIFFFlushData1 ( tif ) ;
+EXPR	303:3	303:3	10	TIFFFlushData1 ( tif )
+FUNCTION_CALL	303:3	303:21	11	TIFFFlushData1 ( tif )
+CALLEE	303:3	303:3	12	TIFFFlushData1
+LEAF_NODE	303:3	303:3	13	TIFFFlushData1
+LEAF_NODE	303:17	303:17	12	(
+ARGUMENT	303:18	303:18	12	tif
+FIELD	303:18	303:18	13	tif
+LEAF_NODE	303:18	303:18	14	tif
+LEAF_NODE	303:21	303:21	12	)
+LEAF_NODE	303:22	303:22	10	;
+EXPR_STATEMENT	304:3	304:41	9	sp -> stream . next_out = tif -> tif_rawdata ;
+EXPR	304:3	304:3	10	sp -> stream . next_out = tif -> tif_rawdata
+ASSIGN	304:3	304:25	11	sp -> stream . next_out = tif -> tif_rawdata
+LVAL	304:3	304:3	12	sp -> stream . next_out
+FIELD	304:3	304:14	13	sp -> stream . next_out
+LEAF_NODE	304:3	304:3	14	sp
+LEAF_NODE	304:5	304:5	14	->
+LEAF_NODE	304:7	304:7	14	stream
+LEAF_NODE	304:13	304:13	14	.
+LEAF_NODE	304:14	304:14	14	next_out
+ASSIGN_OP	304:23	304:23	12	=
+LEAF_NODE	304:23	304:23	13	=
+RVAL	304:25	304:25	12	tif -> tif_rawdata
+FIELD	304:25	304:30	13	tif -> tif_rawdata
+LEAF_NODE	304:25	304:25	14	tif
+LEAF_NODE	304:28	304:28	14	->
+LEAF_NODE	304:30	304:30	14	tif_rawdata
+LEAF_NODE	304:41	304:41	10	;
+EXPR_STATEMENT	305:3	305:54	9	sp -> stream . avail_out = ( size_t ) tif -> tif_rawdatasize ;
+EXPR	305:3	305:3	10	sp -> stream . avail_out = ( size_t ) tif -> tif_rawdatasize
+ASSIGN	305:3	305:26	11	sp -> stream . avail_out = ( size_t ) tif -> tif_rawdatasize
+LVAL	305:3	305:3	12	sp -> stream . avail_out
+FIELD	305:3	305:14	13	sp -> stream . avail_out
+LEAF_NODE	305:3	305:3	14	sp
+LEAF_NODE	305:5	305:5	14	->
+LEAF_NODE	305:7	305:7	14	stream
+LEAF_NODE	305:13	305:13	14	.
+LEAF_NODE	305:14	305:14	14	avail_out
+ASSIGN_OP	305:24	305:24	12	=
+LEAF_NODE	305:24	305:24	13	=
+RVAL	305:26	305:34	12	( size_t ) tif -> tif_rawdatasize
+LEAF_NODE	305:26	305:26	13	(
+TYPE_NAME	305:27	305:27	13	size_t
+LEAF_NODE	305:27	305:27	14	size_t
+LEAF_NODE	305:33	305:33	13	)
+FIELD	305:34	305:39	13	tif -> tif_rawdatasize
+LEAF_NODE	305:34	305:34	14	tif
+LEAF_NODE	305:37	305:37	14	->
+LEAF_NODE	305:39	305:39	14	tif_rawdatasize
+LEAF_NODE	305:54	305:54	10	;
+LEAF_NODE	306:2	306:2	8	}
+LEAF_NODE	307:1	307:1	5	}
+LEAF_NODE	307:34	307:34	3	;
+JUMP_STATEMENT	308:1	308:9	3	return 1 ;
+KEYWORD	308:1	308:1	4	return
+LEAF_NODE	308:1	308:1	5	return
+DESTINATION	308:8	308:8	4	1
+EXPR	308:8	308:8	5	1
+FIELD	308:8	308:8	6	1
+LEAF_NODE	308:8	308:8	7	1
+LEAF_NODE	308:9	308:9	4	;
+LEAF_NODE	309:0	309:0	2	}
+FUNCTION_DEF	315:0	343:0	1	
+RETURN_TYPE	315:0	315:7	2	static int
+LEAF_NODE	315:0	315:0	3	static
+TYPE_NAME	315:7	315:7	3	int
+LEAF_NODE	315:7	315:7	4	int
+FUNCTION_NAME	316:0	316:0	2	LZMAPostEncode
+LEAF_NODE	316:0	316:0	3	LZMAPostEncode
+PARAMETER_LIST	316:14	316:24	2	( TIFF * tif )
+LEAF_NODE	316:14	316:14	3	(
+PARAMETER_DECL	316:15	316:21	3	TIFF * tif
+TYPE	316:15	316:19	4	TIFF *
+TYPE_NAME	316:15	316:15	5	TIFF
+LEAF_NODE	316:15	316:15	6	TIFF
+POINTER	316:19	316:19	5	*
+LEAF_NODE	316:19	316:19	6	*
+NAME	316:21	316:21	4	tif
+LEAF_NODE	316:21	316:21	5	tif
+LEAF_NODE	316:24	316:24	3	)
+LEAF_NODE	317:0	317:0	2	{
+STATEMENTS	318:1	342:1	2	
+LEAF_NODE	318:1	318:1	3	static
+SIMPLE_DECL	318:8	318:46	3	const char [ ] module ; module = "LZMAPostEncode" ;
+VAR_DECL	318:8	318:19	4	const char [ ] module ; module = "LZMAPostEncode"
+TYPE	318:8	318:25	5	const char [ ]
+TYPE_NAME	318:8	318:14	6	const char
+LEAF_NODE	318:8	318:8	7	const
+LEAF_NODE	318:14	318:14	7	char
+TYPE_SUFFIX	318:25	318:26	6	[ ]
+LEAF_NODE	318:25	318:25	7	[
+LEAF_NODE	318:26	318:26	7	]
+NAME	318:19	318:19	5	module
+LEAF_NODE	318:19	318:19	6	module
+LEAF_NODE	0:0	0:0	5	;
+INIT	318:19	318:19	5	module = "LZMAPostEncode"
+ASSIGN	318:19	318:30	6	module = "LZMAPostEncode"
+LVAL	318:19	318:19	7	module
+NAME	318:19	318:19	8	module
+LEAF_NODE	318:19	318:19	9	module
+ASSIGN_OP	318:28	318:28	7	=
+LEAF_NODE	318:28	318:28	8	=
+RVAL	318:30	318:30	7	"LZMAPostEncode"
+FIELD	318:30	318:30	8	"LZMAPostEncode"
+LEAF_NODE	318:30	318:30	9	"LZMAPostEncode"
+LEAF_NODE	318:46	318:46	4	;
+SIMPLE_DECL	319:1	319:34	3	LZMAState * sp ; sp = EncoderState ( tif ) ;
+VAR_DECL	319:1	319:12	4	LZMAState * sp ; sp = EncoderState ( tif )
+TYPE	319:1	319:11	5	LZMAState *
+TYPE_NAME	319:1	319:1	6	LZMAState
+LEAF_NODE	319:1	319:1	7	LZMAState
+POINTER	319:11	319:11	6	*
+LEAF_NODE	319:11	319:11	7	*
+NAME	319:12	319:12	5	sp
+LEAF_NODE	319:12	319:12	6	sp
+LEAF_NODE	0:0	0:0	5	;
+INIT	319:12	319:12	5	sp = EncoderState ( tif )
+ASSIGN	319:12	319:17	6	sp = EncoderState ( tif )
+LVAL	319:12	319:12	7	sp
+NAME	319:12	319:12	8	sp
+LEAF_NODE	319:12	319:12	9	sp
+ASSIGN_OP	319:15	319:15	7	=
+LEAF_NODE	319:15	319:15	8	=
+RVAL	319:17	319:17	7	EncoderState ( tif )
+FUNCTION_CALL	319:17	319:33	8	EncoderState ( tif )
+CALLEE	319:17	319:17	9	EncoderState
+LEAF_NODE	319:17	319:17	10	EncoderState
+LEAF_NODE	319:29	319:29	9	(
+ARGUMENT	319:30	319:30	9	tif
+FIELD	319:30	319:30	10	tif
+LEAF_NODE	319:30	319:30	11	tif
+LEAF_NODE	319:33	319:33	9	)
+LEAF_NODE	319:34	319:34	4	;
+SIMPLE_DECL	320:1	320:13	3	lzma_ret ret ;
+VAR_DECL	320:1	320:10	4	lzma_ret ret
+TYPE	320:1	320:1	5	lzma_ret
+TYPE_NAME	320:1	320:1	6	lzma_ret
+LEAF_NODE	320:1	320:1	7	lzma_ret
+NAME	320:10	320:10	5	ret
+LEAF_NODE	320:10	320:10	6	ret
+LEAF_NODE	320:13	320:13	4	;
+EXPR_STATEMENT	322:1	322:24	3	sp -> stream . avail_in = 0 ;
+EXPR	322:1	322:1	4	sp -> stream . avail_in = 0
+ASSIGN	322:1	322:23	5	sp -> stream . avail_in = 0
+LVAL	322:1	322:1	6	sp -> stream . avail_in
+FIELD	322:1	322:12	7	sp -> stream . avail_in
+LEAF_NODE	322:1	322:1	8	sp
+LEAF_NODE	322:3	322:3	8	->
+LEAF_NODE	322:5	322:5	8	stream
+LEAF_NODE	322:11	322:11	8	.
+LEAF_NODE	322:12	322:12	8	avail_in
+ASSIGN_OP	322:21	322:21	6	=
+LEAF_NODE	322:21	322:21	7	=
+RVAL	322:23	322:23	6	0
+FIELD	322:23	322:23	7	0
+LEAF_NODE	322:23	322:23	8	0
+LEAF_NODE	322:24	322:24	4	;
+ITERATION	323:1	323:4	3	
+KEYWORD	323:1	323:1	4	do
+LEAF_NODE	323:1	323:1	5	do
+LEAF_NODE	341:9	341:9	4	(
+CONDITION	341:10	341:10	4	ret != LZMA_STREAM_END
+EXPR	341:10	341:17	5	ret != LZMA_STREAM_END
+FIELD	341:10	341:10	6	ret
+LEAF_NODE	341:10	341:10	7	ret
+EQ_OPERATOR	341:14	341:14	6	!=
+LEAF_NODE	341:14	341:14	7	!=
+FIELD	341:17	341:17	6	LZMA_STREAM_END
+LEAF_NODE	341:17	341:17	7	LZMA_STREAM_END
+LEAF_NODE	341:32	341:32	4	)
+STATEMENTS	323:4	341:1	4	
+LEAF_NODE	323:4	323:4	5	{
+STATEMENTS	324:2	325:2	5	
+EXPR_STATEMENT	324:2	324:43	6	ret = lzma_code ( & sp -> stream , LZMA_FINISH ) ;
+EXPR	324:2	324:2	7	ret = lzma_code ( & sp -> stream , LZMA_FINISH )
+ASSIGN	324:2	324:8	8	ret = lzma_code ( & sp -> stream , LZMA_FINISH )
+LVAL	324:2	324:2	9	ret
+FIELD	324:2	324:2	10	ret
+LEAF_NODE	324:2	324:2	11	ret
+ASSIGN_OP	324:6	324:6	9	=
+LEAF_NODE	324:6	324:6	10	=
+RVAL	324:8	324:8	9	lzma_code ( & sp -> stream , LZMA_FINISH )
+FUNCTION_CALL	324:8	324:42	10	lzma_code ( & sp -> stream , LZMA_FINISH )
+CALLEE	324:8	324:8	11	lzma_code
+LEAF_NODE	324:8	324:8	12	lzma_code
+LEAF_NODE	324:17	324:17	11	(
+ARGUMENT	324:18	324:18	11	& sp -> stream
+UNARY_EXPR	324:18	324:19	12	& sp -> stream
+UNARY_OPERATOR	324:18	324:18	13	&
+LEAF_NODE	324:18	324:18	14	&
+FIELD	324:19	324:23	13	sp -> stream
+LEAF_NODE	324:19	324:19	14	sp
+LEAF_NODE	324:21	324:21	14	->
+LEAF_NODE	324:23	324:23	14	stream
+LEAF_NODE	324:29	324:29	11	,
+ARGUMENT	324:31	324:31	11	LZMA_FINISH
+FIELD	324:31	324:31	12	LZMA_FINISH
+LEAF_NODE	324:31	324:31	13	LZMA_FINISH
+LEAF_NODE	324:42	324:42	11	)
+LEAF_NODE	324:43	324:43	7	;
+SELECTION	325:2	325:15	6	
+KEYWORD	325:2	325:2	7	switch
+LEAF_NODE	325:2	325:2	8	switch
+LEAF_NODE	325:9	325:9	7	(
+CONDITION	325:10	325:10	7	ret
+EXPR	325:10	325:10	8	ret
+FIELD	325:10	325:10	9	ret
+LEAF_NODE	325:10	325:10	10	ret
+LEAF_NODE	325:13	325:13	7	)
+STATEMENTS	325:15	340:2	7	
+LEAF_NODE	325:15	325:15	8	{
+STATEMENTS	326:2	339:3	8	
+LABEL	326:2	326:22	9	case LZMA_STREAM_END :
+LEAF_NODE	326:2	326:2	10	case
+LEAF_NODE	326:7	326:7	10	LZMA_STREAM_END
+LEAF_NODE	326:22	326:22	10	:
+LABEL	327:2	327:14	9	case LZMA_OK :
+LEAF_NODE	327:2	327:2	10	case
+LEAF_NODE	327:7	327:7	10	LZMA_OK
+LEAF_NODE	327:14	327:14	10	:
+SELECTION	328:3	328:63	9	
+KEYWORD	328:3	328:3	10	if
+LEAF_NODE	328:3	328:3	11	if
+LEAF_NODE	328:6	328:6	10	(
+CONDITION	328:7	328:7	10	( tmsize_t ) sp -> stream . avail_out != tif -> tif_rawdatasize
+EXPR	328:7	328:41	11	( tmsize_t ) sp -> stream . avail_out != tif -> tif_rawdatasize
+LEAF_NODE	328:7	328:7	12	(
+TYPE_NAME	328:8	328:8	12	tmsize_t
+LEAF_NODE	328:8	328:8	13	tmsize_t
+LEAF_NODE	328:16	328:16	12	)
+FIELD	328:17	328:28	12	sp -> stream . avail_out
+LEAF_NODE	328:17	328:17	13	sp
+LEAF_NODE	328:19	328:19	13	->
+LEAF_NODE	328:21	328:21	13	stream
+LEAF_NODE	328:27	328:27	13	.
+LEAF_NODE	328:28	328:28	13	avail_out
+EQ_OPERATOR	328:38	328:38	12	!=
+LEAF_NODE	328:38	328:38	13	!=
+FIELD	328:41	328:46	12	tif -> tif_rawdatasize
+LEAF_NODE	328:41	328:41	13	tif
+LEAF_NODE	328:44	328:44	13	->
+LEAF_NODE	328:46	328:46	13	tif_rawdatasize
+LEAF_NODE	328:61	328:61	10	)
+STATEMENTS	328:63	334:3	10	
+LEAF_NODE	328:63	328:63	11	{
+STATEMENTS	329:4	333:4	11	
+EXPR_STATEMENT	329:4	330:48	12	tif -> tif_rawcc = tif -> tif_rawdatasize - sp -> stream . avail_out ;
+EXPR	329:4	329:4	13	tif -> tif_rawcc = tif -> tif_rawdatasize - sp -> stream . avail_out
+ASSIGN	329:4	330:5	14	tif -> tif_rawcc = tif -> tif_rawdatasize - sp -> stream . avail_out
+LVAL	329:4	329:4	15	tif -> tif_rawcc
+FIELD	329:4	329:9	16	tif -> tif_rawcc
+LEAF_NODE	329:4	329:4	17	tif
+LEAF_NODE	329:7	329:7	17	->
+LEAF_NODE	329:9	329:9	17	tif_rawcc
+ASSIGN_OP	329:19	329:19	15	=
+LEAF_NODE	329:19	329:19	16	=
+RVAL	330:5	330:28	15	tif -> tif_rawdatasize - sp -> stream . avail_out
+FIELD	330:5	330:10	16	tif -> tif_rawdatasize
+LEAF_NODE	330:5	330:5	17	tif
+LEAF_NODE	330:8	330:8	17	->
+LEAF_NODE	330:10	330:10	17	tif_rawdatasize
+LEAF_NODE	330:26	330:26	16	-
+FIELD	330:28	330:39	16	sp -> stream . avail_out
+LEAF_NODE	330:28	330:28	17	sp
+LEAF_NODE	330:30	330:30	17	->
+LEAF_NODE	330:32	330:32	17	stream
+LEAF_NODE	330:38	330:38	17	.
+LEAF_NODE	330:39	330:39	17	avail_out
+LEAF_NODE	330:48	330:48	13	;
+EXPR_STATEMENT	331:4	331:23	12	TIFFFlushData1 ( tif ) ;
+EXPR	331:4	331:4	13	TIFFFlushData1 ( tif )
+FUNCTION_CALL	331:4	331:22	14	TIFFFlushData1 ( tif )
+CALLEE	331:4	331:4	15	TIFFFlushData1
+LEAF_NODE	331:4	331:4	16	TIFFFlushData1
+LEAF_NODE	331:18	331:18	15	(
+ARGUMENT	331:19	331:19	15	tif
+FIELD	331:19	331:19	16	tif
+LEAF_NODE	331:19	331:19	17	tif
+LEAF_NODE	331:22	331:22	15	)
+LEAF_NODE	331:23	331:23	13	;
+EXPR_STATEMENT	332:4	332:42	12	sp -> stream . next_out = tif -> tif_rawdata ;
+EXPR	332:4	332:4	13	sp -> stream . next_out = tif -> tif_rawdata
+ASSIGN	332:4	332:26	14	sp -> stream . next_out = tif -> tif_rawdata
+LVAL	332:4	332:4	15	sp -> stream . next_out
+FIELD	332:4	332:15	16	sp -> stream . next_out
+LEAF_NODE	332:4	332:4	17	sp
+LEAF_NODE	332:6	332:6	17	->
+LEAF_NODE	332:8	332:8	17	stream
+LEAF_NODE	332:14	332:14	17	.
+LEAF_NODE	332:15	332:15	17	next_out
+ASSIGN_OP	332:24	332:24	15	=
+LEAF_NODE	332:24	332:24	16	=
+RVAL	332:26	332:26	15	tif -> tif_rawdata
+FIELD	332:26	332:31	16	tif -> tif_rawdata
+LEAF_NODE	332:26	332:26	17	tif
+LEAF_NODE	332:29	332:29	17	->
+LEAF_NODE	332:31	332:31	17	tif_rawdata
+LEAF_NODE	332:42	332:42	13	;
+EXPR_STATEMENT	333:4	333:55	12	sp -> stream . avail_out = ( size_t ) tif -> tif_rawdatasize ;
+EXPR	333:4	333:4	13	sp -> stream . avail_out = ( size_t ) tif -> tif_rawdatasize
+ASSIGN	333:4	333:27	14	sp -> stream . avail_out = ( size_t ) tif -> tif_rawdatasize
+LVAL	333:4	333:4	15	sp -> stream . avail_out
+FIELD	333:4	333:15	16	sp -> stream . avail_out
+LEAF_NODE	333:4	333:4	17	sp
+LEAF_NODE	333:6	333:6	17	->
+LEAF_NODE	333:8	333:8	17	stream
+LEAF_NODE	333:14	333:14	17	.
+LEAF_NODE	333:15	333:15	17	avail_out
+ASSIGN_OP	333:25	333:25	15	=
+LEAF_NODE	333:25	333:25	16	=
+RVAL	333:27	333:35	15	( size_t ) tif -> tif_rawdatasize
+LEAF_NODE	333:27	333:27	16	(
+TYPE_NAME	333:28	333:28	16	size_t
+LEAF_NODE	333:28	333:28	17	size_t
+LEAF_NODE	333:34	333:34	16	)
+FIELD	333:35	333:40	16	tif -> tif_rawdatasize
+LEAF_NODE	333:35	333:35	17	tif
+LEAF_NODE	333:38	333:38	17	->
+LEAF_NODE	333:40	333:40	17	tif_rawdatasize
+LEAF_NODE	333:55	333:55	13	;
+LEAF_NODE	334:3	334:3	11	}
+JUMP_STATEMENT	335:3	335:8	9	break DESTINATION ;
+KEYWORD	335:3	335:3	10	break
+LEAF_NODE	335:3	335:3	11	break
+LEAF_NODE	0:0	0:0	10	DESTINATION
+LEAF_NODE	335:8	335:8	10	;
+LABEL	336:2	336:9	9	default :
+LEAF_NODE	336:2	336:2	10	default
+LEAF_NODE	336:9	336:9	10	:
+EXPR_STATEMENT	337:3	338:27	9	TIFFErrorExt ( tif -> tif_clientdata , module , "Liblzma error: %s" , LZMAStrerror ( ret ) ) ;
+EXPR	337:3	337:3	10	TIFFErrorExt ( tif -> tif_clientdata , module , "Liblzma error: %s" , LZMAStrerror ( ret ) )
+FUNCTION_CALL	337:3	338:26	11	TIFFErrorExt ( tif -> tif_clientdata , module , "Liblzma error: %s" , LZMAStrerror ( ret ) )
+CALLEE	337:3	337:3	12	TIFFErrorExt
+LEAF_NODE	337:3	337:3	13	TIFFErrorExt
+LEAF_NODE	337:15	337:15	12	(
+ARGUMENT	337:16	337:16	12	tif -> tif_clientdata
+FIELD	337:16	337:21	13	tif -> tif_clientdata
+LEAF_NODE	337:16	337:16	14	tif
+LEAF_NODE	337:19	337:19	14	->
+LEAF_NODE	337:21	337:21	14	tif_clientdata
+LEAF_NODE	337:35	337:35	12	,
+ARGUMENT	337:37	337:37	12	module
+FIELD	337:37	337:37	13	module
+LEAF_NODE	337:37	337:37	14	module
+LEAF_NODE	337:43	337:43	12	,
+ARGUMENT	337:45	337:45	12	"Liblzma error: %s"
+FIELD	337:45	337:45	13	"Liblzma error: %s"
+LEAF_NODE	337:45	337:45	14	"Liblzma error: %s"
+LEAF_NODE	337:64	337:64	12	,
+ARGUMENT	338:9	338:9	12	LZMAStrerror ( ret )
+FUNCTION_CALL	338:9	338:25	13	LZMAStrerror ( ret )
+CALLEE	338:9	338:9	14	LZMAStrerror
+LEAF_NODE	338:9	338:9	15	LZMAStrerror
+LEAF_NODE	338:21	338:21	14	(
+ARGUMENT	338:22	338:22	14	ret
+FIELD	338:22	338:22	15	ret
+LEAF_NODE	338:22	338:22	16	ret
+LEAF_NODE	338:25	338:25	14	)
+LEAF_NODE	338:26	338:26	12	)
+LEAF_NODE	338:27	338:27	10	;
+JUMP_STATEMENT	339:3	339:11	9	return 0 ;
+KEYWORD	339:3	339:3	10	return
+LEAF_NODE	339:3	339:3	11	return
+DESTINATION	339:10	339:10	10	0
+EXPR	339:10	339:10	11	0
+FIELD	339:10	339:10	12	0
+LEAF_NODE	339:10	339:10	13	0
+LEAF_NODE	339:11	339:11	10	;
+LEAF_NODE	340:2	340:2	8	}
+LEAF_NODE	341:1	341:1	5	}
+LEAF_NODE	341:33	341:33	3	;
+JUMP_STATEMENT	342:1	342:9	3	return 1 ;
+KEYWORD	342:1	342:1	4	return
+LEAF_NODE	342:1	342:1	5	return
+DESTINATION	342:8	342:8	4	1
+EXPR	342:8	342:8	5	1
+FIELD	342:8	342:8	6	1
+LEAF_NODE	342:8	342:8	7	1
+LEAF_NODE	342:9	342:9	4	;
+LEAF_NODE	343:0	343:0	2	}
+FUNCTION_DEF	345:0	365:0	1	
+RETURN_TYPE	345:0	345:7	2	static void
+LEAF_NODE	345:0	345:0	3	static
+TYPE_NAME	345:7	345:7	3	void
+LEAF_NODE	345:7	345:7	4	void
+FUNCTION_NAME	346:0	346:0	2	LZMACleanup
+LEAF_NODE	346:0	346:0	3	LZMACleanup
+PARAMETER_LIST	346:11	346:21	2	( TIFF * tif )
+LEAF_NODE	346:11	346:11	3	(
+PARAMETER_DECL	346:12	346:18	3	TIFF * tif
+TYPE	346:12	346:16	4	TIFF *
+TYPE_NAME	346:12	346:12	5	TIFF
+LEAF_NODE	346:12	346:12	6	TIFF
+POINTER	346:16	346:16	5	*
+LEAF_NODE	346:16	346:16	6	*
+NAME	346:18	346:18	4	tif
+LEAF_NODE	346:18	346:18	5	tif
+LEAF_NODE	346:21	346:21	3	)
+LEAF_NODE	347:0	347:0	2	{
+STATEMENTS	348:1	364:1	2	
+SIMPLE_DECL	348:1	348:28	3	LZMAState * sp ; sp = LState ( tif ) ;
+VAR_DECL	348:1	348:12	4	LZMAState * sp ; sp = LState ( tif )
+TYPE	348:1	348:10	5	LZMAState *
+TYPE_NAME	348:1	348:1	6	LZMAState
+LEAF_NODE	348:1	348:1	7	LZMAState
+POINTER	348:10	348:10	6	*
+LEAF_NODE	348:10	348:10	7	*
+NAME	348:12	348:12	5	sp
+LEAF_NODE	348:12	348:12	6	sp
+LEAF_NODE	0:0	0:0	5	;
+INIT	348:12	348:12	5	sp = LState ( tif )
+ASSIGN	348:12	348:17	6	sp = LState ( tif )
+LVAL	348:12	348:12	7	sp
+NAME	348:12	348:12	8	sp
+LEAF_NODE	348:12	348:12	9	sp
+ASSIGN_OP	348:15	348:15	7	=
+LEAF_NODE	348:15	348:15	8	=
+RVAL	348:17	348:17	7	LState ( tif )
+FUNCTION_CALL	348:17	348:27	8	LState ( tif )
+CALLEE	348:17	348:17	9	LState
+LEAF_NODE	348:17	348:17	10	LState
+LEAF_NODE	348:23	348:23	9	(
+ARGUMENT	348:24	348:24	9	tif
+FIELD	348:24	348:24	10	tif
+LEAF_NODE	348:24	348:24	11	tif
+LEAF_NODE	348:27	348:27	9	)
+LEAF_NODE	348:28	348:28	4	;
+EXPR_STATEMENT	350:1	350:16	3	assert ( sp != 0 ) ;
+EXPR	350:1	350:1	4	assert ( sp != 0 )
+FUNCTION_CALL	350:1	350:15	5	assert ( sp != 0 )
+CALLEE	350:1	350:1	6	assert
+LEAF_NODE	350:1	350:1	7	assert
+LEAF_NODE	350:7	350:7	6	(
+ARGUMENT	350:8	350:14	6	sp != 0
+FIELD	350:8	350:8	7	sp
+LEAF_NODE	350:8	350:8	8	sp
+EQ_OPERATOR	350:11	350:11	7	!=
+LEAF_NODE	350:11	350:11	8	!=
+FIELD	350:14	350:14	7	0
+LEAF_NODE	350:14	350:14	8	0
+LEAF_NODE	350:15	350:15	6	)
+LEAF_NODE	350:16	350:16	4	;
+EXPR_STATEMENT	352:1	352:32	3	( void ) TIFFPredictorCleanup ( tif ) ;
+EXPR	352:1	352:7	4	( void ) TIFFPredictorCleanup ( tif )
+LEAF_NODE	352:1	352:1	5	(
+TYPE_NAME	352:2	352:2	5	void
+LEAF_NODE	352:2	352:2	6	void
+LEAF_NODE	352:6	352:6	5	)
+FUNCTION_CALL	352:7	352:31	5	TIFFPredictorCleanup ( tif )
+CALLEE	352:7	352:7	6	TIFFPredictorCleanup
+LEAF_NODE	352:7	352:7	7	TIFFPredictorCleanup
+LEAF_NODE	352:27	352:27	6	(
+ARGUMENT	352:28	352:28	6	tif
+FIELD	352:28	352:28	7	tif
+LEAF_NODE	352:28	352:28	8	tif
+LEAF_NODE	352:31	352:31	6	)
+LEAF_NODE	352:32	352:32	4	;
+EXPR_STATEMENT	354:1	354:47	3	tif -> tif_tagmethods . vgetfield = sp -> vgetparent ;
+EXPR	354:1	354:1	4	tif -> tif_tagmethods . vgetfield = sp -> vgetparent
+ASSIGN	354:1	354:33	5	tif -> tif_tagmethods . vgetfield = sp -> vgetparent
+LVAL	354:1	354:1	6	tif -> tif_tagmethods . vgetfield
+FIELD	354:1	354:21	7	tif -> tif_tagmethods . vgetfield
+LEAF_NODE	354:1	354:1	8	tif
+LEAF_NODE	354:4	354:4	8	->
+LEAF_NODE	354:6	354:6	8	tif_tagmethods
+LEAF_NODE	354:20	354:20	8	.
+LEAF_NODE	354:21	354:21	8	vgetfield
+ASSIGN_OP	354:31	354:31	6	=
+LEAF_NODE	354:31	354:31	7	=
+RVAL	354:33	354:33	6	sp -> vgetparent
+FIELD	354:33	354:37	7	sp -> vgetparent
+LEAF_NODE	354:33	354:33	8	sp
+LEAF_NODE	354:35	354:35	8	->
+LEAF_NODE	354:37	354:37	8	vgetparent
+LEAF_NODE	354:47	354:47	4	;
+EXPR_STATEMENT	355:1	355:47	3	tif -> tif_tagmethods . vsetfield = sp -> vsetparent ;
+EXPR	355:1	355:1	4	tif -> tif_tagmethods . vsetfield = sp -> vsetparent
+ASSIGN	355:1	355:33	5	tif -> tif_tagmethods . vsetfield = sp -> vsetparent
+LVAL	355:1	355:1	6	tif -> tif_tagmethods . vsetfield
+FIELD	355:1	355:21	7	tif -> tif_tagmethods . vsetfield
+LEAF_NODE	355:1	355:1	8	tif
+LEAF_NODE	355:4	355:4	8	->
+LEAF_NODE	355:6	355:6	8	tif_tagmethods
+LEAF_NODE	355:20	355:20	8	.
+LEAF_NODE	355:21	355:21	8	vsetfield
+ASSIGN_OP	355:31	355:31	6	=
+LEAF_NODE	355:31	355:31	7	=
+RVAL	355:33	355:33	6	sp -> vsetparent
+FIELD	355:33	355:37	7	sp -> vsetparent
+LEAF_NODE	355:33	355:33	8	sp
+LEAF_NODE	355:35	355:35	8	->
+LEAF_NODE	355:37	355:37	8	vsetparent
+LEAF_NODE	355:47	355:47	4	;
+SELECTION	357:1	357:16	3	
+KEYWORD	357:1	357:1	4	if
+LEAF_NODE	357:1	357:1	5	if
+LEAF_NODE	357:4	357:4	4	(
+CONDITION	357:5	357:5	4	sp -> state
+EXPR	357:5	357:5	5	sp -> state
+FIELD	357:5	357:9	6	sp -> state
+LEAF_NODE	357:5	357:5	7	sp
+LEAF_NODE	357:7	357:7	7	->
+LEAF_NODE	357:9	357:9	7	state
+LEAF_NODE	357:14	357:14	4	)
+STATEMENTS	357:16	360:1	4	
+LEAF_NODE	357:16	357:16	5	{
+STATEMENTS	358:2	359:2	5	
+EXPR_STATEMENT	358:2	358:23	6	lzma_end ( & sp -> stream ) ;
+EXPR	358:2	358:2	7	lzma_end ( & sp -> stream )
+FUNCTION_CALL	358:2	358:22	8	lzma_end ( & sp -> stream )
+CALLEE	358:2	358:2	9	lzma_end
+LEAF_NODE	358:2	358:2	10	lzma_end
+LEAF_NODE	358:10	358:10	9	(
+ARGUMENT	358:11	358:11	9	& sp -> stream
+UNARY_EXPR	358:11	358:12	10	& sp -> stream
+UNARY_OPERATOR	358:11	358:11	11	&
+LEAF_NODE	358:11	358:11	12	&
+FIELD	358:12	358:16	11	sp -> stream
+LEAF_NODE	358:12	358:12	12	sp
+LEAF_NODE	358:14	358:14	12	->
+LEAF_NODE	358:16	358:16	12	stream
+LEAF_NODE	358:22	358:22	9	)
+LEAF_NODE	358:23	358:23	7	;
+EXPR_STATEMENT	359:2	359:15	6	sp -> state = 0 ;
+EXPR	359:2	359:2	7	sp -> state = 0
+ASSIGN	359:2	359:14	8	sp -> state = 0
+LVAL	359:2	359:2	9	sp -> state
+FIELD	359:2	359:6	10	sp -> state
+LEAF_NODE	359:2	359:2	11	sp
+LEAF_NODE	359:4	359:4	11	->
+LEAF_NODE	359:6	359:6	11	state
+ASSIGN_OP	359:12	359:12	9	=
+LEAF_NODE	359:12	359:12	10	=
+RVAL	359:14	359:14	9	0
+FIELD	359:14	359:14	10	0
+LEAF_NODE	359:14	359:14	11	0
+LEAF_NODE	359:15	359:15	7	;
+LEAF_NODE	360:1	360:1	5	}
+EXPR_STATEMENT	361:1	361:14	3	_TIFFfree ( sp ) ;
+EXPR	361:1	361:1	4	_TIFFfree ( sp )
+FUNCTION_CALL	361:1	361:13	5	_TIFFfree ( sp )
+CALLEE	361:1	361:1	6	_TIFFfree
+LEAF_NODE	361:1	361:1	7	_TIFFfree
+LEAF_NODE	361:10	361:10	6	(
+ARGUMENT	361:11	361:11	6	sp
+FIELD	361:11	361:11	7	sp
+LEAF_NODE	361:11	361:11	8	sp
+LEAF_NODE	361:13	361:13	6	)
+LEAF_NODE	361:14	361:14	4	;
+EXPR_STATEMENT	362:1	362:21	3	tif -> tif_data = NULL ;
+EXPR	362:1	362:1	4	tif -> tif_data = NULL
+ASSIGN	362:1	362:17	5	tif -> tif_data = NULL
+LVAL	362:1	362:1	6	tif -> tif_data
+FIELD	362:1	362:6	7	tif -> tif_data
+LEAF_NODE	362:1	362:1	8	tif
+LEAF_NODE	362:4	362:4	8	->
+LEAF_NODE	362:6	362:6	8	tif_data
+ASSIGN_OP	362:15	362:15	6	=
+LEAF_NODE	362:15	362:15	7	=
+RVAL	362:17	362:17	6	NULL
+FIELD	362:17	362:17	7	NULL
+LEAF_NODE	362:17	362:17	8	NULL
+LEAF_NODE	362:21	362:21	4	;
+EXPR_STATEMENT	364:1	364:37	3	_TIFFSetDefaultCompressionState ( tif ) ;
+EXPR	364:1	364:1	4	_TIFFSetDefaultCompressionState ( tif )
+FUNCTION_CALL	364:1	364:36	5	_TIFFSetDefaultCompressionState ( tif )
+CALLEE	364:1	364:1	6	_TIFFSetDefaultCompressionState
+LEAF_NODE	364:1	364:1	7	_TIFFSetDefaultCompressionState
+LEAF_NODE	364:32	364:32	6	(
+ARGUMENT	364:33	364:33	6	tif
+FIELD	364:33	364:33	7	tif
+LEAF_NODE	364:33	364:33	8	tif
+LEAF_NODE	364:36	364:36	6	)
+LEAF_NODE	364:37	364:37	4	;
+LEAF_NODE	365:0	365:0	2	}
+FUNCTION_DEF	367:0	392:0	1	
+RETURN_TYPE	367:0	367:7	2	static int
+LEAF_NODE	367:0	367:0	3	static
+TYPE_NAME	367:7	367:7	3	int
+LEAF_NODE	367:7	367:7	4	int
+FUNCTION_NAME	368:0	368:0	2	LZMAVSetField
+LEAF_NODE	368:0	368:0	3	LZMAVSetField
+PARAMETER_LIST	368:13	368:47	2	( TIFF * tif , uint32 tag , va_list ap )
+LEAF_NODE	368:13	368:13	3	(
+PARAMETER_DECL	368:14	368:20	3	TIFF * tif
+TYPE	368:14	368:18	4	TIFF *
+TYPE_NAME	368:14	368:14	5	TIFF
+LEAF_NODE	368:14	368:14	6	TIFF
+POINTER	368:18	368:18	5	*
+LEAF_NODE	368:18	368:18	6	*
+NAME	368:20	368:20	4	tif
+LEAF_NODE	368:20	368:20	5	tif
+LEAF_NODE	368:23	368:23	3	,
+PARAMETER_DECL	368:25	368:32	3	uint32 tag
+TYPE	368:25	368:25	4	uint32
+TYPE_NAME	368:25	368:25	5	uint32
+LEAF_NODE	368:25	368:25	6	uint32
+NAME	368:32	368:32	4	tag
+LEAF_NODE	368:32	368:32	5	tag
+LEAF_NODE	368:35	368:35	3	,
+PARAMETER_DECL	368:37	368:45	3	va_list ap
+TYPE	368:37	368:37	4	va_list
+TYPE_NAME	368:37	368:37	5	va_list
+LEAF_NODE	368:37	368:37	6	va_list
+NAME	368:45	368:45	4	ap
+LEAF_NODE	368:45	368:45	5	ap
+LEAF_NODE	368:47	368:47	3	)
+LEAF_NODE	369:0	369:0	2	{
+STATEMENTS	370:1	373:1	2	
+LEAF_NODE	370:1	370:1	3	static
+SIMPLE_DECL	370:8	370:45	3	const char [ ] module ; module = "LZMAVSetField" ;
+VAR_DECL	370:8	370:19	4	const char [ ] module ; module = "LZMAVSetField"
+TYPE	370:8	370:25	5	const char [ ]
+TYPE_NAME	370:8	370:14	6	const char
+LEAF_NODE	370:8	370:8	7	const
+LEAF_NODE	370:14	370:14	7	char
+TYPE_SUFFIX	370:25	370:26	6	[ ]
+LEAF_NODE	370:25	370:25	7	[
+LEAF_NODE	370:26	370:26	7	]
+NAME	370:19	370:19	5	module
+LEAF_NODE	370:19	370:19	6	module
+LEAF_NODE	0:0	0:0	5	;
+INIT	370:19	370:19	5	module = "LZMAVSetField"
+ASSIGN	370:19	370:30	6	module = "LZMAVSetField"
+LVAL	370:19	370:19	7	module
+NAME	370:19	370:19	8	module
+LEAF_NODE	370:19	370:19	9	module
+ASSIGN_OP	370:28	370:28	7	=
+LEAF_NODE	370:28	370:28	8	=
+RVAL	370:30	370:30	7	"LZMAVSetField"
+FIELD	370:30	370:30	8	"LZMAVSetField"
+LEAF_NODE	370:30	370:30	9	"LZMAVSetField"
+LEAF_NODE	370:45	370:45	4	;
+SIMPLE_DECL	371:1	371:28	3	LZMAState * sp ; sp = LState ( tif ) ;
+VAR_DECL	371:1	371:12	4	LZMAState * sp ; sp = LState ( tif )
+TYPE	371:1	371:10	5	LZMAState *
+TYPE_NAME	371:1	371:1	6	LZMAState
+LEAF_NODE	371:1	371:1	7	LZMAState
+POINTER	371:10	371:10	6	*
+LEAF_NODE	371:10	371:10	7	*
+NAME	371:12	371:12	5	sp
+LEAF_NODE	371:12	371:12	6	sp
+LEAF_NODE	0:0	0:0	5	;
+INIT	371:12	371:12	5	sp = LState ( tif )
+ASSIGN	371:12	371:17	6	sp = LState ( tif )
+LVAL	371:12	371:12	7	sp
+NAME	371:12	371:12	8	sp
+LEAF_NODE	371:12	371:12	9	sp
+ASSIGN_OP	371:15	371:15	7	=
+LEAF_NODE	371:15	371:15	8	=
+RVAL	371:17	371:17	7	LState ( tif )
+FUNCTION_CALL	371:17	371:27	8	LState ( tif )
+CALLEE	371:17	371:17	9	LState
+LEAF_NODE	371:17	371:17	10	LState
+LEAF_NODE	371:23	371:23	9	(
+ARGUMENT	371:24	371:24	9	tif
+FIELD	371:24	371:24	10	tif
+LEAF_NODE	371:24	371:24	11	tif
+LEAF_NODE	371:27	371:27	9	)
+LEAF_NODE	371:28	371:28	4	;
+SELECTION	373:1	373:14	3	
+KEYWORD	373:1	373:1	4	switch
+LEAF_NODE	373:1	373:1	5	switch
+LEAF_NODE	373:8	373:8	4	(
+CONDITION	373:9	373:9	4	tag
+EXPR	373:9	373:9	5	tag
+FIELD	373:9	373:9	6	tag
+LEAF_NODE	373:9	373:9	7	tag
+LEAF_NODE	373:12	373:12	4	)
+STATEMENTS	373:14	390:1	4	
+LEAF_NODE	373:14	373:14	5	{
+STATEMENTS	374:1	389:2	5	
+LABEL	374:1	374:24	6	case TIFFTAG_LZMAPRESET :
+LEAF_NODE	374:1	374:1	7	case
+LEAF_NODE	374:6	374:6	7	TIFFTAG_LZMAPRESET
+LEAF_NODE	374:24	374:24	7	:
+EXPR_STATEMENT	375:2	375:36	6	sp -> preset = ( int ) va_arg ( ap , int ) ;
+EXPR	375:2	375:2	7	sp -> preset = ( int ) va_arg ( ap , int )
+ASSIGN	375:2	375:15	8	sp -> preset = ( int ) va_arg ( ap , int )
+LVAL	375:2	375:2	9	sp -> preset
+FIELD	375:2	375:6	10	sp -> preset
+LEAF_NODE	375:2	375:2	11	sp
+LEAF_NODE	375:4	375:4	11	->
+LEAF_NODE	375:6	375:6	11	preset
+ASSIGN_OP	375:13	375:13	9	=
+LEAF_NODE	375:13	375:13	10	=
+RVAL	375:15	375:21	9	( int ) va_arg ( ap , int )
+LEAF_NODE	375:15	375:15	10	(
+TYPE_NAME	375:16	375:16	10	int
+LEAF_NODE	375:16	375:16	11	int
+LEAF_NODE	375:19	375:19	10	)
+FUNCTION_CALL	375:21	375:35	10	va_arg ( ap , int )
+CALLEE	375:21	375:21	11	va_arg
+LEAF_NODE	375:21	375:21	12	va_arg
+LEAF_NODE	375:27	375:27	11	(
+ARGUMENT	375:28	375:28	11	ap
+FIELD	375:28	375:28	12	ap
+LEAF_NODE	375:28	375:28	13	ap
+LEAF_NODE	375:30	375:30	11	,
+ARGUMENT	375:32	375:32	11	int
+FIELD	375:32	375:32	12	int
+LEAF_NODE	375:32	375:32	13	int
+LEAF_NODE	375:35	375:35	11	)
+LEAF_NODE	375:36	375:36	7	;
+EXPR_STATEMENT	376:2	376:45	6	lzma_lzma_preset ( & sp -> opt_lzma , sp -> preset ) ;
+EXPR	376:2	376:2	7	lzma_lzma_preset ( & sp -> opt_lzma , sp -> preset )
+FUNCTION_CALL	376:2	376:44	8	lzma_lzma_preset ( & sp -> opt_lzma , sp -> preset )
+CALLEE	376:2	376:2	9	lzma_lzma_preset
+LEAF_NODE	376:2	376:2	10	lzma_lzma_preset
+LEAF_NODE	376:18	376:18	9	(
+ARGUMENT	376:19	376:19	9	& sp -> opt_lzma
+UNARY_EXPR	376:19	376:20	10	& sp -> opt_lzma
+UNARY_OPERATOR	376:19	376:19	11	&
+LEAF_NODE	376:19	376:19	12	&
+FIELD	376:20	376:24	11	sp -> opt_lzma
+LEAF_NODE	376:20	376:20	12	sp
+LEAF_NODE	376:22	376:22	12	->
+LEAF_NODE	376:24	376:24	12	opt_lzma
+LEAF_NODE	376:32	376:32	9	,
+ARGUMENT	376:34	376:34	9	sp -> preset
+FIELD	376:34	376:38	10	sp -> preset
+LEAF_NODE	376:34	376:34	11	sp
+LEAF_NODE	376:36	376:36	11	->
+LEAF_NODE	376:38	376:38	11	preset
+LEAF_NODE	376:44	376:44	9	)
+LEAF_NODE	376:45	376:45	7	;
+SELECTION	377:2	377:38	6	
+KEYWORD	377:2	377:2	7	if
+LEAF_NODE	377:2	377:2	8	if
+LEAF_NODE	377:5	377:5	7	(
+CONDITION	377:6	377:6	7	sp -> state & LSTATE_INIT_ENCODE
+EXPR	377:6	377:18	8	sp -> state & LSTATE_INIT_ENCODE
+FIELD	377:6	377:10	9	sp -> state
+LEAF_NODE	377:6	377:6	10	sp
+LEAF_NODE	377:8	377:8	10	->
+LEAF_NODE	377:10	377:10	10	state
+LEAF_NODE	377:16	377:16	9	&
+FIELD	377:18	377:18	9	LSTATE_INIT_ENCODE
+LEAF_NODE	377:18	377:18	10	LSTATE_INIT_ENCODE
+LEAF_NODE	377:36	377:36	7	)
+STATEMENTS	377:38	386:2	7	
+LEAF_NODE	377:38	377:38	8	{
+STATEMENTS	378:3	381:3	8	
+SIMPLE_DECL	378:3	380:20	9	lzma_ret ret ; ret = lzma_stream_encoder ( & sp -> stream , sp -> filters , sp -> check ) ;
+VAR_DECL	378:3	378:12	10	lzma_ret ret ; ret = lzma_stream_encoder ( & sp -> stream , sp -> filters , sp -> check )
+TYPE	378:3	378:3	11	lzma_ret
+TYPE_NAME	378:3	378:3	12	lzma_ret
+LEAF_NODE	378:3	378:3	13	lzma_ret
+NAME	378:12	378:12	11	ret
+LEAF_NODE	378:12	378:12	12	ret
+LEAF_NODE	0:0	0:0	11	;
+INIT	378:12	378:12	11	ret = lzma_stream_encoder ( & sp -> stream , sp -> filters , sp -> check )
+ASSIGN	378:12	378:18	12	ret = lzma_stream_encoder ( & sp -> stream , sp -> filters , sp -> check )
+LVAL	378:12	378:12	13	ret
+NAME	378:12	378:12	14	ret
+LEAF_NODE	378:12	378:12	15	ret
+ASSIGN_OP	378:16	378:16	13	=
+LEAF_NODE	378:16	378:16	14	=
+RVAL	378:18	378:18	13	lzma_stream_encoder ( & sp -> stream , sp -> filters , sp -> check )
+FUNCTION_CALL	378:18	380:19	14	lzma_stream_encoder ( & sp -> stream , sp -> filters , sp -> check )
+CALLEE	378:18	378:18	15	lzma_stream_encoder
+LEAF_NODE	378:18	378:18	16	lzma_stream_encoder
+LEAF_NODE	378:37	378:37	15	(
+ARGUMENT	378:38	378:38	15	& sp -> stream
+UNARY_EXPR	378:38	378:39	16	& sp -> stream
+UNARY_OPERATOR	378:38	378:38	17	&
+LEAF_NODE	378:38	378:38	18	&
+FIELD	378:39	378:43	17	sp -> stream
+LEAF_NODE	378:39	378:39	18	sp
+LEAF_NODE	378:41	378:41	18	->
+LEAF_NODE	378:43	378:43	18	stream
+LEAF_NODE	378:49	378:49	15	,
+ARGUMENT	379:10	379:10	15	sp -> filters
+FIELD	379:10	379:14	16	sp -> filters
+LEAF_NODE	379:10	379:10	17	sp
+LEAF_NODE	379:12	379:12	17	->
+LEAF_NODE	379:14	379:14	17	filters
+LEAF_NODE	379:21	379:21	15	,
+ARGUMENT	380:10	380:10	15	sp -> check
+FIELD	380:10	380:14	16	sp -> check
+LEAF_NODE	380:10	380:10	17	sp
+LEAF_NODE	380:12	380:12	17	->
+LEAF_NODE	380:14	380:14	17	check
+LEAF_NODE	380:19	380:19	15	)
+LEAF_NODE	380:20	380:20	10	;
+SELECTION	381:3	381:23	9	
+KEYWORD	381:3	381:3	10	if
+LEAF_NODE	381:3	381:3	11	if
+LEAF_NODE	381:6	381:6	10	(
+CONDITION	381:7	381:7	10	ret != LZMA_OK
+EXPR	381:7	381:14	11	ret != LZMA_OK
+FIELD	381:7	381:7	12	ret
+LEAF_NODE	381:7	381:7	13	ret
+EQ_OPERATOR	381:11	381:11	12	!=
+LEAF_NODE	381:11	381:11	13	!=
+FIELD	381:14	381:14	12	LZMA_OK
+LEAF_NODE	381:14	381:14	13	LZMA_OK
+LEAF_NODE	381:21	381:21	10	)
+STATEMENTS	381:23	385:3	10	
+LEAF_NODE	381:23	381:23	11	{
+STATEMENTS	382:4	382:4	11	
+EXPR_STATEMENT	382:4	384:28	12	TIFFErrorExt ( tif -> tif_clientdata , module , "Liblzma error: %s" , LZMAStrerror ( ret ) ) ;
+EXPR	382:4	382:4	13	TIFFErrorExt ( tif -> tif_clientdata , module , "Liblzma error: %s" , LZMAStrerror ( ret ) )
+FUNCTION_CALL	382:4	384:27	14	TIFFErrorExt ( tif -> tif_clientdata , module , "Liblzma error: %s" , LZMAStrerror ( ret ) )
+CALLEE	382:4	382:4	15	TIFFErrorExt
+LEAF_NODE	382:4	382:4	16	TIFFErrorExt
+LEAF_NODE	382:16	382:16	15	(
+ARGUMENT	382:17	382:17	15	tif -> tif_clientdata
+FIELD	382:17	382:22	16	tif -> tif_clientdata
+LEAF_NODE	382:17	382:17	17	tif
+LEAF_NODE	382:20	382:20	17	->
+LEAF_NODE	382:22	382:22	17	tif_clientdata
+LEAF_NODE	382:36	382:36	15	,
+ARGUMENT	382:38	382:38	15	module
+FIELD	382:38	382:38	16	module
+LEAF_NODE	382:38	382:38	17	module
+LEAF_NODE	382:44	382:44	15	,
+ARGUMENT	383:10	383:10	15	"Liblzma error: %s"
+FIELD	383:10	383:10	16	"Liblzma error: %s"
+LEAF_NODE	383:10	383:10	17	"Liblzma error: %s"
+LEAF_NODE	383:29	383:29	15	,
+ARGUMENT	384:10	384:10	15	LZMAStrerror ( ret )
+FUNCTION_CALL	384:10	384:26	16	LZMAStrerror ( ret )
+CALLEE	384:10	384:10	17	LZMAStrerror
+LEAF_NODE	384:10	384:10	18	LZMAStrerror
+LEAF_NODE	384:22	384:22	17	(
+ARGUMENT	384:23	384:23	17	ret
+FIELD	384:23	384:23	18	ret
+LEAF_NODE	384:23	384:23	19	ret
+LEAF_NODE	384:26	384:26	17	)
+LEAF_NODE	384:27	384:27	15	)
+LEAF_NODE	384:28	384:28	13	;
+LEAF_NODE	385:3	385:3	11	}
+LEAF_NODE	386:2	386:2	8	}
+JUMP_STATEMENT	387:2	387:10	6	return 1 ;
+KEYWORD	387:2	387:2	7	return
+LEAF_NODE	387:2	387:2	8	return
+DESTINATION	387:9	387:9	7	1
+EXPR	387:9	387:9	8	1
+FIELD	387:9	387:9	9	1
+LEAF_NODE	387:9	387:9	10	1
+LEAF_NODE	387:10	387:10	7	;
+LABEL	388:1	388:8	6	default :
+LEAF_NODE	388:1	388:1	7	default
+LEAF_NODE	388:8	388:8	7	:
+JUMP_STATEMENT	389:2	389:40	6	return ( * sp -> vsetparent ) ( tif , tag , ap ) ;
+KEYWORD	389:2	389:2	7	return
+LEAF_NODE	389:2	389:2	8	return
+DESTINATION	389:9	389:9	7	( * sp -> vsetparent ) ( tif , tag , ap )
+EXPR	389:9	389:9	8	( * sp -> vsetparent ) ( tif , tag , ap )
+FUNCTION_CALL	389:9	389:39	9	( * sp -> vsetparent ) ( tif , tag , ap )
+CALLEE	389:9	389:25	10	( * sp -> vsetparent )
+LEAF_NODE	389:9	389:9	11	(
+UNARY_EXPR	389:10	389:11	11	* sp -> vsetparent
+UNARY_OPERATOR	389:10	389:10	12	*
+LEAF_NODE	389:10	389:10	13	*
+FIELD	389:11	389:15	12	sp -> vsetparent
+LEAF_NODE	389:11	389:11	13	sp
+LEAF_NODE	389:13	389:13	13	->
+LEAF_NODE	389:15	389:15	13	vsetparent
+LEAF_NODE	389:25	389:25	11	)
+LEAF_NODE	389:26	389:26	10	(
+ARGUMENT	389:27	389:27	10	tif
+FIELD	389:27	389:27	11	tif
+LEAF_NODE	389:27	389:27	12	tif
+LEAF_NODE	389:30	389:30	10	,
+ARGUMENT	389:32	389:32	10	tag
+FIELD	389:32	389:32	11	tag
+LEAF_NODE	389:32	389:32	12	tag
+LEAF_NODE	389:35	389:35	10	,
+ARGUMENT	389:37	389:37	10	ap
+FIELD	389:37	389:37	11	ap
+LEAF_NODE	389:37	389:37	12	ap
+LEAF_NODE	389:39	389:39	10	)
+LEAF_NODE	389:40	389:40	7	;
+LEAF_NODE	390:1	390:1	5	}
+LEAF_NODE	392:0	392:0	2	}
+FUNCTION_DEF	394:0	407:0	1	
+RETURN_TYPE	394:0	394:7	2	static int
+LEAF_NODE	394:0	394:0	3	static
+TYPE_NAME	394:7	394:7	3	int
+LEAF_NODE	394:7	394:7	4	int
+FUNCTION_NAME	395:0	395:0	2	LZMAVGetField
+LEAF_NODE	395:0	395:0	3	LZMAVGetField
+PARAMETER_LIST	395:13	395:47	2	( TIFF * tif , uint32 tag , va_list ap )
+LEAF_NODE	395:13	395:13	3	(
+PARAMETER_DECL	395:14	395:20	3	TIFF * tif
+TYPE	395:14	395:18	4	TIFF *
+TYPE_NAME	395:14	395:14	5	TIFF
+LEAF_NODE	395:14	395:14	6	TIFF
+POINTER	395:18	395:18	5	*
+LEAF_NODE	395:18	395:18	6	*
+NAME	395:20	395:20	4	tif
+LEAF_NODE	395:20	395:20	5	tif
+LEAF_NODE	395:23	395:23	3	,
+PARAMETER_DECL	395:25	395:32	3	uint32 tag
+TYPE	395:25	395:25	4	uint32
+TYPE_NAME	395:25	395:25	5	uint32
+LEAF_NODE	395:25	395:25	6	uint32
+NAME	395:32	395:32	4	tag
+LEAF_NODE	395:32	395:32	5	tag
+LEAF_NODE	395:35	395:35	3	,
+PARAMETER_DECL	395:37	395:45	3	va_list ap
+TYPE	395:37	395:37	4	va_list
+TYPE_NAME	395:37	395:37	5	va_list
+LEAF_NODE	395:37	395:37	6	va_list
+NAME	395:45	395:45	4	ap
+LEAF_NODE	395:45	395:45	5	ap
+LEAF_NODE	395:47	395:47	3	)
+LEAF_NODE	396:0	396:0	2	{
+STATEMENTS	397:1	406:1	2	
+SIMPLE_DECL	397:1	397:28	3	LZMAState * sp ; sp = LState ( tif ) ;
+VAR_DECL	397:1	397:12	4	LZMAState * sp ; sp = LState ( tif )
+TYPE	397:1	397:10	5	LZMAState *
+TYPE_NAME	397:1	397:1	6	LZMAState
+LEAF_NODE	397:1	397:1	7	LZMAState
+POINTER	397:10	397:10	6	*
+LEAF_NODE	397:10	397:10	7	*
+NAME	397:12	397:12	5	sp
+LEAF_NODE	397:12	397:12	6	sp
+LEAF_NODE	0:0	0:0	5	;
+INIT	397:12	397:12	5	sp = LState ( tif )
+ASSIGN	397:12	397:17	6	sp = LState ( tif )
+LVAL	397:12	397:12	7	sp
+NAME	397:12	397:12	8	sp
+LEAF_NODE	397:12	397:12	9	sp
+ASSIGN_OP	397:15	397:15	7	=
+LEAF_NODE	397:15	397:15	8	=
+RVAL	397:17	397:17	7	LState ( tif )
+FUNCTION_CALL	397:17	397:27	8	LState ( tif )
+CALLEE	397:17	397:17	9	LState
+LEAF_NODE	397:17	397:17	10	LState
+LEAF_NODE	397:23	397:23	9	(
+ARGUMENT	397:24	397:24	9	tif
+FIELD	397:24	397:24	10	tif
+LEAF_NODE	397:24	397:24	11	tif
+LEAF_NODE	397:27	397:27	9	)
+LEAF_NODE	397:28	397:28	4	;
+SELECTION	399:1	399:14	3	
+KEYWORD	399:1	399:1	4	switch
+LEAF_NODE	399:1	399:1	5	switch
+LEAF_NODE	399:8	399:8	4	(
+CONDITION	399:9	399:9	4	tag
+EXPR	399:9	399:9	5	tag
+FIELD	399:9	399:9	6	tag
+LEAF_NODE	399:9	399:9	7	tag
+LEAF_NODE	399:12	399:12	4	)
+STATEMENTS	399:14	405:1	4	
+LEAF_NODE	399:14	399:14	5	{
+STATEMENTS	400:1	404:2	5	
+LABEL	400:1	400:24	6	case TIFFTAG_LZMAPRESET :
+LEAF_NODE	400:1	400:1	7	case
+LEAF_NODE	400:6	400:6	7	TIFFTAG_LZMAPRESET
+LEAF_NODE	400:24	400:24	7	:
+LEAF_NODE	401:2	401:2	6	*
+LEAF_NODE	401:3	401:3	6	va_arg
+LEAF_NODE	401:9	401:9	6	(
+LEAF_NODE	401:10	401:10	6	ap
+LEAF_NODE	401:12	401:12	6	,
+LEAF_NODE	401:14	401:14	6	int
+LEAF_NODE	401:17	401:17	6	*
+LEAF_NODE	401:18	401:18	6	)
+LEAF_NODE	401:20	401:20	6	=
+EXPR_STATEMENT	401:22	401:32	6	sp -> preset ;
+EXPR	401:22	401:22	7	sp -> preset
+FIELD	401:22	401:26	8	sp -> preset
+LEAF_NODE	401:22	401:22	9	sp
+LEAF_NODE	401:24	401:24	9	->
+LEAF_NODE	401:26	401:26	9	preset
+LEAF_NODE	401:32	401:32	7	;
+JUMP_STATEMENT	402:2	402:7	6	break DESTINATION ;
+KEYWORD	402:2	402:2	7	break
+LEAF_NODE	402:2	402:2	8	break
+LEAF_NODE	0:0	0:0	7	DESTINATION
+LEAF_NODE	402:7	402:7	7	;
+LABEL	403:1	403:8	6	default :
+LEAF_NODE	403:1	403:1	7	default
+LEAF_NODE	403:8	403:8	7	:
+JUMP_STATEMENT	404:2	404:40	6	return ( * sp -> vgetparent ) ( tif , tag , ap ) ;
+KEYWORD	404:2	404:2	7	return
+LEAF_NODE	404:2	404:2	8	return
+DESTINATION	404:9	404:9	7	( * sp -> vgetparent ) ( tif , tag , ap )
+EXPR	404:9	404:9	8	( * sp -> vgetparent ) ( tif , tag , ap )
+FUNCTION_CALL	404:9	404:39	9	( * sp -> vgetparent ) ( tif , tag , ap )
+CALLEE	404:9	404:25	10	( * sp -> vgetparent )
+LEAF_NODE	404:9	404:9	11	(
+UNARY_EXPR	404:10	404:11	11	* sp -> vgetparent
+UNARY_OPERATOR	404:10	404:10	12	*
+LEAF_NODE	404:10	404:10	13	*
+FIELD	404:11	404:15	12	sp -> vgetparent
+LEAF_NODE	404:11	404:11	13	sp
+LEAF_NODE	404:13	404:13	13	->
+LEAF_NODE	404:15	404:15	13	vgetparent
+LEAF_NODE	404:25	404:25	11	)
+LEAF_NODE	404:26	404:26	10	(
+ARGUMENT	404:27	404:27	10	tif
+FIELD	404:27	404:27	11	tif
+LEAF_NODE	404:27	404:27	12	tif
+LEAF_NODE	404:30	404:30	10	,
+ARGUMENT	404:32	404:32	10	tag
+FIELD	404:32	404:32	11	tag
+LEAF_NODE	404:32	404:32	12	tag
+LEAF_NODE	404:35	404:35	10	,
+ARGUMENT	404:37	404:37	10	ap
+FIELD	404:37	404:37	11	ap
+LEAF_NODE	404:37	404:37	12	ap
+LEAF_NODE	404:39	404:39	10	)
+LEAF_NODE	404:40	404:40	7	;
+LEAF_NODE	405:1	405:1	5	}
+JUMP_STATEMENT	406:1	406:9	3	return 1 ;
+KEYWORD	406:1	406:1	4	return
+LEAF_NODE	406:1	406:1	5	return
+DESTINATION	406:8	406:8	4	1
+EXPR	406:8	406:8	5	1
+FIELD	406:8	406:8	6	1
+LEAF_NODE	406:8	406:8	7	1
+LEAF_NODE	406:9	406:9	4	;
+LEAF_NODE	407:0	407:0	2	}
+FUNCTION_DEF	414:0	497:0	1	
+RETURN_TYPE	414:0	414:0	2	int
+TYPE_NAME	414:0	414:0	3	int
+LEAF_NODE	414:0	414:0	4	int
+FUNCTION_NAME	415:0	415:0	2	TIFFInitLZMA
+LEAF_NODE	415:0	415:0	3	TIFFInitLZMA
+PARAMETER_LIST	415:12	415:34	2	( TIFF * tif , int scheme )
+LEAF_NODE	415:12	415:12	3	(
+PARAMETER_DECL	415:13	415:19	3	TIFF * tif
+TYPE	415:13	415:17	4	TIFF *
+TYPE_NAME	415:13	415:13	5	TIFF
+LEAF_NODE	415:13	415:13	6	TIFF
+POINTER	415:17	415:17	5	*
+LEAF_NODE	415:17	415:17	6	*
+NAME	415:19	415:19	4	tif
+LEAF_NODE	415:19	415:19	5	tif
+LEAF_NODE	415:22	415:22	3	,
+PARAMETER_DECL	415:24	415:28	3	int scheme
+TYPE	415:24	415:24	4	int
+TYPE_NAME	415:24	415:24	5	int
+LEAF_NODE	415:24	415:24	6	int
+NAME	415:28	415:28	4	scheme
+LEAF_NODE	415:28	415:28	5	scheme
+LEAF_NODE	415:34	415:34	3	)
+LEAF_NODE	416:0	416:0	2	{
+STATEMENTS	417:1	496:1	2	
+LEAF_NODE	417:1	417:1	3	static
+SIMPLE_DECL	417:8	417:44	3	const char [ ] module ; module = "TIFFInitLZMA" ;
+VAR_DECL	417:8	417:19	4	const char [ ] module ; module = "TIFFInitLZMA"
+TYPE	417:8	417:25	5	const char [ ]
+TYPE_NAME	417:8	417:14	6	const char
+LEAF_NODE	417:8	417:8	7	const
+LEAF_NODE	417:14	417:14	7	char
+TYPE_SUFFIX	417:25	417:26	6	[ ]
+LEAF_NODE	417:25	417:25	7	[
+LEAF_NODE	417:26	417:26	7	]
+NAME	417:19	417:19	5	module
+LEAF_NODE	417:19	417:19	6	module
+LEAF_NODE	0:0	0:0	5	;
+INIT	417:19	417:19	5	module = "TIFFInitLZMA"
+ASSIGN	417:19	417:30	6	module = "TIFFInitLZMA"
+LVAL	417:19	417:19	7	module
+NAME	417:19	417:19	8	module
+LEAF_NODE	417:19	417:19	9	module
+ASSIGN_OP	417:28	417:28	7	=
+LEAF_NODE	417:28	417:28	8	=
+RVAL	417:30	417:30	7	"TIFFInitLZMA"
+FIELD	417:30	417:30	8	"TIFFInitLZMA"
+LEAF_NODE	417:30	417:30	9	"TIFFInitLZMA"
+LEAF_NODE	417:44	417:44	4	;
+SIMPLE_DECL	418:1	418:14	3	LZMAState * sp ;
+VAR_DECL	418:1	418:12	4	LZMAState * sp
+TYPE	418:1	418:10	5	LZMAState *
+TYPE_NAME	418:1	418:1	6	LZMAState
+LEAF_NODE	418:1	418:1	7	LZMAState
+POINTER	418:10	418:10	6	*
+LEAF_NODE	418:10	418:10	7	*
+NAME	418:12	418:12	5	sp
+LEAF_NODE	418:12	418:12	6	sp
+LEAF_NODE	418:14	418:14	4	;
+SIMPLE_DECL	419:1	419:42	3	lzma_stream tmp_stream ; tmp_stream = LZMA_STREAM_INIT ;
+VAR_DECL	419:1	419:13	4	lzma_stream tmp_stream ; tmp_stream = LZMA_STREAM_INIT
+TYPE	419:1	419:1	5	lzma_stream
+TYPE_NAME	419:1	419:1	6	lzma_stream
+LEAF_NODE	419:1	419:1	7	lzma_stream
+NAME	419:13	419:13	5	tmp_stream
+LEAF_NODE	419:13	419:13	6	tmp_stream
+LEAF_NODE	0:0	0:0	5	;
+INIT	419:13	419:13	5	tmp_stream = LZMA_STREAM_INIT
+ASSIGN	419:13	419:26	6	tmp_stream = LZMA_STREAM_INIT
+LVAL	419:13	419:13	7	tmp_stream
+NAME	419:13	419:13	8	tmp_stream
+LEAF_NODE	419:13	419:13	9	tmp_stream
+ASSIGN_OP	419:24	419:24	7	=
+LEAF_NODE	419:24	419:24	8	=
+RVAL	419:26	419:26	7	LZMA_STREAM_INIT
+FIELD	419:26	419:26	8	LZMA_STREAM_INIT
+LEAF_NODE	419:26	419:26	9	LZMA_STREAM_INIT
+LEAF_NODE	419:42	419:42	4	;
+EXPR_STATEMENT	421:1	421:37	3	assert ( scheme == COMPRESSION_LZMA ) ;
+EXPR	421:1	421:1	4	assert ( scheme == COMPRESSION_LZMA )
+FUNCTION_CALL	421:1	421:36	5	assert ( scheme == COMPRESSION_LZMA )
+CALLEE	421:1	421:1	6	assert
+LEAF_NODE	421:1	421:1	7	assert
+LEAF_NODE	421:7	421:7	6	(
+ARGUMENT	421:9	421:19	6	scheme == COMPRESSION_LZMA
+FIELD	421:9	421:9	7	scheme
+LEAF_NODE	421:9	421:9	8	scheme
+EQ_OPERATOR	421:16	421:16	7	==
+LEAF_NODE	421:16	421:16	8	==
+FIELD	421:19	421:19	7	COMPRESSION_LZMA
+LEAF_NODE	421:19	421:19	8	COMPRESSION_LZMA
+LEAF_NODE	421:36	421:36	6	)
+LEAF_NODE	421:37	421:37	4	;
+SELECTION	426:1	426:69	3	
+KEYWORD	426:1	426:1	4	if
+LEAF_NODE	426:1	426:1	5	if
+LEAF_NODE	426:4	426:4	4	(
+CONDITION	426:5	426:5	4	! _TIFFMergeFields ( tif , lzmaFields , TIFFArrayCount ( lzmaFields ) )
+EXPR	426:5	426:5	5	! _TIFFMergeFields ( tif , lzmaFields , TIFFArrayCount ( lzmaFields ) )
+UNARY_EXPR	426:5	426:6	6	! _TIFFMergeFields ( tif , lzmaFields , TIFFArrayCount ( lzmaFields ) )
+UNARY_OPERATOR	426:5	426:5	7	!
+LEAF_NODE	426:5	426:5	8	!
+FUNCTION_CALL	426:6	426:66	7	_TIFFMergeFields ( tif , lzmaFields , TIFFArrayCount ( lzmaFields ) )
+CALLEE	426:6	426:6	8	_TIFFMergeFields
+LEAF_NODE	426:6	426:6	9	_TIFFMergeFields
+LEAF_NODE	426:22	426:22	8	(
+ARGUMENT	426:23	426:23	8	tif
+FIELD	426:23	426:23	9	tif
+LEAF_NODE	426:23	426:23	10	tif
+LEAF_NODE	426:26	426:26	8	,
+ARGUMENT	426:28	426:28	8	lzmaFields
+FIELD	426:28	426:28	9	lzmaFields
+LEAF_NODE	426:28	426:28	10	lzmaFields
+LEAF_NODE	426:38	426:38	8	,
+ARGUMENT	426:40	426:40	8	TIFFArrayCount ( lzmaFields )
+FUNCTION_CALL	426:40	426:65	9	TIFFArrayCount ( lzmaFields )
+CALLEE	426:40	426:40	10	TIFFArrayCount
+LEAF_NODE	426:40	426:40	11	TIFFArrayCount
+LEAF_NODE	426:54	426:54	10	(
+ARGUMENT	426:55	426:55	10	lzmaFields
+FIELD	426:55	426:55	11	lzmaFields
+LEAF_NODE	426:55	426:55	12	lzmaFields
+LEAF_NODE	426:65	426:65	10	)
+LEAF_NODE	426:66	426:66	8	)
+LEAF_NODE	426:67	426:67	4	)
+STATEMENTS	426:69	430:1	4	
+LEAF_NODE	426:69	426:69	5	{
+STATEMENTS	427:2	429:2	5	
+EXPR_STATEMENT	427:2	428:51	6	TIFFErrorExt ( tif -> tif_clientdata , module , "Merging LZMA2 codec-specific tags failed" ) ;
+EXPR	427:2	427:2	7	TIFFErrorExt ( tif -> tif_clientdata , module , "Merging LZMA2 codec-specific tags failed" )
+FUNCTION_CALL	427:2	428:50	8	TIFFErrorExt ( tif -> tif_clientdata , module , "Merging LZMA2 codec-specific tags failed" )
+CALLEE	427:2	427:2	9	TIFFErrorExt
+LEAF_NODE	427:2	427:2	10	TIFFErrorExt
+LEAF_NODE	427:14	427:14	9	(
+ARGUMENT	427:15	427:15	9	tif -> tif_clientdata
+FIELD	427:15	427:20	10	tif -> tif_clientdata
+LEAF_NODE	427:15	427:15	11	tif
+LEAF_NODE	427:18	427:18	11	->
+LEAF_NODE	427:20	427:20	11	tif_clientdata
+LEAF_NODE	427:34	427:34	9	,
+ARGUMENT	427:36	427:36	9	module
+FIELD	427:36	427:36	10	module
+LEAF_NODE	427:36	427:36	11	module
+LEAF_NODE	427:42	427:42	9	,
+ARGUMENT	428:8	428:8	9	"Merging LZMA2 codec-specific tags failed"
+FIELD	428:8	428:8	10	"Merging LZMA2 codec-specific tags failed"
+LEAF_NODE	428:8	428:8	11	"Merging LZMA2 codec-specific tags failed"
+LEAF_NODE	428:50	428:50	9	)
+LEAF_NODE	428:51	428:51	7	;
+JUMP_STATEMENT	429:2	429:10	6	return 0 ;
+KEYWORD	429:2	429:2	7	return
+LEAF_NODE	429:2	429:2	8	return
+DESTINATION	429:9	429:9	7	0
+EXPR	429:9	429:9	8	0
+FIELD	429:9	429:9	9	0
+LEAF_NODE	429:9	429:9	10	0
+LEAF_NODE	429:10	429:10	7	;
+LEAF_NODE	430:1	430:1	5	}
+EXPR_STATEMENT	435:1	435:56	3	tif -> tif_data = ( uint8 * ) _TIFFmalloc ( sizeof ( LZMAState ) ) ;
+EXPR	435:1	435:1	4	tif -> tif_data = ( uint8 * ) _TIFFmalloc ( sizeof ( LZMAState ) )
+ASSIGN	435:1	435:17	5	tif -> tif_data = ( uint8 * ) _TIFFmalloc ( sizeof ( LZMAState ) )
+LVAL	435:1	435:1	6	tif -> tif_data
+FIELD	435:1	435:6	7	tif -> tif_data
+LEAF_NODE	435:1	435:1	8	tif
+LEAF_NODE	435:4	435:4	8	->
+LEAF_NODE	435:6	435:6	8	tif_data
+ASSIGN_OP	435:15	435:15	6	=
+LEAF_NODE	435:15	435:15	7	=
+RVAL	435:17	435:26	6	( uint8 * ) _TIFFmalloc ( sizeof ( LZMAState ) )
+LEAF_NODE	435:17	435:17	7	(
+TYPE_NAME	435:18	435:18	7	uint8
+LEAF_NODE	435:18	435:18	8	uint8
+LEAF_NODE	435:23	435:23	7	*
+LEAF_NODE	435:24	435:24	7	)
+FUNCTION_CALL	435:26	435:55	7	_TIFFmalloc ( sizeof ( LZMAState ) )
+CALLEE	435:26	435:26	8	_TIFFmalloc
+LEAF_NODE	435:26	435:26	9	_TIFFmalloc
+LEAF_NODE	435:37	435:37	8	(
+ARGUMENT	435:38	435:38	8	sizeof ( LZMAState )
+FUNCTION_CALL	435:38	435:54	9	sizeof ( LZMAState )
+CALLEE	435:38	435:38	10	sizeof
+LEAF_NODE	435:38	435:38	11	sizeof
+LEAF_NODE	435:44	435:44	10	(
+ARGUMENT	435:45	435:45	10	LZMAState
+FIELD	435:45	435:45	11	LZMAState
+LEAF_NODE	435:45	435:45	12	LZMAState
+LEAF_NODE	435:54	435:54	10	)
+LEAF_NODE	435:55	435:55	8	)
+LEAF_NODE	435:56	435:56	4	;
+SELECTION	436:1	437:2	3	
+KEYWORD	436:1	436:1	4	if
+LEAF_NODE	436:1	436:1	5	if
+LEAF_NODE	436:4	436:4	4	(
+CONDITION	436:5	436:5	4	tif -> tif_data == NULL
+EXPR	436:5	436:22	5	tif -> tif_data == NULL
+FIELD	436:5	436:10	6	tif -> tif_data
+LEAF_NODE	436:5	436:5	7	tif
+LEAF_NODE	436:8	436:8	7	->
+LEAF_NODE	436:10	436:10	7	tif_data
+EQ_OPERATOR	436:19	436:19	6	==
+LEAF_NODE	436:19	436:19	7	==
+FIELD	436:22	436:22	6	NULL
+LEAF_NODE	436:22	436:22	7	NULL
+LEAF_NODE	436:26	436:26	4	)
+STATEMENTS	437:2	437:2	4	
+JUMP_STATEMENT	437:2	437:10	5	goto bad ;
+KEYWORD	437:2	437:2	6	goto
+LEAF_NODE	437:2	437:2	7	goto
+DESTINATION	437:7	437:7	6	bad
+LEAF_NODE	437:7	437:7	7	bad
+LEAF_NODE	437:10	437:10	6	;
+EXPR_STATEMENT	438:1	438:17	3	sp = LState ( tif ) ;
+EXPR	438:1	438:1	4	sp = LState ( tif )
+ASSIGN	438:1	438:6	5	sp = LState ( tif )
+LVAL	438:1	438:1	6	sp
+FIELD	438:1	438:1	7	sp
+LEAF_NODE	438:1	438:1	8	sp
+ASSIGN_OP	438:4	438:4	6	=
+LEAF_NODE	438:4	438:4	7	=
+RVAL	438:6	438:6	6	LState ( tif )
+FUNCTION_CALL	438:6	438:16	7	LState ( tif )
+CALLEE	438:6	438:6	8	LState
+LEAF_NODE	438:6	438:6	9	LState
+LEAF_NODE	438:12	438:12	8	(
+ARGUMENT	438:13	438:13	8	tif
+FIELD	438:13	438:13	9	tif
+LEAF_NODE	438:13	438:13	10	tif
+LEAF_NODE	438:16	438:16	8	)
+LEAF_NODE	438:17	438:17	4	;
+EXPR_STATEMENT	439:1	439:54	3	memcpy ( & sp -> stream , & tmp_stream , sizeof ( lzma_stream ) ) ;
+EXPR	439:1	439:1	4	memcpy ( & sp -> stream , & tmp_stream , sizeof ( lzma_stream ) )
+FUNCTION_CALL	439:1	439:53	5	memcpy ( & sp -> stream , & tmp_stream , sizeof ( lzma_stream ) )
+CALLEE	439:1	439:1	6	memcpy
+LEAF_NODE	439:1	439:1	7	memcpy
+LEAF_NODE	439:7	439:7	6	(
+ARGUMENT	439:8	439:8	6	& sp -> stream
+UNARY_EXPR	439:8	439:9	7	& sp -> stream
+UNARY_OPERATOR	439:8	439:8	8	&
+LEAF_NODE	439:8	439:8	9	&
+FIELD	439:9	439:13	8	sp -> stream
+LEAF_NODE	439:9	439:9	9	sp
+LEAF_NODE	439:11	439:11	9	->
+LEAF_NODE	439:13	439:13	9	stream
+LEAF_NODE	439:19	439:19	6	,
+ARGUMENT	439:21	439:21	6	& tmp_stream
+UNARY_EXPR	439:21	439:22	7	& tmp_stream
+UNARY_OPERATOR	439:21	439:21	8	&
+LEAF_NODE	439:21	439:21	9	&
+FIELD	439:22	439:22	8	tmp_stream
+LEAF_NODE	439:22	439:22	9	tmp_stream
+LEAF_NODE	439:32	439:32	6	,
+ARGUMENT	439:34	439:34	6	sizeof ( lzma_stream )
+FUNCTION_CALL	439:34	439:52	7	sizeof ( lzma_stream )
+CALLEE	439:34	439:34	8	sizeof
+LEAF_NODE	439:34	439:34	9	sizeof
+LEAF_NODE	439:40	439:40	8	(
+ARGUMENT	439:41	439:41	8	lzma_stream
+FIELD	439:41	439:41	9	lzma_stream
+LEAF_NODE	439:41	439:41	10	lzma_stream
+LEAF_NODE	439:52	439:52	8	)
+LEAF_NODE	439:53	439:53	6	)
+LEAF_NODE	439:54	439:54	4	;
+EXPR_STATEMENT	444:1	444:47	3	sp -> vgetparent = tif -> tif_tagmethods . vgetfield ;
+EXPR	444:1	444:1	4	sp -> vgetparent = tif -> tif_tagmethods . vgetfield
+ASSIGN	444:1	444:18	5	sp -> vgetparent = tif -> tif_tagmethods . vgetfield
+LVAL	444:1	444:1	6	sp -> vgetparent
+FIELD	444:1	444:5	7	sp -> vgetparent
+LEAF_NODE	444:1	444:1	8	sp
+LEAF_NODE	444:3	444:3	8	->
+LEAF_NODE	444:5	444:5	8	vgetparent
+ASSIGN_OP	444:16	444:16	6	=
+LEAF_NODE	444:16	444:16	7	=
+RVAL	444:18	444:18	6	tif -> tif_tagmethods . vgetfield
+FIELD	444:18	444:38	7	tif -> tif_tagmethods . vgetfield
+LEAF_NODE	444:18	444:18	8	tif
+LEAF_NODE	444:21	444:21	8	->
+LEAF_NODE	444:23	444:23	8	tif_tagmethods
+LEAF_NODE	444:37	444:37	8	.
+LEAF_NODE	444:38	444:38	8	vgetfield
+LEAF_NODE	444:47	444:47	4	;
+EXPR_STATEMENT	445:1	445:46	3	tif -> tif_tagmethods . vgetfield = LZMAVGetField ;
+EXPR	445:1	445:1	4	tif -> tif_tagmethods . vgetfield = LZMAVGetField
+ASSIGN	445:1	445:33	5	tif -> tif_tagmethods . vgetfield = LZMAVGetField
+LVAL	445:1	445:1	6	tif -> tif_tagmethods . vgetfield
+FIELD	445:1	445:21	7	tif -> tif_tagmethods . vgetfield
+LEAF_NODE	445:1	445:1	8	tif
+LEAF_NODE	445:4	445:4	8	->
+LEAF_NODE	445:6	445:6	8	tif_tagmethods
+LEAF_NODE	445:20	445:20	8	.
+LEAF_NODE	445:21	445:21	8	vgetfield
+ASSIGN_OP	445:31	445:31	6	=
+LEAF_NODE	445:31	445:31	7	=
+RVAL	445:33	445:33	6	LZMAVGetField
+FIELD	445:33	445:33	7	LZMAVGetField
+LEAF_NODE	445:33	445:33	8	LZMAVGetField
+LEAF_NODE	445:46	445:46	4	;
+EXPR_STATEMENT	446:1	446:47	3	sp -> vsetparent = tif -> tif_tagmethods . vsetfield ;
+EXPR	446:1	446:1	4	sp -> vsetparent = tif -> tif_tagmethods . vsetfield
+ASSIGN	446:1	446:18	5	sp -> vsetparent = tif -> tif_tagmethods . vsetfield
+LVAL	446:1	446:1	6	sp -> vsetparent
+FIELD	446:1	446:5	7	sp -> vsetparent
+LEAF_NODE	446:1	446:1	8	sp
+LEAF_NODE	446:3	446:3	8	->
+LEAF_NODE	446:5	446:5	8	vsetparent
+ASSIGN_OP	446:16	446:16	6	=
+LEAF_NODE	446:16	446:16	7	=
+RVAL	446:18	446:18	6	tif -> tif_tagmethods . vsetfield
+FIELD	446:18	446:38	7	tif -> tif_tagmethods . vsetfield
+LEAF_NODE	446:18	446:18	8	tif
+LEAF_NODE	446:21	446:21	8	->
+LEAF_NODE	446:23	446:23	8	tif_tagmethods
+LEAF_NODE	446:37	446:37	8	.
+LEAF_NODE	446:38	446:38	8	vsetfield
+LEAF_NODE	446:47	446:47	4	;
+EXPR_STATEMENT	447:1	447:46	3	tif -> tif_tagmethods . vsetfield = LZMAVSetField ;
+EXPR	447:1	447:1	4	tif -> tif_tagmethods . vsetfield = LZMAVSetField
+ASSIGN	447:1	447:33	5	tif -> tif_tagmethods . vsetfield = LZMAVSetField
+LVAL	447:1	447:1	6	tif -> tif_tagmethods . vsetfield
+FIELD	447:1	447:21	7	tif -> tif_tagmethods . vsetfield
+LEAF_NODE	447:1	447:1	8	tif
+LEAF_NODE	447:4	447:4	8	->
+LEAF_NODE	447:6	447:6	8	tif_tagmethods
+LEAF_NODE	447:20	447:20	8	.
+LEAF_NODE	447:21	447:21	8	vsetfield
+ASSIGN_OP	447:31	447:31	6	=
+LEAF_NODE	447:31	447:31	7	=
+RVAL	447:33	447:33	6	LZMAVSetField
+FIELD	447:33	447:33	7	LZMAVSetField
+LEAF_NODE	447:33	447:33	8	LZMAVSetField
+LEAF_NODE	447:46	447:46	4	;
+EXPR_STATEMENT	450:1	450:33	3	sp -> preset = LZMA_PRESET_DEFAULT ;
+EXPR	450:1	450:1	4	sp -> preset = LZMA_PRESET_DEFAULT
+ASSIGN	450:1	450:14	5	sp -> preset = LZMA_PRESET_DEFAULT
+LVAL	450:1	450:1	6	sp -> preset
+FIELD	450:1	450:5	7	sp -> preset
+LEAF_NODE	450:1	450:1	8	sp
+LEAF_NODE	450:3	450:3	8	->
+LEAF_NODE	450:5	450:5	8	preset
+ASSIGN_OP	450:12	450:12	6	=
+LEAF_NODE	450:12	450:12	7	=
+RVAL	450:14	450:14	6	LZMA_PRESET_DEFAULT
+FIELD	450:14	450:14	7	LZMA_PRESET_DEFAULT
+LEAF_NODE	450:14	450:14	8	LZMA_PRESET_DEFAULT
+LEAF_NODE	450:33	450:33	4	;
+EXPR_STATEMENT	451:1	451:28	3	sp -> check = LZMA_CHECK_NONE ;
+EXPR	451:1	451:1	4	sp -> check = LZMA_CHECK_NONE
+ASSIGN	451:1	451:13	5	sp -> check = LZMA_CHECK_NONE
+LVAL	451:1	451:1	6	sp -> check
+FIELD	451:1	451:5	7	sp -> check
+LEAF_NODE	451:1	451:1	8	sp
+LEAF_NODE	451:3	451:3	8	->
+LEAF_NODE	451:5	451:5	8	check
+ASSIGN_OP	451:11	451:11	6	=
+LEAF_NODE	451:11	451:11	7	=
+RVAL	451:13	451:13	6	LZMA_CHECK_NONE
+FIELD	451:13	451:13	7	LZMA_CHECK_NONE
+LEAF_NODE	451:13	451:13	8	LZMA_CHECK_NONE
+LEAF_NODE	451:28	451:28	4	;
+EXPR_STATEMENT	452:1	452:14	3	sp -> state = 0 ;
+EXPR	452:1	452:1	4	sp -> state = 0
+ASSIGN	452:1	452:13	5	sp -> state = 0
+LVAL	452:1	452:1	6	sp -> state
+FIELD	452:1	452:5	7	sp -> state
+LEAF_NODE	452:1	452:1	8	sp
+LEAF_NODE	452:3	452:3	8	->
+LEAF_NODE	452:5	452:5	8	state
+ASSIGN_OP	452:11	452:11	6	=
+LEAF_NODE	452:11	452:11	7	=
+RVAL	452:13	452:13	6	0
+FIELD	452:13	452:13	7	0
+LEAF_NODE	452:13	452:13	8	0
+LEAF_NODE	452:14	452:14	4	;
+EXPR_STATEMENT	455:1	455:42	3	sp -> opt_delta . type = LZMA_DELTA_TYPE_BYTE ;
+EXPR	455:1	455:1	4	sp -> opt_delta . type = LZMA_DELTA_TYPE_BYTE
+ASSIGN	455:1	455:22	5	sp -> opt_delta . type = LZMA_DELTA_TYPE_BYTE
+LVAL	455:1	455:1	6	sp -> opt_delta . type
+FIELD	455:1	455:15	7	sp -> opt_delta . type
+LEAF_NODE	455:1	455:1	8	sp
+LEAF_NODE	455:3	455:3	8	->
+LEAF_NODE	455:5	455:5	8	opt_delta
+LEAF_NODE	455:14	455:14	8	.
+LEAF_NODE	455:15	455:15	8	type
+ASSIGN_OP	455:20	455:20	6	=
+LEAF_NODE	455:20	455:20	7	=
+RVAL	455:22	455:22	6	LZMA_DELTA_TYPE_BYTE
+FIELD	455:22	455:22	7	LZMA_DELTA_TYPE_BYTE
+LEAF_NODE	455:22	455:22	8	LZMA_DELTA_TYPE_BYTE
+LEAF_NODE	455:42	455:42	4	;
+EXPR_STATEMENT	460:1	461:39	3	sp -> opt_delta . dist = ( tif -> tif_dir . td_bitspersample % 8 ) ? 1 : tif -> tif_dir . td_bitspersample / 8 ;
+EXPR	460:1	460:1	4	sp -> opt_delta . dist = ( tif -> tif_dir . td_bitspersample % 8 ) ? 1 : tif -> tif_dir . td_bitspersample / 8
+ASSIGN	460:1	460:22	5	sp -> opt_delta . dist = ( tif -> tif_dir . td_bitspersample % 8 ) ? 1 : tif -> tif_dir . td_bitspersample / 8
+LVAL	460:1	460:1	6	sp -> opt_delta . dist
+FIELD	460:1	460:15	7	sp -> opt_delta . dist
+LEAF_NODE	460:1	460:1	8	sp
+LEAF_NODE	460:3	460:3	8	->
+LEAF_NODE	460:5	460:5	8	opt_delta
+LEAF_NODE	460:14	460:14	8	.
+LEAF_NODE	460:15	460:15	8	dist
+ASSIGN_OP	460:20	460:20	6	=
+LEAF_NODE	460:20	460:20	7	=
+RVAL	460:22	460:22	6	( tif -> tif_dir . td_bitspersample % 8 ) ? 1 : tif -> tif_dir . td_bitspersample / 8
+COND_EXPR	460:22	461:38	7	( tif -> tif_dir . td_bitspersample % 8 ) ? 1 : tif -> tif_dir . td_bitspersample / 8
+CONDITION	460:22	460:56	8	( tif -> tif_dir . td_bitspersample % 8 )
+LEAF_NODE	460:22	460:22	9	(
+FIELD	460:23	460:36	9	tif -> tif_dir . td_bitspersample
+LEAF_NODE	460:23	460:23	10	tif
+LEAF_NODE	460:26	460:26	10	->
+LEAF_NODE	460:28	460:28	10	tif_dir
+LEAF_NODE	460:35	460:35	10	.
+LEAF_NODE	460:36	460:36	10	td_bitspersample
+LEAF_NODE	460:53	460:53	9	%
+FIELD	460:55	460:55	9	8
+LEAF_NODE	460:55	460:55	10	8
+LEAF_NODE	460:56	460:56	9	)
+LEAF_NODE	460:58	460:58	8	?
+EXPR	461:2	461:2	8	1
+FIELD	461:2	461:2	9	1
+LEAF_NODE	461:2	461:2	10	1
+LEAF_NODE	461:4	461:4	8	:
+FIELD	461:6	461:19	8	tif -> tif_dir . td_bitspersample
+LEAF_NODE	461:6	461:6	9	tif
+LEAF_NODE	461:9	461:9	9	->
+LEAF_NODE	461:11	461:11	9	tif_dir
+LEAF_NODE	461:18	461:18	9	.
+LEAF_NODE	461:19	461:19	9	td_bitspersample
+LEAF_NODE	461:36	461:36	8	/
+FIELD	461:38	461:38	8	8
+LEAF_NODE	461:38	461:38	9	8
+LEAF_NODE	461:39	461:39	4	;
+EXPR_STATEMENT	462:1	462:38	3	sp -> filters [ 0 ] . id = LZMA_FILTER_DELTA ;
+EXPR	462:1	462:1	4	sp -> filters [ 0 ] . id = LZMA_FILTER_DELTA
+ASSIGN	462:1	462:21	5	sp -> filters [ 0 ] . id = LZMA_FILTER_DELTA
+LVAL	462:1	462:1	6	sp -> filters [ 0 ] . id
+FIELD	462:1	462:16	7	sp -> filters [ 0 ] . id
+LEAF_NODE	462:1	462:1	8	sp
+LEAF_NODE	462:3	462:3	8	->
+LEAF_NODE	462:5	462:5	8	filters
+LEAF_NODE	462:12	462:12	8	[
+EXPR	462:13	462:13	8	0
+FIELD	462:13	462:13	9	0
+LEAF_NODE	462:13	462:13	10	0
+LEAF_NODE	462:14	462:14	8	]
+LEAF_NODE	462:15	462:15	8	.
+LEAF_NODE	462:16	462:16	8	id
+ASSIGN_OP	462:19	462:19	6	=
+LEAF_NODE	462:19	462:19	7	=
+RVAL	462:21	462:21	6	LZMA_FILTER_DELTA
+FIELD	462:21	462:21	7	LZMA_FILTER_DELTA
+LEAF_NODE	462:21	462:21	8	LZMA_FILTER_DELTA
+LEAF_NODE	462:38	462:38	4	;
+EXPR_STATEMENT	463:1	463:40	3	sp -> filters [ 0 ] . options = & sp -> opt_delta ;
+EXPR	463:1	463:1	4	sp -> filters [ 0 ] . options = & sp -> opt_delta
+ASSIGN	463:1	463:26	5	sp -> filters [ 0 ] . options = & sp -> opt_delta
+LVAL	463:1	463:1	6	sp -> filters [ 0 ] . options
+FIELD	463:1	463:16	7	sp -> filters [ 0 ] . options
+LEAF_NODE	463:1	463:1	8	sp
+LEAF_NODE	463:3	463:3	8	->
+LEAF_NODE	463:5	463:5	8	filters
+LEAF_NODE	463:12	463:12	8	[
+EXPR	463:13	463:13	8	0
+FIELD	463:13	463:13	9	0
+LEAF_NODE	463:13	463:13	10	0
+LEAF_NODE	463:14	463:14	8	]
+LEAF_NODE	463:15	463:15	8	.
+LEAF_NODE	463:16	463:16	8	options
+ASSIGN_OP	463:24	463:24	6	=
+LEAF_NODE	463:24	463:24	7	=
+RVAL	463:26	463:26	6	& sp -> opt_delta
+UNARY_EXPR	463:26	463:27	7	& sp -> opt_delta
+UNARY_OPERATOR	463:26	463:26	8	&
+LEAF_NODE	463:26	463:26	9	&
+FIELD	463:27	463:31	8	sp -> opt_delta
+LEAF_NODE	463:27	463:27	9	sp
+LEAF_NODE	463:29	463:29	9	->
+LEAF_NODE	463:31	463:31	9	opt_delta
+LEAF_NODE	463:40	463:40	4	;
+EXPR_STATEMENT	465:1	465:44	3	lzma_lzma_preset ( & sp -> opt_lzma , sp -> preset ) ;
+EXPR	465:1	465:1	4	lzma_lzma_preset ( & sp -> opt_lzma , sp -> preset )
+FUNCTION_CALL	465:1	465:43	5	lzma_lzma_preset ( & sp -> opt_lzma , sp -> preset )
+CALLEE	465:1	465:1	6	lzma_lzma_preset
+LEAF_NODE	465:1	465:1	7	lzma_lzma_preset
+LEAF_NODE	465:17	465:17	6	(
+ARGUMENT	465:18	465:18	6	& sp -> opt_lzma
+UNARY_EXPR	465:18	465:19	7	& sp -> opt_lzma
+UNARY_OPERATOR	465:18	465:18	8	&
+LEAF_NODE	465:18	465:18	9	&
+FIELD	465:19	465:23	8	sp -> opt_lzma
+LEAF_NODE	465:19	465:19	9	sp
+LEAF_NODE	465:21	465:21	9	->
+LEAF_NODE	465:23	465:23	9	opt_lzma
+LEAF_NODE	465:31	465:31	6	,
+ARGUMENT	465:33	465:33	6	sp -> preset
+FIELD	465:33	465:37	7	sp -> preset
+LEAF_NODE	465:33	465:33	8	sp
+LEAF_NODE	465:35	465:35	8	->
+LEAF_NODE	465:37	465:37	8	preset
+LEAF_NODE	465:43	465:43	6	)
+LEAF_NODE	465:44	465:44	4	;
+EXPR_STATEMENT	466:1	466:38	3	sp -> filters [ 1 ] . id = LZMA_FILTER_LZMA2 ;
+EXPR	466:1	466:1	4	sp -> filters [ 1 ] . id = LZMA_FILTER_LZMA2
+ASSIGN	466:1	466:21	5	sp -> filters [ 1 ] . id = LZMA_FILTER_LZMA2
+LVAL	466:1	466:1	6	sp -> filters [ 1 ] . id
+FIELD	466:1	466:16	7	sp -> filters [ 1 ] . id
+LEAF_NODE	466:1	466:1	8	sp
+LEAF_NODE	466:3	466:3	8	->
+LEAF_NODE	466:5	466:5	8	filters
+LEAF_NODE	466:12	466:12	8	[
+EXPR	466:13	466:13	8	1
+FIELD	466:13	466:13	9	1
+LEAF_NODE	466:13	466:13	10	1
+LEAF_NODE	466:14	466:14	8	]
+LEAF_NODE	466:15	466:15	8	.
+LEAF_NODE	466:16	466:16	8	id
+ASSIGN_OP	466:19	466:19	6	=
+LEAF_NODE	466:19	466:19	7	=
+RVAL	466:21	466:21	6	LZMA_FILTER_LZMA2
+FIELD	466:21	466:21	7	LZMA_FILTER_LZMA2
+LEAF_NODE	466:21	466:21	8	LZMA_FILTER_LZMA2
+LEAF_NODE	466:38	466:38	4	;
+EXPR_STATEMENT	467:1	467:39	3	sp -> filters [ 1 ] . options = & sp -> opt_lzma ;
+EXPR	467:1	467:1	4	sp -> filters [ 1 ] . options = & sp -> opt_lzma
+ASSIGN	467:1	467:26	5	sp -> filters [ 1 ] . options = & sp -> opt_lzma
+LVAL	467:1	467:1	6	sp -> filters [ 1 ] . options
+FIELD	467:1	467:16	7	sp -> filters [ 1 ] . options
+LEAF_NODE	467:1	467:1	8	sp
+LEAF_NODE	467:3	467:3	8	->
+LEAF_NODE	467:5	467:5	8	filters
+LEAF_NODE	467:12	467:12	8	[
+EXPR	467:13	467:13	8	1
+FIELD	467:13	467:13	9	1
+LEAF_NODE	467:13	467:13	10	1
+LEAF_NODE	467:14	467:14	8	]
+LEAF_NODE	467:15	467:15	8	.
+LEAF_NODE	467:16	467:16	8	options
+ASSIGN_OP	467:24	467:24	6	=
+LEAF_NODE	467:24	467:24	7	=
+RVAL	467:26	467:26	6	& sp -> opt_lzma
+UNARY_EXPR	467:26	467:27	7	& sp -> opt_lzma
+UNARY_OPERATOR	467:26	467:26	8	&
+LEAF_NODE	467:26	467:26	9	&
+FIELD	467:27	467:31	8	sp -> opt_lzma
+LEAF_NODE	467:27	467:27	9	sp
+LEAF_NODE	467:29	467:29	9	->
+LEAF_NODE	467:31	467:31	9	opt_lzma
+LEAF_NODE	467:39	467:39	4	;
+EXPR_STATEMENT	469:1	469:37	3	sp -> filters [ 2 ] . id = LZMA_VLI_UNKNOWN ;
+EXPR	469:1	469:1	4	sp -> filters [ 2 ] . id = LZMA_VLI_UNKNOWN
+ASSIGN	469:1	469:21	5	sp -> filters [ 2 ] . id = LZMA_VLI_UNKNOWN
+LVAL	469:1	469:1	6	sp -> filters [ 2 ] . id
+FIELD	469:1	469:16	7	sp -> filters [ 2 ] . id
+LEAF_NODE	469:1	469:1	8	sp
+LEAF_NODE	469:3	469:3	8	->
+LEAF_NODE	469:5	469:5	8	filters
+LEAF_NODE	469:12	469:12	8	[
+EXPR	469:13	469:13	8	2
+FIELD	469:13	469:13	9	2
+LEAF_NODE	469:13	469:13	10	2
+LEAF_NODE	469:14	469:14	8	]
+LEAF_NODE	469:15	469:15	8	.
+LEAF_NODE	469:16	469:16	8	id
+ASSIGN_OP	469:19	469:19	6	=
+LEAF_NODE	469:19	469:19	7	=
+RVAL	469:21	469:21	6	LZMA_VLI_UNKNOWN
+FIELD	469:21	469:21	7	LZMA_VLI_UNKNOWN
+LEAF_NODE	469:21	469:21	8	LZMA_VLI_UNKNOWN
+LEAF_NODE	469:37	469:37	4	;
+EXPR_STATEMENT	470:1	470:30	3	sp -> filters [ 2 ] . options = NULL ;
+EXPR	470:1	470:1	4	sp -> filters [ 2 ] . options = NULL
+ASSIGN	470:1	470:26	5	sp -> filters [ 2 ] . options = NULL
+LVAL	470:1	470:1	6	sp -> filters [ 2 ] . options
+FIELD	470:1	470:16	7	sp -> filters [ 2 ] . options
+LEAF_NODE	470:1	470:1	8	sp
+LEAF_NODE	470:3	470:3	8	->
+LEAF_NODE	470:5	470:5	8	filters
+LEAF_NODE	470:12	470:12	8	[
+EXPR	470:13	470:13	8	2
+FIELD	470:13	470:13	9	2
+LEAF_NODE	470:13	470:13	10	2
+LEAF_NODE	470:14	470:14	8	]
+LEAF_NODE	470:15	470:15	8	.
+LEAF_NODE	470:16	470:16	8	options
+ASSIGN_OP	470:24	470:24	6	=
+LEAF_NODE	470:24	470:24	7	=
+RVAL	470:26	470:26	6	NULL
+FIELD	470:26	470:26	7	NULL
+LEAF_NODE	470:26	470:26	8	NULL
+LEAF_NODE	470:30	470:30	4	;
+EXPR_STATEMENT	475:1	475:35	3	tif -> tif_fixuptags = LZMAFixupTags ;
+EXPR	475:1	475:1	4	tif -> tif_fixuptags = LZMAFixupTags
+ASSIGN	475:1	475:22	5	tif -> tif_fixuptags = LZMAFixupTags
+LVAL	475:1	475:1	6	tif -> tif_fixuptags
+FIELD	475:1	475:6	7	tif -> tif_fixuptags
+LEAF_NODE	475:1	475:1	8	tif
+LEAF_NODE	475:4	475:4	8	->
+LEAF_NODE	475:6	475:6	8	tif_fixuptags
+ASSIGN_OP	475:20	475:20	6	=
+LEAF_NODE	475:20	475:20	7	=
+RVAL	475:22	475:22	6	LZMAFixupTags
+FIELD	475:22	475:22	7	LZMAFixupTags
+LEAF_NODE	475:22	475:22	8	LZMAFixupTags
+LEAF_NODE	475:35	475:35	4	;
+EXPR_STATEMENT	476:1	476:39	3	tif -> tif_setupdecode = LZMASetupDecode ;
+EXPR	476:1	476:1	4	tif -> tif_setupdecode = LZMASetupDecode
+ASSIGN	476:1	476:24	5	tif -> tif_setupdecode = LZMASetupDecode
+LVAL	476:1	476:1	6	tif -> tif_setupdecode
+FIELD	476:1	476:6	7	tif -> tif_setupdecode
+LEAF_NODE	476:1	476:1	8	tif
+LEAF_NODE	476:4	476:4	8	->
+LEAF_NODE	476:6	476:6	8	tif_setupdecode
+ASSIGN_OP	476:22	476:22	6	=
+LEAF_NODE	476:22	476:22	7	=
+RVAL	476:24	476:24	6	LZMASetupDecode
+FIELD	476:24	476:24	7	LZMASetupDecode
+LEAF_NODE	476:24	476:24	8	LZMASetupDecode
+LEAF_NODE	476:39	476:39	4	;
+EXPR_STATEMENT	477:1	477:35	3	tif -> tif_predecode = LZMAPreDecode ;
+EXPR	477:1	477:1	4	tif -> tif_predecode = LZMAPreDecode
+ASSIGN	477:1	477:22	5	tif -> tif_predecode = LZMAPreDecode
+LVAL	477:1	477:1	6	tif -> tif_predecode
+FIELD	477:1	477:6	7	tif -> tif_predecode
+LEAF_NODE	477:1	477:1	8	tif
+LEAF_NODE	477:4	477:4	8	->
+LEAF_NODE	477:6	477:6	8	tif_predecode
+ASSIGN_OP	477:20	477:20	6	=
+LEAF_NODE	477:20	477:20	7	=
+RVAL	477:22	477:22	6	LZMAPreDecode
+FIELD	477:22	477:22	7	LZMAPreDecode
+LEAF_NODE	477:22	477:22	8	LZMAPreDecode
+LEAF_NODE	477:35	477:35	4	;
+EXPR_STATEMENT	478:1	478:32	3	tif -> tif_decoderow = LZMADecode ;
+EXPR	478:1	478:1	4	tif -> tif_decoderow = LZMADecode
+ASSIGN	478:1	478:22	5	tif -> tif_decoderow = LZMADecode
+LVAL	478:1	478:1	6	tif -> tif_decoderow
+FIELD	478:1	478:6	7	tif -> tif_decoderow
+LEAF_NODE	478:1	478:1	8	tif
+LEAF_NODE	478:4	478:4	8	->
+LEAF_NODE	478:6	478:6	8	tif_decoderow
+ASSIGN_OP	478:20	478:20	6	=
+LEAF_NODE	478:20	478:20	7	=
+RVAL	478:22	478:22	6	LZMADecode
+FIELD	478:22	478:22	7	LZMADecode
+LEAF_NODE	478:22	478:22	8	LZMADecode
+LEAF_NODE	478:32	478:32	4	;
+EXPR_STATEMENT	479:1	479:34	3	tif -> tif_decodestrip = LZMADecode ;
+EXPR	479:1	479:1	4	tif -> tif_decodestrip = LZMADecode
+ASSIGN	479:1	479:24	5	tif -> tif_decodestrip = LZMADecode
+LVAL	479:1	479:1	6	tif -> tif_decodestrip
+FIELD	479:1	479:6	7	tif -> tif_decodestrip
+LEAF_NODE	479:1	479:1	8	tif
+LEAF_NODE	479:4	479:4	8	->
+LEAF_NODE	479:6	479:6	8	tif_decodestrip
+ASSIGN_OP	479:22	479:22	6	=
+LEAF_NODE	479:22	479:22	7	=
+RVAL	479:24	479:24	6	LZMADecode
+FIELD	479:24	479:24	7	LZMADecode
+LEAF_NODE	479:24	479:24	8	LZMADecode
+LEAF_NODE	479:34	479:34	4	;
+EXPR_STATEMENT	480:1	480:33	3	tif -> tif_decodetile = LZMADecode ;
+EXPR	480:1	480:1	4	tif -> tif_decodetile = LZMADecode
+ASSIGN	480:1	480:23	5	tif -> tif_decodetile = LZMADecode
+LVAL	480:1	480:1	6	tif -> tif_decodetile
+FIELD	480:1	480:6	7	tif -> tif_decodetile
+LEAF_NODE	480:1	480:1	8	tif
+LEAF_NODE	480:4	480:4	8	->
+LEAF_NODE	480:6	480:6	8	tif_decodetile
+ASSIGN_OP	480:21	480:21	6	=
+LEAF_NODE	480:21	480:21	7	=
+RVAL	480:23	480:23	6	LZMADecode
+FIELD	480:23	480:23	7	LZMADecode
+LEAF_NODE	480:23	480:23	8	LZMADecode
+LEAF_NODE	480:33	480:33	4	;
+EXPR_STATEMENT	481:1	481:39	3	tif -> tif_setupencode = LZMASetupEncode ;
+EXPR	481:1	481:1	4	tif -> tif_setupencode = LZMASetupEncode
+ASSIGN	481:1	481:24	5	tif -> tif_setupencode = LZMASetupEncode
+LVAL	481:1	481:1	6	tif -> tif_setupencode
+FIELD	481:1	481:6	7	tif -> tif_setupencode
+LEAF_NODE	481:1	481:1	8	tif
+LEAF_NODE	481:4	481:4	8	->
+LEAF_NODE	481:6	481:6	8	tif_setupencode
+ASSIGN_OP	481:22	481:22	6	=
+LEAF_NODE	481:22	481:22	7	=
+RVAL	481:24	481:24	6	LZMASetupEncode
+FIELD	481:24	481:24	7	LZMASetupEncode
+LEAF_NODE	481:24	481:24	8	LZMASetupEncode
+LEAF_NODE	481:39	481:39	4	;
+EXPR_STATEMENT	482:1	482:35	3	tif -> tif_preencode = LZMAPreEncode ;
+EXPR	482:1	482:1	4	tif -> tif_preencode = LZMAPreEncode
+ASSIGN	482:1	482:22	5	tif -> tif_preencode = LZMAPreEncode
+LVAL	482:1	482:1	6	tif -> tif_preencode
+FIELD	482:1	482:6	7	tif -> tif_preencode
+LEAF_NODE	482:1	482:1	8	tif
+LEAF_NODE	482:4	482:4	8	->
+LEAF_NODE	482:6	482:6	8	tif_preencode
+ASSIGN_OP	482:20	482:20	6	=
+LEAF_NODE	482:20	482:20	7	=
+RVAL	482:22	482:22	6	LZMAPreEncode
+FIELD	482:22	482:22	7	LZMAPreEncode
+LEAF_NODE	482:22	482:22	8	LZMAPreEncode
+LEAF_NODE	482:35	482:35	4	;
+EXPR_STATEMENT	483:1	483:37	3	tif -> tif_postencode = LZMAPostEncode ;
+EXPR	483:1	483:1	4	tif -> tif_postencode = LZMAPostEncode
+ASSIGN	483:1	483:23	5	tif -> tif_postencode = LZMAPostEncode
+LVAL	483:1	483:1	6	tif -> tif_postencode
+FIELD	483:1	483:6	7	tif -> tif_postencode
+LEAF_NODE	483:1	483:1	8	tif
+LEAF_NODE	483:4	483:4	8	->
+LEAF_NODE	483:6	483:6	8	tif_postencode
+ASSIGN_OP	483:21	483:21	6	=
+LEAF_NODE	483:21	483:21	7	=
+RVAL	483:23	483:23	6	LZMAPostEncode
+FIELD	483:23	483:23	7	LZMAPostEncode
+LEAF_NODE	483:23	483:23	8	LZMAPostEncode
+LEAF_NODE	483:37	483:37	4	;
+EXPR_STATEMENT	484:1	484:32	3	tif -> tif_encoderow = LZMAEncode ;
+EXPR	484:1	484:1	4	tif -> tif_encoderow = LZMAEncode
+ASSIGN	484:1	484:22	5	tif -> tif_encoderow = LZMAEncode
+LVAL	484:1	484:1	6	tif -> tif_encoderow
+FIELD	484:1	484:6	7	tif -> tif_encoderow
+LEAF_NODE	484:1	484:1	8	tif
+LEAF_NODE	484:4	484:4	8	->
+LEAF_NODE	484:6	484:6	8	tif_encoderow
+ASSIGN_OP	484:20	484:20	6	=
+LEAF_NODE	484:20	484:20	7	=
+RVAL	484:22	484:22	6	LZMAEncode
+FIELD	484:22	484:22	7	LZMAEncode
+LEAF_NODE	484:22	484:22	8	LZMAEncode
+LEAF_NODE	484:32	484:32	4	;
+EXPR_STATEMENT	485:1	485:34	3	tif -> tif_encodestrip = LZMAEncode ;
+EXPR	485:1	485:1	4	tif -> tif_encodestrip = LZMAEncode
+ASSIGN	485:1	485:24	5	tif -> tif_encodestrip = LZMAEncode
+LVAL	485:1	485:1	6	tif -> tif_encodestrip
+FIELD	485:1	485:6	7	tif -> tif_encodestrip
+LEAF_NODE	485:1	485:1	8	tif
+LEAF_NODE	485:4	485:4	8	->
+LEAF_NODE	485:6	485:6	8	tif_encodestrip
+ASSIGN_OP	485:22	485:22	6	=
+LEAF_NODE	485:22	485:22	7	=
+RVAL	485:24	485:24	6	LZMAEncode
+FIELD	485:24	485:24	7	LZMAEncode
+LEAF_NODE	485:24	485:24	8	LZMAEncode
+LEAF_NODE	485:34	485:34	4	;
+EXPR_STATEMENT	486:1	486:33	3	tif -> tif_encodetile = LZMAEncode ;
+EXPR	486:1	486:1	4	tif -> tif_encodetile = LZMAEncode
+ASSIGN	486:1	486:23	5	tif -> tif_encodetile = LZMAEncode
+LVAL	486:1	486:1	6	tif -> tif_encodetile
+FIELD	486:1	486:6	7	tif -> tif_encodetile
+LEAF_NODE	486:1	486:1	8	tif
+LEAF_NODE	486:4	486:4	8	->
+LEAF_NODE	486:6	486:6	8	tif_encodetile
+ASSIGN_OP	486:21	486:21	6	=
+LEAF_NODE	486:21	486:21	7	=
+RVAL	486:23	486:23	6	LZMAEncode
+FIELD	486:23	486:23	7	LZMAEncode
+LEAF_NODE	486:23	486:23	8	LZMAEncode
+LEAF_NODE	486:33	486:33	4	;
+EXPR_STATEMENT	487:1	487:31	3	tif -> tif_cleanup = LZMACleanup ;
+EXPR	487:1	487:1	4	tif -> tif_cleanup = LZMACleanup
+ASSIGN	487:1	487:20	5	tif -> tif_cleanup = LZMACleanup
+LVAL	487:1	487:1	6	tif -> tif_cleanup
+FIELD	487:1	487:6	7	tif -> tif_cleanup
+LEAF_NODE	487:1	487:1	8	tif
+LEAF_NODE	487:4	487:4	8	->
+LEAF_NODE	487:6	487:6	8	tif_cleanup
+ASSIGN_OP	487:18	487:18	6	=
+LEAF_NODE	487:18	487:18	7	=
+RVAL	487:20	487:20	6	LZMACleanup
+FIELD	487:20	487:20	7	LZMACleanup
+LEAF_NODE	487:20	487:20	8	LZMACleanup
+LEAF_NODE	487:31	487:31	4	;
+EXPR_STATEMENT	491:1	491:30	3	( void ) TIFFPredictorInit ( tif ) ;
+EXPR	491:1	491:8	4	( void ) TIFFPredictorInit ( tif )
+LEAF_NODE	491:1	491:1	5	(
+TYPE_NAME	491:2	491:2	5	void
+LEAF_NODE	491:2	491:2	6	void
+LEAF_NODE	491:6	491:6	5	)
+FUNCTION_CALL	491:8	491:29	5	TIFFPredictorInit ( tif )
+CALLEE	491:8	491:8	6	TIFFPredictorInit
+LEAF_NODE	491:8	491:8	7	TIFFPredictorInit
+LEAF_NODE	491:25	491:25	6	(
+ARGUMENT	491:26	491:26	6	tif
+FIELD	491:26	491:26	7	tif
+LEAF_NODE	491:26	491:26	8	tif
+LEAF_NODE	491:29	491:29	6	)
+LEAF_NODE	491:30	491:30	4	;
+JUMP_STATEMENT	492:1	492:9	3	return 1 ;
+KEYWORD	492:1	492:1	4	return
+LEAF_NODE	492:1	492:1	5	return
+DESTINATION	492:8	492:8	4	1
+EXPR	492:8	492:8	5	1
+FIELD	492:8	492:8	6	1
+LEAF_NODE	492:8	492:8	7	1
+LEAF_NODE	492:9	492:9	4	;
+LABEL	493:0	493:3	3	bad :
+LEAF_NODE	493:0	493:0	4	bad
+LEAF_NODE	493:3	493:3	4	:
+EXPR_STATEMENT	494:1	495:40	3	TIFFErrorExt ( tif -> tif_clientdata , module , "No space for LZMA2 state block" ) ;
+EXPR	494:1	494:1	4	TIFFErrorExt ( tif -> tif_clientdata , module , "No space for LZMA2 state block" )
+FUNCTION_CALL	494:1	495:39	5	TIFFErrorExt ( tif -> tif_clientdata , module , "No space for LZMA2 state block" )
+CALLEE	494:1	494:1	6	TIFFErrorExt
+LEAF_NODE	494:1	494:1	7	TIFFErrorExt
+LEAF_NODE	494:13	494:13	6	(
+ARGUMENT	494:14	494:14	6	tif -> tif_clientdata
+FIELD	494:14	494:19	7	tif -> tif_clientdata
+LEAF_NODE	494:14	494:14	8	tif
+LEAF_NODE	494:17	494:17	8	->
+LEAF_NODE	494:19	494:19	8	tif_clientdata
+LEAF_NODE	494:33	494:33	6	,
+ARGUMENT	494:35	494:35	6	module
+FIELD	494:35	494:35	7	module
+LEAF_NODE	494:35	494:35	8	module
+LEAF_NODE	494:41	494:41	6	,
+ARGUMENT	495:7	495:7	6	"No space for LZMA2 state block"
+FIELD	495:7	495:7	7	"No space for LZMA2 state block"
+LEAF_NODE	495:7	495:7	8	"No space for LZMA2 state block"
+LEAF_NODE	495:39	495:39	6	)
+LEAF_NODE	495:40	495:40	4	;
+JUMP_STATEMENT	496:1	496:9	3	return 0 ;
+KEYWORD	496:1	496:1	4	return
+LEAF_NODE	496:1	496:1	5	return
+DESTINATION	496:8	496:8	4	0
+EXPR	496:8	496:8	5	0
+FIELD	496:8	496:8	6	0
+LEAF_NODE	496:8	496:8	7	0
+LEAF_NODE	496:9	496:9	4	;
+LEAF_NODE	497:0	497:0	2	}

@@ -1,0 +1,53 @@
+SOURCE_FILE	34:7	54:23	0	
+SIMPLE_DECL	34:7	34:60	1	char [ ] sccsid ; sccsid = "@(#)lsearch.c\t8.1 (Berkeley) 6/4/93" ;
+VAR_DECL	34:7	34:12	2	char [ ] sccsid ; sccsid = "@(#)lsearch.c\t8.1 (Berkeley) 6/4/93"
+TYPE	34:7	34:18	3	char [ ]
+TYPE_NAME	34:7	34:7	4	char
+LEAF_NODE	34:7	34:7	5	char
+TYPE_SUFFIX	34:18	34:19	4	[ ]
+LEAF_NODE	34:18	34:18	5	[
+LEAF_NODE	34:19	34:19	5	]
+NAME	34:12	34:12	3	sccsid
+LEAF_NODE	34:12	34:12	4	sccsid
+LEAF_NODE	0:0	0:0	3	;
+INIT	34:12	34:12	3	sccsid = "@(#)lsearch.c\t8.1 (Berkeley) 6/4/93"
+ASSIGN	34:12	34:23	4	sccsid = "@(#)lsearch.c\t8.1 (Berkeley) 6/4/93"
+LVAL	34:12	34:12	5	sccsid
+NAME	34:12	34:12	6	sccsid
+LEAF_NODE	34:12	34:12	7	sccsid
+ASSIGN_OP	34:21	34:21	5	=
+LEAF_NODE	34:21	34:21	6	=
+RVAL	34:23	34:23	5	"@(#)lsearch.c\t8.1 (Berkeley) 6/4/93"
+FIELD	34:23	34:23	6	"@(#)lsearch.c\t8.1 (Berkeley) 6/4/93"
+LEAF_NODE	34:23	34:23	7	"@(#)lsearch.c\t8.1 (Berkeley) 6/4/93"
+LEAF_NODE	34:60	34:60	2	;
+SIMPLE_DECL	52:1	52:20	1	char * element , char * end ;
+INIT_DECL_LIST	52:1	52:1	2	char * element , char * end
+VAR_DECL	52:1	52:7	3	char * element
+TYPE	52:1	52:6	4	char *
+TYPE_NAME	52:1	52:1	5	char
+LEAF_NODE	52:1	52:1	6	char
+POINTER	52:6	52:6	5	*
+LEAF_NODE	52:6	52:6	6	*
+NAME	52:7	52:7	4	element
+LEAF_NODE	52:7	52:7	5	element
+LEAF_NODE	52:14	52:14	3	,
+VAR_DECL	52:1	52:17	3	char * end
+TYPE	52:1	52:16	4	char *
+TYPE_NAME	52:1	52:1	5	char
+LEAF_NODE	52:1	52:1	6	char
+POINTER	52:16	52:16	5	*
+LEAF_NODE	52:16	52:16	6	*
+NAME	52:17	52:17	4	end
+LEAF_NODE	52:17	52:17	5	end
+LEAF_NODE	52:20	52:20	2	;
+SIMPLE_DECL	54:23	54:35	1	nmemb * size ;
+VAR_DECL	54:23	54:31	2	nmemb * size
+TYPE	54:23	54:29	3	nmemb *
+TYPE_NAME	54:23	54:23	4	nmemb
+LEAF_NODE	54:23	54:23	5	nmemb
+POINTER	54:29	54:29	4	*
+LEAF_NODE	54:29	54:29	5	*
+NAME	54:31	54:31	3	size
+LEAF_NODE	54:31	54:31	4	size
+LEAF_NODE	54:35	54:35	2	;

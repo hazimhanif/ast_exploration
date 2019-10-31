@@ -1,0 +1,420 @@
+SOURCE_FILE	16:0	16:0	0	
+FUNCTION_DEF	16:0	59:0	1	
+RETURN_TYPE	16:0	16:0	2	int
+TYPE_NAME	16:0	16:0	3	int
+LEAF_NODE	16:0	16:0	4	int
+FUNCTION_NAME	16:4	16:4	2	TIFFReInitJPEG_12
+LEAF_NODE	16:4	16:4	3	TIFFReInitJPEG_12
+PARAMETER_LIST	16:21	16:60	2	( TIFF * tif , int scheme , int is_encode )
+LEAF_NODE	16:21	16:21	3	(
+PARAMETER_DECL	16:23	16:29	3	TIFF * tif
+TYPE	16:23	16:28	4	TIFF *
+TYPE_NAME	16:23	16:23	5	TIFF
+LEAF_NODE	16:23	16:23	6	TIFF
+POINTER	16:28	16:28	5	*
+LEAF_NODE	16:28	16:28	6	*
+NAME	16:29	16:29	4	tif
+LEAF_NODE	16:29	16:29	5	tif
+LEAF_NODE	16:32	16:32	3	,
+PARAMETER_DECL	16:34	16:38	3	int scheme
+TYPE	16:34	16:34	4	int
+TYPE_NAME	16:34	16:34	5	int
+LEAF_NODE	16:34	16:34	6	int
+NAME	16:38	16:38	4	scheme
+LEAF_NODE	16:38	16:38	5	scheme
+LEAF_NODE	16:44	16:44	3	,
+PARAMETER_DECL	16:46	16:50	3	int is_encode
+TYPE	16:46	16:46	4	int
+TYPE_NAME	16:46	16:46	5	int
+LEAF_NODE	16:46	16:46	6	int
+NAME	16:50	16:50	4	is_encode
+LEAF_NODE	16:50	16:50	5	is_encode
+LEAF_NODE	16:60	16:60	3	)
+LEAF_NODE	18:0	18:0	2	{
+STATEMENTS	19:4	57:4	2	
+SIMPLE_DECL	19:4	19:17	3	JPEGState * sp ;
+VAR_DECL	19:4	19:15	4	JPEGState * sp
+TYPE	19:4	19:13	5	JPEGState *
+TYPE_NAME	19:4	19:4	6	JPEGState
+LEAF_NODE	19:4	19:4	7	JPEGState
+POINTER	19:13	19:13	6	*
+LEAF_NODE	19:13	19:13	7	*
+NAME	19:15	19:15	5	sp
+LEAF_NODE	19:15	19:15	6	sp
+LEAF_NODE	19:17	19:17	4	;
+EXPR_STATEMENT	21:4	21:38	3	assert ( scheme == COMPRESSION_JPEG ) ;
+EXPR	21:4	21:4	4	assert ( scheme == COMPRESSION_JPEG )
+FUNCTION_CALL	21:4	21:37	5	assert ( scheme == COMPRESSION_JPEG )
+CALLEE	21:4	21:4	6	assert
+LEAF_NODE	21:4	21:4	7	assert
+LEAF_NODE	21:10	21:10	6	(
+ARGUMENT	21:11	21:21	6	scheme == COMPRESSION_JPEG
+FIELD	21:11	21:11	7	scheme
+LEAF_NODE	21:11	21:11	8	scheme
+EQ_OPERATOR	21:18	21:18	7	==
+LEAF_NODE	21:18	21:18	8	==
+FIELD	21:21	21:21	7	COMPRESSION_JPEG
+LEAF_NODE	21:21	21:21	8	COMPRESSION_JPEG
+LEAF_NODE	21:37	21:37	6	)
+LEAF_NODE	21:38	21:38	4	;
+EXPR_STATEMENT	23:4	23:20	3	sp = JState ( tif ) ;
+EXPR	23:4	23:4	4	sp = JState ( tif )
+ASSIGN	23:4	23:9	5	sp = JState ( tif )
+LVAL	23:4	23:4	6	sp
+FIELD	23:4	23:4	7	sp
+LEAF_NODE	23:4	23:4	8	sp
+ASSIGN_OP	23:7	23:7	6	=
+LEAF_NODE	23:7	23:7	7	=
+RVAL	23:9	23:9	6	JState ( tif )
+FUNCTION_CALL	23:9	23:19	7	JState ( tif )
+CALLEE	23:9	23:9	8	JState
+LEAF_NODE	23:9	23:9	9	JState
+LEAF_NODE	23:15	23:15	8	(
+ARGUMENT	23:16	23:16	8	tif
+FIELD	23:16	23:16	9	tif
+LEAF_NODE	23:16	23:16	10	tif
+LEAF_NODE	23:19	23:19	8	)
+LEAF_NODE	23:20	23:20	4	;
+EXPR_STATEMENT	24:4	24:17	3	sp -> tif = tif ;
+EXPR	24:4	24:4	4	sp -> tif = tif
+ASSIGN	24:4	24:14	5	sp -> tif = tif
+LVAL	24:4	24:4	6	sp -> tif
+FIELD	24:4	24:8	7	sp -> tif
+LEAF_NODE	24:4	24:4	8	sp
+LEAF_NODE	24:6	24:6	8	->
+LEAF_NODE	24:8	24:8	8	tif
+ASSIGN_OP	24:12	24:12	6	=
+LEAF_NODE	24:12	24:12	7	=
+RVAL	24:14	24:14	6	tif
+FIELD	24:14	24:14	7	tif
+LEAF_NODE	24:14	24:14	8	tif
+LEAF_NODE	24:17	24:17	4	;
+EXPR_STATEMENT	29:4	29:49	3	tif -> tif_tagmethods . vgetfield = JPEGVGetField ;
+EXPR	29:4	29:4	4	tif -> tif_tagmethods . vgetfield = JPEGVGetField
+ASSIGN	29:4	29:36	5	tif -> tif_tagmethods . vgetfield = JPEGVGetField
+LVAL	29:4	29:4	6	tif -> tif_tagmethods . vgetfield
+FIELD	29:4	29:24	7	tif -> tif_tagmethods . vgetfield
+LEAF_NODE	29:4	29:4	8	tif
+LEAF_NODE	29:7	29:7	8	->
+LEAF_NODE	29:9	29:9	8	tif_tagmethods
+LEAF_NODE	29:23	29:23	8	.
+LEAF_NODE	29:24	29:24	8	vgetfield
+ASSIGN_OP	29:34	29:34	6	=
+LEAF_NODE	29:34	29:34	7	=
+RVAL	29:36	29:36	6	JPEGVGetField
+FIELD	29:36	29:36	7	JPEGVGetField
+LEAF_NODE	29:36	29:36	8	JPEGVGetField
+LEAF_NODE	29:49	29:49	4	;
+EXPR_STATEMENT	30:4	30:49	3	tif -> tif_tagmethods . vsetfield = JPEGVSetField ;
+EXPR	30:4	30:4	4	tif -> tif_tagmethods . vsetfield = JPEGVSetField
+ASSIGN	30:4	30:36	5	tif -> tif_tagmethods . vsetfield = JPEGVSetField
+LVAL	30:4	30:4	6	tif -> tif_tagmethods . vsetfield
+FIELD	30:4	30:24	7	tif -> tif_tagmethods . vsetfield
+LEAF_NODE	30:4	30:4	8	tif
+LEAF_NODE	30:7	30:7	8	->
+LEAF_NODE	30:9	30:9	8	tif_tagmethods
+LEAF_NODE	30:23	30:23	8	.
+LEAF_NODE	30:24	30:24	8	vsetfield
+ASSIGN_OP	30:34	30:34	6	=
+LEAF_NODE	30:34	30:34	7	=
+RVAL	30:36	30:36	6	JPEGVSetField
+FIELD	30:36	30:36	7	JPEGVSetField
+LEAF_NODE	30:36	30:36	8	JPEGVSetField
+LEAF_NODE	30:49	30:49	4	;
+EXPR_STATEMENT	31:4	31:47	3	tif -> tif_tagmethods . printdir = JPEGPrintDir ;
+EXPR	31:4	31:4	4	tif -> tif_tagmethods . printdir = JPEGPrintDir
+ASSIGN	31:4	31:35	5	tif -> tif_tagmethods . printdir = JPEGPrintDir
+LVAL	31:4	31:4	6	tif -> tif_tagmethods . printdir
+FIELD	31:4	31:24	7	tif -> tif_tagmethods . printdir
+LEAF_NODE	31:4	31:4	8	tif
+LEAF_NODE	31:7	31:7	8	->
+LEAF_NODE	31:9	31:9	8	tif_tagmethods
+LEAF_NODE	31:23	31:23	8	.
+LEAF_NODE	31:24	31:24	8	printdir
+ASSIGN_OP	31:33	31:33	6	=
+LEAF_NODE	31:33	31:33	7	=
+RVAL	31:35	31:35	6	JPEGPrintDir
+FIELD	31:35	31:35	7	JPEGPrintDir
+LEAF_NODE	31:35	31:35	8	JPEGPrintDir
+LEAF_NODE	31:47	31:47	4	;
+EXPR_STATEMENT	36:4	36:38	3	tif -> tif_fixuptags = JPEGFixupTags ;
+EXPR	36:4	36:4	4	tif -> tif_fixuptags = JPEGFixupTags
+ASSIGN	36:4	36:25	5	tif -> tif_fixuptags = JPEGFixupTags
+LVAL	36:4	36:4	6	tif -> tif_fixuptags
+FIELD	36:4	36:9	7	tif -> tif_fixuptags
+LEAF_NODE	36:4	36:4	8	tif
+LEAF_NODE	36:7	36:7	8	->
+LEAF_NODE	36:9	36:9	8	tif_fixuptags
+ASSIGN_OP	36:23	36:23	6	=
+LEAF_NODE	36:23	36:23	7	=
+RVAL	36:25	36:25	6	JPEGFixupTags
+FIELD	36:25	36:25	7	JPEGFixupTags
+LEAF_NODE	36:25	36:25	8	JPEGFixupTags
+LEAF_NODE	36:38	36:38	4	;
+EXPR_STATEMENT	37:4	37:42	3	tif -> tif_setupdecode = JPEGSetupDecode ;
+EXPR	37:4	37:4	4	tif -> tif_setupdecode = JPEGSetupDecode
+ASSIGN	37:4	37:27	5	tif -> tif_setupdecode = JPEGSetupDecode
+LVAL	37:4	37:4	6	tif -> tif_setupdecode
+FIELD	37:4	37:9	7	tif -> tif_setupdecode
+LEAF_NODE	37:4	37:4	8	tif
+LEAF_NODE	37:7	37:7	8	->
+LEAF_NODE	37:9	37:9	8	tif_setupdecode
+ASSIGN_OP	37:25	37:25	6	=
+LEAF_NODE	37:25	37:25	7	=
+RVAL	37:27	37:27	6	JPEGSetupDecode
+FIELD	37:27	37:27	7	JPEGSetupDecode
+LEAF_NODE	37:27	37:27	8	JPEGSetupDecode
+LEAF_NODE	37:42	37:42	4	;
+EXPR_STATEMENT	38:4	38:38	3	tif -> tif_predecode = JPEGPreDecode ;
+EXPR	38:4	38:4	4	tif -> tif_predecode = JPEGPreDecode
+ASSIGN	38:4	38:25	5	tif -> tif_predecode = JPEGPreDecode
+LVAL	38:4	38:4	6	tif -> tif_predecode
+FIELD	38:4	38:9	7	tif -> tif_predecode
+LEAF_NODE	38:4	38:4	8	tif
+LEAF_NODE	38:7	38:7	8	->
+LEAF_NODE	38:9	38:9	8	tif_predecode
+ASSIGN_OP	38:23	38:23	6	=
+LEAF_NODE	38:23	38:23	7	=
+RVAL	38:25	38:25	6	JPEGPreDecode
+FIELD	38:25	38:25	7	JPEGPreDecode
+LEAF_NODE	38:25	38:25	8	JPEGPreDecode
+LEAF_NODE	38:38	38:38	4	;
+EXPR_STATEMENT	39:4	39:35	3	tif -> tif_decoderow = JPEGDecode ;
+EXPR	39:4	39:4	4	tif -> tif_decoderow = JPEGDecode
+ASSIGN	39:4	39:25	5	tif -> tif_decoderow = JPEGDecode
+LVAL	39:4	39:4	6	tif -> tif_decoderow
+FIELD	39:4	39:9	7	tif -> tif_decoderow
+LEAF_NODE	39:4	39:4	8	tif
+LEAF_NODE	39:7	39:7	8	->
+LEAF_NODE	39:9	39:9	8	tif_decoderow
+ASSIGN_OP	39:23	39:23	6	=
+LEAF_NODE	39:23	39:23	7	=
+RVAL	39:25	39:25	6	JPEGDecode
+FIELD	39:25	39:25	7	JPEGDecode
+LEAF_NODE	39:25	39:25	8	JPEGDecode
+LEAF_NODE	39:35	39:35	4	;
+EXPR_STATEMENT	40:4	40:37	3	tif -> tif_decodestrip = JPEGDecode ;
+EXPR	40:4	40:4	4	tif -> tif_decodestrip = JPEGDecode
+ASSIGN	40:4	40:27	5	tif -> tif_decodestrip = JPEGDecode
+LVAL	40:4	40:4	6	tif -> tif_decodestrip
+FIELD	40:4	40:9	7	tif -> tif_decodestrip
+LEAF_NODE	40:4	40:4	8	tif
+LEAF_NODE	40:7	40:7	8	->
+LEAF_NODE	40:9	40:9	8	tif_decodestrip
+ASSIGN_OP	40:25	40:25	6	=
+LEAF_NODE	40:25	40:25	7	=
+RVAL	40:27	40:27	6	JPEGDecode
+FIELD	40:27	40:27	7	JPEGDecode
+LEAF_NODE	40:27	40:27	8	JPEGDecode
+LEAF_NODE	40:37	40:37	4	;
+EXPR_STATEMENT	41:4	41:36	3	tif -> tif_decodetile = JPEGDecode ;
+EXPR	41:4	41:4	4	tif -> tif_decodetile = JPEGDecode
+ASSIGN	41:4	41:26	5	tif -> tif_decodetile = JPEGDecode
+LVAL	41:4	41:4	6	tif -> tif_decodetile
+FIELD	41:4	41:9	7	tif -> tif_decodetile
+LEAF_NODE	41:4	41:4	8	tif
+LEAF_NODE	41:7	41:7	8	->
+LEAF_NODE	41:9	41:9	8	tif_decodetile
+ASSIGN_OP	41:24	41:24	6	=
+LEAF_NODE	41:24	41:24	7	=
+RVAL	41:26	41:26	6	JPEGDecode
+FIELD	41:26	41:26	7	JPEGDecode
+LEAF_NODE	41:26	41:26	8	JPEGDecode
+LEAF_NODE	41:36	41:36	4	;
+EXPR_STATEMENT	42:4	42:42	3	tif -> tif_setupencode = JPEGSetupEncode ;
+EXPR	42:4	42:4	4	tif -> tif_setupencode = JPEGSetupEncode
+ASSIGN	42:4	42:27	5	tif -> tif_setupencode = JPEGSetupEncode
+LVAL	42:4	42:4	6	tif -> tif_setupencode
+FIELD	42:4	42:9	7	tif -> tif_setupencode
+LEAF_NODE	42:4	42:4	8	tif
+LEAF_NODE	42:7	42:7	8	->
+LEAF_NODE	42:9	42:9	8	tif_setupencode
+ASSIGN_OP	42:25	42:25	6	=
+LEAF_NODE	42:25	42:25	7	=
+RVAL	42:27	42:27	6	JPEGSetupEncode
+FIELD	42:27	42:27	7	JPEGSetupEncode
+LEAF_NODE	42:27	42:27	8	JPEGSetupEncode
+LEAF_NODE	42:42	42:42	4	;
+EXPR_STATEMENT	43:4	43:38	3	tif -> tif_preencode = JPEGPreEncode ;
+EXPR	43:4	43:4	4	tif -> tif_preencode = JPEGPreEncode
+ASSIGN	43:4	43:25	5	tif -> tif_preencode = JPEGPreEncode
+LVAL	43:4	43:4	6	tif -> tif_preencode
+FIELD	43:4	43:9	7	tif -> tif_preencode
+LEAF_NODE	43:4	43:4	8	tif
+LEAF_NODE	43:7	43:7	8	->
+LEAF_NODE	43:9	43:9	8	tif_preencode
+ASSIGN_OP	43:23	43:23	6	=
+LEAF_NODE	43:23	43:23	7	=
+RVAL	43:25	43:25	6	JPEGPreEncode
+FIELD	43:25	43:25	7	JPEGPreEncode
+LEAF_NODE	43:25	43:25	8	JPEGPreEncode
+LEAF_NODE	43:38	43:38	4	;
+EXPR_STATEMENT	44:4	44:40	3	tif -> tif_postencode = JPEGPostEncode ;
+EXPR	44:4	44:4	4	tif -> tif_postencode = JPEGPostEncode
+ASSIGN	44:4	44:26	5	tif -> tif_postencode = JPEGPostEncode
+LVAL	44:4	44:4	6	tif -> tif_postencode
+FIELD	44:4	44:9	7	tif -> tif_postencode
+LEAF_NODE	44:4	44:4	8	tif
+LEAF_NODE	44:7	44:7	8	->
+LEAF_NODE	44:9	44:9	8	tif_postencode
+ASSIGN_OP	44:24	44:24	6	=
+LEAF_NODE	44:24	44:24	7	=
+RVAL	44:26	44:26	6	JPEGPostEncode
+FIELD	44:26	44:26	7	JPEGPostEncode
+LEAF_NODE	44:26	44:26	8	JPEGPostEncode
+LEAF_NODE	44:40	44:40	4	;
+EXPR_STATEMENT	45:4	45:35	3	tif -> tif_encoderow = JPEGEncode ;
+EXPR	45:4	45:4	4	tif -> tif_encoderow = JPEGEncode
+ASSIGN	45:4	45:25	5	tif -> tif_encoderow = JPEGEncode
+LVAL	45:4	45:4	6	tif -> tif_encoderow
+FIELD	45:4	45:9	7	tif -> tif_encoderow
+LEAF_NODE	45:4	45:4	8	tif
+LEAF_NODE	45:7	45:7	8	->
+LEAF_NODE	45:9	45:9	8	tif_encoderow
+ASSIGN_OP	45:23	45:23	6	=
+LEAF_NODE	45:23	45:23	7	=
+RVAL	45:25	45:25	6	JPEGEncode
+FIELD	45:25	45:25	7	JPEGEncode
+LEAF_NODE	45:25	45:25	8	JPEGEncode
+LEAF_NODE	45:35	45:35	4	;
+EXPR_STATEMENT	46:4	46:37	3	tif -> tif_encodestrip = JPEGEncode ;
+EXPR	46:4	46:4	4	tif -> tif_encodestrip = JPEGEncode
+ASSIGN	46:4	46:27	5	tif -> tif_encodestrip = JPEGEncode
+LVAL	46:4	46:4	6	tif -> tif_encodestrip
+FIELD	46:4	46:9	7	tif -> tif_encodestrip
+LEAF_NODE	46:4	46:4	8	tif
+LEAF_NODE	46:7	46:7	8	->
+LEAF_NODE	46:9	46:9	8	tif_encodestrip
+ASSIGN_OP	46:25	46:25	6	=
+LEAF_NODE	46:25	46:25	7	=
+RVAL	46:27	46:27	6	JPEGEncode
+FIELD	46:27	46:27	7	JPEGEncode
+LEAF_NODE	46:27	46:27	8	JPEGEncode
+LEAF_NODE	46:37	46:37	4	;
+EXPR_STATEMENT	47:4	47:36	3	tif -> tif_encodetile = JPEGEncode ;
+EXPR	47:4	47:4	4	tif -> tif_encodetile = JPEGEncode
+ASSIGN	47:4	47:26	5	tif -> tif_encodetile = JPEGEncode
+LVAL	47:4	47:4	6	tif -> tif_encodetile
+FIELD	47:4	47:9	7	tif -> tif_encodetile
+LEAF_NODE	47:4	47:4	8	tif
+LEAF_NODE	47:7	47:7	8	->
+LEAF_NODE	47:9	47:9	8	tif_encodetile
+ASSIGN_OP	47:24	47:24	6	=
+LEAF_NODE	47:24	47:24	7	=
+RVAL	47:26	47:26	6	JPEGEncode
+FIELD	47:26	47:26	7	JPEGEncode
+LEAF_NODE	47:26	47:26	8	JPEGEncode
+LEAF_NODE	47:36	47:36	4	;
+EXPR_STATEMENT	48:4	48:34	3	tif -> tif_cleanup = JPEGCleanup ;
+EXPR	48:4	48:4	4	tif -> tif_cleanup = JPEGCleanup
+ASSIGN	48:4	48:23	5	tif -> tif_cleanup = JPEGCleanup
+LVAL	48:4	48:4	6	tif -> tif_cleanup
+FIELD	48:4	48:9	7	tif -> tif_cleanup
+LEAF_NODE	48:4	48:4	8	tif
+LEAF_NODE	48:7	48:7	8	->
+LEAF_NODE	48:9	48:9	8	tif_cleanup
+ASSIGN_OP	48:21	48:21	6	=
+LEAF_NODE	48:21	48:21	7	=
+RVAL	48:23	48:23	6	JPEGCleanup
+FIELD	48:23	48:23	7	JPEGCleanup
+LEAF_NODE	48:23	48:23	8	JPEGCleanup
+LEAF_NODE	48:34	48:34	4	;
+EXPR_STATEMENT	49:4	49:48	3	tif -> tif_defstripsize = JPEGDefaultStripSize ;
+EXPR	49:4	49:4	4	tif -> tif_defstripsize = JPEGDefaultStripSize
+ASSIGN	49:4	49:28	5	tif -> tif_defstripsize = JPEGDefaultStripSize
+LVAL	49:4	49:4	6	tif -> tif_defstripsize
+FIELD	49:4	49:9	7	tif -> tif_defstripsize
+LEAF_NODE	49:4	49:4	8	tif
+LEAF_NODE	49:7	49:7	8	->
+LEAF_NODE	49:9	49:9	8	tif_defstripsize
+ASSIGN_OP	49:26	49:26	6	=
+LEAF_NODE	49:26	49:26	7	=
+RVAL	49:28	49:28	6	JPEGDefaultStripSize
+FIELD	49:28	49:28	7	JPEGDefaultStripSize
+LEAF_NODE	49:28	49:28	8	JPEGDefaultStripSize
+LEAF_NODE	49:48	49:48	4	;
+EXPR_STATEMENT	50:4	50:46	3	tif -> tif_deftilesize = JPEGDefaultTileSize ;
+EXPR	50:4	50:4	4	tif -> tif_deftilesize = JPEGDefaultTileSize
+ASSIGN	50:4	50:27	5	tif -> tif_deftilesize = JPEGDefaultTileSize
+LVAL	50:4	50:4	6	tif -> tif_deftilesize
+FIELD	50:4	50:9	7	tif -> tif_deftilesize
+LEAF_NODE	50:4	50:4	8	tif
+LEAF_NODE	50:7	50:7	8	->
+LEAF_NODE	50:9	50:9	8	tif_deftilesize
+ASSIGN_OP	50:25	50:25	6	=
+LEAF_NODE	50:25	50:25	7	=
+RVAL	50:27	50:27	6	JPEGDefaultTileSize
+FIELD	50:27	50:27	7	JPEGDefaultTileSize
+LEAF_NODE	50:27	50:27	8	JPEGDefaultTileSize
+LEAF_NODE	50:46	50:46	4	;
+EXPR_STATEMENT	51:4	51:35	3	tif -> tif_flags |= TIFF_NOBITREV ;
+EXPR	51:4	51:4	4	tif -> tif_flags |= TIFF_NOBITREV
+ASSIGN	51:4	51:22	5	tif -> tif_flags |= TIFF_NOBITREV
+LVAL	51:4	51:4	6	tif -> tif_flags
+FIELD	51:4	51:9	7	tif -> tif_flags
+LEAF_NODE	51:4	51:4	8	tif
+LEAF_NODE	51:7	51:7	8	->
+LEAF_NODE	51:9	51:9	8	tif_flags
+ASSIGN_OP	51:19	51:19	6	|=
+LEAF_NODE	51:19	51:19	7	|=
+RVAL	51:22	51:22	6	TIFF_NOBITREV
+FIELD	51:22	51:22	7	TIFF_NOBITREV
+LEAF_NODE	51:22	51:22	8	TIFF_NOBITREV
+LEAF_NODE	51:35	51:35	4	;
+EXPR_STATEMENT	53:4	53:33	3	sp -> cinfo_initialized = FALSE ;
+EXPR	53:4	53:4	4	sp -> cinfo_initialized = FALSE
+ASSIGN	53:4	53:28	5	sp -> cinfo_initialized = FALSE
+LVAL	53:4	53:4	6	sp -> cinfo_initialized
+FIELD	53:4	53:8	7	sp -> cinfo_initialized
+LEAF_NODE	53:4	53:4	8	sp
+LEAF_NODE	53:6	53:6	8	->
+LEAF_NODE	53:8	53:8	8	cinfo_initialized
+ASSIGN_OP	53:26	53:26	6	=
+LEAF_NODE	53:26	53:26	7	=
+RVAL	53:28	53:28	6	FALSE
+FIELD	53:28	53:28	7	FALSE
+LEAF_NODE	53:28	53:28	8	FALSE
+LEAF_NODE	53:33	53:33	4	;
+SELECTION	55:4	56:8	3	
+KEYWORD	55:4	55:4	4	if
+LEAF_NODE	55:4	55:4	5	if
+LEAF_NODE	55:6	55:6	4	(
+CONDITION	55:8	55:8	4	is_encode
+EXPR	55:8	55:8	5	is_encode
+FIELD	55:8	55:8	6	is_encode
+LEAF_NODE	55:8	55:8	7	is_encode
+LEAF_NODE	55:18	55:18	4	)
+STATEMENTS	56:8	56:8	4	
+JUMP_STATEMENT	56:8	56:35	5	return JPEGSetupEncode ( tif ) ;
+KEYWORD	56:8	56:8	6	return
+LEAF_NODE	56:8	56:8	7	return
+DESTINATION	56:15	56:15	6	JPEGSetupEncode ( tif )
+EXPR	56:15	56:15	7	JPEGSetupEncode ( tif )
+FUNCTION_CALL	56:15	56:34	8	JPEGSetupEncode ( tif )
+CALLEE	56:15	56:15	9	JPEGSetupEncode
+LEAF_NODE	56:15	56:15	10	JPEGSetupEncode
+LEAF_NODE	56:30	56:30	9	(
+ARGUMENT	56:31	56:31	9	tif
+FIELD	56:31	56:31	10	tif
+LEAF_NODE	56:31	56:31	11	tif
+LEAF_NODE	56:34	56:34	9	)
+LEAF_NODE	56:35	56:35	6	;
+SELECTION	57:4	58:8	3	
+KEYWORD	57:4	57:4	4	else
+LEAF_NODE	57:4	57:4	5	else
+STATEMENTS	58:8	58:8	4	
+JUMP_STATEMENT	58:8	58:35	5	return JPEGSetupDecode ( tif ) ;
+KEYWORD	58:8	58:8	6	return
+LEAF_NODE	58:8	58:8	7	return
+DESTINATION	58:15	58:15	6	JPEGSetupDecode ( tif )
+EXPR	58:15	58:15	7	JPEGSetupDecode ( tif )
+FUNCTION_CALL	58:15	58:34	8	JPEGSetupDecode ( tif )
+CALLEE	58:15	58:15	9	JPEGSetupDecode
+LEAF_NODE	58:15	58:15	10	JPEGSetupDecode
+LEAF_NODE	58:30	58:30	9	(
+ARGUMENT	58:31	58:31	9	tif
+FIELD	58:31	58:31	10	tif
+LEAF_NODE	58:31	58:31	11	tif
+LEAF_NODE	58:34	58:34	9	)
+LEAF_NODE	58:35	58:35	6	;
+LEAF_NODE	59:0	59:0	2	}
