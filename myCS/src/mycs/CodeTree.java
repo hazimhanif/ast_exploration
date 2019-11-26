@@ -1,7 +1,12 @@
 package mycs;
 
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.LinkedList;
 import java.util.HashMap;
+import java.util.StringTokenizer;
 
 import org.antlr.runtime.tree.CommonTree;
 
@@ -14,9 +19,12 @@ public class CodeTree
 	root.initializeFromASTNode(ast, 0);	
     }
 
-    public void print()
+    public void print(String filename) throws IOException
     {
+        NodePrinter.initPrinter(filename);
 	NodePrinter.printCSV(root);
+        NodePrinter.closePrinter();
+        
     }
     
     private CodeTreeNode root;
@@ -124,7 +132,8 @@ class ASTNodeWrapper
     public static String getStartPosition(CommonTree node)
     {
 	int pos = node.getCharPositionInLine();
-	return node.getLine() + ":" + pos;		
+	//return node.getLine() + ":" + pos;
+        return node.getLine()+"";
     }
        
 }
@@ -132,8 +141,9 @@ class ASTNodeWrapper
 class NodePrinter
 {
     
+    static PrintWriter pw ;
     static final String [] nodeTypeBlacklist = {
-	"SOURCE_FILE", "ITERATION", "SELECTION"
+	"SOURCE_FILE", "ITERATION", "FUNCTION_DEF","SELECTION","STATEMENTS"
     };
   
     static HashMap<String,Integer> nodeBlacklist;   
@@ -150,6 +160,17 @@ class NodePrinter
 	for(int i = 0; i < nodeTypeBlacklist.length; i++){
 	    nodeBlacklist.put(nodeTypeBlacklist[i], 1);
 	}		
+    }
+    
+    public static void initPrinter(String Filename) throws IOException{
+        StringTokenizer st = new StringTokenizer(Filename,"/");
+        st.nextToken();
+        pw = new PrintWriter(new FileWriter("output/"+st.nextToken()+".txt"));
+        //pw.println("Type\tLine\tLevel\tCode");
+    }
+    
+    public static  void closePrinter() throws IOException{
+        pw.close();
     }
 
     public static void printCSV(CodeTreeNode node)
@@ -170,7 +191,7 @@ class NodePrinter
 	    codeStr = node.codeStr;
 	}
 	
-	System.out.println(type + '\t' + node.startPos + '\t' + node.endPos + '\t' + node.level + '\t' + codeStr);
+	pw.println(type + '\t' + node.startPos + '\t' + node.level + '\t' + codeStr);
 	
 	int numberOfChildren = node.children.size();
 	for(int i = 0; i < numberOfChildren; i++){

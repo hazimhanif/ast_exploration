@@ -30,11 +30,23 @@ public class MyCS {
 	    
 	    try{
     
-		
-		String inputFilename = "test2.c";
-		CPPGrammarParser.code_return ast = parseFile(inputFilename);
-		codeTree.initializeFromAST(ast.tree);
-		codeTree.print();
+		String dirPath = "input";
+                File dir = new File(dirPath);
+                File[] files = dir.listFiles();
+                if (files.length == 0) {
+                    System.out.println("The directory is empty");
+                } else {
+                    for (File aFile : files) {
+                    
+                        String inputFilename = "input/"+aFile.getName();
+                        CPPGrammarParser.code_return ast = parseFile(inputFilename);
+                        codeTree.initializeFromAST(ast.tree);
+                        codeTree.print(inputFilename);
+                        
+                    }
+                }
+                
+
 	    } catch (Exception e) {
 		e.printStackTrace();
 	    }
