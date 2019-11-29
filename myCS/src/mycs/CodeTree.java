@@ -1,5 +1,6 @@
 package mycs;
 
+
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -142,6 +143,7 @@ class NodePrinter
 {
     
     static PrintWriter pw ;
+    static String statement="[";
     static final String [] nodeTypeBlacklist = {
 	"SOURCE_FILE", "ITERATION", "FUNCTION_DEF","SELECTION","STATEMENTS"
     };
@@ -177,6 +179,7 @@ class NodePrinter
     {
 	String type;
 	String codeStr;
+	int ascii;
 	CommonTree astNode = node.astNode;
 	
 	if(ASTNodeWrapper.isLeaf(astNode)){	    
@@ -192,12 +195,40 @@ class NodePrinter
 	}
 	
 	pw.println(type + '\t' + node.startPos + '\t' + node.level + '\t' + codeStr);
+
+    if(type.contains("STATEMENTS")||type.contains("_STATEMENT")||type.equals("VAR_DECL")||type.equals("FUNCTION_DEF")||type.equals("SELECTION")||type.equals("ITERATION")){
+		if(!statement.equals("[")){
+	    	System.out.println(statement.substring(0, statement.length()-2)+"]");
+	    }
+	    statement = "[";
+    }
+
+    if(type=="LEAF_NODE")
+    	if(codeStr.equals(";")||codeStr.equals(",")||codeStr.equals("")){
+
+    	}else{
+	    	if(codeStr.equals("}")|| codeStr.equals("{")){
+		    	if(!statement.equals("[")){
+					System.out.println(statement.substring(0, statement.length()-2)+"]");
+		    		statement = "["+codeStr+", ";
+		    	}
+		    	statement = "["+codeStr+", ";
+	    	}else{
+	        	statement = statement + codeStr+", ";
+	    	}
+
+//        if(statement.charAt(statement.length() - 1)==']')
+//        	System.out.println(statement);
+
+    	}
+
 	
 	int numberOfChildren = node.children.size();
 	for(int i = 0; i < numberOfChildren; i++){
 	    CodeTreeNode child = (CodeTreeNode) node.children.get(i);
 	    printCSV(child);
 	}
+
     }
 
     private static boolean nodeTypeIsBlacklisted(String type)
