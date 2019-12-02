@@ -25,7 +25,10 @@ public class CodeTree
         NodePrinter.initPrinter(filename);
 	NodePrinter.printCSV(root);
         NodePrinter.closePrinter();
-        System.out.println(NodePrinter.getfunc());
+        System.out.println("");
+        System.out.println(NodePrinter.func);
+        System.out.println(NodePrinter.func_lvl);
+        System.out.println("");
     }
     
     private CodeTreeNode root;
@@ -143,10 +146,10 @@ class NodePrinter
 {
     
     static PrintWriter pw ;
-    static String statement="[";
     static ArrayList<String> stmnt = new ArrayList();
     static ArrayList<Integer> lvl = new ArrayList();
     static ArrayList<ArrayList<String>> func = new ArrayList();
+    static ArrayList<ArrayList<Integer>> func_lvl = new ArrayList();
     static final String [] nodeTypeBlacklist = {
 	"SOURCE_FILE", "ITERATION", "FUNCTION_DEF","SELECTION","STATEMENTS"
     };
@@ -157,11 +160,7 @@ class NodePrinter
     {	
 	initializeNodeBlacklist();
     }
-  
-    public static ArrayList<ArrayList<String>> getfunc(){
-        return func;
-    }
-    
+
     private static void initializeNodeBlacklist()
     {
 	nodeBlacklist = new HashMap<String,Integer>();
@@ -181,6 +180,40 @@ class NodePrinter
     public static  void closePrinter() throws IOException{
         pw.close();
     }
+    
+    public static void bubleSort(){
+        
+        int temp1;
+        String temp2;
+        boolean sorted = false;
+        
+        if(lvl.size()!=1){
+            while (!sorted) {
+                sorted = true;
+                for (int i = 0; i < lvl.size()-1; i++) {
+                    if (lvl.get(i).compareTo(lvl.get(i + 1)) > 0) {
+                        temp1 = lvl.get(i);
+                        temp2 = stmnt.get(i); 
+
+                        lvl.set(i, lvl.get(i + 1));
+                        stmnt.set(i, stmnt.get(i + 1));
+
+                        lvl.set(i + 1, temp1);
+                        stmnt.set(i + 1, temp2);
+
+                        sorted = false;
+                    }
+                }
+            }
+        }
+        
+        
+    }
+    
+    public static void makeChild(){
+        
+        
+    }
 
     public static void printCSV (CodeTreeNode node) throws NullPointerException
     {
@@ -199,49 +232,37 @@ class NodePrinter
 	
 	pw.println(type + '\t' + node.startPos + '\t' + node.level + '\t' + codeStr);
 
-    if(type.contains("STATEMENTS")||type.contains("_STATEMENT")||type.equals("VAR_DECL")||type.equals("FUNCTION_DEF")||type.equals("SELECTION")||type.equals("ITERATION")){
-		if(!statement.equals("[")){
-	    	//System.out.println(statement.substring(0, statement.length()-2)+"]");
-                System.out.println(stmnt);
-                System.out.println(lvl);
-                func.add(stmnt);
-                    System.out.println(func);
-                lvl.clear();
-                stmnt.clear();
-
-	    }
-                
-	    statement = "[";
-            
-
-    }
+    if(type.contains("STATEMENTS")||type.contains("_STATEMENT")||type.equals("VAR_DECL")||type.equals("FUNCTION_DEF")||type.equals("SELECTION")||type.equals("ITERATION"))
+        if(!stmnt.isEmpty()){
+            bubleSort();
+            System.out.println(stmnt);
+            System.out.println(lvl);
+            func.add((ArrayList<String>) stmnt.clone());
+            func_lvl.add((ArrayList<Integer>) lvl.clone());
+            lvl.clear();
+            stmnt.clear();
+        }
 
     if(type=="LEAF_NODE")
     	if(codeStr.equals(";")||codeStr.equals(",")||codeStr.equals("")||codeStr.equals("(")||codeStr.equals(")")){
 
     	}else{
-	    	if(codeStr.equals("}")|| codeStr.equals("{")){
-		    	if(!statement.equals("[")){
-                            //System.out.println(statement.substring(0, statement.length()-2)+"]");
-                            System.out.println(stmnt);
-                            System.out.println(lvl);
-                            func.add(stmnt);
-                            lvl.clear();
-                            stmnt.clear();
-                            statement = "["+codeStr+": "+node.level+", ";
-                            lvl.add(node.level);
-                            stmnt.add(codeStr);
-                            func.add(stmnt);
-		    	}
-		    	statement = "["+codeStr+": "+node.level+", ";
+	    	if(codeStr.equals("}")|| codeStr.equals("{")){            
+                    if(!stmnt.isEmpty()){
+                        bubleSort();
+                        System.out.println(stmnt);
+                        System.out.println(lvl);
+                        func.add((ArrayList<String>) stmnt.clone());
+                        func_lvl.add((ArrayList<Integer>) lvl.clone());
+                        stmnt.clear();
+                        lvl.clear();
                         lvl.add(node.level);
                         stmnt.add(codeStr);
-                        func.add(stmnt);
+                    }
+                    
 	    	}else{
-	        	statement = statement + codeStr+": "+node.level+", ";
                         lvl.add(node.level);
                         stmnt.add(codeStr);
-                        func.add(stmnt);
 	    	}
 
     	}

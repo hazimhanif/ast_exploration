@@ -11,6 +11,7 @@ import org.antlr.runtime.tree.CommonTreeAdaptor;
 import java.io.*;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  *
@@ -23,6 +24,8 @@ public class MyCS {
     public static void main(String[] args) throws IOException
 	{
 	    CodeTree codeTree = new CodeTree();
+            
+
 	    
 	    try{
     
@@ -46,6 +49,53 @@ public class MyCS {
 	    } catch (Exception e) {
 		e.printStackTrace();
 	    }
+            
+            
+            ArrayList<Object> in = new ArrayList();
+            ArrayList<Integer> inlvl = new ArrayList();
+            ArrayList<Object> out = new ArrayList();
+            ArrayList<Object> temp = new ArrayList();
+            ArrayList<Object> temp2 = new ArrayList();
+            
+            in.add("=");
+            in.add("x");
+            in.add("2");
+            inlvl.add(10);
+            inlvl.add(11);
+            inlvl.add(11);
+            
+            System.out.println(in);
+            System.out.println(inlvl);
+            int head =0;
+            
+            for(int i=1;i<in.size();i++){
+                if(i==1){
+                    // first child
+                    head = inlvl.get(i-1);
+                    temp.add(in.get(i));
+                    in.set(i, temp.clone());
+                    temp.clear();
+                }else if(inlvl.get(i)>inlvl.get(i-1)){
+                    // child
+                    
+
+                }else{
+                    // same level
+                    temp.add(in.get(i));
+                    in.set(i, temp.clone());
+                    temp.clear();
+                }
+            }
+            
+//                    temp.add(in.get(i));
+//                    in.remove(i);
+//                    temp2 = (ArrayList<Object>)in.get(i-1);
+//                    temp2.add(temp.get(0));
+//                    in.set(i-1, temp2.clone());
+//                    temp.clear();
+//                    temp2.clear();
+            
+            System.out.println(in);
 	}
 	    
     private static String parseCommandLine(String[] args) throws Exception
