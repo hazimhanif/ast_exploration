@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.HashMap;
 import java.util.StringTokenizer;
@@ -13,7 +14,6 @@ import org.antlr.runtime.tree.CommonTree;
 
 public class CodeTree
 {
-    
     public void initializeFromAST(CommonTree ast)
     {
 	root = new CodeTreeNode();
@@ -25,7 +25,7 @@ public class CodeTree
         NodePrinter.initPrinter(filename);
 	NodePrinter.printCSV(root);
         NodePrinter.closePrinter();
-        
+        System.out.println(NodePrinter.getfunc());
     }
     
     private CodeTreeNode root;
@@ -144,6 +144,9 @@ class NodePrinter
     
     static PrintWriter pw ;
     static String statement="[";
+    static ArrayList<String> stmnt = new ArrayList();
+    static ArrayList<Integer> lvl = new ArrayList();
+    static ArrayList<ArrayList<String>> func = new ArrayList();
     static final String [] nodeTypeBlacklist = {
 	"SOURCE_FILE", "ITERATION", "FUNCTION_DEF","SELECTION","STATEMENTS"
     };
@@ -155,6 +158,10 @@ class NodePrinter
 	initializeNodeBlacklist();
     }
   
+    public static ArrayList<ArrayList<String>> getfunc(){
+        return func;
+    }
+    
     private static void initializeNodeBlacklist()
     {
 	nodeBlacklist = new HashMap<String,Integer>();
@@ -175,7 +182,7 @@ class NodePrinter
         pw.close();
     }
 
-    public static void printCSV(CodeTreeNode node)
+    public static void printCSV (CodeTreeNode node) throws NullPointerException
     {
 	String type;
 	String codeStr;
@@ -188,44 +195,62 @@ class NodePrinter
 	    type = ASTNodeWrapper.getType(astNode);
 	}
 	
-	if(nodeTypeIsBlacklisted(type)){
-	    codeStr = "";
-	}else{
-	    codeStr = node.codeStr;
-	}
+	codeStr = node.codeStr;
 	
 	pw.println(type + '\t' + node.startPos + '\t' + node.level + '\t' + codeStr);
 
     if(type.contains("STATEMENTS")||type.contains("_STATEMENT")||type.equals("VAR_DECL")||type.equals("FUNCTION_DEF")||type.equals("SELECTION")||type.equals("ITERATION")){
 		if(!statement.equals("[")){
-	    	System.out.println(statement.substring(0, statement.length()-2)+"]");
+	    	//System.out.println(statement.substring(0, statement.length()-2)+"]");
+                System.out.println(stmnt);
+                System.out.println(lvl);
+                func.add(stmnt);
+                    System.out.println(func);
+                lvl.clear();
+                stmnt.clear();
+
 	    }
+                
 	    statement = "[";
+            
+
     }
 
     if(type=="LEAF_NODE")
-    	if(codeStr.equals(";")||codeStr.equals(",")||codeStr.equals("")){
+    	if(codeStr.equals(";")||codeStr.equals(",")||codeStr.equals("")||codeStr.equals("(")||codeStr.equals(")")){
 
     	}else{
 	    	if(codeStr.equals("}")|| codeStr.equals("{")){
 		    	if(!statement.equals("[")){
-					System.out.println(statement.substring(0, statement.length()-2)+"]");
-		    		statement = "["+codeStr+", ";
+                            //System.out.println(statement.substring(0, statement.length()-2)+"]");
+                            System.out.println(stmnt);
+                            System.out.println(lvl);
+                            func.add(stmnt);
+                            lvl.clear();
+                            stmnt.clear();
+                            statement = "["+codeStr+": "+node.level+", ";
+                            lvl.add(node.level);
+                            stmnt.add(codeStr);
+                            func.add(stmnt);
 		    	}
-		    	statement = "["+codeStr+", ";
+		    	statement = "["+codeStr+": "+node.level+", ";
+                        lvl.add(node.level);
+                        stmnt.add(codeStr);
+                        func.add(stmnt);
 	    	}else{
-	        	statement = statement + codeStr+", ";
+	        	statement = statement + codeStr+": "+node.level+", ";
+                        lvl.add(node.level);
+                        stmnt.add(codeStr);
+                        func.add(stmnt);
 	    	}
-
-//        if(statement.charAt(statement.length() - 1)==']')
-//        	System.out.println(statement);
 
     	}
 
-	
+	//System.out.println("Parent: "+codeStr);
 	int numberOfChildren = node.children.size();
 	for(int i = 0; i < numberOfChildren; i++){
 	    CodeTreeNode child = (CodeTreeNode) node.children.get(i);
+	    //System.out.println("Child: "+child.codeStr);
 	    printCSV(child);
 	}
 

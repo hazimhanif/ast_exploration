@@ -22,7 +22,8 @@ public class CodeTree
     public void print(String filename) throws IOException
     {
         NodePrinter.initPrinter(filename);
-	NodePrinter.printCSV(root);
+		NodePrinter.printCSV(root);
+		System.out.println("[}]");
         NodePrinter.closePrinter();
         
     }
@@ -187,11 +188,7 @@ class NodePrinter
 	    type = ASTNodeWrapper.getType(astNode);
 	}
 	
-	if(nodeTypeIsBlacklisted(type)){
-	    codeStr = "";
-	}else{
-	    codeStr = node.codeStr;
-	}
+	codeStr = node.codeStr;
 	
 	pw.println(type + '\t' + node.startPos + '\t' + node.level + '\t' + codeStr);
 
@@ -203,25 +200,26 @@ class NodePrinter
     }
 
     if(type=="LEAF_NODE")
-    	if(codeStr.equals(";")||codeStr.equals(",")||codeStr.equals("")){
+    	if(codeStr.equals(";")||codeStr.equals(",")||codeStr.equals("")||codeStr.equals("(")||codeStr.equals(")")){
 
     	}else{
 	    	if(codeStr.equals("}")|| codeStr.equals("{")){
 		    	if(!statement.equals("[")){
 					System.out.println(statement.substring(0, statement.length()-2)+"]");
-		    		statement = "["+codeStr+", ";
+		    		statement = "["+codeStr+": "+node.level+", ";
 		    	}
-		    	statement = "["+codeStr+", ";
+		    	statement = "["+codeStr+": "+node.level+", ";
 	    	}else{
-	        	statement = statement + codeStr+", ";
+	        	statement = statement + codeStr+": "+node.level+", ";
 	    	}
 
     	}
 
-	
+	//System.out.println("Parent: "+codeStr);
 	int numberOfChildren = node.children.size();
 	for(int i = 0; i < numberOfChildren; i++){
 	    CodeTreeNode child = (CodeTreeNode) node.children.get(i);
+	    //System.out.println("Child: "+child.codeStr);
 	    printCSV(child);
 	}
 
