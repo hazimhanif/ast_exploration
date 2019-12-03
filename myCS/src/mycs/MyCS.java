@@ -99,8 +99,7 @@ public class MyCS {
                   //child
                  int j=1;
                 
-                if(inlvl.get(i)!=level.get(level.size()-1))
-                      level.add(inlvl.get(i));
+
                  
                  while(!(((ArrayList<Object>)in.get(j)).size()<3)){
                      j++;
