@@ -257,15 +257,15 @@ class NodePrinter
                         stmnt.clear();
                         lvl.clear();
                         lvl.add(node.level);
-                        stmnt.add(codeStr);
+                        stmnt.add("\'"+codeStr+"\'");
                     }else{
                         lvl.add(node.level);
-                        stmnt.add(codeStr);
+                        stmnt.add("\'"+codeStr+"\'");
                     }
                     
 	    	}else{
                         lvl.add(node.level);
-                        stmnt.add(codeStr);
+                        stmnt.add("\'"+codeStr+"\'");
 	    	}
 
     	}
