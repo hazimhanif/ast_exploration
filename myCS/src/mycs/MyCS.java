@@ -20,6 +20,8 @@ import java.util.ArrayList;
 public class MyCS {
 
     static final String separator = "\t";
+    static int i=0;
+    static int recurse_level =0;
     static ArrayList<Integer> level = new ArrayList();
     static ArrayList<Object> in = new ArrayList();
     static ArrayList<Integer> inlvl = new ArrayList();
@@ -77,51 +79,84 @@ public class MyCS {
             System.out.println(inlvl);
             System.out.println("");
 
-            level.add(inlvl.get(0));
+            
             makeChild();
             
  
             System.out.println(in);
             System.out.println(level);
+            System.out.println(recurse_level);
+
 	}
+    
+    public static void recurse(ArrayList<Object> child){
+        
+        recurse_level++;
+        //if(level.size()-1!=recurse_level)
+           
+        
+        int j=-1;
+        int childsize;
+        do{
+            childsize = 0;
+            j++;
+            if(j==child.size()-1){
+                recurse((ArrayList<Object>)child.get(0));
+                return;
+            }else if(child.get(j).getClass().getSimpleName().equals("String")){
+                childsize= 999;
+                continue;
+            }else{
+                
+            }
+           childsize = ((ArrayList<Object>)child.get(j)).size();
+        }while(!(childsize<3));
+                
+        temp.add(in.get(i));
+        in.remove(i);
+        temp2 = (ArrayList<Object>) child.get(j);
+        temp2.add(temp.clone());
+        child.set(j,temp2.clone());
+
+        temp.clear();
+        temp2.clear();
+        i--;
+    
+    }
     
     public static void makeChild(){
         
-        for(int i=1;i<in.size();i++){
-             if(i==1){
-                 // first child
-                 temp.add(in.get(i));
-                 in.set(i, temp.clone());
-                 temp.clear();
-                 level.add(inlvl.get(i));
-             }else if(inlvl.get(i)>inlvl.get(i-1)){
+        if(in.size()==1)
+            return;
+        
+        int lvlcounter = 1;
+        level.add(inlvl.get(0));
+        
+        for(i=1;i<in.size();i++){
+            recurse_level=0;
+            
+            if(inlvl.get(lvlcounter)!=level.get(level.size()-1))
+                level.add(inlvl.get(lvlcounter));
+            
+            if(i==1){
+                // first child
+                temp.add(in.get(i));
+                in.set(i, temp.clone());
+                temp.clear();
+            }else if(inlvl.get(i)>inlvl.get(i-1)){
 
-                  //child
-                 int j=1;
+                 //child
+                recurse(in);
                 
+            }else{
+                 //same level
 
-                 
-                 while(!(((ArrayList<Object>)in.get(j)).size()<3)){
-                     j++;
-                 }
-
-                 temp.add(in.get(i));
-                 in.remove(i);
-                 temp2 = (ArrayList<Object>)in.get(j);
-                 temp2.add(temp.clone());
-                 in.set(j, temp2.clone());
-                 
-                 temp.clear();
-                 temp2.clear();
-                 i--;
-             }else{
-                  //same level
-                  
-                 temp.add(in.get(i));
-                 in.set(i, temp.clone());
-                 temp.clear();
-             }
-         }
+                temp.add(in.get(i));
+                in.set(i, temp.clone());
+                temp.clear();
+            }
+            lvlcounter++;
+        }
             
 
     }

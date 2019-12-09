@@ -236,7 +236,7 @@ class NodePrinter
         if(!stmnt.isEmpty()){
             bubleSort();
             System.out.println(stmnt);
-            System.out.println(lvl);
+            //System.out.println(lvl);
             func.add((ArrayList<String>) stmnt.clone());
             func_lvl.add((ArrayList<Integer>) lvl.clone());
             lvl.clear();
@@ -247,15 +247,18 @@ class NodePrinter
     	if(codeStr.equals(";")||codeStr.equals(",")||codeStr.equals("")||codeStr.equals("(")||codeStr.equals(")")){
 
     	}else{
-	    	if(codeStr.equals("}")|| codeStr.equals("{")){            
+	    	if(codeStr.equals("{")|| codeStr.equals("}")){            
                     if(!stmnt.isEmpty()){
                         bubleSort();
                         System.out.println(stmnt);
-                        System.out.println(lvl);
+                        //System.out.println(lvl);
                         func.add((ArrayList<String>) stmnt.clone());
                         func_lvl.add((ArrayList<Integer>) lvl.clone());
                         stmnt.clear();
                         lvl.clear();
+                        lvl.add(node.level);
+                        stmnt.add(codeStr);
+                    }else{
                         lvl.add(node.level);
                         stmnt.add(codeStr);
                     }
