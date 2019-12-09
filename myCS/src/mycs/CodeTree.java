@@ -20,15 +20,13 @@ public class CodeTree
 	root.initializeFromASTNode(ast, 0);	
     }
 
-    public void print(String filename) throws IOException
+    public void print(PrintWriter pwlocal, String filename) throws IOException
     {
-        NodePrinter.initPrinter(filename);
-	NodePrinter.printCSV(root);
-        NodePrinter.closePrinter();
-        System.out.println("");
-        System.out.println(NodePrinter.func);
-        System.out.println(NodePrinter.func_lvl);
-        System.out.println("");
+        NodePrinter.clean();
+        NodePrinter.printCSV(root);
+        pwlocal.println(NodePrinter.func);
+        pwlocal.println(NodePrinter.func_lvl);
+
     }
     
     private CodeTreeNode root;
@@ -160,7 +158,14 @@ class NodePrinter
     {	
 	initializeNodeBlacklist();
     }
-
+    
+    public static void clean(){
+        stmnt = new ArrayList();
+        lvl = new ArrayList();
+        func = new ArrayList();
+        func_lvl = new ArrayList();
+    }
+    
     private static void initializeNodeBlacklist()
     {
 	nodeBlacklist = new HashMap<String,Integer>();
@@ -168,17 +173,6 @@ class NodePrinter
 	for(int i = 0; i < nodeTypeBlacklist.length; i++){
 	    nodeBlacklist.put(nodeTypeBlacklist[i], 1);
 	}		
-    }
-    
-    public static void initPrinter(String Filename) throws IOException{
-        StringTokenizer st = new StringTokenizer(Filename,"/");
-        st.nextToken();
-        pw = new PrintWriter(new FileWriter("output/"+st.nextToken()+".txt"));
-        //pw.println("Type\tLine\tLevel\tCode");
-    }
-    
-    public static  void closePrinter() throws IOException{
-        pw.close();
     }
     
     public static void bubleSort(){
@@ -209,11 +203,7 @@ class NodePrinter
         
         
     }
-    
-    public static void makeChild(){
-        
-        
-    }
+
 
     public static void printCSV (CodeTreeNode node) throws NullPointerException
     {
@@ -230,12 +220,12 @@ class NodePrinter
 	
 	codeStr = node.codeStr;
 	
-	pw.println(type + '\t' + node.startPos + '\t' + node.level + '\t' + codeStr);
+	//pw.println(type + '\t' + node.startPos + '\t' + node.level + '\t' + codeStr);
 
     if(type.contains("STATEMENTS")||type.contains("_STATEMENT")||type.equals("VAR_DECL")||type.equals("FUNCTION_DEF")||type.equals("SELECTION")||type.equals("ITERATION"))
         if(!stmnt.isEmpty()){
             bubleSort();
-            System.out.println(stmnt);
+            //System.out.println(stmnt);
             //System.out.println(lvl);
             func.add((ArrayList<String>) stmnt.clone());
             func_lvl.add((ArrayList<Integer>) lvl.clone());
@@ -250,7 +240,7 @@ class NodePrinter
 	    	if(codeStr.equals("{")|| codeStr.equals("}")){            
                     if(!stmnt.isEmpty()){
                         bubleSort();
-                        System.out.println(stmnt);
+                        //System.out.println(stmnt);
                         //System.out.println(lvl);
                         func.add((ArrayList<String>) stmnt.clone());
                         func_lvl.add((ArrayList<Integer>) lvl.clone());
@@ -270,11 +260,9 @@ class NodePrinter
 
     	}
 
-	//System.out.println("Parent: "+codeStr);
 	int numberOfChildren = node.children.size();
 	for(int i = 0; i < numberOfChildren; i++){
 	    CodeTreeNode child = (CodeTreeNode) node.children.get(i);
-	    //System.out.println("Child: "+child.codeStr);
 	    printCSV(child);
 	}
 
