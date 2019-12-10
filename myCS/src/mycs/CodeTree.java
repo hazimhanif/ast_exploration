@@ -233,8 +233,9 @@ class NodePrinter
             stmnt.clear();
         }
 
-    if(type=="LEAF_NODE")
-    	if(codeStr.equals(";")||codeStr.equals(",")||codeStr.equals("")||codeStr.equals("(")||codeStr.equals(")")){
+    if(type=="LEAF_NODE"){
+        codeStr = codeStr.replaceAll("\r","").replaceAll("\n", "").replaceAll("\t", "");
+    	if(codeStr.equals(";")||codeStr.equals(",")||codeStr.equals("")||codeStr.equals("(")||codeStr.equals(")")||codeStr.equals(".")||codeStr.equals("[")||codeStr.equals("]")||codeStr.equals(":")){
 
     	}else{
 	    	if(codeStr.equals("{")|| codeStr.equals("}")){            
@@ -259,13 +260,14 @@ class NodePrinter
 	    	}
 
     	}
-
+    }
 	int numberOfChildren = node.children.size();
 	for(int i = 0; i < numberOfChildren; i++){
 	    CodeTreeNode child = (CodeTreeNode) node.children.get(i);
 	    printCSV(child);
 	}
 
+    
     }
 
     private static boolean nodeTypeIsBlacklisted(String type)

@@ -26,11 +26,11 @@ public class MyCS {
 	{
 	    CodeTree codeTree = new CodeTree();
             
-            PrintWriter pw = new PrintWriter(new FileWriter("output/val.txt",true));
+            PrintWriter pw = new PrintWriter(new FileWriter("output/train_false.txt",true));
 	    
 	    try{
     
-		String dirPath = "input";
+		String dirPath = "D:\\OneDrive\\Documents\\PhD\\Experiment\\Exp1\\experiment-1-replication\\out\\train\\false";
                 File dir = new File(dirPath);
                 File[] files = dir.listFiles();
                 if (files.length == 0) {
@@ -38,7 +38,7 @@ public class MyCS {
                 } else {
                     for (File aFile : files) {
                     
-                        String inputFilename = "input/"+aFile.getName();
+                        String inputFilename = "D:\\OneDrive\\Documents\\PhD\\Experiment\\Exp1\\experiment-1-replication\\out\\train\\false\\"+aFile.getName();
                         CPPGrammarParser.code_return ast = parseFile(inputFilename);
                         codeTree.initializeFromAST(ast.tree);
                         codeTree.print(pw,inputFilename);
